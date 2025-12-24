@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Sparkles } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 export const Footer = () => {
     return (
@@ -8,7 +8,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="md:col-span-1 space-y-4">
                         <div className="flex items-center space-x-2">
-                            <Sparkles className="w-5 h-5 text-brand-500" />
+                            <img src={logo} alt="Textglow Logo" className="w-6 h-6" />
                             <span className="font-bold text-lg text-slate-900">Textglow</span>
                         </div>
                         <p className="text-sm text-slate-500">
@@ -21,16 +21,7 @@ export const Footer = () => {
                         <ul className="space-y-2">
                             <li><Link to="/" className="text-sm text-slate-600 hover:text-slate-900">Features</Link></li>
                             <li><Link to="/pricing" className="text-sm text-slate-600 hover:text-slate-900">Pricing</Link></li>
-                            <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3 className="font-semibold text-slate-900 mb-4">Company</h3>
-                        <ul className="space-y-2">
-                            <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">About</a></li>
-                            <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Blog</a></li>
-                            <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Contact</a></li>
+                            <li><a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
                         </ul>
                     </div>
 
@@ -38,9 +29,20 @@ export const Footer = () => {
                         <h3 className="font-semibold text-slate-900 mb-4">Legal</h3>
                         <ul className="space-y-2">
                             <li><Link to="/privacy" className="text-sm text-slate-600 hover:text-slate-900">Privacy Policy</Link></li>
-                            <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Terms of Service</a></li>
+                            <li><Link to="/terms" className="text-sm text-slate-600 hover:text-slate-900">Terms of Service</Link></li>
                         </ul>
                     </div>
+
+                    <div>
+                        {/* Hidden Company Column 
+            <h3 className="font-semibold text-slate-900 mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">About</a></li>
+              <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Contact</a></li>
+            </ul>
+             */}
+                    </div>
+
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center">

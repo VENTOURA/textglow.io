@@ -1,8 +1,9 @@
 import { Button } from '../ui/Button';
 import { Link } from 'react-router-dom';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../../assets/logo.png';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +13,17 @@ export const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <Link to="/" className="flex items-center space-x-2">
-                        <Sparkles className="w-6 h-6 text-brand-500" />
+                        <img src={logo} alt="Textglow Logo" className="w-8 h-8" />
                         <span className="font-bold text-xl tracking-tight text-slate-900">Textglow</span>
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-8">
                         <Link to="/" className="text-sm font-medium text-slate-600 hover:text-slate-900">Home</Link>
                         <Link to="/pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
+                        {/* Hidden links
+            <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">About</a>
+            <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">Blog</a>
+            */}
                         <Button size="sm" href="https://chrome.google.com/webstore" variant="primary">Install Free</Button>
                     </div>
 

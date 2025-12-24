@@ -115,7 +115,7 @@ export const Privacy = () => {
                         </h3>
                         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                             <p className="mb-0">
-                                If you have any questions about this Privacy Policy, the practices of this extension, or your dealings with this extension, please contact us at: <a href="mailto:support@textglow.app" className="font-bold text-brand-600 no-underline hover:underline">support@textglow.app</a>.
+                                If you have any questions about this Privacy Policy, the practices of this extension, or your dealings with this extension, please contact us at: <a href="mailto:support@textglow.io" className="font-bold text-brand-600 no-underline hover:underline">support@textglow.io</a>.
                             </p>
                         </div>
                     </div>

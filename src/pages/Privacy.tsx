@@ -45,6 +45,12 @@ export const Privacy = () => {
                             <strong>Website Content (Selected Text):</strong> The core functionality of Textglow requires accessing text that you explicitly select on web pages. We <strong>only</strong> access and process the specific text you highlight and choose to submit for polishing. We do not passively monitor, record, or store your browsing history, passwords, or other page content.
                         </p>
                         <p>
+                            <strong>Account Information (Pro Users):</strong> If you upgrade to our Pro plan, we collect your email address to manage your subscription and verify your "Pro" status across devices.
+                        </p>
+                        <p>
+                            <strong>Payment Information:</strong> All payments are processed securely by our third-party payment processor, Stripe. We <strong>do not</strong> store or have access to your credit card numbers or banking information.
+                        </p>
+                        <p>
                             <strong>Usage Data:</strong> We may collect anonymous, aggregated usage statistics (e.g., number of polishes performed) to improve service stability and performance.
                         </p>
 
@@ -62,6 +68,10 @@ export const Privacy = () => {
                             </li>
                             <li className="flex items-start">
                                 <span className="w-2 h-2 bg-brand-400 rounded-full mt-2.5 mr-3"></span>
+                                <span><strong>Subscription Management:</strong> We use your email to verify your subscription status and deliver Pro features.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-2 h-2 bg-brand-400 rounded-full mt-2.5 mr-3"></span>
                                 <span><strong>Service Improvement:</strong> We use aggregated usage data to identify bugs and improve features.</span>
                             </li>
                         </ul>
@@ -71,7 +81,7 @@ export const Privacy = () => {
                             Data Retention
                         </h3>
                         <p>
-                            We do <strong>not</strong> permanently store the text content you submit for polishing. Once the rewritten text is returned to your browser, the original and processed text data is discarded from our processing servers.
+                            We do <strong>not</strong> permanently store the text content you submit for polishing. Once the rewritten text is returned to your browser, the original and processed text data is discarded from our processing servers. Account information (email) is retained only as long as your subscription is active or as required by law.
                         </p>
 
                         <h3 className="flex items-center group">
@@ -82,8 +92,19 @@ export const Privacy = () => {
                             We do not sell, trade, or rent your personal identification information to others.
                         </p>
                         <p>
-                            <strong>Third-Party Service Providers:</strong> We use trusted third-party providers (such as OpenAI) to perform the AI text generation. These providers adhere to strict data security standards.
+                            <strong>Third-Party Service Providers:</strong>
                         </p>
+                        <ul className="list-none pl-0 space-y-2">
+                            <li className="flex items-start">
+                                <span className="w-2 h-2 bg-brand-400 rounded-full mt-2.5 mr-3"></span>
+                                <span><strong>AI Providers (e.g., OpenAI):</strong> To perform text generation.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="w-2 h-2 bg-brand-400 rounded-full mt-2.5 mr-3"></span>
+                                <span><strong>Payment Processors (Stripe):</strong> To securely handle billing and subscription management.</span>
+                            </li>
+                        </ul>
+                        <br />
 
                         <h3 className="flex items-center group">
                             <span className="bg-brand-100 text-brand-600 w-10 h-10 rounded-xl flex items-center justify-center text-lg mr-4 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300">5</span>
@@ -98,7 +119,7 @@ export const Privacy = () => {
                             Your Rights
                         </h3>
                         <p>
-                            You have the right to access, correct, or delete your personal information. Since we do not store your text content or require user accounts for the basic service, we inherently minimize the personal data we hold.
+                            You have the right to access, correct, or delete your personal information. You can manage or cancel your subscription at any time via the "Manage Subscription" portal provided by Stripe. Since we do not store your text content, we inherently minimize the personal data we hold.
                         </p>
 
                         <h3 className="flex items-center group">

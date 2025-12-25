@@ -6,7 +6,7 @@ import { useState } from 'react';
 export const PricingSection = () => {
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly');
 
-    const monthlyLink = "https://buy.stripe.com/00wfZj5Sp46q8fW5kEc3m02";
+    const monthlyLink = "https://buy.stripe.com/7sY28tdkR0Ue0NufZic3m04";
     const yearlyLink = "https://buy.stripe.com/00weVfeoV46q0Nu8wQc3m03";
 
     return (

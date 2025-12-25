@@ -29,64 +29,128 @@ export const Terms = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12"
+                    className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12 text-justify"
                 >
                     <div className="prose prose-slate prose-lg max-w-none hover:prose-a:text-brand-600 prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600">
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">1</span>
-                            Acceptance of Terms
-                        </h3>
-                        <p>
-                            By installing and using the Textglow Chrome Extension, you agree to these Terms of Service. If you do not agree, please do not use the extension.
+                        <p className="lead mb-10 text-xl text-slate-600 leading-relaxed">
+                            Welcome to Textglow. By accessing, installing, or using the Textglow Chrome Extension ("Service"), you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.
                         </p>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">2</span>
-                            Description of Service
-                        </h3>
-                        <p>
-                            Textglow provides AI-powered text polishing and rewriting services directly within your browser. We offer both a Free version (requiring user's own API key) and a Pro version (inclusive of AI processing).
-                        </p>
+                        <div className="space-y-12">
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">1</span>
+                                    Acceptance of Terms
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        By installing and using the Textglow Chrome Extension, you agree to these Terms of Service. If you do not agree, please do not use the extension. You must be at least 13 years old to use this Service.
+                                    </p>
+                                </div>
+                            </section>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">3</span>
-                            User Conduct
-                        </h3>
-                        <p>
-                            You are responsible for the content you process using Textglow. You agree not to use the service to generate harmful, illegal, or abusive content.
-                        </p>
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">2</span>
+                                    Description of Service
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        Textglow provides AI-powered text polishing and rewriting services directly within your browser.
+                                    </p>
+                                    <ul className="list-none pl-0 space-y-3">
+                                        <li className="flex items-start">
+                                            <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                                            <span className="leading-relaxed"><strong>Free Plan:</strong> Requires you to provide your own valid OpenAI API key. Usage limits are determined by your own OpenAI quota and a daily fair-use limit within the extension (30 polishes/day).</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                                            <span className="leading-relaxed"><strong>Pro Plan:</strong> Includes premium AI access managed by us. Pro users enjoy an expanded daily limit (300 polishes/day) and priority processing.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">4</span>
-                            Intellectual Property
-                        </h3>
-                        <p>
-                            The Textglow extension, including its code, design, and branding, is owned by Textglow. The content you generate using the service belongs to you.
-                        </p>
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">3</span>
+                                    Subscription & Payments
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        <strong>Billing:</strong> Pro subscriptions are billed on a recurring basis (monthly or annually) via Stripe, our secure payment processor.
+                                    </p>
+                                    <p className="leading-relaxed">
+                                        <strong>Cancellation:</strong> You may cancel your subscription at any time through the "Manage Subscription" portal in the extension or via your Stripe email receipt. Your Pro access will continue until the end of the current billing period.
+                                    </p>
+                                    <p className="leading-relaxed">
+                                        <strong>Refunds:</strong> Refunds are generally not provided for partial billing periods, but exceptions may be made on a case-by-case basis for technical failures.
+                                    </p>
+                                </div>
+                            </section>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">5</span>
-                            Payments and Refunds
-                        </h3>
-                        <p>
-                            Pro subscriptions are billed monthly or annually. You may cancel at any time. Refunds are handled on a case-by-case basis.
-                        </p>
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">4</span>
+                                    User Conduct
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        You are responsible for the content you process using Textglow. You agree not to use the service to generate harmful, illegal, abusive, or fraudulent content. We reserve the right to terminate access for users who violate these guidelines or abuse the API limits.
+                                    </p>
+                                </div>
+                            </section>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">6</span>
-                            Disclaimer of Warranties
-                        </h3>
-                        <p>
-                            The service is provided "as is" without warranties of any kind. We do not guarantee that the service will be uninterrupted or error-free.
-                        </p>
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">5</span>
+                                    Intellectual Property
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        The Textglow extension, including its code, design, features, and branding, is owned by Textglow. The text content you generate using the service belongs to you, subject to the terms of the underlying AI provider (e.g., OpenAI).
+                                    </p>
+                                </div>
+                            </section>
 
-                        <h3 className="flex items-center">
-                            <span className="bg-brand-100 text-brand-600 w-8 h-8 rounded-lg flex items-center justify-center text-sm mr-3">7</span>
-                            Limitation of Liability
-                        </h3>
-                        <p>
-                            Textglow shall not be liable for any indirect, incidental, or consequential damages arising from your use of the service.
-                        </p>
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">6</span>
+                                    Disclaimer of Warranties
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        The service is provided "as is" and "as available" without warranties of any kind, express or implied. We do not guarantee that the service will be uninterrupted, secure, or error-free.
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">7</span>
+                                    Limitation of Liability
+                                </h3>
+                                <div className="pl-0 md:pl-16 space-y-4">
+                                    <p className="leading-relaxed">
+                                        To the fullest extent permitted by law, Textglow shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits or data, arising from your use of the service.
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h3 className="flex items-center group text-2xl mb-6">
+                                    <span className="bg-brand-100 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center text-xl mr-5 group-hover:bg-brand-600 group-hover:text-white transition-colors duration-300 shadow-sm">8</span>
+                                    Contact
+                                </h3>
+                                <div className="pl-0 md:pl-16">
+                                    <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
+                                        <p className="mb-0 text-lg leading-relaxed text-slate-700">
+                                            Questions about the Terms of Service should be sent to us at <a href="mailto:support@textglow.io" className="font-bold text-brand-600 no-underline hover:text-brand-700 hover:underline transition-all">support@textglow.io</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
                     </div>
                 </motion.div>
             </div>

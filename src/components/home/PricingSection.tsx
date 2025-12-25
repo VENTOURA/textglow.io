@@ -6,8 +6,8 @@ import { useState } from 'react';
 export const PricingSection = () => {
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly');
 
-    const monthlyLink = "https://buy.stripe.com/test_14A7sM3kpgIVa2B2aOdnW01";
-    const yearlyLink = "https://buy.stripe.com/test_9B66oI6wBboBcaJ9DgdnW02";
+    const monthlyLink = "https://buy.stripe.com/00wfZj5Sp46q8fW5kEc3m02";
+    const yearlyLink = "https://buy.stripe.com/00weVfeoV46q0Nu8wQc3m03";
 
     return (
         <section id="pricing" className="py-20 relative overflow-hidden bg-slate-50">

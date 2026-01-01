@@ -21,7 +21,7 @@ export const Footer = () => {
                         <ul className="space-y-2">
                             <li><Link to="/" className="text-sm text-slate-600 hover:text-slate-900">Features</Link></li>
                             <li><Link to="/pricing" className="text-sm text-slate-600 hover:text-slate-900">Pricing</Link></li>
-                            <li><a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
+                            <li><a href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
                         </ul>
                     </div>
 

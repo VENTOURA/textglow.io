@@ -24,7 +24,7 @@ export const Navbar = () => {
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">About</a>
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">Blog</a>
             */}
-                        <Button size="sm" href="https://chrome.google.com/webstore" variant="primary">Install Free</Button>
+                        <Button size="sm" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" variant="primary">Install Free</Button>
                     </div>
 
                     <div className="md:hidden flex items-center">
@@ -47,7 +47,7 @@ export const Navbar = () => {
                             <Link to="/" onClick={() => setIsOpen(false)} className="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Home</Link>
                             <Link to="/pricing" onClick={() => setIsOpen(false)} className="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
                             <div className="pt-2">
-                                <Button href="https://chrome.google.com/webstore" className="w-full justify-center">Install Free</Button>
+                                <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install Free</Button>
                             </div>
                         </div>
                     </motion.div>

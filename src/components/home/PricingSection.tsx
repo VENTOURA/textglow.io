@@ -84,7 +84,7 @@ export const PricingSection = () => {
                             </li>
                         </ul>
 
-                        <Button variant="secondary" className="w-full" href="https://chrome.google.com/webstore">
+                        <Button variant="secondary" className="w-full" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf">
                             Install Free
                         </Button>
                     </motion.div>

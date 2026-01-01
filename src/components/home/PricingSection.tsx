@@ -1,6 +1,4 @@
-import { Button } from '../ui/Button';
-import { Check, Sparkles } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { PricingCard } from './PricingCard';
 import { useState } from 'react';
 
 export const PricingSection = () => {
@@ -45,116 +43,43 @@ export const PricingSection = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    {/* Free Plan */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 flex flex-col"
-                    >
-                        <div className="mb-6">
-                            <h3 className="text-2xl font-bold text-slate-900">Free</h3>
-                            <p className="text-slate-500 mt-2">Perfect for getting started</p>
-                        </div>
-                        <div className="mb-6">
-                            <span className="text-4xl font-bold text-slate-900">$0</span>
-                            <span className="text-slate-500">/month</span>
-                        </div>
+                    <PricingCard
+                        title="Free"
+                        subtitle="Perfect for getting started"
+                        price="$0"
+                        period="month"
+                        features={[
+                            "30 polishes per day",
+                            "Requires your own OpenAI API Key",
+                            "Up to 1,000 characters per polish",
+                            "Basic tones included",
+                            "Works on all supported sites"
+                        ]}
+                        buttonText="Install Free"
+                        buttonLink="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
+                    />
 
-                        <ul className="space-y-4 mb-8 flex-grow">
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-500 mr-2 flex-shrink-0" />
-                                <span className="text-slate-600 font-medium">30 polishes per day</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-500 mr-2 flex-shrink-0" />
-                                <span className="text-slate-600">Requires your own OpenAI API Key</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-500 mr-2 flex-shrink-0" />
-                                <span className="text-slate-600">Up to 1,000 characters per polish</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-500 mr-2 flex-shrink-0" />
-                                <span className="text-slate-600">Basic tones included</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-500 mr-2 flex-shrink-0" />
-                                <span className="text-slate-600">Works on all supported sites</span>
-                            </li>
-                        </ul>
-
-                        <Button variant="secondary" className="w-full" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf">
-                            Install Free
-                        </Button>
-                    </motion.div>
-
-                    {/* Pro Plan */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                        className="bg-slate-900 rounded-2xl shadow-xl border border-slate-800 p-8 flex flex-col relative overflow-hidden"
-                    >
-                        <div className="absolute top-0 right-0 bg-brand-500/10 w-32 h-32 rounded-bl-full"></div>
-
-                        <div className="mb-6 relative">
-                            <div className="flex justify-between items-start">
-                                <div>
-                                    <h3 className="text-2xl font-bold text-white">Pro</h3>
-                                    <p className="text-slate-400 mt-2">For power users</p>
-                                </div>
-                                <div className="bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-xs font-semibold flex items-center">
-                                    <Sparkles className="w-3 h-3 mr-1" />
-                                    POPULAR
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="mb-6">
-                            <span className="text-4xl font-bold text-white">
-                                {billingCycle === 'monthly' ? '$5' : '$49'}
-                            </span>
-                            <span className="text-slate-400">/{billingCycle === 'monthly' ? 'month' : 'year'}</span>
-                            {billingCycle === 'yearly' && (
-                                <div className="text-sm text-brand-300 mt-1 font-medium">Save $11 a year</div>
-                            )}
-                        </div>
-
-                        <ul className="space-y-4 mb-8 flex-grow">
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-400 mr-2 flex-shrink-0" />
-                                <span className="text-slate-200 font-medium">300 polishes per day</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-400 mr-2 flex-shrink-0" />
-                                <span className="text-slate-200">No API Key needed</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-400 mr-2 flex-shrink-0" />
-                                <span className="text-slate-200">Up to 3,000 characters per polish</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-400 mr-2 flex-shrink-0" />
-                                <span className="text-slate-200">Priority faster responses</span>
-                            </li>
-                            <li className="flex items-start">
-                                <Check className="w-5 h-5 text-brand-400 mr-2 flex-shrink-0" />
-                                <span className="text-slate-200">Early access to new features</span>
-                            </li>
-                        </ul>
-
-                        <Button
-                            variant="primary"
-                            className="w-full bg-brand-600 hover:bg-brand-700 text-white border-none shadow-[0_0_20px_rgba(14,165,233,0.3)]"
-                            href={billingCycle === 'monthly' ? monthlyLink : yearlyLink}
-                        >
-                            Upgrade to Pro
-                        </Button>
-                    </motion.div>
+                    <PricingCard
+                        isPro={true}
+                        title="Pro"
+                        subtitle="For power users"
+                        price={billingCycle === 'monthly' ? '$5' : '$49'}
+                        period={billingCycle === 'monthly' ? 'month' : 'year'}
+                        features={[
+                            "300 polishes per day",
+                            "No API Key needed",
+                            "Up to 3,000 characters per polish",
+                            "Priority faster responses",
+                            "Early access to new features"
+                        ]}
+                        buttonText="Upgrade to Pro"
+                        buttonLink={billingCycle === 'monthly' ? monthlyLink : yearlyLink}
+                        isYearly={billingCycle === 'yearly'}
+                        delay={0.1}
+                    />
                 </div>
             </div>
         </section>
     );
 };
+

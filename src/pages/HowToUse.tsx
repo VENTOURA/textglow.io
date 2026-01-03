@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Download, Globe, PenTool, Check, Zap, Settings, Shield, User } from 'lucide-react';
+import { Download, PenTool, Check, Zap, Settings, Shield, User } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const HowToUse = () => {
@@ -83,7 +83,7 @@ export const HowToUse = () => {
                                 <p className="text-slate-600 mb-4">
                                     Add Textglow to Chrome from the Web Store. Once installed, we recommend pinning it to your browser toolbar for easy access.
                                 </p>
-                                <Button size="sm" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" variant="outline">Install Extension</Button>
+                                <Button size="sm" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" variant="secondary">Install Extension</Button>
                             </div>
                         </div>
 

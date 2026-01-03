@@ -1,5 +1,5 @@
 import { Button } from '../ui/Button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -7,6 +7,11 @@ import logo from '../../assets/logo.png';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const location = useLocation();
+
+    const isActive = (path: string) => location.pathname === path;
+    const linkClass = (path: string) => `text-sm font-medium transition-colors ${isActive(path) ? 'text-brand-600 font-bold' : 'text-slate-600 hover:text-slate-900'}`;
+    const mobileLinkClass = (path: string) => `block py-2 text-base font-medium transition-colors ${isActive(path) ? 'text-brand-600 font-bold' : 'text-slate-600 hover:text-slate-900'}`;
 
     return (
         <div className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
@@ -18,8 +23,9 @@ export const Navbar = () => {
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link to="/" className="text-sm font-medium text-slate-600 hover:text-slate-900">Home</Link>
-                        <Link to="/pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
+                        <Link to="/" className={linkClass('/')}>Home</Link>
+                        <Link to="/how-to-use" className={linkClass('/how-to-use')}>How to Use</Link>
+                        <Link to="/pricing" className={linkClass('/pricing')}>Pricing</Link>
                         {/* Hidden links
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">About</a>
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">Blog</a>
@@ -44,8 +50,9 @@ export const Navbar = () => {
                         className="md:hidden bg-white border-b border-slate-100 overflow-hidden"
                     >
                         <div className="px-4 pt-2 pb-6 space-y-2">
-                            <Link to="/" onClick={() => setIsOpen(false)} className="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Home</Link>
-                            <Link to="/pricing" onClick={() => setIsOpen(false)} className="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Pricing</Link>
+                            <Link to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/')}>Home</Link>
+                            <Link to="/how-to-use" onClick={() => setIsOpen(false)} className={mobileLinkClass('/how-to-use')}>How to Use</Link>
+                            <Link to="/pricing" onClick={() => setIsOpen(false)} className={mobileLinkClass('/pricing')}>Pricing</Link>
                             <div className="pt-2">
                                 <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install Free</Button>
                             </div>

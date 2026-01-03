@@ -1,0 +1,143 @@
+import { useState, useEffect, useRef } from 'react';
+import { Sparkles } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+interface DemoCardProps {
+    originalText: string;
+    polishedText: string;
+    tone: string;
+    delay?: number;
+}
+
+type AnimationState = 'IDLE' | 'TYPING' | 'PRE_POLISH' | 'POLISHING' | 'POLISHED' | 'RESETTING';
+
+export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCardProps) => {
+    const [text, setText] = useState('');
+    const [state, setState] = useState<AnimationState>('IDLE');
+    const [cursorVisible, setCursorVisible] = useState(true);
+
+    // Refs to manage timeouts and prevent memory leaks
+    const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+
+    const addTimeout = (callback: () => void, ms: number) => {
+        const id = setTimeout(callback, ms);
+        timeoutsRef.current.push(id);
+        return id;
+    };
+
+    const clearTimeouts = () => {
+        timeoutsRef.current.forEach(clearTimeout);
+        timeoutsRef.current = [];
+    };
+
+    useEffect(() => {
+        const cursorInterval = setInterval(() => {
+            setCursorVisible(v => !v);
+        }, 500);
+
+        // Start the animation loop
+        const startAnimation = () => {
+            setState('IDLE');
+            setText('');
+
+            // Initial Delay
+            addTimeout(() => {
+                setState('TYPING');
+            }, delay);
+        };
+
+        startAnimation();
+
+        return () => {
+            clearInterval(cursorInterval);
+            clearTimeouts();
+        };
+    }, [delay]); // Only restart if props change significantly
+
+    // State Machine Effect
+    useEffect(() => {
+        if (state === 'TYPING') {
+            let charIndex = 0;
+            const typeChar = () => {
+                if (charIndex <= originalText.length) {
+                    setText(originalText.slice(0, charIndex));
+                    charIndex++;
+                    // Random typing speed between 30ms and 70ms
+                    const speed = Math.random() * 40 + 30;
+                    addTimeout(typeChar, speed);
+                } else {
+                    setState('PRE_POLISH');
+                }
+            };
+            typeChar();
+        } else if (state === 'PRE_POLISH') {
+            // Wait before clicking polish
+            addTimeout(() => {
+                setState('POLISHING');
+            }, 800);
+        } else if (state === 'POLISHING') {
+            // Simulate processing time + button animation
+            addTimeout(() => {
+                setText(polishedText);
+                setState('POLISHED');
+            }, 600);
+        } else if (state === 'POLISHED') {
+            // Wait so user can read the result
+            addTimeout(() => {
+                setState('RESETTING');
+            }, 4000);
+        } else if (state === 'RESETTING') {
+            setText('');
+            setState('TYPING'); // Loop back to typing immediately or after small delay
+        }
+    }, [state, originalText, polishedText]);
+
+    return (
+        <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-xl">
+            {/* Mock Window Header */}
+            <div className="bg-slate-50 px-4 py-3 border-b border-slate-100 flex items-center space-x-2">
+                <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                <div className="w-3 h-3 rounded-full bg-amber-400"></div>
+                <div className="w-3 h-3 rounded-full bg-green-400"></div>
+            </div>
+
+            {/* Editor Area */}
+            <div className="p-4 flex-grow bg-white relative">
+                <div className="font-mono text-base text-slate-800 leading-relaxed min-h-[140px] whitespace-pre-wrap">
+                    {text}
+                    {(state === 'TYPING' || state === 'IDLE' || state === 'PRE_POLISH') && (
+                        <span className={`${cursorVisible ? 'opacity-100' : 'opacity-0'} text-brand-500 font-bold`}>|</span>
+                    )}
+                </div>
+
+                {/* Tone Badge */}
+                <AnimatePresence>
+                    {state === 'POLISHED' && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0 }}
+                            className="absolute bottom-4 right-4 bg-purple-100 text-purple-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-purple-200 shadow-sm"
+                        >
+                            Tone: {tone}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+
+            {/* Toolbar / Action Area */}
+            <div className="bg-slate-50 p-3 border-t border-slate-100 flex justify-end items-center">
+                <motion.button
+                    animate={state === 'POLISHING' ? { scale: 0.95 } : { scale: 1 }}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${state === 'POLISHED'
+                        ? 'bg-green-100 text-green-700'
+                        : 'bg-brand-600 text-white shadow-md shadow-brand-500/20'
+                        }`}
+                >
+                    <Sparkles className={`w-4 h-4 ${state === 'POLISHING' ? 'animate-spin' : ''}`} />
+                    <span>{state === 'POLISHED' ? 'Polished!' : 'Polish'}</span>
+                </motion.button>
+            </div>
+        </div>
+    );
+};

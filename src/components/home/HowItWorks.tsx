@@ -4,8 +4,8 @@ import { MousePointerClick, Wand2, MessageSquare } from 'lucide-react';
 const steps = [
     {
         icon: MousePointerClick,
-        title: "Select Text",
-        description: "Highlight any text in your email, chat, or document."
+        title: "Type Your Text",
+        description: "Just write anywhere—email, chat, or doc. No need to select text manually."
     },
     {
         icon: Wand2,
@@ -21,7 +21,7 @@ const steps = [
 
 export const HowItWorks = () => {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-slate-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-slate-900 mb-4">How It Works</h2>

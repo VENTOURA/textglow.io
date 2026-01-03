@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, MousePointer2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface DemoCardProps {
@@ -9,7 +9,7 @@ interface DemoCardProps {
     delay?: number;
 }
 
-type AnimationState = 'IDLE' | 'TYPING' | 'PRE_POLISH' | 'POLISHING' | 'POLISHED' | 'RESETTING';
+type AnimationState = 'IDLE' | 'TYPING' | 'PRE_POLISH' | 'MOVING_CURSOR' | 'CLICKING' | 'POLISHING' | 'POLISHED' | 'RESETTING';
 
 export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCardProps) => {
     const [text, setText] = useState('');
@@ -71,16 +71,26 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
             };
             typeChar();
         } else if (state === 'PRE_POLISH') {
-            // Wait before clicking polish
+            // Short pause before cursor starts moving
+            addTimeout(() => {
+                setState('MOVING_CURSOR');
+            }, 500);
+        } else if (state === 'MOVING_CURSOR') {
+            // Time for cursor to travel to button
+            addTimeout(() => {
+                setState('CLICKING');
+            }, 1000);
+        } else if (state === 'CLICKING') {
+            // Click animation
             addTimeout(() => {
                 setState('POLISHING');
-            }, 800);
+            }, 300);
         } else if (state === 'POLISHING') {
             // Simulate processing time + button animation
             addTimeout(() => {
                 setText(polishedText);
                 setState('POLISHED');
-            }, 600);
+            }, 800);
         } else if (state === 'POLISHED') {
             // Wait so user can read the result
             addTimeout(() => {
@@ -93,7 +103,7 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
     }, [state, originalText, polishedText]);
 
     return (
-        <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-xl">
+        <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-xl relative">
             {/* Mock Window Header */}
             <div className="bg-slate-50 px-4 py-3 border-b border-slate-100 flex items-center space-x-2">
                 <div className="w-3 h-3 rounded-full bg-red-400"></div>
@@ -126,9 +136,9 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
             </div>
 
             {/* Toolbar / Action Area */}
-            <div className="bg-slate-50 p-3 border-t border-slate-100 flex justify-end items-center">
+            <div className="bg-slate-50 p-3 border-t border-slate-100 flex justify-end items-center relative z-10">
                 <motion.button
-                    animate={state === 'POLISHING' ? { scale: 0.95 } : { scale: 1 }}
+                    animate={state === 'CLICKING' || state === 'POLISHING' ? { scale: 0.95 } : { scale: 1 }}
                     className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${state === 'POLISHED'
                         ? 'bg-green-100 text-green-700'
                         : 'bg-brand-600 text-white shadow-md shadow-brand-500/20'
@@ -138,6 +148,25 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
                     <span>{state === 'POLISHED' ? 'Polished!' : 'Polish'}</span>
                 </motion.button>
             </div>
+
+            {/* Animated Mouse Cursor */}
+            <AnimatePresence>
+                {(state === 'MOVING_CURSOR' || state === 'CLICKING') && (
+                    <motion.div
+                        initial={{ opacity: 0, top: "40%", left: "40%" }}
+                        animate={{
+                            opacity: 1,
+                            top: "88%",   // Approximate position of the button
+                            left: "85%"   // Approximate position of the button
+                        }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                        className="absolute z-50 pointer-events-none"
+                    >
+                        <MousePointer2 className="w-6 h-6 text-slate-900 fill-slate-900 drop-shadow-md" />
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };

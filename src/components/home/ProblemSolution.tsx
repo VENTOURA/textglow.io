@@ -60,13 +60,25 @@ export const ProblemSolution = () => {
                             With Textglow
                         </div>
                         <div className="space-y-4 text-slate-600">
-                            <div className="flex items-center p-3 bg-brand-50 rounded-lg">
-                                <div className="flex-1">
-                                    <p className="font-medium text-slate-900">Select text & click Polish</p>
-                                    <p className="text-sm text-slate-500">Done. It's rewritten instantly in place.</p>
+                            <div className="flex items-start p-3 bg-brand-50/50 rounded-xl border border-brand-100">
+                                <div className="bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">1</div>
+                                <div>
+                                    <p className="font-bold text-slate-900">Type Your Draft</p>
+                                    <p className="text-sm text-slate-600">Write naturally inside any website text field.</p>
                                 </div>
-                                <div className="ml-4 bg-white p-2 rounded-md shadow-sm">
-                                    <span className="text-2xl">✨</span>
+                            </div>
+                            <div className="flex items-start p-3 bg-brand-50/50 rounded-xl border border-brand-100">
+                                <div className="bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">2</div>
+                                <div>
+                                    <p className="font-bold text-slate-900">Click the Sparkle</p>
+                                    <p className="text-sm text-slate-600">The icon appears instantly right where you're typing.</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start p-3 bg-brand-50/50 rounded-xl border border-brand-100">
+                                <div className="bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</div>
+                                <div>
+                                    <p className="font-bold text-slate-900">Magical Rewrite</p>
+                                    <p className="text-sm text-slate-600">Your text is replaced with a polished version in place.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Download, PenTool, Check, Zap, Settings, Shield, User } from 'lucide-react';
+import { Download, PenTool, Check, Zap, Settings, Shield, User, Sparkles } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const HowToUse = () => {
@@ -100,20 +100,41 @@ export const HowToUse = () => {
                             </div>
                         </div>
 
-                        {/* Step 3 */}
+                        {/* Step 3: Standard Polish */}
                         <div className="flex flex-col md:flex-row gap-8 items-start">
                             <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex-shrink-0">
                                 <Zap className="w-8 h-8 text-brand-600" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-2">3. Click to Polish</h3>
+                                <h3 className="text-xl font-bold text-slate-900 mb-2">3. Polish & Refine</h3>
                                 <div className="prose text-slate-600">
+                                    <p className="mb-2">Click the Textglow icon to open the polishing menu.</p>
                                     <ul className="list-disc list-inside space-y-2 mt-2">
-                                        <li>You don't even need to select text! changing the way you write.</li>
-                                        <li>Click the <strong>Textglow icon</strong> (or use the shortcut).</li>
-                                        <li>Choose a <strong>Tone</strong> (e.g., Professional).</li>
+                                        <li>Choose a <strong>Tone</strong> (your default tone is pre-selected).</li>
                                         <li>Click <strong>Polish</strong>.</li>
-                                        <li>Your text is automatically replaced with the improved version. No copy-pasting required!</li>
+                                        <li>The menu closes and your text is <strong>instantly replaced</strong> by the AI-improved version. It's like magic!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Step 4: Pro One-Click Polish */}
+                        <div id="one-click" className="flex flex-col md:flex-row gap-8 items-start p-8 rounded-2xl bg-brand-50 border border-brand-100">
+                            <div className="bg-white p-4 rounded-xl shadow-sm border border-brand-200 flex-shrink-0">
+                                <Sparkles className="w-8 h-8 text-brand-600" />
+                            </div>
+                            <div>
+                                <div className="flex items-center gap-2 mb-2">
+                                    <h3 className="text-xl font-bold text-slate-900">One-Click Polish</h3>
+                                    <span className="bg-brand-600 text-white text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Pro</span>
+                                </div>
+                                <div className="prose text-slate-600">
+                                    <p className="mb-2 font-medium text-slate-900 text-lg">The ultimate productivity hack.</p>
+                                    <p className="mb-4 text-slate-600">Enable <strong>One-Click Polish</strong> in settings to bypass all menus.</p>
+                                    <ul className="list-disc list-inside space-y-2 mt-2">
+                                        <li><strong>No menus.</strong> No need to open any windows.</li>
+                                        <li><strong>No selecting.</strong> Just click the ✨ Sparkle Icon in the corner of your text field.</li>
+                                        <li><strong>Instant magic.</strong> Your draft is replaced with the polished version in a single click.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -164,19 +185,19 @@ export const HowToUse = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-600">Up to <strong>1,000 characters</strong> per rewrite</span>
+                                    <span className="text-slate-600">Up to <strong>800 characters</strong> per rewrite</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-600"><strong>30 polishes</strong> per day</span>
+                                    <span className="text-slate-600"><strong>10 polishes</strong> per day</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-600">Access to standard tones</span>
+                                    <span className="text-slate-600">Access to all 10 tones</span>
                                 </li>
                                 <li className="flex items-start">
-                                    <Settings className="w-5 h-5 text-slate-400 mr-3 mt-0.5" />
-                                    <span className="text-slate-500 text-sm">Requires your own OpenAI API Key</span>
+                                    <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
+                                    <span className="text-slate-600"><strong>No API Key needed</strong> (Ready to use)</span>
                                 </li>
                             </ul>
                         </div>
@@ -187,11 +208,15 @@ export const HowToUse = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
+                                    <span className="text-slate-700"><strong>One-Click Polish</strong> (Instant replacement)</span>
+                                </li>
+                                <li className="flex items-start">
+                                    <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
                                     <span className="text-slate-700">Up to <strong>3,000 characters</strong> per rewrite</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-700"><strong>300 polishes</strong> per day</span>
+                                    <span className="text-slate-700"><strong>150 polishes</strong> per day</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
@@ -199,7 +224,7 @@ export const HowToUse = () => {
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-700">No setup required (We cover the API cost)</span>
+                                    <span className="text-slate-700">Early access to new features</span>
                                 </li>
                             </ul>
                         </div>
@@ -246,7 +271,7 @@ export const HowToUse = () => {
                     <Shield className="w-12 h-12 text-slate-400 mx-auto mb-6" />
                     <h2 className="text-2xl font-bold text-slate-900 mb-4">Your Data is Safe</h2>
                     <p className="text-slate-600">
-                        Textglow is designed with privacy first. Your text is sent securely to the AI solely for the purpose of rewriting it and is not stored, tracked, or used for training. Using the Free plan with your own API key means you have full control over your data usage.
+                        Textglow is designed with privacy first. Your text is sent securely to the AI solely for the purpose of rewriting it and is not stored, tracked, or used for training. 
                     </p>
                 </div>
             </section>

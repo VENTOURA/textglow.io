@@ -4,8 +4,8 @@ import { useState } from 'react';
 export const PricingSection = () => {
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly');
 
-    const monthlyLink = "https://buy.stripe.com/00wfZj5Sp46q8fW5kEc3m02";
-    const yearlyLink = "https://buy.stripe.com/00weVfeoV46q0Nu8wQc3m03";
+    const monthlyLink = "https://buy.stripe.com/9B6fZjeoVfP8dAg6oIc3m08";
+    const yearlyLink = "https://buy.stripe.com/9B69AV5SpbyS8fW3cwc3m07";
 
     return (
         <section id="pricing" className="py-20 relative overflow-hidden bg-slate-50">
@@ -37,7 +37,7 @@ export const PricingSection = () => {
                             />
                         </button>
                         <span className={`text-sm font-medium ${billingCycle === 'yearly' ? 'text-slate-900' : 'text-slate-500'}`}>
-                            Yearly <span className="text-brand-500 font-bold">(Save 20%)</span>
+                            Yearly <span className="text-brand-500 font-bold">(Save 35%)</span>
                         </span>
                     </div>
                 </div>
@@ -49,10 +49,10 @@ export const PricingSection = () => {
                         price="$0"
                         period="month"
                         features={[
-                            "30 polishes per day",
-                            "Requires your own OpenAI API Key",
-                            "Up to 1,000 characters per polish",
-                            "Basic tones included",
+                            "10 polishes per day",
+                            "No API key required",
+                            "Up to 800 characters per polish",
+                            "All 10 tones included",
                             "Works on all supported sites"
                         ]}
                         buttonText="Install Free"
@@ -62,14 +62,14 @@ export const PricingSection = () => {
                     <PricingCard
                         isPro={true}
                         title="Pro"
-                        subtitle="For power users"
-                        price={billingCycle === 'monthly' ? '$5' : '$49'}
+                        subtitle="For daily writers"
+                        price={billingCycle === 'monthly' ? '$4.99' : '$39'}
                         period={billingCycle === 'monthly' ? 'month' : 'year'}
                         features={[
-                            "300 polishes per day",
-                            "No API Key needed",
+                            "One-Click Polish (Exclusive)",
+                            "150 polishes per day",
                             "Up to 3,000 characters per polish",
-                            "Priority faster responses",
+                            "Faster, priority AI responses",
                             "Early access to new features"
                         ]}
                         buttonText="Upgrade to Pro"

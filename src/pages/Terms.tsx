@@ -61,11 +61,11 @@ export const Terms = () => {
                                     <ul className="list-none pl-0 space-y-3">
                                         <li className="flex items-start">
                                             <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                                            <span className="leading-relaxed"><strong>Free Plan:</strong> Requires you to provide your own valid OpenAI API key. Usage limits are determined by your own OpenAI quota and a daily fair-use limit within the extension (30 polishes/day).</span>
+                                            <span className="leading-relaxed"><strong>Free Plan:</strong> Includes 10 polishes per day using our high-speed AI infrastructure. No technical setup required. You may optionally provide your own OpenAI API key to use your own quota.</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                                            <span className="leading-relaxed"><strong>Pro Plan:</strong> Includes premium AI access managed by us. Pro users enjoy an expanded daily limit (300 polishes/day) and priority processing.</span>
+                                            <span className="leading-relaxed"><strong>Pro Plan:</strong> Includes premium AI access, 150 polishes per day, the exclusive One-Click Magic mode, and priority processing.</span>
                                         </li>
                                     </ul>
                                 </div>

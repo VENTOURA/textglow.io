@@ -4,18 +4,18 @@ import { MousePointerClick, Wand2, MessageSquare } from 'lucide-react';
 const steps = [
     {
         icon: MousePointerClick,
-        title: "Type Your Text",
-        description: "Just write anywhere—email, chat, or doc. No need to select text manually."
+        title: "Write Your Draft",
+        description: "Just type naturally in any email, chat, or document. Textglow is already watching."
     },
     {
         icon: Wand2,
-        title: "Click to Polish",
-        description: "Hit the Textglow icon or shortcut to instantly improve it."
+        title: "Click the Sparkle",
+        description: "Click the ✨ icon that appears in the corner of your text field to summon the magic."
     },
     {
         icon: MessageSquare,
-        title: "Send with Confidence",
-        description: "Your text is replaced with a polished version, ready to send."
+        title: "Magic Transformation",
+        description: "Your draft is instantly replaced with a polished version. Ready to impress!"
     }
 ];
 

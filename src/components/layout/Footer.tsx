@@ -34,13 +34,11 @@ export const Footer = () => {
                     </div>
 
                     <div>
-                        {/* Hidden Company Column 
-            <h3 className="font-semibold text-slate-900 mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">About</a></li>
-              <li><a href="#" className="text-sm text-slate-600 hover:text-slate-900">Contact</a></li>
-            </ul>
-             */}
+                        <h3 className="font-semibold text-slate-900 mb-4">Support</h3>
+                        <ul className="space-y-2">
+                            <li><a href="mailto:support@textglow.io" className="text-sm text-slate-600 hover:text-slate-900">Contact Us</a></li>
+                            <li><a href="mailto:support@textglow.io" className="text-sm text-slate-600 hover:text-slate-900 font-medium">support@textglow.io</a></li>
+                        </ul>
                     </div>
 
                 </div>

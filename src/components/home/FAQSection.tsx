@@ -4,24 +4,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
     {
-        question: "What is Textglow?",
-        answer: "Textglow is a browser-based AI writing assistant that instantly rewrites your selected text in different tones to match your needs perfectly."
+        question: "What exactly does Textglow do?",
+        answer: "Textglow is your secret weapon for writing. It lives in your browser and helps you instantly rewrite emails, LinkedIn posts, or chat messages. Whether you want to sound more professional, friendlier, or more concise, Textglow does the heavy lifting for you."
     },
     {
-        question: "Where does Textglow work?",
-        answer: "It works anywhere you type online! Whether you're drafting emails in Gmail, chatting on Slack or Discord, filling out forms, or writing documents in Google Docs, Textglow is there to help."
+        question: "Does it work on my favorite sites?",
+        answer: "Yes! Textglow works seamlessly on Gmail, LinkedIn, Facebook, Slack (Web), Discord, and almost any other text area on the web. Just click the sparkle icon that appears when you focus on a text field."
     },
     {
-        question: "Is my text private and secure?",
-        answer: "Absolutely. Your privacy is our priority. Your text is only processed to generate the rewrites you request and is never stored, tracked, or sold to third parties."
+        question: "Do I need an OpenAI API key to use it?",
+        answer: "Nope! We’ve made it incredibly easy. Free users get 10 polishes per day using our own high-speed AI infrastructure. No keys, no technical setup. Just install and write."
     },
     {
-        question: "What’s the difference between Free and Pro?",
-        answer: "The **Free** plan gives you 30 polishes per day with 1,000 characters per rewrite, requiring your own OpenAI API key. The **Pro** plan offers 300 polishes per day with a generous 3,000 characters per rewrite, using our optimized API key for a seamless experience with no setup required."
+        question: "What is the 'One-Click Magic' feature?",
+        answer: "Exclusive to Pro users, One-Click Magic allows you to polish your text instantly without ever opening a selection modal. Your draft is replaced with a polished version in a single click, saving you even more time."
     },
     {
-        question: "How do I upgrade or cancel Pro?",
-        answer: "You can upgrade to Pro anytime via our secure Stripe checkout. If you ever need to cancel, you can do so instantly directly from the extension settings menu with just one click."
+        question: "What are the benefits of Textglow Pro?",
+        answer: "Pro unlocks the full potential of Textglow: **150 polishes per day**, the **One-Click Magic** mode, a massive **3,000 character limit** per message, and priority access to our fastest AI models."
+    },
+    {
+        question: "Is my writing private and secure?",
+        answer: "Absolutely. We believe your words are yours alone. Your text is processed securely to generate the rewrite and is **never stored, sold, or used to train AI models.** Once the polish is done, the data is gone."
     }
 ];
 
@@ -44,17 +48,25 @@ export const FAQSection = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="border border-slate-200 rounded-xl overflow-hidden bg-white hover:border-slate-300 transition-colors duration-200"
+                            className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
+                                openIndex === index 
+                                ? 'border-blue-200 bg-gradient-to-br from-blue-50/50 to-white shadow-md' 
+                                : 'border-slate-200 bg-white hover:border-slate-300'
+                            }`}
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500 rounded-xl"
+                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
                                 aria-expanded={openIndex === index}
                                 aria-controls={`faq-answer-${index}`}
                             >
-                                <span className="text-lg font-medium text-slate-900 pr-8">{faq.question}</span>
+                                <span className={`text-lg font-bold transition-colors duration-300 ${openIndex === index ? 'text-blue-700' : 'text-slate-900'} pr-8`}>
+                                    {faq.question}
+                                </span>
                                 {openIndex === index ? (
-                                    <ChevronUp className="w-5 h-5 text-brand-500 flex-shrink-0" />
+                                    <div className="bg-blue-100 p-1.5 rounded-full">
+                                        <ChevronUp className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                                    </div>
                                 ) : (
                                     <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                                 )}

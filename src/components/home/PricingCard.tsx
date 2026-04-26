@@ -63,7 +63,7 @@ export const PricingCard = ({
                 </span>
                 <span className={isPro ? 'text-slate-400' : 'text-slate-500'}>/{period}</span>
                 {isYearly && isPro && (
-                    <div className="text-sm text-brand-300 mt-1 font-medium">Save $11 a year</div>
+                    <div className="text-sm text-brand-300 mt-1 font-medium">Save $21 a year</div>
                 )}
             </div>
 

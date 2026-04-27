@@ -46,7 +46,7 @@ export const LinkedIn = () => {
                             transition={{ delay: 0.3 }}
                             className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4"
                         >
-                            <Button href="https://chromewebstore.google.com/" className="px-8 py-4 text-lg bg-brand-600 hover:bg-brand-700 text-white shadow-[0_0_30px_rgba(14,165,233,0.4)]">
+                            <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="px-8 py-4 text-lg bg-brand-600 hover:bg-brand-700 text-white shadow-[0_0_30px_rgba(14,165,233,0.4)]">
                                 Install Textglow Free
                             </Button>
                         </motion.div>
@@ -97,7 +97,7 @@ export const LinkedIn = () => {
                         <div className="relative z-10">
                             <h2 className="text-3xl font-bold mb-6">Ready to dominate LinkedIn?</h2>
                             <p className="text-brand-100 mb-8 text-lg">Join 1,000+ professionals who have ditched the copy-paste madness.</p>
-                            <Button variant="secondary" href="https://chromewebstore.google.com/" className="!text-brand-600 px-10 py-4 text-lg">
+                            <Button variant="secondary" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="!text-brand-600 px-10 py-4 text-lg">
                                 Get Textglow for Free
                             </Button>
                         </div>

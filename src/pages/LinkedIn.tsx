@@ -98,7 +98,7 @@ export const LinkedIn = () => {
                         <div className="relative z-10">
                             <h2 className="text-3xl font-bold mb-6">Ready to dominate LinkedIn?</h2>
                             <p className="text-brand-100 mb-8 text-lg">Join 1,000+ professionals who have ditched the copy-paste madness.</p>
-                            <Button href="https://chromewebstore.google.com/" className="bg-white text-brand-600 hover:bg-slate-50 px-10 py-4 text-lg">
+                            <Button variant="secondary" href="https://chromewebstore.google.com/" className="!text-brand-600 px-10 py-4 text-lg">
                                 Get Textglow for Free
                             </Button>
                         </div>

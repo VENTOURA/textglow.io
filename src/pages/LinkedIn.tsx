@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, ArrowRight, MessageSquare, Shield, Zap } from 'lucide-react';
 import { Button } from '../components/ui/Button';

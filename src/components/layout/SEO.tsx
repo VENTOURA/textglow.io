@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const SEO = () => {
     const schemaData = {
         "@context": "https://schema.org",

@@ -25,21 +25,21 @@ export const HowToUse = () => {
                                     "name": "Install & Pin",
                                     "text": "Add Textglow to Chrome from the Web Store and pin it to your toolbar.",
                                     "image": "https://textglow.io/images/step-install.png",
-                                    "url": "https://textglow.io/#/how-to-use#step1"
+                                    "url": "https://textglow.io/how-to-use#step1"
                                 },
                                 {
                                     "@type": "HowToStep",
                                     "name": "Type Your Text",
                                     "text": "Open any website like Gmail or LinkedIn and type your draft.",
                                     "image": "https://textglow.io/images/step-type.png",
-                                    "url": "https://textglow.io/#/how-to-use#step2"
+                                    "url": "https://textglow.io/how-to-use#step2"
                                 },
                                 {
                                     "@type": "HowToStep",
                                     "name": "Click to Polish",
                                     "text": "Click the Textglow icon, choose a tone, and click Polish to instantly replace your text.",
                                     "image": "https://textglow.io/images/step-polish.png",
-                                    "url": "https://textglow.io/#/how-to-use#step3"
+                                    "url": "https://textglow.io/how-to-use#step3"
                                 }
                             ]
                         }

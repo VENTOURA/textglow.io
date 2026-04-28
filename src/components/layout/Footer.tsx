@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer className="bg-slate-50 border-t border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
                     <div className="md:col-span-1 space-y-4">
                         <div className="flex items-center space-x-2">
                             <img src={logo} alt="Textglow Logo" className="w-6 h-6" />
@@ -17,10 +17,22 @@ export const Footer = () => {
                     </div>
 
                     <div>
+                        <h3 className="font-semibold text-slate-900 mb-4">Use Cases</h3>
+                        <ul className="space-y-2">
+                            <li><Link to="/linkedin" className="text-sm text-slate-600 hover:text-slate-900">For LinkedIn</Link></li>
+                            <li><Link to="/gmail" className="text-sm text-slate-600 hover:text-slate-900">For Gmail</Link></li>
+                            <li><Link to="/slack" className="text-sm text-slate-600 hover:text-slate-900">For Slack</Link></li>
+                            <li><Link to="/tinder" className="text-sm text-slate-600 hover:text-slate-900">For Dating Apps</Link></li>
+                            <li><Link to="/translate" className="text-sm text-slate-600 hover:text-slate-900">For Translation</Link></li>
+                        </ul>
+                    </div>
+
+                    <div>
                         <h3 className="font-semibold text-slate-900 mb-4">Product</h3>
                         <ul className="space-y-2">
                             <li><Link to="/" className="text-sm text-slate-600 hover:text-slate-900">Features</Link></li>
                             <li><Link to="/pricing" className="text-sm text-slate-600 hover:text-slate-900">Pricing</Link></li>
+                            <li><Link to="/blog" className="text-sm text-slate-600 hover:text-slate-900">Blog</Link></li>
                             <li><a href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
                         </ul>
                     </div>

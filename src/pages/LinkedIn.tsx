@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Sparkles, MessageSquare, Shield, Zap } from 'lucide-react';
 import { Button } from '../components/ui/Button';
@@ -5,6 +6,16 @@ import { Button } from '../components/ui/Button';
 export const LinkedIn = () => {
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>The #1 LinkedIn AI Writing Assistant - Textglow</title>
+                <meta name="description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs directly inside the LinkedIn interface with Textglow." />
+                <meta name="keywords" content="LinkedIn AI writer, LinkedIn post generator, AI for LinkedIn comments, improve LinkedIn posts, Textglow" />
+                <link rel="canonical" href="https://textglow.io/linkedin" />
+                
+                <meta property="og:title" content="The #1 LinkedIn AI Writing Assistant - Textglow" />
+                <meta property="og:description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs directly inside the LinkedIn interface." />
+                <meta property="og:url" content="https://textglow.io/linkedin" />
+            </Helmet>
             {/* Hero Section */}
             <section className="relative pt-20 pb-32 overflow-hidden bg-slate-900">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-5xl z-0 pointer-events-none opacity-20">

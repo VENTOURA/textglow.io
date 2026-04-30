@@ -55,8 +55,11 @@ export const Footer = () => {
 
                 </div>
 
-                <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center">
+                <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-sm text-slate-500">© {new Date().getFullYear()} Textglow. All rights reserved.</p>
+                    <a href="https://theresanaiforthat.com/ai/textglow/?ref=featured&v=10289570" target="_blank" rel="nofollow noreferrer" className="hover:opacity-80 transition-opacity">
+                        <img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600" alt="Featured on There's An AI For That" className="w-48 md:w-[300px] h-auto" />
+                    </a>
                 </div>
             </div>
         </footer>

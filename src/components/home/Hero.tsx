@@ -31,7 +31,7 @@ export const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight"
                 >
-                    Polish Your Text Instantly.<br />
+                    Upgrade Your Words Instantly.<br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600">Anywhere You Write.</span>
                 </motion.h1>
 
@@ -41,7 +41,8 @@ export const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="max-w-2xl mx-auto text-xl text-slate-600 mb-10"
                 >
-                    Transform your emails, chats, and docs into polished, professional copy with one click. No copy-pasting required.
+                    Write faster, sound smarter, and save time. Instantly polish grammar, perfect your tone, and elevate your emails and chats with one click!
+                    All without ever leaving your active tab.
                 </motion.p>
 
                 <motion.div
@@ -59,6 +60,6 @@ export const Hero = () => {
                     </Button>
                 </motion.div>
             </div>
-        </section>
+        </section >
     );
 };

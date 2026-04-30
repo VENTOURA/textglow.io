@@ -14,6 +14,7 @@ import { Tinder } from './pages/Tinder';
 import { Translate } from './pages/Translate';
 import { BlogIndex } from './pages/BlogIndex';
 import { BlogPost } from './pages/BlogPost';
+import { Offer } from './pages/Offer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/offer" element={<Offer />} />
           </Routes>
         </Layout>
       </Router>

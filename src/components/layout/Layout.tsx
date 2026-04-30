@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="min-h-screen flex flex-col bg-white">
             <SEO />
             <Navbar />
-            <main className="flex-grow pt-16">
+            <main className="flex-grow pt-32">
                 {children}
             </main>
             <Footer />

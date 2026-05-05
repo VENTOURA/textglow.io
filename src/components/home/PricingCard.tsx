@@ -1,5 +1,5 @@
 import { Button } from '../ui/Button';
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface PricingCardProps {
@@ -34,12 +34,14 @@ export const PricingCard = ({
             viewport={{ once: true }}
             transition={{ delay }}
             className={`
-                rounded-2xl shadow-xl p-8 flex flex-col relative overflow-hidden
-                ${isPro ? 'bg-slate-900 border border-slate-800' : 'bg-white border border-slate-200'}
+                rounded-2xl shadow-xl p-8 flex flex-col relative overflow-hidden transition-all duration-300
+                ${isPro 
+                    ? 'bg-slate-900 border border-slate-800 scale-105 z-10 shadow-brand-500/10' 
+                    : 'bg-white border border-slate-200 hover:shadow-2xl'}
             `}
         >
             {isPro && (
-                <div className="absolute top-0 right-0 bg-brand-500/10 w-32 h-32 rounded-bl-full"></div>
+                <div className="absolute top-0 right-0 bg-brand-500/10 w-32 h-32 rounded-bl-full blur-2xl"></div>
             )}
 
             <div className="mb-6 relative">
@@ -49,7 +51,7 @@ export const PricingCard = ({
                         <p className={`mt-2 ${isPro ? 'text-slate-400' : 'text-slate-500'}`}>{subtitle}</p>
                     </div>
                     {isPro && (
-                        <div className="bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-xs font-semibold flex items-center">
+                        <div className="bg-brand-500/20 text-brand-300 px-3 py-1 rounded-full text-xs font-semibold flex items-center border border-brand-500/30">
                             <Sparkles className="w-3 h-3 mr-1" />
                             POPULAR
                         </div>
@@ -58,20 +60,25 @@ export const PricingCard = ({
             </div>
 
             <div className="mb-6">
-                <span className={`text-4xl font-bold ${isPro ? 'text-white' : 'text-slate-900'}`}>
-                    {price}
-                </span>
-                <span className={isPro ? 'text-slate-400' : 'text-slate-500'}>/{period}</span>
+                <div className="flex items-baseline">
+                    <span className={`text-4xl font-bold ${isPro ? 'text-white' : 'text-slate-900'}`}>
+                        {price}
+                    </span>
+                    <span className={`ml-1 ${isPro ? 'text-slate-400' : 'text-slate-500'}`}>/{period}</span>
+                </div>
                 {isYearly && isPro && (
-                    <div className="text-sm text-brand-300 mt-1 font-medium">Save $21 a year</div>
+                    <div className="text-sm text-brand-400 mt-1 font-medium flex items-center">
+                        <span className="w-1 h-1 bg-brand-400 rounded-full mr-2"></span>
+                        Save $21 a year
+                    </div>
                 )}
             </div>
 
             <ul className="space-y-4 mb-8 flex-grow">
                 {features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                        <Check className={`w-5 h-5 mr-2 flex-shrink-0 ${isPro ? 'text-brand-400' : 'text-brand-500'}`} />
-                        <span className={isPro ? 'text-slate-200' : 'text-slate-600 font-medium'}>
+                        <Check className={`w-5 h-5 mr-3 flex-shrink-0 ${isPro ? 'text-brand-400' : 'text-brand-500'}`} />
+                        <span className={isPro ? 'text-slate-300' : 'text-slate-600 font-medium'}>
                             {feature}
                         </span>
                     </li>
@@ -79,11 +86,13 @@ export const PricingCard = ({
             </ul>
 
             <Button
-                variant={isPro ? 'primary' : 'secondary'}
-                className={`w-full ${isPro ? 'bg-brand-600 hover:bg-brand-700 text-white border-none shadow-[0_0_20px_rgba(14,165,233,0.3)]' : ''}`}
+                variant={isPro ? 'pro' : 'secondary'}
+                size="lg"
+                className="w-full group"
                 href={buttonLink}
             >
-                {buttonText}
+                <span className="mr-2">{buttonText}</span>
+                <ArrowRight className={`w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 ${isPro ? 'text-white' : 'text-slate-400'}`} />
             </Button>
         </motion.div>
     );

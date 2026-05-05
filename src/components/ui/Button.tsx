@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 interface ButtonProps {
     children: React.ReactNode;
-    variant?: 'primary' | 'secondary' | 'ghost';
+    variant?: 'primary' | 'secondary' | 'ghost' | 'pro';
     size?: 'sm' | 'md' | 'lg';
     to?: string;
     href?: string;
@@ -28,7 +28,8 @@ export const Button: React.FC<ButtonProps> = ({
     const variants = {
         primary: "bg-slate-900 text-white hover:bg-slate-800 focus:ring-slate-900 shadow-md",
         secondary: "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 focus:ring-slate-200",
-        ghost: "bg-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100"
+        ghost: "bg-transparent text-slate-600 hover:text-slate-900 hover:bg-slate-100",
+        pro: "bg-gradient-to-r from-brand-600 to-brand-400 text-white hover:from-brand-700 hover:to-brand-500 shadow-[0_0_20px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.45)] border-none transition-all duration-300"
     };
 
     const sizes = {

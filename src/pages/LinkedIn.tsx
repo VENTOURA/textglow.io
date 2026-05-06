@@ -7,14 +7,18 @@ export const LinkedIn = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>The #1 LinkedIn AI Writing Assistant - Textglow</title>
-                <meta name="description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs directly inside the LinkedIn interface with Textglow." />
+                <title>AI LinkedIn Post Writer – Polish Posts Instantly</title>
+                <meta name="description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs directly inside LinkedIn with Textglow." />
                 <meta name="keywords" content="LinkedIn AI writer, LinkedIn post generator, AI for LinkedIn comments, improve LinkedIn posts, Textglow" />
                 <link rel="canonical" href="https://textglow.io/linkedin" />
-                
-                <meta property="og:title" content="The #1 LinkedIn AI Writing Assistant - Textglow" />
-                <meta property="og:description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs directly inside the LinkedIn interface." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="AI LinkedIn Post Writer – Polish Posts Instantly" />
+                <meta property="og:description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs." />
                 <meta property="og:url" content="https://textglow.io/linkedin" />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI LinkedIn Post Writer – Polish Posts Instantly" />
+                <meta property="twitter:description" content="Stop the ChatGPT copy-paste shuffle. Instantly polish your LinkedIn posts, comments, and DMs." />
             </Helmet>
             {/* Hero Section */}
             <section className="relative pt-20 pb-32 overflow-hidden bg-slate-900">

@@ -2,14 +2,24 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Download, PenTool, Check, Zap, Settings, Shield, User, Sparkles } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { PlaygroundSection } from '../components/home/PlaygroundSection';
 
 export const HowToUse = () => {
     return (
         <div className="bg-white min-h-screen">
             <Helmet>
-                <title>How to Use Textglow - Step-by-Step Guide</title>
-                <meta name="description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide on rewriting text, changing tones, and using the extension." />
+                <title>How to Use Textglow – Step-by-Step Guide</title>
+                <meta name="description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide on rewriting text, changing tones, and using the Chrome extension." />
                 <meta name="keywords" content="how to use textglow, AI writing guide, text polisher tutorial, tone changer, chrome extension guide" />
+                <link rel="canonical" href="https://textglow.io/how-to-use" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/how-to-use" />
+                <meta property="og:title" content="How to Use Textglow – Step-by-Step Guide" />
+                <meta property="og:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="How to Use Textglow – Step-by-Step Guide" />
+                <meta property="twitter:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
 
                 {/* Structured Data (JSON-LD) for HowTo */}
                 <script type="application/ld+json">
@@ -142,6 +152,8 @@ export const HowToUse = () => {
                     </div>
                 </div>
             </section>
+
+            <PlaygroundSection />
 
             {/* Section 3: Writing Tones */}
             <section className="py-20 bg-white">

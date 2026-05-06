@@ -7,14 +7,18 @@ export const Gmail = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>The #1 AI Email Assistant for Gmail - Textglow</title>
+                <title>AI Email Assistant for Gmail – Write 10x Faster</title>
                 <meta name="description" content="Write professional emails 10x faster. Instantly polish your drafts directly inside Gmail with Textglow's AI writing assistant." />
                 <meta name="keywords" content="Gmail AI writer, AI email assistant, write professional emails, improve email tone, Textglow" />
                 <link rel="canonical" href="https://textglow.io/gmail" />
-                
-                <meta property="og:title" content="The #1 AI Email Assistant for Gmail - Textglow" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="AI Email Assistant for Gmail – Write 10x Faster" />
                 <meta property="og:description" content="Write professional emails 10x faster. Instantly polish your drafts directly inside Gmail with Textglow." />
                 <meta property="og:url" content="https://textglow.io/gmail" />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI Email Assistant for Gmail – Write 10x Faster" />
+                <meta property="twitter:description" content="Write professional emails 10x faster. Instantly polish your drafts directly inside Gmail with Textglow." />
             </Helmet>
             {/* Hero Section */}
             <section className="relative pt-20 pb-32 overflow-hidden bg-slate-900">

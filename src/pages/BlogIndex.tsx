@@ -7,9 +7,17 @@ export const BlogIndex = () => {
     return (
         <div className="bg-slate-50 min-h-screen pt-24 pb-20">
             <Helmet>
-                <title>The Textglow Blog | AI Writing Tips & Guides</title>
-                <meta name="description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology." />
+                <title>Textglow Blog – AI Writing Tips & Guides</title>
+                <meta name="description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology from Textglow." />
                 <link rel="canonical" href="https://textglow.io/blog" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/blog" />
+                <meta property="og:title" content="Textglow Blog – AI Writing Tips & Guides" />
+                <meta property="og:description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Textglow Blog – AI Writing Tips & Guides" />
+                <meta property="twitter:description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology." />
             </Helmet>
 
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

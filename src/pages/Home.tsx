@@ -5,6 +5,7 @@ import { LiveDemoSection } from '../components/home/LiveDemoSection';
 import { HowItWorks } from '../components/home/HowItWorks';
 import { Features } from '../components/home/Features';
 import { PricingSection } from '../components/home/PricingSection';
+import { PlaygroundSection } from '../components/home/PlaygroundSection';
 import { FAQSection } from '../components/home/FAQSection';
 
 export const Home = () => {
@@ -26,7 +27,7 @@ export const Home = () => {
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://textglow.io/" />
-                <meta property="twitter:title" content="Textglow - AI Text Polisher & Rewriter" />
+                <meta property="twitter:title" content="Textglow - AI Text Polisher & Rewriter Chrome Extension" />
                 <meta property="twitter:description" content="Instantly polish and rewrite text inside any website with Textglow. No copy-pasting required." />
                 <meta property="twitter:image" content="https://textglow.io/og-image.png" />
 
@@ -69,6 +70,7 @@ export const Home = () => {
 
             <Hero />
             <LiveDemoSection />
+            <PlaygroundSection />
             <ProblemSolution />
             <HowItWorks />
             <Features />

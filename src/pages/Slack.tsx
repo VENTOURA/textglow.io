@@ -7,14 +7,18 @@ export const Slack = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>The #1 AI Message Assistant for Slack - Textglow</title>
+                <title>AI Slack Message Assistant – Sound Professional</title>
                 <meta name="description" content="Never second-guess a Slack message again. Instantly polish your workplace chats directly inside Slack with Textglow's AI assistant." />
                 <meta name="keywords" content="Slack AI writer, AI chat assistant, write professional Slack messages, improve tone, Textglow" />
                 <link rel="canonical" href="https://textglow.io/slack" />
-                
-                <meta property="og:title" content="The #1 AI Message Assistant for Slack - Textglow" />
-                <meta property="og:description" content="Never second-guess a Slack message again. Instantly polish your workplace chats directly inside Slack with Textglow." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="AI Slack Message Assistant – Sound Professional" />
+                <meta property="og:description" content="Never second-guess a Slack message again. Instantly polish your workplace chats directly inside Slack." />
                 <meta property="og:url" content="https://textglow.io/slack" />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI Slack Message Assistant – Sound Professional" />
+                <meta property="twitter:description" content="Never second-guess a Slack message again. Instantly polish your workplace chats directly inside Slack." />
             </Helmet>
             {/* Hero Section */}
             <section className="relative pt-20 pb-32 overflow-hidden bg-slate-900">

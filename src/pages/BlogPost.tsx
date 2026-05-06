@@ -16,9 +16,17 @@ export const BlogPost = () => {
     return (
         <div className="bg-white min-h-screen pt-24 pb-32">
             <Helmet>
-                <title>{post.title} - Textglow Blog</title>
+                <title>{post.title} – Textglow Blog</title>
                 <meta name="description" content={post.excerpt} />
                 <link rel="canonical" href={`https://textglow.io/blog/${post.slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content={`https://textglow.io/blog/${post.slug}`} />
+                <meta property="og:title" content={`${post.title} – Textglow Blog`} />
+                <meta property="og:description" content={post.excerpt} />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content={`${post.title} – Textglow Blog`} />
+                <meta property="twitter:description" content={post.excerpt} />
             </Helmet>
 
             <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

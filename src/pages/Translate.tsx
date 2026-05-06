@@ -7,14 +7,18 @@ export const Translate = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Multilingual AI Grammar Checker & Translator - Textglow</title>
-                <meta name="description" content="Write flawlessly in English, Spanish, French, and 50+ languages. Textglow translates, polishes, and perfects your grammar across the globe." />
+                <title>AI Writing Tool for Non-Native Speakers – Textglow</title>
+                <meta name="description" content="Write flawlessly in English, Spanish, French, and 50+ languages. Textglow polishes grammar and tone so you sound like a native speaker." />
                 <meta name="keywords" content="multilingual grammar checker, AI language translator, non-native english writer, polish translated text, write in spanish, Textglow language tool" />
                 <link rel="canonical" href="https://textglow.io/translate" />
-                
-                <meta property="og:title" content="Multilingual AI Grammar Checker & Translator" />
-                <meta property="og:description" content="Write flawlessly in any language. Textglow translates, polishes, and perfects your grammar across the globe." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="AI Writing Tool for Non-Native Speakers – Textglow" />
+                <meta property="og:description" content="Write flawlessly in any language. Textglow polishes grammar and tone so you sound like a native." />
                 <meta property="og:url" content="https://textglow.io/translate" />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI Writing Tool for Non-Native Speakers – Textglow" />
+                <meta property="twitter:description" content="Write flawlessly in any language. Textglow polishes grammar and tone so you sound like a native." />
             </Helmet>
             
             {/* Hero Section */}

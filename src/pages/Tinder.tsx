@@ -7,14 +7,18 @@ export const Tinder = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI Rizz & Dating App Assistant for Tinder, Bumble, Hinge</title>
-                <meta name="description" content="Never send a boring 'hey' again. Instantly generate flirty, funny, and confident openers for Tinder, Bumble, and Hinge with Textglow's AI dating assistant." />
+                <title>AI Dating Message Helper – Tinder, Bumble, Hinge</title>
+                <meta name="description" content="Never send a boring 'hey' again. Generate flirty, funny, and confident openers for Tinder, Bumble, and Hinge with Textglow." />
                 <meta name="keywords" content="AI rizz, Tinder opener generator, Bumble opening lines, Hinge prompt answers, flirty text generator, dating app AI, Textglow" />
                 <link rel="canonical" href="https://textglow.io/tinder" />
-                
-                <meta property="og:title" content="AI Rizz & Dating App Assistant - Textglow" />
-                <meta property="og:description" content="Turn boring matches into dates. Generate flirty, funny, and confident openers for Tinder, Bumble, and Hinge instantly." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="AI Dating Message Helper – Tinder, Bumble, Hinge" />
+                <meta property="og:description" content="Turn boring matches into dates. Generate flirty, funny, and confident openers instantly." />
                 <meta property="og:url" content="https://textglow.io/tinder" />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI Dating Message Helper – Tinder, Bumble, Hinge" />
+                <meta property="twitter:description" content="Turn boring matches into dates. Generate flirty, funny, and confident openers instantly." />
             </Helmet>
             
             {/* Hero Section */}

@@ -5,8 +5,18 @@ export const Offer = () => {
     return (
         <div className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
             <Helmet>
-                <title>Special Offer - Textglow</title>
+                <title>Special Offer – Textglow Pro Early Bird Deal</title>
+                <meta name="description" content="Exclusive early bird offer for Textglow Pro. Get $1,030 in AI API credits when you subscribe yearly." />
                 <meta name="robots" content="noindex" />
+                <link rel="canonical" href="https://textglow.io/offer" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/offer" />
+                <meta property="og:title" content="Special Offer – Textglow Pro Early Bird Deal" />
+                <meta property="og:description" content="Exclusive early bird offer for Textglow Pro. Get $1,030 in AI API credits." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Special Offer – Textglow Pro Early Bird Deal" />
+                <meta property="twitter:description" content="Exclusive early bird offer for Textglow Pro. Get $1,030 in AI API credits." />
             </Helmet>
             <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
                 <div className="bg-gradient-to-r from-brand-600 to-purple-600 px-8 py-12 text-center text-white">

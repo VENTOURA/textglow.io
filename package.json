@@ -18,7 +18,7 @@
       "removeComments": true
     },
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "puppeteerExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "puppeteerExecutablePath": null,
     "inlineCss": false,
     "skipThirdPartyRequests": true,
     "include": [

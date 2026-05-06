@@ -2,7 +2,7 @@ import { PricingCard } from './PricingCard';
 import { useState } from 'react';
 
 export const PricingSection = () => {
-    const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly');
+    const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
 
     const monthlyLink = "https://buy.stripe.com/9B6fZjeoVfP8dAg6oIc3m08";
     const yearlyLink = "https://buy.stripe.com/9B69AV5SpbyS8fW3cwc3m07";

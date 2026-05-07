@@ -46,12 +46,7 @@ export const Home = () => {
                                     "price": "0",
                                     "priceCurrency": "USD"
                                 },
-                                "description": "Textglow is an AI-powered Chrome extension that helps you polish, rewrite, and improve your emails, messages, and documents instantly inside any website.",
-                                "aggregateRating": {
-                                    "@type": "AggregateRating",
-                                    "ratingValue": "4.9",
-                                    "ratingCount": "120"
-                                }
+                                "description": "Textglow is an AI-powered Chrome extension that helps you polish, rewrite, and improve your emails, messages, and documents instantly inside any website."
                             },
                             {
                                 "@context": "https://schema.org",

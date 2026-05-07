@@ -5,11 +5,6 @@ export const SEO = () => {
         "name": "Textglow",
         "operatingSystem": "Chrome, Edge, Brave",
         "applicationCategory": "WritingAssistant",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "1250"
-        },
         "offers": {
             "@type": "AggregateOffer",
             "priceCurrency": "USD",

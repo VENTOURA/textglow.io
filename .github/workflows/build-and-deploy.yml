@@ -41,25 +41,20 @@ jobs:
       # Since the files are already built, Hostinger just copies them — no build needed.
       - name: Push to deploy branch
         run: |
-          cd dist
-          git init
+          # Create a clean staging area
+          mkdir -p /tmp/deploy-staging
+          cd /tmp/deploy-staging
+          
+          # Root-level package.json so Hostinger's "npm run build" succeeds
+          echo '{"scripts":{"build":"echo done"}}' > package.json
+          
+          # Copy the pre-rendered build into dist/ (matches Hostinger's Output directory setting)
+          cp -r "$GITHUB_WORKSPACE/dist" ./dist
+          
+          # Init git and push to deploy branch
+          git init -b deploy
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git checkout -b deploy
-          
-          # Create a minimal package.json so Hostinger's "npm run build" doesn't fail
-          echo '{"scripts":{"build":"echo pre-built"}}' > package.json
-          
-          # Move all built files into a dist/ subfolder so Hostinger's
-          # "Output directory: dist" setting works correctly
-          mkdir -p dist
-          shopt -s dotglob
-          for f in *; do
-            [ "$f" = "dist" ] && continue
-            [ "$f" = ".git" ] && continue
-            mv "$f" dist/
-          done
-          
           git add -A
           git commit -m "Deploy pre-rendered build from ${{ github.sha }}"
           git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy

@@ -35,22 +35,26 @@ jobs:
       # DIAGNOSTIC: List the FTP directory structure to find the correct upload path
       - name: "[DEBUG] Explore FTP directory structure"
         run: |
-          sudo apt-get install -y lftp
+          sudo apt-get install -y lftp > /dev/null 2>&1
           lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-allow yes;
             echo '=== Current directory (pwd) ===';
             pwd;
             echo '';
-            echo '=== Top-level listing (ls) ===';
-            ls;
+            echo '=== Top-level listing ===';
+            cls;
             echo '';
-            echo '=== Recursive listing (2 levels deep) ===';
-            find . -maxdepth 2 -type d;
+            echo '=== Listing public_html/ ===';
+            cls public_html/;
             echo '';
-            echo '=== Checking public_html ===';
-            ls public_html/ 2>/dev/null || echo 'public_html/ does NOT exist at FTP root';
+            echo '=== Checking index.html in public_html ===';
+            cat public_html/index.html | head -c 300;
             echo '';
-            echo '=== Checking domains/ ===';
-            ls domains/ 2>/dev/null || echo 'domains/ does NOT exist at FTP root';
+            echo '=== Check .ftp-deploy-sync-state.json at root ===';
+            cat .ftp-deploy-sync-state.json 2>/dev/null | head -c 200 || echo 'NOT FOUND at root';
             echo '';
+            echo '=== Check .ftp-deploy-sync-state.json in public_html ===';
+            cat public_html/.ftp-deploy-sync-state.json 2>/dev/null | head -c 200 || echo 'NOT FOUND in public_html';
             bye;
           "

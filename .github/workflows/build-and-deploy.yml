@@ -1,0 +1,56 @@
+name: Build and Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+  # 4. A test workflow or manual trigger option
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Handle Chrome/Chromium dependencies
+      # react-snap uses an older Puppeteer which can fail to launch its bundled Chromium on newer Ubuntu versions.
+      # GitHub Actions ubuntu-latest runners come with Google Chrome already installed with all system dependencies.
+      # We dynamically tell react-snap to use this pre-installed Chrome.
+      - name: Configure Puppeteer to use System Chrome
+        run: |
+          CHROME_PATH=$(which google-chrome-stable)
+          echo "Using system Chrome at: $CHROME_PATH"
+          # This safely adds/updates the path in package.json just for this build run
+          npm pkg set reactSnap.puppeteerExecutablePath="$CHROME_PATH"
+
+      # 5. Runs npm run build (triggers react-snap via postbuild)
+      - name: Build and Pre-render
+        run: npm run build
+
+      # 6. Deploys the dist/ folder to Hostinger via FTP
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          # The local folder we want to upload (note the trailing slash)
+          local-dir: ./dist/
+          # The destination folder on the server (replaces contents of public_html)
+          server-dir: ./public_html/
+          # Do not delete existing files that aren't in dist/ (like .htaccess or server configs)
+          dangerous-clean-slate: false
+          # Handle timeout for large uploads (set to 10 minutes)
+          timeout: 600000

@@ -32,39 +32,60 @@ jobs:
       - name: Build and Pre-render
         run: npm run build
 
-      # Deploy using lftp (mirror) — more reliable than FTP actions with Hostinger's SSL setup
       - name: Deploy to Hostinger via FTP
         run: |
           sudo apt-get install -y lftp > /dev/null 2>&1
-          echo "Uploading dist/ to public_html/ on Hostinger..."
+          
+          echo "=== Step 1: Clean up junk directories from previous bad uploads ==="
+          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-allow yes;
+            echo 'Removing junk public_html/ folder (nested by mistake)...';
+            rm -rf public_html/ 2>/dev/null || true;
+            echo 'Removing junk domains/ folder (created by mistake)...';
+            rm -rf domains/ 2>/dev/null || true;
+            echo 'Removing stale .ftp-deploy-sync-state.json...';
+            rm -f .ftp-deploy-sync-state.json 2>/dev/null || true;
+            echo 'Cleanup done.';
+            bye;
+          "
+          
+          echo ""
+          echo "=== Step 2: Upload dist/ to FTP root (which IS public_html) ==="
           lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
             set ssl:verify-certificate no;
             set ftp:ssl-allow yes;
             set mirror:parallel-transfer-count 5;
             set mirror:use-pget-n 5;
-            mirror --reverse --delete --verbose ./dist/ domains/textglow.io/public_html/;
+            mirror --reverse --verbose --exclude .htaccess ./dist/ .;
             bye;
           "
           echo "✅ Upload complete!"
 
-      # Verify the upload actually worked
       - name: Verify deployment
         run: |
           sudo apt-get install -y lftp > /dev/null 2>&1
-          echo "=== Reading back index.html from public_html/ ==="
+          echo "=== JS bundle on server (FTP root) ==="
           lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
             set ssl:verify-certificate no;
             set ftp:ssl-allow yes;
-            cat domains/textglow.io/public_html/index.html | head -c 500;
-            echo '';
-            echo '=== JS bundle filename on server ===';
-            ls domains/textglow.io/public_html/assets/index-*.js;
+            ls assets/index-*.js;
+            echo '=== Dirs at FTP root (should NOT have public_html/ or domains/) ===';
+            ls -d */ ;
             bye;
           "
           echo ""
           echo "=== JS bundle in local dist/ ==="
           ls dist/assets/index-*.js
           echo ""
-          echo "=== Checking live site ==="
-          sleep 5
-          curl -s "https://textglow.io/" | grep -o 'src="/assets/index-[^"]*"' || echo "Could not find JS bundle reference"
+          echo "=== Checking live site (after 10s wait for CDN) ==="
+          sleep 10
+          LIVE_BUNDLE=$(curl -s "https://textglow.io/" | grep -o 'src="/assets/index-[^"]*"')
+          LOCAL_BUNDLE=$(ls dist/assets/index-*.js | sed 's|dist|src="|;s|$|"|;s|/|/|g' | sed 's|src="/|src="/|')
+          echo "Live:  $LIVE_BUNDLE"
+          echo "Local: $(ls dist/assets/index-*.js | xargs basename)"
+          if echo "$LIVE_BUNDLE" | grep -q "$(ls dist/assets/index-*.js | xargs basename | sed 's/.js//')"; then
+            echo "✅ SUCCESS! Live site matches the build."
+          else
+            echo "❌ MISMATCH. Hostinger auto-deploy may have overwritten our files."
+          fi

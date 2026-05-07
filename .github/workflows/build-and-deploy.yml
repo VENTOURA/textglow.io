@@ -32,14 +32,39 @@ jobs:
       - name: Build and Pre-render
         run: npm run build
 
-      # Deploy the pre-rendered dist/ folder to Hostinger's public_html/ via FTP
+      # Deploy using lftp (mirror) — more reliable than FTP actions with Hostinger's SSL setup
       - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: ./dist/
-          server-dir: public_html/
-          dangerous-clean-slate: false
-          timeout: 600000
+        run: |
+          sudo apt-get install -y lftp > /dev/null 2>&1
+          echo "Uploading dist/ to public_html/ on Hostinger..."
+          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-allow yes;
+            set mirror:parallel-transfer-count 5;
+            set mirror:use-pget-n 5;
+            mirror --reverse --delete --verbose ./dist/ public_html/;
+            bye;
+          "
+          echo "✅ Upload complete!"
+
+      # Verify the upload actually worked
+      - name: Verify deployment
+        run: |
+          sudo apt-get install -y lftp > /dev/null 2>&1
+          echo "=== Reading back index.html from public_html/ ==="
+          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
+            set ssl:verify-certificate no;
+            set ftp:ssl-allow yes;
+            cat public_html/index.html | head -c 500;
+            echo '';
+            echo '=== JS bundle filename on server ===';
+            ls public_html/assets/index-*.js;
+            bye;
+          "
+          echo ""
+          echo "=== JS bundle in local dist/ ==="
+          ls dist/assets/index-*.js
+          echo ""
+          echo "=== Checking live site ==="
+          sleep 5
+          curl -s "https://textglow.io/" | grep -o 'src="/assets/index-[^"]*"' || echo "Could not find JS bundle reference"

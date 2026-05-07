@@ -216,7 +216,7 @@ export const Playground = () => {
             </div>
 
             <p className="mt-6 text-center text-slate-500 text-sm">
-                This is a preview. The extension works directly inside your favorite websites.
+                This is a preview. The extension works directly inside your favorite websites and apps.
             </p>
         </div>
     );

@@ -15,6 +15,9 @@ import { Translate } from './pages/Translate';
 import { BlogIndex } from './pages/BlogIndex';
 import { BlogPost } from './pages/BlogPost';
 import { Offer } from './pages/Offer';
+import { EmailToneAnalyzer } from './pages/EmailToneAnalyzer';
+import { WordCounter } from './pages/WordCounter';
+import { Tools } from './pages/Tools';
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/offer" element={<Offer />} />
+            <Route path="/tools" element={<Tools />} />
+            <Route path="/tools/email-tone-analyzer" element={<EmailToneAnalyzer />} />
+            <Route path="/tools/word-counter" element={<WordCounter />} />
           </Routes>
         </Layout>
       </Router>

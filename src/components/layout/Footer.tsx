@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer className="bg-slate-50 border-t border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
                     <div className="md:col-span-1 space-y-4">
                         <div className="flex items-center space-x-2">
                             <img src={logo} alt="Textglow Logo" className="w-6 h-6" />
@@ -24,6 +24,14 @@ export const Footer = () => {
                             <li><Link to="/slack" className="text-sm text-slate-600 hover:text-slate-900">For Slack</Link></li>
                             <li><Link to="/tinder" className="text-sm text-slate-600 hover:text-slate-900">For Dating Apps</Link></li>
                             <li><Link to="/translate" className="text-sm text-slate-600 hover:text-slate-900">For Translation</Link></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="font-semibold text-slate-900 mb-4">Free Tools</h3>
+                        <ul className="space-y-2">
+                            <li><Link to="/tools/email-tone-analyzer" className="text-sm text-slate-600 hover:text-slate-900">Email Tone Analyzer</Link></li>
+                            <li><Link to="/tools/word-counter" className="text-sm text-slate-600 hover:text-slate-900">Word Counter</Link></li>
                         </ul>
                     </div>
 

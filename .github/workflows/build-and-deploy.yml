@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  # 4. A test workflow or manual trigger option
   workflow_dispatch: 
 
 jobs:
@@ -24,33 +23,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4. Handle Chrome/Chromium dependencies
-      # react-snap uses an older Puppeteer which can fail to launch its bundled Chromium on newer Ubuntu versions.
-      # GitHub Actions ubuntu-latest runners come with Google Chrome already installed with all system dependencies.
-      # We dynamically tell react-snap to use this pre-installed Chrome.
       - name: Configure Puppeteer to use System Chrome
         run: |
           CHROME_PATH=$(which google-chrome-stable)
           echo "Using system Chrome at: $CHROME_PATH"
-          # This safely adds/updates the path in package.json just for this build run
           npm pkg set reactSnap.puppeteerExecutablePath="$CHROME_PATH"
 
-      # 5. Runs npm run build (triggers react-snap via postbuild)
       - name: Build and Pre-render
         run: npm run build
 
-      # 6. Deploys the dist/ folder to Hostinger via FTP
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          # The local folder we want to upload (note the trailing slash)
-          local-dir: ./dist/
-          # The destination folder on the server
-          server-dir: domains/textglow.io/public_html/
-          # Do not delete existing files that aren't in dist/ (like .htaccess or server configs)
-          dangerous-clean-slate: false
-          # Handle timeout for large uploads (set to 10 minutes)
-          timeout: 600000
+      # DIAGNOSTIC: List the FTP directory structure to find the correct upload path
+      - name: "[DEBUG] Explore FTP directory structure"
+        run: |
+          sudo apt-get install -y lftp
+          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
+            echo '=== Current directory (pwd) ===';
+            pwd;
+            echo '';
+            echo '=== Top-level listing (ls) ===';
+            ls;
+            echo '';
+            echo '=== Recursive listing (2 levels deep) ===';
+            find . -maxdepth 2 -type d;
+            echo '';
+            echo '=== Checking public_html ===';
+            ls public_html/ 2>/dev/null || echo 'public_html/ does NOT exist at FTP root';
+            echo '';
+            echo '=== Checking domains/ ===';
+            ls domains/ 2>/dev/null || echo 'domains/ does NOT exist at FTP root';
+            echo '';
+            bye;
+          "

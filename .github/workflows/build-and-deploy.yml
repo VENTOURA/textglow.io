@@ -48,8 +48,8 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           # The local folder we want to upload (note the trailing slash)
           local-dir: ./dist/
-          # The destination folder on the server (replaces contents of public_html)
-          server-dir: ./public_html/
+          # The destination folder on the server (Hostinger FTP drops you directly into public_html)
+          server-dir: ./
           # Do not delete existing files that aren't in dist/ (like .htaccess or server configs)
           dangerous-clean-slate: false
           # Handle timeout for large uploads (set to 10 minutes)

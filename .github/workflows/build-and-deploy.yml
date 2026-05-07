@@ -42,7 +42,7 @@ jobs:
             set ftp:ssl-allow yes;
             set mirror:parallel-transfer-count 5;
             set mirror:use-pget-n 5;
-            mirror --reverse --delete --verbose ./dist/ public_html/;
+            mirror --reverse --delete --verbose ./dist/ domains/textglow.io/public_html/;
             bye;
           "
           echo "✅ Upload complete!"
@@ -55,10 +55,10 @@ jobs:
           lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
             set ssl:verify-certificate no;
             set ftp:ssl-allow yes;
-            cat public_html/index.html | head -c 500;
+            cat domains/textglow.io/public_html/index.html | head -c 500;
             echo '';
             echo '=== JS bundle filename on server ===';
-            ls public_html/assets/index-*.js;
+            ls domains/textglow.io/public_html/assets/index-*.js;
             bye;
           "
           echo ""

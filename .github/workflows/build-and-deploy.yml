@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
@@ -32,60 +34,31 @@ jobs:
       - name: Build and Pre-render
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
+      # Push the pre-built dist/ to a "deploy" branch.
+      # Hostinger watches this branch and deploys from it.
+      # Since the files are already built, Hostinger just copies them — no build needed.
+      - name: Push to deploy branch
         run: |
-          sudo apt-get install -y lftp > /dev/null 2>&1
+          cd dist
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git checkout -b deploy
           
-          echo "=== Step 1: Clean up junk directories from previous bad uploads ==="
-          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            echo 'Removing junk public_html/ folder (nested by mistake)...';
-            rm -rf public_html/ 2>/dev/null || true;
-            echo 'Removing junk domains/ folder (created by mistake)...';
-            rm -rf domains/ 2>/dev/null || true;
-            echo 'Removing stale .ftp-deploy-sync-state.json...';
-            rm -f .ftp-deploy-sync-state.json 2>/dev/null || true;
-            echo 'Cleanup done.';
-            bye;
-          "
+          # Create a minimal package.json so Hostinger's "npm run build" doesn't fail
+          echo '{"scripts":{"build":"echo pre-built"}}' > package.json
           
-          echo ""
-          echo "=== Step 2: Upload dist/ to FTP root (which IS public_html) ==="
-          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            set mirror:parallel-transfer-count 5;
-            set mirror:use-pget-n 5;
-            mirror --reverse --verbose --exclude .htaccess ./dist/ .;
-            bye;
-          "
-          echo "✅ Upload complete!"
-
-      - name: Verify deployment
-        run: |
-          sudo apt-get install -y lftp > /dev/null 2>&1
-          echo "=== JS bundle on server (FTP root) ==="
-          lftp -u "${{ secrets.FTP_USER }},${{ secrets.FTP_PASS }}" "${{ secrets.FTP_HOST }}" -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            ls assets/index-*.js;
-            echo '=== Dirs at FTP root (should NOT have public_html/ or domains/) ===';
-            ls -d */ ;
-            bye;
-          "
-          echo ""
-          echo "=== JS bundle in local dist/ ==="
-          ls dist/assets/index-*.js
-          echo ""
-          echo "=== Checking live site (after 10s wait for CDN) ==="
-          sleep 10
-          LIVE_BUNDLE=$(curl -s "https://textglow.io/" | grep -o 'src="/assets/index-[^"]*"')
-          LOCAL_BUNDLE=$(ls dist/assets/index-*.js | sed 's|dist|src="|;s|$|"|;s|/|/|g' | sed 's|src="/|src="/|')
-          echo "Live:  $LIVE_BUNDLE"
-          echo "Local: $(ls dist/assets/index-*.js | xargs basename)"
-          if echo "$LIVE_BUNDLE" | grep -q "$(ls dist/assets/index-*.js | xargs basename | sed 's/.js//')"; then
-            echo "✅ SUCCESS! Live site matches the build."
-          else
-            echo "❌ MISMATCH. Hostinger auto-deploy may have overwritten our files."
-          fi
+          # Move all built files into a dist/ subfolder so Hostinger's
+          # "Output directory: dist" setting works correctly
+          mkdir -p dist
+          shopt -s dotglob
+          for f in *; do
+            [ "$f" = "dist" ] && continue
+            [ "$f" = ".git" ] && continue
+            mv "$f" dist/
+          done
+          
+          git add -A
+          git commit -m "Deploy pre-rendered build from ${{ github.sha }}"
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
+          echo "✅ Pushed to deploy branch!"

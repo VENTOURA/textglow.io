@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js 20
         uses: actions/setup-node@v4
@@ -36,22 +34,26 @@ jobs:
       - name: Build and Pre-render
         run: npm run build
 
-      # Push the pre-built dist/ to a "deploy" branch.
-      # Hostinger watches this branch and deploys from it.
-      # Since the files are already built, Hostinger just copies them — no build needed.
       - name: Push to deploy branch
         run: |
           # Create a clean staging area
-          mkdir -p /tmp/deploy-staging
-          cd /tmp/deploy-staging
+          STAGING=$(mktemp -d)
           
-          # Root-level package.json so Hostinger's "npm run build" succeeds
-          echo '{"scripts":{"build":"echo done"}}' > package.json
+          # package.json at root — build command copies _prebuilt to dist
+          # This way even if Hostinger wipes dist/ before building, our build recreates it
+          cat > "$STAGING/package.json" << 'EOF'
+          {
+            "scripts": {
+              "build": "cp -r _prebuilt dist"
+            }
+          }
+          EOF
           
-          # Copy the pre-rendered build into dist/ (matches Hostinger's Output directory setting)
-          cp -r "$GITHUB_WORKSPACE/dist" ./dist
+          # Store pre-rendered files in _prebuilt/ (Hostinger won't touch this)
+          cp -r dist "$STAGING/_prebuilt"
           
-          # Init git and push to deploy branch
+          # Init git and push
+          cd "$STAGING"
           git init -b deploy
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"

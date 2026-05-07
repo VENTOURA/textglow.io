@@ -20,7 +20,7 @@ export const Tinder = () => {
                 <meta property="twitter:title" content="AI Dating Message Helper – Tinder, Bumble, Hinge" />
                 <meta property="twitter:description" content="Turn boring matches into dates. Generate flirty, funny, and confident openers instantly." />
             </Helmet>
-            
+
             {/* Hero Section */}
             <section className="relative pt-20 pb-32 overflow-hidden bg-slate-900">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-5xl z-0 pointer-events-none opacity-20">

@@ -44,7 +44,7 @@ jobs:
           cat > "$STAGING/package.json" << 'EOF'
           {
             "scripts": {
-              "build": "cp -r _prebuilt dist"
+              "build": "rm -rf dist && cp -r _prebuilt dist"
             }
           }
           EOF

@@ -43,6 +43,7 @@ export const Navbar = () => {
                         <Link to="/" className={linkClass('/')}>Home</Link>
                         <Link to="/how-to-use" className={linkClass('/how-to-use')}>How to Use</Link>
                         <Link to="/pricing" className={linkClass('/pricing')}>Pricing</Link>
+                        <Link to="/tools" className={linkClass('/tools')}>Tools</Link>
                         {/* Hidden links
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">About</a>
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">Blog</a>
@@ -70,6 +71,7 @@ export const Navbar = () => {
                             <Link to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/')}>Home</Link>
                             <Link to="/how-to-use" onClick={() => setIsOpen(false)} className={mobileLinkClass('/how-to-use')}>How to Use</Link>
                             <Link to="/pricing" onClick={() => setIsOpen(false)} className={mobileLinkClass('/pricing')}>Pricing</Link>
+                            <Link to="/tools" onClick={() => setIsOpen(false)} className={mobileLinkClass('/tools')}>Tools</Link>
                             <div className="pt-2">
                                 <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install Free</Button>
                             </div>

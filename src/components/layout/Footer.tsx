@@ -36,6 +36,14 @@ export const Footer = () => {
                             <li><Link to="/tools/formality-checker" className="text-sm text-slate-600 hover:text-slate-900">Formality Checker</Link></li>
                             <li><Link to="/tools/linkedin-post-preview" className="text-sm text-slate-600 hover:text-slate-900">LinkedIn Post Preview</Link></li>
                             <li><Link to="/tools/cold-email-generator" className="text-sm text-slate-600 hover:text-slate-900">Cold Email Generator</Link></li>
+                            <li><Link to="/tools/jargon-translator" className="text-sm text-slate-600 hover:text-slate-900">Jargon Translator</Link></li>
+                            <li><Link to="/tools/ai-writing-detector" className="text-sm text-slate-600 hover:text-slate-900">AI Writing Detector</Link></li>
+                            <li><Link to="/tools/passive-aggressive-checker" className="text-sm text-slate-600 hover:text-slate-900">Passive-Aggressive Checker</Link></li>
+                            <li><Link to="/tools/genz-translator" className="text-sm text-slate-600 hover:text-slate-900">Gen Z Translator</Link></li>
+                            <li><Link to="/tools/subject-line-scorer" className="text-sm text-slate-600 hover:text-slate-900">Subject Line Scorer</Link></li>
+                            <li><Link to="/tools/out-of-office" className="text-sm text-slate-600 hover:text-slate-900">Out-of-Office Generator</Link></li>
+                            <li><Link to="/tools/writing-quiz" className="text-sm text-slate-600 hover:text-slate-900">Writing Personality Quiz</Link></li>
+                            <li><Link to="/tools/examples" className="text-sm text-slate-600 hover:text-slate-900">Writing Examples</Link></li>
                         </ul>
                     </div>
 

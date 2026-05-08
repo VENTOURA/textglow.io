@@ -1,0 +1,1212 @@
+export type Tone =
+  | 'Professional'
+  | 'Friendly'
+  | 'Confident'
+  | 'Concise'
+  | 'Empathetic'
+  | 'Persuasive'
+  | 'Formal'
+  | 'Casual'
+  | 'Direct'
+  | 'Enthusiastic';
+
+export type Context =
+  | 'Gmail'
+  | 'Slack'
+  | 'LinkedIn'
+  | 'Cover Letter'
+  | 'Customer Support'
+  | 'Management'
+  | 'Sales'
+  | 'Academic'
+  | 'Dating App'
+  | 'Personal';
+
+export type Category =
+  | 'Email'
+  | 'Slack/Teams'
+  | 'LinkedIn'
+  | 'Cover Letters'
+  | 'Customer Support'
+  | 'Management'
+  | 'Sales'
+  | 'Academic'
+  | 'Personal'
+  | 'Non-Native Speaker';
+
+export type ProblemTag =
+  | 'Too Formal'
+  | 'Too Casual'
+  | 'Passive-Aggressive'
+  | 'Too Long'
+  | 'Unclear'
+  | 'Grammar Issues'
+  | 'Weak Opening'
+  | 'Missing CTA'
+  | 'Defensive Tone'
+  | 'Overly Apologetic';
+
+export type DifficultyBadge = 'Quick Fix' | 'Major Rewrite' | 'Tone Shift';
+
+export interface BeforeAfterExample {
+  slug: string;
+  title: string;                   // display title, e.g. "Professional Follow-Up Email"
+  seoTitle: string;                // <title> tag for individual page
+  seoDescription: string;         // meta description for individual page
+  tone: Tone;
+  context: Context;
+  category: Category;
+  problems: ProblemTag[];
+  difficulty: DifficultyBadge;
+  before: string;
+  after: string;
+  whatChanged: string[];           // 2–4 bullet strings
+  toneExplanation: string;        // 1–2 sentences on why this tone fits this context
+  popularityScore: number;        // 1–100, used for "Most Popular" sort (hardcoded)
+  relatedSlugs: string[];         // 3–4 slugs of similar examples
+  dateAdded: string;              // ISO date string
+}
+
+export const TONE_DESCRIPTIONS: Record<Tone, string> = {
+  Professional: 'Clear, credible, and respectful. Appropriate for colleagues, clients, and employers at any level.',
+  Friendly: 'Warm and conversational without being informal. Works well in team settings and customer-facing interactions.',
+  Confident: 'Direct and assured without arrogance. Leads with value and avoids hedging or over-qualifying.',
+  Concise: 'Gets to the point immediately and removes everything that doesn\'t earn its place. Respects the reader\'s time.',
+  Empathetic: 'Prioritizes the reader\'s emotional experience. Validates before solving. Builds trust in tense situations.',
+  Persuasive: 'Leads with the reader\'s interests, not the writer\'s. Uses evidence and specificity to make the case feel logical.',
+  Formal: 'Structured and precise, appropriate for legal, academic, or high-stakes professional contexts.',
+  Casual: 'Relaxed and human — sounds like you\'re talking to a friend without being unprofessional.',
+  Direct: 'States what it means immediately. No hedging, no preamble, no softening that obscures the actual message.',
+  Enthusiastic: 'Genuinely energetic and positive. Works when the excitement is backed by specifics — otherwise reads as performative.',
+};
+
+export const examples: BeforeAfterExample[] = [
+
+  // ─── EMAIL ──────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'professional-follow-up-email',
+    title: 'Professional Follow-Up Email',
+    seoTitle: 'Professional Follow-Up Email Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a vague, apologetic follow-up email becomes a clear, confident nudge. Real before/after with tone breakdown.',
+    tone: 'Professional',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Overly Apologetic', 'Unclear'],
+    difficulty: 'Quick Fix',
+    before: `Hi, sorry to bother you again. I just wanted to follow up on my previous email about the proposal I sent last week. I know you're probably very busy so no worries if you haven't had a chance to look at it yet. Just let me know whenever you get a chance.`,
+    after: `Hi Sarah, I wanted to follow up on the proposal I sent on Monday. I'd love to hear your thoughts — happy to answer any questions or adjust the scope if needed. Are you available for a quick 15-minute call this week?`,
+    whatChanged: [
+      'Removed apologetic framing ("sorry to bother you") that signals low confidence',
+      'Added a specific date reference so the reader can find the original email immediately',
+      'Replaced the open-ended "let me know whenever" with a concrete call-to-action',
+    ],
+    toneExplanation: 'Professional tone in follow-ups strikes a balance between persistence and respect — it assumes mutual value without groveling.',
+    popularityScore: 95,
+    relatedSlugs: ['cold-email-outreach', 'meeting-request-email', 'email-apology-professional', 'proposal-follow-up-sales'],
+    dateAdded: '2025-01-15',
+  },
+
+  {
+    slug: 'cold-email-outreach',
+    title: 'Cold Email Outreach',
+    seoTitle: 'Cold Email Outreach Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'Transform a self-centered cold email into a value-first outreach that gets replies. See the full before/after breakdown.',
+    tone: 'Persuasive',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Weak Opening', 'Missing CTA'],
+    difficulty: 'Major Rewrite',
+    before: `Hello, my name is Jake and I work at Acme Solutions. We provide software that helps companies with their needs. I think your company could really benefit from what we offer. We have worked with many companies similar to yours. Please let me know if you are interested in learning more about us.`,
+    after: `Hi Marcus — I noticed Brightline just expanded to three new markets. Congrats on the growth. Companies at that stage typically hit bottlenecks in order tracking around month four. We built a fix for exactly that — and cut fulfillment errors by 40% for a similar company last quarter. Worth a 20-minute look?`,
+    whatChanged: [
+      'Opened with a specific, researched hook about the recipient (not about the sender)',
+      'Named a concrete pain point relevant to their current situation instead of vague claims',
+      'Included a specific proof point (40% reduction) to establish credibility',
+      'Ended with a low-commitment, time-boxed ask instead of an open-ended "let me know"',
+    ],
+    toneExplanation: 'Persuasive tone in cold outreach leads with the reader\'s world, not your product — making the ask feel logical rather than salesy.',
+    popularityScore: 88,
+    relatedSlugs: ['professional-follow-up-email', 'proposal-follow-up-sales', 'sales-objection-response', 'linkedin-inmail-outreach'],
+    dateAdded: '2025-01-15',
+  },
+
+  {
+    slug: 'email-apology-professional',
+    title: 'Professional Apology Email',
+    seoTitle: 'How to Write a Professional Apology Email — Before & After | TextGlow',
+    seoDescription: 'See how an over-explained, defensive apology becomes a clean, accountable professional apology that rebuilds trust.',
+    tone: 'Empathetic',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Defensive Tone', 'Too Long'],
+    difficulty: 'Tone Shift',
+    before: `Hi, I wanted to reach out about the delay with your order. There were some unforeseen circumstances on our end that were outside of our control, including supplier issues and a system outage that affected many of our customers. We tried our best to resolve things quickly but unfortunately the situation was complicated. I hope you understand.`,
+    after: `Hi James, I'm sorry for the delay — this fell short of the experience we aim to provide. Your order will ship by Friday, and I've added a $20 credit to your account for the inconvenience. I'll send a tracking number as soon as it's in transit.`,
+    whatChanged: [
+      'Removed the defensive explanation chain that shifts blame to external factors',
+      'Led with a direct, clean apology (no "I wanted to reach out about")',
+      'Added concrete resolution details (date + credit) instead of vague reassurance',
+    ],
+    toneExplanation: 'Empathetic tone in apologies focuses on the other person\'s experience first, then action — not on explaining yourself.',
+    popularityScore: 82,
+    relatedSlugs: ['customer-support-complaint-response', 'management-bad-news-delivery', 'professional-follow-up-email', 'customer-refund-request-response'],
+    dateAdded: '2025-01-16',
+  },
+
+  {
+    slug: 'meeting-request-email',
+    title: 'Meeting Request Email',
+    seoTitle: 'Meeting Request Email Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a vague meeting request becomes a clear, easy-to-accept invite. Before/after with full tone breakdown.',
+    tone: 'Direct',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Unclear', 'Too Long'],
+    difficulty: 'Quick Fix',
+    before: `Hi there, I was thinking maybe we could possibly find a time to meet up sometime in the coming weeks when you have some free time to discuss some things related to the project and potentially get on the same page about next steps if that works for you.`,
+    after: `Hi Priya, can we do 30 minutes this week to align on Q3 priorities? I'm free Tuesday 2–4pm or Thursday morning. A Zoom link is fine — or I can come to your office.`,
+    whatChanged: [
+      'Cut filler phrases ("I was thinking maybe", "potentially") that dilute the ask',
+      'Specified duration, topic, and two concrete time options to reduce back-and-forth',
+      'Offered logistics options to make it easy to say yes',
+    ],
+    toneExplanation: 'Direct tone in meeting requests respects the recipient\'s time by front-loading the ask and giving them everything they need to respond in one read.',
+    popularityScore: 79,
+    relatedSlugs: ['professional-follow-up-email', 'slack-meeting-announcement', 'management-project-update', 'email-apology-professional'],
+    dateAdded: '2025-01-16',
+  },
+
+  {
+    slug: 'rejection-email-vendor',
+    title: 'Vendor Rejection Email',
+    seoTitle: 'How to Write a Vendor Rejection Email — Before & After | TextGlow',
+    seoDescription: 'See how to decline a vendor politely and professionally without burning bridges. Full before/after rewrite example.',
+    tone: 'Formal',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Unclear', 'Too Casual'],
+    difficulty: 'Tone Shift',
+    before: `Hey, thanks for sending that over. We looked at the proposal and I think right now it's just not really the right fit for us, but maybe in the future things could be different. We'll keep your info on file.`,
+    after: `Dear Margot, thank you for the detailed proposal and the time you invested in presenting to our team. After careful review, we've decided to move forward with another vendor whose solution more closely matches our current infrastructure. We genuinely appreciate your effort and will keep Vantage on our shortlist for future initiatives.`,
+    whatChanged: [
+      'Replaced casual opener ("Hey") with an appropriate formal greeting for a business relationship',
+      'Gave a clear, specific reason for the rejection without being harsh',
+      'Closed with a genuine-sounding compliment that leaves the relationship intact',
+    ],
+    toneExplanation: 'Formal tone in rejections signals that the decision was considered seriously — it\'s a form of respect that preserves goodwill.',
+    popularityScore: 71,
+    relatedSlugs: ['email-apology-professional', 'professional-follow-up-email', 'management-bad-news-delivery', 'customer-support-complaint-response'],
+    dateAdded: '2025-01-17',
+  },
+
+  {
+    slug: 'thank-you-email-after-interview',
+    title: 'Thank You Email After Interview',
+    seoTitle: 'Thank You Email After Interview — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a generic thank-you email becomes a memorable, specific message that reinforces your candidacy.',
+    tone: 'Enthusiastic',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Too Casual', 'Weak Opening'],
+    difficulty: 'Tone Shift',
+    before: `Hi, just wanted to say thanks for taking the time to meet with me today. It was great to learn more about the role. I think I would be a good fit and I'm excited about the opportunity. Let me know if you need anything else from me.`,
+    after: `Hi David, thank you for the conversation this afternoon — I left genuinely energized. The point you made about rebuilding the pipeline architecture resonates with work I led at Clearview, and I'd love to bring that same approach to this team. I'm very interested in moving forward and happy to provide any additional context you need.`,
+    whatChanged: [
+      'Referenced a specific moment from the interview to prove attentiveness and make the message memorable',
+      'Connected a concrete past experience to the role instead of making a generic "good fit" claim',
+      'Maintained genuine enthusiasm without crossing into hollow superlatives',
+    ],
+    toneExplanation: 'Enthusiastic tone in post-interview follow-ups reinforces positive emotional memory of the candidate — but it must be specific to feel authentic.',
+    popularityScore: 85,
+    relatedSlugs: ['cover-letter-opening-paragraph', 'linkedin-connection-request-job-seeker', 'professional-follow-up-email', 'cold-email-outreach'],
+    dateAdded: '2025-01-17',
+  },
+
+  // ─── SLACK / TEAMS ──────────────────────────────────────────────────────────
+
+  {
+    slug: 'slack-passive-aggressive-dm',
+    title: 'Fixing a Passive-Aggressive Slack DM',
+    seoTitle: 'How to Fix a Passive-Aggressive Slack Message — Before & After | TextGlow',
+    seoDescription: 'See a classic passive-aggressive Slack DM rewritten into clear, professional feedback. Full before/after breakdown.',
+    tone: 'Direct',
+    context: 'Slack',
+    category: 'Slack/Teams',
+    problems: ['Passive-Aggressive'],
+    difficulty: 'Tone Shift',
+    before: `Hey so I noticed the report still hasn't been updated even though we talked about this last week. Just wondering if there's maybe some confusion about the deadline or if something came up? Not a big deal I guess, just wanted to check.`,
+    after: `Hey — the report update was due Monday and I don't have it yet. Can you send it by end of day today, or let me know if you're blocked on something?`,
+    whatChanged: [
+      'Removed hedging language ("I guess", "not a big deal") that contradicts the actual concern',
+      'Stated the missed deadline as a fact rather than a passive question about "confusion"',
+      'Offered a path forward (today\'s deadline or unblocking) instead of just surfacing frustration',
+    ],
+    toneExplanation: 'Direct tone in Slack removes the emotional subtext that makes passive-aggressive messages exhausting to receive and decode.',
+    popularityScore: 93,
+    relatedSlugs: ['management-performance-feedback', 'slack-channel-announcement', 'slack-meeting-announcement', 'management-delegation-message'],
+    dateAdded: '2025-01-18',
+  },
+
+  {
+    slug: 'slack-channel-announcement',
+    title: 'Slack Channel Announcement',
+    seoTitle: 'Slack Channel Announcement Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a wall of text Slack announcement becomes a scannable, action-driving message. Full before/after.',
+    tone: 'Friendly',
+    context: 'Slack',
+    category: 'Slack/Teams',
+    problems: ['Too Long', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `Hey everyone, just wanted to let everyone know that we're going to be doing some changes to how we handle the onboarding process for new clients starting from next month. There will be a new checklist that everyone needs to follow and we'll be having a training session soon to go over everything. More details to come. Thanks!`,
+    after: `Team update: we're rolling out a new client onboarding process on Feb 1.\n\n**What's changing:** A standardized checklist replaces the current ad-hoc flow.\n**Training:** 30-min session Thursday at 2pm (invite coming today).\n**Questions?** Drop them in #onboarding-updates.\n\nMore details in the doc linked below.`,
+    whatChanged: [
+      'Used formatting (bold headers, line breaks) to make the message scannable in 10 seconds',
+      'Replaced "more details to come" vagueness with specific dates and a dedicated channel',
+      'Cut the filler opener ("just wanted to let everyone know") and led with the news directly',
+    ],
+    toneExplanation: 'Friendly tone in Slack announcements signals approachability while keeping structure — it prevents the "wall of text" that gets ignored.',
+    popularityScore: 76,
+    relatedSlugs: ['slack-passive-aggressive-dm', 'management-project-update', 'slack-meeting-announcement', 'management-bad-news-delivery'],
+    dateAdded: '2025-01-18',
+  },
+
+  {
+    slug: 'slack-meeting-announcement',
+    title: 'Slack Meeting Announcement',
+    seoTitle: 'Slack Meeting Announcement Example — Before & After | TextGlow',
+    seoDescription: 'See how a confusing Slack meeting message becomes a clear, RSVP-ready announcement. Full before/after rewrite.',
+    tone: 'Concise',
+    context: 'Slack',
+    category: 'Slack/Teams',
+    problems: ['Too Long', 'Missing CTA'],
+    difficulty: 'Quick Fix',
+    before: `Hi everyone, I wanted to reach out because we probably should have a meeting at some point to catch up on the project status and make sure we're all aligned. I was thinking maybe sometime next week could work? If people could let me know their availability that would be great so we can figure out a time that works.`,
+    after: `📅 Sprint sync — next week. Please fill in your availability: [poll link]. I'll book based on majority. Shouldn't need more than 30 min.`,
+    whatChanged: [
+      'Replaced "let me know your availability" with a direct poll link — one click to respond',
+      'Removed hedging preamble and stated the purpose (sprint sync) upfront',
+      'Capped expected time (30 min) to reduce meeting anxiety',
+    ],
+    toneExplanation: 'Concise tone in Slack respects that people\'s attention is split across dozens of channels — every extra word has a cost.',
+    popularityScore: 68,
+    relatedSlugs: ['slack-channel-announcement', 'meeting-request-email', 'management-project-update', 'slack-passive-aggressive-dm'],
+    dateAdded: '2025-01-19',
+  },
+
+  {
+    slug: 'slack-feedback-message',
+    title: 'Constructive Feedback in Slack',
+    seoTitle: 'How to Give Constructive Feedback in Slack — Before & After | TextGlow',
+    seoDescription: 'See how vague Slack feedback becomes specific, actionable, and easy to receive. Full before/after rewrite.',
+    tone: 'Empathetic',
+    context: 'Slack',
+    category: 'Slack/Teams',
+    problems: ['Unclear', 'Passive-Aggressive'],
+    difficulty: 'Tone Shift',
+    before: `Hey just saw the deck. It's fine but I feel like it could be better in some ways. The slides toward the end felt a bit rushed and some of the data stuff wasn't totally clear. Just something to think about before Thursday.`,
+    after: `Hey, saw the deck — great structure overall. Two things before Thursday: slides 14–16 feel rushed compared to the rest (could use one more sentence of context each), and the chart on slide 18 needs a source cited. Happy to hop on a quick call if it helps.`,
+    whatChanged: [
+      'Replaced vague "it could be better" with specific slide numbers and exact issues',
+      'Opened with genuine positive framing ("great structure") to make feedback easier to receive',
+      'Offered concrete help (a call) instead of leaving the person to figure it out alone',
+    ],
+    toneExplanation: 'Empathetic tone in peer feedback acknowledges effort before naming problems — making the recipient more likely to act on the notes.',
+    popularityScore: 74,
+    relatedSlugs: ['management-performance-feedback', 'slack-passive-aggressive-dm', 'management-delegation-message', 'slack-channel-announcement'],
+    dateAdded: '2025-01-19',
+  },
+
+  // ─── LINKEDIN ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'linkedin-connection-request-job-seeker',
+    title: 'LinkedIn Connection Request (Job Seeker)',
+    seoTitle: 'LinkedIn Connection Request Example for Job Seekers — Before & After | TextGlow',
+    seoDescription: 'See how a generic LinkedIn connection request becomes one that actually gets accepted. Full before/after rewrite.',
+    tone: 'Friendly',
+    context: 'LinkedIn',
+    category: 'LinkedIn',
+    problems: ['Weak Opening', 'Unclear'],
+    difficulty: 'Quick Fix',
+    before: `Hi, I'd like to add you to my professional network on LinkedIn.`,
+    after: `Hi Claire — I came across your post on scaling customer success teams and it matched exactly what I'm working through at my current role. Would love to connect and follow your work.`,
+    whatChanged: [
+      'Referenced a specific piece of the person\'s content to prove the request is genuine',
+      'Gave a clear, non-threatening reason for connecting (follow their work, not ask for a job)',
+      'Replaced LinkedIn\'s default text, which signals zero effort',
+    ],
+    toneExplanation: 'Friendly tone in connection requests lowers the guard — the reader feels approached by a peer, not pursued by a stranger.',
+    popularityScore: 90,
+    relatedSlugs: ['linkedin-inmail-outreach', 'linkedin-post-thought-leadership', 'cold-email-outreach', 'thank-you-email-after-interview'],
+    dateAdded: '2025-01-20',
+  },
+
+  {
+    slug: 'linkedin-inmail-outreach',
+    title: 'LinkedIn InMail Outreach',
+    seoTitle: 'LinkedIn InMail Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a self-focused LinkedIn InMail becomes a concise, value-first message that gets replies. Full before/after.',
+    tone: 'Persuasive',
+    context: 'LinkedIn',
+    category: 'LinkedIn',
+    problems: ['Weak Opening', 'Too Long', 'Missing CTA'],
+    difficulty: 'Major Rewrite',
+    before: `Hello, I hope this message finds you well. My name is Tomas and I am a senior recruiter at TalentBridge. We are currently looking to fill several positions and I believe based on your profile that you could be an excellent candidate. I would love to connect and discuss opportunities that might align with your career goals. Please feel free to reach out if you are interested.`,
+    after: `Hi Tomas — your work on the Meridian logistics restructuring caught my eye. We're building a similar function at a Series B company and have a Head of Operations role that maps closely to what you've done. Would you be open to a 15-minute call next week, no commitment?`,
+    whatChanged: [
+      'Led with a specific reference to the recipient\'s work, not the sender\'s company',
+      'Named a concrete role and company stage instead of vague "opportunities"',
+      'Set a low-commitment bar ("no commitment") that makes it easy to say yes',
+    ],
+    toneExplanation: 'Persuasive InMail treats the reader\'s career as the subject of the message — not the sender\'s open headcount.',
+    popularityScore: 84,
+    relatedSlugs: ['linkedin-connection-request-job-seeker', 'cold-email-outreach', 'linkedin-post-thought-leadership', 'sales-proposal-email'],
+    dateAdded: '2025-01-20',
+  },
+
+  {
+    slug: 'linkedin-post-thought-leadership',
+    title: 'LinkedIn Thought Leadership Post',
+    seoTitle: 'LinkedIn Thought Leadership Post — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a vague LinkedIn post becomes a specific, shareable insight that builds your professional brand. Full before/after.',
+    tone: 'Confident',
+    context: 'LinkedIn',
+    category: 'LinkedIn',
+    problems: ['Weak Opening', 'Unclear'],
+    difficulty: 'Tone Shift',
+    before: `I think a lot of people don't realize how important company culture really is. In my experience working at various companies, I've seen how it can make or break a team. It's something leaders should really pay attention to. Just my thoughts.`,
+    after: `Bad culture doesn't hide. It shows up in your attrition data, your Glassdoor score, and the energy in the first five minutes of your all-hands.\n\nI've rebuilt teams at three companies. Every time, the root cause of underperformance wasn't strategy or budget — it was a culture that made honesty feel dangerous.\n\nFix psychological safety first. Everything else follows.`,
+    whatChanged: [
+      'Replaced the hedged opener ("I think a lot of people don\'t realize") with a direct, specific claim',
+      'Grounded the insight in concrete, recognizable signals (attrition, Glassdoor, all-hands energy)',
+      'Ended with a clear, actionable takeaway instead of "just my thoughts"',
+    ],
+    toneExplanation: 'Confident tone on LinkedIn earns engagement — vague, hedged posts get scrolled past, while clear convictions get debated and shared.',
+    popularityScore: 80,
+    relatedSlugs: ['linkedin-connection-request-job-seeker', 'linkedin-inmail-outreach', 'management-performance-feedback', 'cover-letter-opening-paragraph'],
+    dateAdded: '2025-01-21',
+  },
+
+  {
+    slug: 'linkedin-recommendation-written',
+    title: 'LinkedIn Recommendation',
+    seoTitle: 'LinkedIn Recommendation Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a generic LinkedIn recommendation becomes a specific, memorable endorsement. Full before/after breakdown.',
+    tone: 'Enthusiastic',
+    context: 'LinkedIn',
+    category: 'LinkedIn',
+    problems: ['Too Formal', 'Unclear'],
+    difficulty: 'Tone Shift',
+    before: `I had the pleasure of working with Jane for two years at Acme Corp. She is a highly skilled professional who consistently delivered quality work. Jane is a team player and communicates well. I would highly recommend her for any position.`,
+    after: `Jane ran our entire content operation through a rebrand, a platform migration, and a 40% team reduction — and our publishing cadence didn't slip once. She's the kind of person who spots a process problem before it becomes a crisis, then fixes it without making it a big deal. Any team that gets her is genuinely lucky.`,
+    whatChanged: [
+      'Replaced generic adjectives ("highly skilled", "team player") with a specific high-stakes situation and outcome',
+      'Included a concrete detail (40% team reduction, no cadence slip) that signals real performance',
+      'Ended with a genuine, memorable character statement rather than boilerplate praise',
+    ],
+    toneExplanation: 'Enthusiastic recommendations work because they read like something a person actually said — not a performance review checkbox.',
+    popularityScore: 77,
+    relatedSlugs: ['linkedin-post-thought-leadership', 'linkedin-connection-request-job-seeker', 'cover-letter-opening-paragraph', 'thank-you-email-after-interview'],
+    dateAdded: '2025-01-21',
+  },
+
+  // ─── COVER LETTERS ───────────────────────────────────────────────────────────
+
+  {
+    slug: 'cover-letter-opening-paragraph',
+    title: 'Cover Letter Opening Paragraph',
+    seoTitle: 'Cover Letter Opening Paragraph — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a clichéd cover letter opener becomes a specific, attention-grabbing first paragraph. Full before/after.',
+    tone: 'Confident',
+    context: 'Cover Letter',
+    category: 'Cover Letters',
+    problems: ['Weak Opening', 'Too Formal'],
+    difficulty: 'Major Rewrite',
+    before: `I am writing to express my interest in the Senior Product Manager position at Horizon Technologies. I believe that my background and experience make me an excellent candidate for this role. I am passionate about product development and have always admired Horizon's innovative approach to technology.`,
+    after: `Last quarter I shipped a pricing page redesign that lifted trial conversions by 34% — without touching the product. That's the kind of cross-functional problem I'm drawn to, and it's why Horizon's shift toward product-led growth caught my attention six months ago. I want to help build what comes next.`,
+    whatChanged: [
+      'Led with a specific, quantified result instead of a vague claim about being an "excellent candidate"',
+      'Signaled genuine company knowledge ("six months ago") rather than generic flattery',
+      'Ended with a forward-looking statement that positions the candidate as a contributor, not an applicant',
+    ],
+    toneExplanation: 'Confident cover letters treat the reader\'s time as valuable — they prove the candidate\'s value in the first sentence instead of announcing interest.',
+    popularityScore: 92,
+    relatedSlugs: ['cover-letter-experience-paragraph', 'cover-letter-closing', 'thank-you-email-after-interview', 'linkedin-recommendation-written'],
+    dateAdded: '2025-01-22',
+  },
+
+  {
+    slug: 'cover-letter-experience-paragraph',
+    title: 'Cover Letter Experience Paragraph',
+    seoTitle: 'Cover Letter Experience Description — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a resume-repeating cover letter paragraph becomes a compelling narrative of impact. Full before/after.',
+    tone: 'Professional',
+    context: 'Cover Letter',
+    category: 'Cover Letters',
+    problems: ['Unclear', 'Too Long'],
+    difficulty: 'Tone Shift',
+    before: `In my previous role at DataCorp, I was responsible for various data analysis tasks and worked with a team of analysts to produce reports. I also participated in cross-functional meetings and contributed to project planning. My work was recognized by my manager and I received positive performance reviews.`,
+    after: `At DataCorp I built the reporting infrastructure our sales team had been requesting for two years — consolidating six manual spreadsheets into a single live dashboard. It reduced reporting time from four hours weekly to 20 minutes, and directly informed the territory restructuring that grew ARR by 18% the following year.`,
+    whatChanged: [
+      'Replaced passive "was responsible for" language with active ownership ("I built")',
+      'Connected the work to a specific business outcome (18% ARR growth) rather than personal performance reviews',
+      'Made the scope concrete (six spreadsheets to one dashboard) so the reader can picture the actual work',
+    ],
+    toneExplanation: 'Professional tone in cover letters means showing your value through specifics — not asserting it through adjectives.',
+    popularityScore: 78,
+    relatedSlugs: ['cover-letter-opening-paragraph', 'cover-letter-closing', 'linkedin-post-thought-leadership', 'thank-you-email-after-interview'],
+    dateAdded: '2025-01-22',
+  },
+
+  {
+    slug: 'cover-letter-closing',
+    title: 'Cover Letter Closing Paragraph',
+    seoTitle: 'How to End a Cover Letter — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a weak cover letter closing becomes a confident, action-driving paragraph. Full before/after breakdown.',
+    tone: 'Direct',
+    context: 'Cover Letter',
+    category: 'Cover Letters',
+    problems: ['Overly Apologetic', 'Passive-Aggressive', 'Missing CTA'],
+    difficulty: 'Quick Fix',
+    before: `I hope that you will consider my application. I would be very grateful for the opportunity to interview. If you have any questions please don't hesitate to contact me. Thank you so much for taking the time to read my application.`,
+    after: `I'd welcome the chance to walk through how my approach fits what you're building. I'll be in touch next week — but please feel free to reach me anytime at maya@email.com or 555-0182.`,
+    whatChanged: [
+      'Removed the grateful/apologetic framing ("I hope you will consider", "I would be very grateful") that signals low confidence',
+      'Took initiative by indicating follow-up rather than passively waiting',
+      'Provided a direct contact instead of the vague "don\'t hesitate to contact me"',
+    ],
+    toneExplanation: 'Direct closings treat the application as a two-way conversation — not a plea for consideration.',
+    popularityScore: 73,
+    relatedSlugs: ['cover-letter-opening-paragraph', 'cover-letter-experience-paragraph', 'professional-follow-up-email', 'thank-you-email-after-interview'],
+    dateAdded: '2025-01-23',
+  },
+
+  // ─── CUSTOMER SUPPORT ────────────────────────────────────────────────────────
+
+  {
+    slug: 'customer-support-complaint-response',
+    title: 'Customer Complaint Response',
+    seoTitle: 'Customer Complaint Response Email — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a defensive customer complaint response becomes a trust-building, resolution-focused reply. Full before/after.',
+    tone: 'Empathetic',
+    context: 'Customer Support',
+    category: 'Customer Support',
+    problems: ['Defensive Tone', 'Too Formal'],
+    difficulty: 'Tone Shift',
+    before: `Dear Customer, we are sorry to hear about your experience. Please note that our products undergo extensive quality testing and the issue you are describing is not typical. We recommend reviewing the user manual for proper usage instructions. We are happy to assist you further if needed.`,
+    after: `Hi Renata, I'm really sorry this happened — a damaged item on the first use is genuinely frustrating, and you deserve better. I've processed a replacement and it will arrive by Friday. You won't need to return the original. If anything feels off when it arrives, reply here and I'll sort it the same day.`,
+    whatChanged: [
+      'Removed defensive language about "extensive testing" that invalidates the customer\'s experience',
+      'Made the resolution immediate and specific (replacement by Friday, no return required)',
+      'Personalized the response with the customer\'s name and validated their frustration directly',
+    ],
+    toneExplanation: 'Empathetic support responses validate first, solve second — customers who feel heard escalate far less often.',
+    popularityScore: 87,
+    relatedSlugs: ['customer-refund-request-response', 'email-apology-professional', 'customer-escalation-response', 'management-bad-news-delivery'],
+    dateAdded: '2025-01-23',
+  },
+
+  {
+    slug: 'customer-refund-request-response',
+    title: 'Refund Request Response',
+    seoTitle: 'How to Respond to a Refund Request — Before & After | TextGlow',
+    seoDescription: 'See how a policy-quoting refund response becomes a customer-first resolution that preserves loyalty. Full before/after.',
+    tone: 'Friendly',
+    context: 'Customer Support',
+    category: 'Customer Support',
+    problems: ['Too Formal', 'Defensive Tone'],
+    difficulty: 'Tone Shift',
+    before: `Thank you for contacting us regarding your refund request. After reviewing your case, we see that your purchase falls outside our 30-day return window. As per our refund policy, we are unable to process a refund for orders older than 30 days. We apologize for any inconvenience.`,
+    after: `Hi Thomas, thanks for reaching out. I checked your order and I can see why this is frustrating — the item arrived late, which pushed you past the window. I've gone ahead and processed the refund anyway. You'll see it in 3–5 business days. Thanks for giving us the chance to make it right.`,
+    whatChanged: [
+      'Acknowledged the specific reason the customer is in this situation (late arrival) rather than citing policy at them',
+      'Made the exception decision first, then explained — not the other way around',
+      'Ended with a loyalty-preserving statement rather than a hollow "we apologize for any inconvenience"',
+    ],
+    toneExplanation: 'Friendly tone in refund responses treats policy as a tool, not a shield — and customers remember that.',
+    popularityScore: 83,
+    relatedSlugs: ['customer-support-complaint-response', 'customer-escalation-response', 'email-apology-professional', 'rejection-email-vendor'],
+    dateAdded: '2025-01-24',
+  },
+
+  {
+    slug: 'customer-escalation-response',
+    title: 'Customer Escalation Response',
+    seoTitle: 'Customer Escalation Response — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how to de-escalate an angry customer email without being defensive or dismissive. Full before/after rewrite.',
+    tone: 'Empathetic',
+    context: 'Customer Support',
+    category: 'Customer Support',
+    problems: ['Defensive Tone', 'Passive-Aggressive'],
+    difficulty: 'Major Rewrite',
+    before: `We understand you are frustrated but we have been trying to resolve this issue for several weeks. Our team has been working diligently on your case. We ask for your patience as we continue to investigate. We will update you as soon as we have more information.`,
+    after: `Hi Kenji, I hear you — three weeks is too long, and I take responsibility for that delay. Here's where things stand: [specific update]. I'm escalating this to our engineering lead today, and I will personally update you by Thursday at 5pm. If you don't hear from me, please reply to this email and tag it urgent.`,
+    whatChanged: [
+      'Replaced passive "our team has been working diligently" with specific, owned accountability',
+      'Gave a concrete status update instead of "we\'ll update you when we know more"',
+      'Committed to a specific time and provided a fallback action — making the promise binding',
+    ],
+    toneExplanation: 'Empathetic escalation responses acknowledge failure directly — customers in crisis need to feel heard before they can accept a resolution plan.',
+    popularityScore: 75,
+    relatedSlugs: ['customer-support-complaint-response', 'customer-refund-request-response', 'email-apology-professional', 'management-bad-news-delivery'],
+    dateAdded: '2025-01-24',
+  },
+
+  // ─── MANAGEMENT ──────────────────────────────────────────────────────────────
+
+  {
+    slug: 'management-performance-feedback',
+    title: 'Performance Feedback Message',
+    seoTitle: 'How to Write Performance Feedback — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how vague performance feedback becomes specific, growth-oriented, and easy to act on. Full before/after rewrite.',
+    tone: 'Direct',
+    context: 'Management',
+    category: 'Management',
+    problems: ['Unclear', 'Passive-Aggressive'],
+    difficulty: 'Tone Shift',
+    before: `I feel like lately your work hasn't been quite at the level we'd expect. There have been some issues with deadlines and I've noticed that your attention to detail could be improved. I know you have a lot going on but it would be great if you could step it up a bit.`,
+    after: `I want to give you direct feedback: the last two deliverables missed deadlines (the API docs by 3 days, the design review by 2), and both had errors that required rework. This is a pattern over the past six weeks, and it's affecting the team's planning. I'd like to understand what's getting in the way — can we set up 30 minutes this week?`,
+    whatChanged: [
+      'Named specific deliverables and specific delays instead of vague "some issues with deadlines"',
+      'Identified the pattern explicitly (six weeks) to signal this is a documented concern, not a one-off frustration',
+      'Ended with a question that opens dialogue rather than a vague "step it up" directive',
+    ],
+    toneExplanation: 'Direct performance feedback is actually kinder than vague feedback — specifics give the person something to fix instead of general anxiety.',
+    popularityScore: 89,
+    relatedSlugs: ['management-delegation-message', 'management-bad-news-delivery', 'slack-passive-aggressive-dm', 'slack-feedback-message'],
+    dateAdded: '2025-01-25',
+  },
+
+  {
+    slug: 'management-bad-news-delivery',
+    title: 'Delivering Bad News to a Team',
+    seoTitle: 'How to Deliver Bad News to Your Team — Before & After | TextGlow',
+    seoDescription: 'See how a vague bad-news message becomes a clear, trust-building communication that respects the team. Full before/after.',
+    tone: 'Empathetic',
+    context: 'Management',
+    category: 'Management',
+    problems: ['Unclear', 'Defensive Tone'],
+    difficulty: 'Major Rewrite',
+    before: `Hi team, as you may have heard there have been some changes happening at the company level. We wanted to make sure to keep you in the loop as things develop. There may be some restructuring happening in the coming months and we'll share more when we know more. Thank you for your patience.`,
+    after: `Team, I want to be direct with you. We're reducing the team from 12 to 9. Three roles are being eliminated, effective March 15. If your role is affected, you'll have a 1:1 with me by end of day Thursday. If you don't hear from me by Thursday 5pm, your position is not impacted. I know this is hard news. I'm available today if you want to talk.`,
+    whatChanged: [
+      'Stated the actual news (layoffs) plainly instead of using corporate language to bury it',
+      'Gave everyone a clear timeline and a way to know their own status, reducing anxiety for the whole team',
+      'Made the manager accessible immediately rather than hiding behind "more details to come"',
+    ],
+    toneExplanation: 'Empathetic bad-news delivery prioritizes clarity over comfort — people handle hard truths better when they\'re not left to speculate.',
+    popularityScore: 86,
+    relatedSlugs: ['management-performance-feedback', 'slack-channel-announcement', 'email-apology-professional', 'management-delegation-message'],
+    dateAdded: '2025-01-25',
+  },
+
+  {
+    slug: 'management-delegation-message',
+    title: 'Delegation Message to a Direct Report',
+    seoTitle: 'How to Delegate Clearly — Before & After Message | TextGlow',
+    seoDescription: 'See how a vague delegation message becomes a clear, motivating task assignment. Full before/after rewrite.',
+    tone: 'Direct',
+    context: 'Management',
+    category: 'Management',
+    problems: ['Unclear', 'Missing CTA'],
+    difficulty: 'Quick Fix',
+    before: `Hey, so I was thinking it might be good if you could take a look at the vendor situation and maybe put together some thoughts on it. No rush, but probably before the end of the month would be ideal if possible. Let me know if you have questions.`,
+    after: `Hi Lena, I'd like you to own the vendor evaluation for Q2. Deliverable: a one-page comparison of our top 3 vendors on cost, reliability, and SLA. Due: March 28. Decision-maker: you have full authority to recommend. I'm here if you hit blockers — otherwise I'll check in on the 21st.`,
+    whatChanged: [
+      'Named the deliverable exactly (one-page comparison, three vendors, three criteria) instead of "put together some thoughts"',
+      'Set a firm deadline (March 28) instead of "before the end of the month if possible"',
+      'Clarified decision authority — a critical piece often missing from delegation that keeps people coming back for approval',
+    ],
+    toneExplanation: 'Direct delegation is empowering, not harsh — it gives people what they need to succeed independently instead of leaving them guessing.',
+    popularityScore: 81,
+    relatedSlugs: ['management-performance-feedback', 'management-project-update', 'slack-passive-aggressive-dm', 'meeting-request-email'],
+    dateAdded: '2025-01-26',
+  },
+
+  {
+    slug: 'management-project-update',
+    title: 'Project Update to Stakeholders',
+    seoTitle: 'Project Status Update Email — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a vague project update email becomes a clear, decision-ready stakeholder communication. Full before/after.',
+    tone: 'Professional',
+    context: 'Management',
+    category: 'Management',
+    problems: ['Unclear', 'Too Long'],
+    difficulty: 'Tone Shift',
+    before: `Hi everyone, just wanted to send a quick update on where we are with the Atlas project. Things have been moving along and we've made some good progress on various fronts. There are still some outstanding items that we're working to resolve. Overall things are looking positive and we expect to stay on track. Please let me know if you have any questions.`,
+    after: `Atlas Project — Week 8 Update\n\n**Status: On track** (launch April 12)\n**Completed this week:** API integration (done), QA cycle 1 (done), stakeholder review (done)\n**At risk:** Payment provider onboarding — 3-day delay possible. Mitigation plan shared with procurement.\n**Decision needed:** Approve fallback provider by March 5 to stay on timeline.\n\nFull tracker: [link]`,
+    whatChanged: [
+      'Used a scannable format (status, completed, at risk, decision needed) instead of narrative paragraphs',
+      'Called out the specific risk and mitigation instead of burying it in "some outstanding items"',
+      'Made the decision needed explicit — the #1 thing stakeholder updates should do',
+    ],
+    toneExplanation: 'Professional project updates separate status from risk from decisions needed — mixing them forces stakeholders to extract information themselves.',
+    popularityScore: 78,
+    relatedSlugs: ['management-delegation-message', 'slack-channel-announcement', 'management-bad-news-delivery', 'meeting-request-email'],
+    dateAdded: '2025-01-26',
+  },
+
+  // ─── SALES ───────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'sales-objection-response',
+    title: 'Sales Objection Response (Too Expensive)',
+    seoTitle: 'How to Respond to "Too Expensive" — Sales Email Before & After | TextGlow',
+    seoDescription: 'See how a defensive price objection response becomes a confident, value-reframing reply. Full before/after rewrite.',
+    tone: 'Confident',
+    context: 'Gmail',
+    category: 'Sales',
+    problems: ['Defensive Tone', 'Unclear'],
+    difficulty: 'Tone Shift',
+    before: `Hi, thanks for your feedback about the pricing. I understand that budget can be a concern and we do have different options available. Our pricing reflects the quality and features we offer. We could potentially discuss a discount depending on the situation. Let me know what you think.`,
+    after: `Hi Yuki — fair point, let's talk about the math. At $800/month, you're paying $26/day. Based on what you told me about your team spending 3 hours a week on manual reporting, that's roughly $4,000/month in labor cost. If we cut that in half — a conservative estimate — you're at 5:1 ROI in month one. Does that framing change the picture? Happy to build out a full ROI model for your CFO.`,
+    whatChanged: [
+      'Reframed price as an investment by quantifying the cost of the problem it solves',
+      'Used the prospect\'s own numbers (3 hours/week) to make the case — not generic claims',
+      'Offered to build a CFO-facing ROI model, elevating the conversation and the salesperson\'s role',
+    ],
+    toneExplanation: 'Confident objection handling doesn\'t apologize for price — it changes the unit of comparison from cost to value.',
+    popularityScore: 88,
+    relatedSlugs: ['cold-email-outreach', 'sales-proposal-email', 'proposal-follow-up-sales', 'linkedin-inmail-outreach'],
+    dateAdded: '2025-01-27',
+  },
+
+  {
+    slug: 'sales-proposal-email',
+    title: 'Sales Proposal Email',
+    seoTitle: 'Sales Proposal Email Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a features-first proposal email becomes a outcomes-first pitch that closes faster. Full before/after.',
+    tone: 'Persuasive',
+    context: 'Gmail',
+    category: 'Sales',
+    problems: ['Weak Opening', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `Hi, I am pleased to send you the proposal for our services as discussed. Please find attached our comprehensive proposal outlining our features and capabilities. We believe our solution will be a great fit for your needs. Please review and let us know your thoughts.`,
+    after: `Hi Angela, as promised — the proposal is attached. I've structured it around the three outcomes you flagged: reducing onboarding time, cutting churn in the first 90 days, and giving your CS team a live visibility dashboard. Each section ties our solution to your specific numbers from our call. The executive summary on page 2 is written for your VP if you need to share it upward. Happy to walk through it live on Thursday.`,
+    whatChanged: [
+      'Connected the proposal directly to the prospect\'s stated priorities instead of generic "features and capabilities"',
+      'Enabled internal selling by noting what is written for the VP — showing sales intelligence',
+      'Replaced "let us know your thoughts" with a specific offer (Thursday walkthrough)',
+    ],
+    toneExplanation: 'Persuasive proposals make the reader feel the proposal was built for them — because it should be.',
+    popularityScore: 81,
+    relatedSlugs: ['sales-objection-response', 'proposal-follow-up-sales', 'cold-email-outreach', 'meeting-request-email'],
+    dateAdded: '2025-01-27',
+  },
+
+  {
+    slug: 'proposal-follow-up-sales',
+    title: 'Sales Proposal Follow-Up',
+    seoTitle: 'Sales Proposal Follow-Up Email — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a weak proposal follow-up becomes a confident, momentum-building check-in. Full before/after rewrite.',
+    tone: 'Confident',
+    context: 'Gmail',
+    category: 'Sales',
+    problems: ['Overly Apologetic', 'Passive-Aggressive'],
+    difficulty: 'Quick Fix',
+    before: `Hi, I hope I'm not bothering you. I just wanted to follow up on the proposal I sent last week. I know you're busy so I understand if you haven't had time to look at it yet. Just wanted to make sure you received it okay. No rush, just let me know when you have a chance.`,
+    after: `Hi Ravi — following up on the proposal from Tuesday. Two things worth flagging: our Q1 pricing ends March 31, so there's a timing consideration, and I have one slot left for April onboarding. Happy to walk through the proposal together if it helps speed up the review. What does your week look like?`,
+    whatChanged: [
+      'Removed the apologetic opener ("I hope I\'m not bothering you") that undermines the salesperson\'s position',
+      'Created real urgency with a specific pricing deadline and capacity constraint — not manufactured pressure',
+      'Offered value (a walkthrough) instead of just asking for a response',
+    ],
+    toneExplanation: 'Confident follow-ups add new information — they don\'t just ask "did you see my email?"',
+    popularityScore: 84,
+    relatedSlugs: ['sales-objection-response', 'sales-proposal-email', 'professional-follow-up-email', 'cold-email-outreach'],
+    dateAdded: '2025-01-28',
+  },
+
+  // ─── ACADEMIC ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'professor-email-extension-request',
+    title: 'Extension Request to Professor',
+    seoTitle: 'How to Email a Professor for an Extension — Before & After | TextGlow',
+    seoDescription: 'See how an overly apologetic extension request becomes a respectful, professional ask. Full before/after rewrite.',
+    tone: 'Professional',
+    context: 'Academic',
+    category: 'Academic',
+    problems: ['Overly Apologetic', 'Too Long'],
+    difficulty: 'Quick Fix',
+    before: `Dear Professor Smith, I am so sorry to bother you with this. I know you are very busy and I hate to ask but I am really struggling with the essay assignment and have had a really difficult week due to some personal things and I was wondering if maybe there was any possibility of getting a small extension if that is at all possible and if it's not too much trouble.`,
+    after: `Dear Professor Smith, I'm writing to request a 48-hour extension on the rhetorical analysis essay. I encountered a family emergency this week that affected my ability to complete the work at the standard I'd like to submit. I understand if this isn't possible — and I'm happy to discuss if you'd like more context.`,
+    whatChanged: [
+      'Stated the request in the first sentence instead of burying it after two lines of apology',
+      'Named a specific extension duration (48 hours) which is more actionable than "a small extension"',
+      'Maintained dignity while leaving room for the professor to decline gracefully',
+    ],
+    toneExplanation: 'Professional academic emails treat professors as humans, not authority figures to grovel before — clear requests with brief context get better outcomes.',
+    popularityScore: 91,
+    relatedSlugs: ['academic-grade-dispute', 'academic-recommendation-request', 'meeting-request-email', 'professional-follow-up-email'],
+    dateAdded: '2025-01-28',
+  },
+
+  {
+    slug: 'academic-grade-dispute',
+    title: 'Grade Dispute Email to Professor',
+    seoTitle: 'How to Dispute a Grade via Email — Before & After | TextGlow',
+    seoDescription: 'See how a defensive grade dispute email becomes a respectful, evidence-based inquiry. Full before/after rewrite.',
+    tone: 'Formal',
+    context: 'Academic',
+    category: 'Academic',
+    problems: ['Defensive Tone', 'Passive-Aggressive'],
+    difficulty: 'Tone Shift',
+    before: `Hi, I got my grade back for the midterm and I don't really understand the feedback. I worked really hard on this and I feel like my answer was actually correct based on what we covered in class. Some of the points taken off don't make sense to me and I was wondering if there's any chance you could look at it again.`,
+    after: `Dear Professor Okafor, I'm writing to respectfully request a grade review for question 4 of the midterm. Based on the rubric and our discussion in week 7 class notes (attached), my interpretation of the secondary source requirement appears to align with the stated criteria. I'd welcome the chance to discuss this in office hours if you'd like to review it together.`,
+    whatChanged: [
+      'Referenced specific evidence (question number, rubric, class notes) instead of making a general feelings-based appeal',
+      'Used "review" rather than "change" — framing this as a question, not an accusation',
+      'Offered office hours as the forum, which is appropriate and harder to dismiss',
+    ],
+    toneExplanation: 'Formal tone in grade disputes signals academic maturity — professors respond to evidence and process, not frustration.',
+    popularityScore: 72,
+    relatedSlugs: ['professor-email-extension-request', 'academic-recommendation-request', 'rejection-email-vendor', 'management-performance-feedback'],
+    dateAdded: '2025-01-29',
+  },
+
+  {
+    slug: 'academic-recommendation-request',
+    title: 'Recommendation Letter Request',
+    seoTitle: 'How to Ask a Professor for a Recommendation — Before & After | TextGlow',
+    seoDescription: 'See how an awkward recommendation request becomes a thoughtful, easy-to-say-yes ask. Full before/after rewrite.',
+    tone: 'Friendly',
+    context: 'Academic',
+    category: 'Academic',
+    problems: ['Weak Opening', 'Missing CTA'],
+    difficulty: 'Major Rewrite',
+    before: `Hi Professor Lee, I was wondering if you might be able to write me a letter of recommendation. I'm applying to some graduate programs and they need letters from professors. I took your research methods class last year and got an A. I hope this isn't too much to ask. The deadline is in six weeks.`,
+    after: `Dear Professor Lee, I'm applying to five PhD programs in cognitive linguistics and I'd be grateful if you'd write a letter of recommendation on my behalf. You supervised my capstone on bilingual code-switching, which I believe makes you the strongest voice for my research potential. The earliest deadline is December 1. I'll send you a draft of my statement of purpose, a CV, and program details if you're able to help — and I'm happy to meet first if it would be useful.`,
+    whatChanged: [
+      'Explained why this professor specifically is the right choice, making the ask feel considered rather than mass-sent',
+      'Provided everything the professor needs to decide and write (materials, timeline, programs)',
+      'Framed the request around research identity rather than just a grade',
+    ],
+    toneExplanation: 'Friendly recommendation requests make the professor\'s job easy — the easier you make it to say yes, the better the letter you\'ll get.',
+    popularityScore: 80,
+    relatedSlugs: ['professor-email-extension-request', 'academic-grade-dispute', 'cover-letter-opening-paragraph', 'linkedin-recommendation-written'],
+    dateAdded: '2025-01-29',
+  },
+
+  // ─── PERSONAL ────────────────────────────────────────────────────────────────
+
+  {
+    slug: 'dating-app-bio-rewrite',
+    title: 'Dating App Bio Rewrite',
+    seoTitle: 'Dating App Bio Before & After Rewrite — TextGlow Examples',
+    seoDescription: 'See how a clichéd, boring dating app bio becomes a specific, personality-showing profile that gets matches. Full before/after.',
+    tone: 'Casual',
+    context: 'Dating App',
+    category: 'Personal',
+    problems: ['Too Formal', 'Weak Opening', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `Hi! I'm Tom, 28. I love hiking, good food, and spending time with friends and family. I'm looking for someone who values adventure and has a good sense of humor. I'm told I'm a good listener. Love to travel and try new things. Looking for something real.`,
+    after: `Currently debating whether the best hiking spot I've found is worth 3 hours of driving (yes). Works in environmental law by day, amateur bread baker by night — these two facts are not unrelated. Will always suggest the less obvious restaurant. Looking for someone who'd rather have a weird story to tell than a safe evening.`,
+    whatChanged: [
+      'Replaced generic hobby lists ("I love hiking, good food") with specific details that reveal actual personality',
+      'Let the humor and perspective show through word choice rather than claiming "good sense of humor"',
+      'Ended with a qualifier that signals what kind of partner fits, giving matches a reason to message',
+    ],
+    toneExplanation: 'Casual tone on dating apps works when it\'s specific — "casual" doesn\'t mean vague, it means you sound like a person, not a template.',
+    popularityScore: 94,
+    relatedSlugs: ['dating-app-opening-message', 'personal-apology-message', 'linkedin-post-thought-leadership', 'cover-letter-opening-paragraph'],
+    dateAdded: '2025-01-30',
+  },
+
+  {
+    slug: 'dating-app-opening-message',
+    title: 'Dating App Opening Message',
+    seoTitle: 'Dating App Opening Message — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a boring first message on a dating app becomes a specific, conversation-starting opener. Full before/after.',
+    tone: 'Friendly',
+    context: 'Dating App',
+    category: 'Personal',
+    problems: ['Weak Opening', 'Too Formal'],
+    difficulty: 'Quick Fix',
+    before: `Hey! How's your week going? I saw your profile and thought you seemed really cool. We seem to have a lot in common! Would love to chat sometime.`,
+    after: `Ok I have to ask — the photo with the handmade ceramics, is that your work or someone else's studio? Because the glaze on that bowl in the background is incredible and now I can't think about anything else.`,
+    whatChanged: [
+      'Referenced a specific detail from the profile instead of a generic "you seem cool"',
+      'Asked a single, focused question that is genuinely easy to answer and opens a real thread',
+      'Showed genuine curiosity about something they created — the highest form of flattery on a dating app',
+    ],
+    toneExplanation: 'Friendly openers work when they feel like the start of a real conversation — not a mass copy-paste intro.',
+    popularityScore: 89,
+    relatedSlugs: ['dating-app-bio-rewrite', 'linkedin-connection-request-job-seeker', 'personal-apology-message', 'slack-feedback-message'],
+    dateAdded: '2025-01-30',
+  },
+
+  {
+    slug: 'personal-apology-message',
+    title: 'Personal Apology Message',
+    seoTitle: 'How to Write a Personal Apology — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a self-focused personal apology becomes one that actually lands and repairs the relationship. Full before/after.',
+    tone: 'Empathetic',
+    context: 'Personal',
+    category: 'Personal',
+    problems: ['Defensive Tone', 'Overly Apologetic'],
+    difficulty: 'Tone Shift',
+    before: `I'm really sorry if I upset you the other night. I didn't mean to come across that way and I was just stressed about a lot of things. I feel really bad about it. I hope you know that's not who I am. Can we talk?`,
+    after: `I'm sorry for what I said on Friday. It was dismissive and you didn't deserve that, regardless of what I was dealing with. I'd like to understand how it landed for you — if you're open to talking, I'm here.`,
+    whatChanged: [
+      'Removed the "if" qualifier ("sorry if I upset you") which makes apologies conditional and hollow',
+      'Named the specific behavior ("dismissive") instead of vague "coming across that way"',
+      'Removed the self-defense about stress, which redirects attention away from the other person',
+    ],
+    toneExplanation: 'Empathetic apologies name the impact, not just the intent — "I didn\'t mean to" is irrelevant when the damage is real.',
+    popularityScore: 86,
+    relatedSlugs: ['email-apology-professional', 'customer-support-complaint-response', 'dating-app-bio-rewrite', 'slack-feedback-message'],
+    dateAdded: '2025-01-31',
+  },
+
+  {
+    slug: 'complaint-letter-to-landlord',
+    title: 'Complaint Letter to Landlord',
+    seoTitle: 'Complaint Letter to Landlord — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a frustrated tenant complaint becomes a formal, documented, action-driving letter. Full before/after rewrite.',
+    tone: 'Formal',
+    context: 'Personal',
+    category: 'Personal',
+    problems: ['Passive-Aggressive', 'Unclear'],
+    difficulty: 'Tone Shift',
+    before: `Hi, I'm writing about the heating issue again. As I mentioned multiple times, the heat has not been working properly and it's been really cold. This is unacceptable and I need this to be fixed. I've been patient but this has been going on too long now.`,
+    after: `Dear Mr. Reyes, I am writing formally to document the ongoing heating failure at Unit 4B, which has been unresolved since November 12. I have reported this issue three times (November 12, November 19, November 28) and have received no repair confirmation. Per Section 8.2 of my lease and California Civil Code 1941.1, landlords are required to maintain working heating systems. I request written confirmation of a repair date within 5 business days. If I do not receive this by December 10, I will contact the city housing department and pursue rent withholding remedies as permitted by law.`,
+    whatChanged: [
+      'Documented the timeline of reports (dates) to establish a paper trail and a pattern of negligence',
+      'Cited the specific legal codes that the landlord is violating — showing the tenant knows their rights',
+      'Set a concrete deadline with a specific consequence instead of vague frustration',
+    ],
+    toneExplanation: 'Formal tone in tenant complaints creates legal leverage — documented, professional letters are taken more seriously than emotional ones.',
+    popularityScore: 77,
+    relatedSlugs: ['email-apology-professional', 'customer-escalation-response', 'academic-grade-dispute', 'management-performance-feedback'],
+    dateAdded: '2025-01-31',
+  },
+
+  // ─── NON-NATIVE SPEAKER ──────────────────────────────────────────────────────
+
+  {
+    slug: 'esl-professional-email-fix',
+    title: 'Professional Email (ESL Fix)',
+    seoTitle: 'Professional Email Grammar Fix — Before & After Rewrite | TextGlow',
+    seoDescription: 'See common ESL writing patterns corrected in a professional email — grammar, tone, and clarity. Full before/after.',
+    tone: 'Professional',
+    context: 'Gmail',
+    category: 'Non-Native Speaker',
+    problems: ['Grammar Issues', 'Too Formal'],
+    difficulty: 'Quick Fix',
+    before: `Dear Sir or Madam, I am writing this email for to inquiry about the status of my application which I have submitted last month on the 15th. I have not yet received any reply from your side. I hope you will kindly consider to give me an update about the same. I am looking forward for your positive response.`,
+    after: `Hello, I'm following up on my application submitted on October 15. I haven't received a confirmation or update yet — could you let me know where things stand? I'm happy to provide any additional information you might need.`,
+    whatChanged: [
+      'Fixed grammatical patterns common in ESL writing ("for to inquiry", "from your side", "about the same")',
+      'Replaced stiff formal phrases ("Dear Sir or Madam", "your positive response") with natural professional language',
+      'Shortened significantly while preserving all the necessary information',
+    ],
+    toneExplanation: 'Professional tone for non-native speakers means natural and clear — excessive formality in English often reads as less professional, not more.',
+    popularityScore: 88,
+    relatedSlugs: ['esl-slack-message-fix', 'esl-linkedin-about-fix', 'professional-follow-up-email', 'professor-email-extension-request'],
+    dateAdded: '2025-02-01',
+  },
+
+  {
+    slug: 'esl-slack-message-fix',
+    title: 'Slack Message (ESL Fix)',
+    seoTitle: 'Slack Message Grammar & Tone Fix (ESL) — Before & After | TextGlow',
+    seoDescription: 'See common non-native English patterns corrected in a Slack message for professional settings. Full before/after rewrite.',
+    tone: 'Friendly',
+    context: 'Slack',
+    category: 'Non-Native Speaker',
+    problems: ['Grammar Issues', 'Too Formal'],
+    difficulty: 'Quick Fix',
+    before: `Hello team, kindly be informed that the meeting of tomorrow has been postponed to next week due to some unavoidable circumstances. Please do the needful and update your calendars accordingly. Inconvenience caused is regretted.`,
+    after: `Hey team — tomorrow's meeting is moved to next Wednesday, same time. Go ahead and update your calendars. Sorry for the late notice!`,
+    whatChanged: [
+      'Replaced formal bureaucratic phrasing ("kindly be informed", "do the needful", "inconvenience is regretted") with natural Slack-appropriate language',
+      'Cut the message by 60% while communicating the same information',
+      'Added a natural human apology ("sorry for the late notice") instead of the passive "inconvenience is regretted"',
+    ],
+    toneExplanation: 'Friendly Slack tone means writing how a colleague actually talks — overly formal Slack messages create distance in team culture.',
+    popularityScore: 83,
+    relatedSlugs: ['esl-professional-email-fix', 'esl-linkedin-about-fix', 'slack-channel-announcement', 'slack-meeting-announcement'],
+    dateAdded: '2025-02-01',
+  },
+
+  {
+    slug: 'esl-linkedin-about-fix',
+    title: 'LinkedIn About Section (ESL Fix)',
+    seoTitle: 'LinkedIn About Section Rewrite (ESL) — Before & After | TextGlow',
+    seoDescription: 'See how a grammar-heavy LinkedIn About section becomes fluent, natural, and compelling. Full before/after rewrite.',
+    tone: 'Confident',
+    context: 'LinkedIn',
+    category: 'Non-Native Speaker',
+    problems: ['Grammar Issues', 'Weak Opening'],
+    difficulty: 'Major Rewrite',
+    before: `I am a software engineer with 6 years of experience in developing of software applications. I have worked in many companies and I am very experienced in Java, Python and cloud technologies. I am a hardworking person who always give 100% and I enjoy to work in teams. I am seeking for new opportunities in the field of software engineering.`,
+    after: `Software engineer with 6 years building backend systems at scale — primarily in Java and Python, with deep experience in AWS and GCP. I've shipped infrastructure for products used by millions of users, and I find the most interesting problems at the boundary between performance and reliability. Open to senior engineering and tech lead roles.`,
+    whatChanged: [
+      'Fixed grammatical patterns ("developing of", "seeking for", "enjoy to work") to natural English',
+      'Replaced vague phrases ("very experienced", "hardworking", "give 100%") with specific technical details',
+      'Reframed as a statement of capability rather than a request for opportunity',
+    ],
+    toneExplanation: 'Confident LinkedIn profiles describe impact and expertise — they don\'t list personality traits or explain that the person works hard.',
+    popularityScore: 86,
+    relatedSlugs: ['esl-professional-email-fix', 'esl-slack-message-fix', 'linkedin-post-thought-leadership', 'cover-letter-opening-paragraph'],
+    dateAdded: '2025-02-01',
+  },
+
+  {
+    slug: 'esl-performance-review-self-assessment',
+    title: 'Performance Review Self-Assessment (ESL Fix)',
+    seoTitle: 'Performance Review Self-Assessment — ESL Rewrite Before & After | TextGlow',
+    seoDescription: 'See how a weak self-assessment with common ESL patterns becomes a confident, achievement-driven review. Full before/after.',
+    tone: 'Professional',
+    context: 'Management',
+    category: 'Non-Native Speaker',
+    problems: ['Grammar Issues', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `During this year I have done many contributions to the team. I have helped my colleagues many times and always try to finish work before deadline. I have improved my skills in many areas. I am looking forward to grow more and take more responsibilities in the upcoming year.`,
+    after: `This year I led the migration of our data pipeline from Redshift to Snowflake, cutting query costs by 22% and reducing average run time from 4 minutes to 40 seconds. I mentored two junior engineers through their first production deployments, both of whom shipped independently by Q3. In the coming year, I'd like to take on team lead responsibilities for a project area.`,
+    whatChanged: [
+      'Replaced vague contributions ("done many contributions") with specific, quantified achievements',
+      'Named the mentored engineers\' outcomes rather than just claiming to have "helped colleagues"',
+      'Changed "looking forward to grow" to a specific, professional growth goal',
+    ],
+    toneExplanation: 'Professional self-assessments in English use specific outcomes as evidence — claiming to be hardworking without proof is not persuasive.',
+    popularityScore: 79,
+    relatedSlugs: ['esl-professional-email-fix', 'cover-letter-experience-paragraph', 'management-performance-feedback', 'linkedin-post-thought-leadership'],
+    dateAdded: '2025-02-02',
+  },
+
+  // ─── ADDITIONAL ENTRIES (extending to 50+) ───────────────────────────────────
+
+  {
+    slug: 'salary-negotiation-email',
+    title: 'Salary Negotiation Email',
+    seoTitle: 'Salary Negotiation Email — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how an apologetic salary negotiation email becomes a confident, market-anchored counter-offer. Full before/after.',
+    tone: 'Confident',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Overly Apologetic', 'Weak Opening'],
+    difficulty: 'Major Rewrite',
+    before: `Hi, thank you so much for the offer! I'm really excited about this opportunity and I love everything about the role. I was wondering if there might be any possibility to discuss the salary slightly since based on my research it seems a bit below market. I completely understand if the budget is set and I really don't want to jeopardize the offer.`,
+    after: `Hi Meredith, thank you for the offer — I'm genuinely excited about this role and the team. Based on my research (Levels.fyi, Glassdoor, and two recent offers in this space), the market rate for this scope in San Francisco is $145–160K. I'd like to ask for $155K. I believe I'll deliver significant value quickly, and I'd prefer to start with alignment on that point. Can we discuss?`,
+    whatChanged: [
+      'Removed the apologetic framing ("I don\'t want to jeopardize") that signals willingness to accept less',
+      'Cited specific market data sources instead of vague "research" — this is harder to dismiss',
+      'Named a specific number anchored within a researched range, which is how negotiation actually works',
+    ],
+    toneExplanation: 'Confident salary negotiation treats the number conversation as professional, not personal — the employer expects it.',
+    popularityScore: 96,
+    relatedSlugs: ['cover-letter-opening-paragraph', 'professional-follow-up-email', 'management-performance-feedback', 'thank-you-email-after-interview'],
+    dateAdded: '2025-02-02',
+  },
+
+  {
+    slug: 'internal-promotion-request',
+    title: 'Internal Promotion Request',
+    seoTitle: 'How to Ask for a Promotion — Email Before & After | TextGlow',
+    seoDescription: 'See how a tentative promotion request becomes a business-case-driven conversation starter. Full before/after rewrite.',
+    tone: 'Direct',
+    context: 'Gmail',
+    category: 'Management',
+    problems: ['Overly Apologetic', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `Hi, I wanted to reach out about potentially discussing my role at some point when you have a moment. I've been thinking a lot about my career and was wondering if there might be an opportunity to explore possibly moving into a more senior position if the timing is right.`,
+    after: `Hi Linda, I'd like to formally discuss a promotion to Senior Analyst. Over the past 18 months I've led three projects, managed two interns, and expanded our reporting suite from 4 to 14 clients — the work that prompted the Arrowhead account renewal. I believe I'm performing at the senior level consistently, and I'd like us to make that official. Can we set up 30 minutes to talk?`,
+    whatChanged: [
+      'Stated the promotion ask directly in sentence one instead of hedging with "potentially" and "possibly"',
+      'Built a three-point business case (projects led, team managed, client growth) before asking',
+      'Referenced a specific outcome (account renewal) that links the candidate to business results',
+    ],
+    toneExplanation: 'Direct promotion requests treat the conversation as professional business — managers respond better to evidence than to tentative requests.',
+    popularityScore: 85,
+    relatedSlugs: ['salary-negotiation-email', 'management-performance-feedback', 'cover-letter-experience-paragraph', 'professional-follow-up-email'],
+    dateAdded: '2025-02-03',
+  },
+
+  {
+    slug: 'networking-email-reconnect',
+    title: 'Reconnecting with a Professional Contact',
+    seoTitle: 'How to Reconnect with a Professional Contact — Email Before & After | TextGlow',
+    seoDescription: 'See how an awkward reconnect email becomes a warm, genuine outreach that gets replies. Full before/after rewrite.',
+    tone: 'Friendly',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Weak Opening', 'Unclear'],
+    difficulty: 'Quick Fix',
+    before: `Hi, I hope you're doing well. I'm not sure if you remember me — we met at the Marketing Summit in Denver back in 2022. I've been meaning to reach out. I'm currently exploring some new opportunities and wanted to reconnect.`,
+    after: `Hi Priscilla — Dan Yuen from the Denver Marketing Summit in 2022, where we talked for an hour about attribution modeling. I've been following your work since you joined Helix and that post on incrementality testing last month was exactly what I needed. I'm exploring a pivot into growth analytics and your path is one I'd love to learn from. Would you be open to a brief call?`,
+    whatChanged: [
+      'Led with a specific shared memory ("attribution modeling for an hour") to confirm the connection immediately',
+      'Showed genuine ongoing awareness of their work (specific post) — not just "I saw you on LinkedIn"',
+      'Made the ask specific (growth analytics pivot) rather than vague "exploring opportunities"',
+    ],
+    toneExplanation: 'Friendly reconnects remind the other person of who you are without making it awkward — specificity does the work.',
+    popularityScore: 78,
+    relatedSlugs: ['linkedin-connection-request-job-seeker', 'cold-email-outreach', 'thank-you-email-after-interview', 'professional-follow-up-email'],
+    dateAdded: '2025-02-03',
+  },
+
+  {
+    slug: 'team-announcement-new-role',
+    title: 'Team Announcement — New Role or Join',
+    seoTitle: 'Team Introduction Announcement — Before & After | TextGlow',
+    seoDescription: 'See how a stiff new-hire announcement becomes an engaging, human introduction. Full before/after rewrite.',
+    tone: 'Enthusiastic',
+    context: 'Slack',
+    category: 'Slack/Teams',
+    problems: ['Too Formal', 'Weak Opening'],
+    difficulty: 'Quick Fix',
+    before: `Hello everyone, please join me in welcoming our new team member, Alex Kim. Alex will be joining us as a Senior Designer starting Monday. Alex has extensive experience in the field and we are very pleased to have them on board. Please make them feel welcome.`,
+    after: `Team, meet Alex Kim — joining us Monday as Senior Designer. Alex spent the last 4 years rebuilding the design system at Chord (you've probably seen it — they did the redesign everyone shared last year), and they're obsessed with accessibility-first design. We're really lucky they chose us over two other offers. Ask them about their sourdough starter. First round of intro coffees is on the team budget this week.`,
+    whatChanged: [
+      'Named a specific, recognizable past work to give Alex instant credibility and conversation starters',
+      'Added a personal detail (sourdough starter) that humanizes the introduction and invites colleagues to reach out',
+      'Noted competitive context ("two other offers") — signals the hire is valued and lets Alex start with social proof',
+    ],
+    toneExplanation: 'Enthusiastic team introductions set the new hire\'s social standing — a warm, specific intro is a gift that pays off in faster integration.',
+    popularityScore: 72,
+    relatedSlugs: ['slack-channel-announcement', 'management-delegation-message', 'linkedin-connection-request-job-seeker', 'management-project-update'],
+    dateAdded: '2025-02-04',
+  },
+
+  {
+    slug: 'out-of-office-message',
+    title: 'Out-of-Office Auto-Reply',
+    seoTitle: 'Out-of-Office Message Examples — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a generic out-of-office auto-reply becomes helpful, on-brand, and actually useful. Full before/after rewrite.',
+    tone: 'Friendly',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Too Formal', 'Missing CTA'],
+    difficulty: 'Quick Fix',
+    before: `Thank you for your email. I am currently out of the office and will return on January 8th. I will respond to your email upon my return. If this is urgent please contact someone else.`,
+    after: `Hey — I'm out until January 8 and checking email only once a day.\n\nIf it's urgent: contact Priya at priya@company.com (she's running point on everything time-sensitive).\n\nIf it can wait: I'll respond properly when I'm back. Enjoy the holidays.`,
+    whatChanged: [
+      'Named a specific person with their email for urgent matters — "contact someone else" is not useful',
+      'Acknowledged the most likely time of year context ("enjoy the holidays") to humanize the message',
+      'Set honest expectations ("checking once a day") rather than pretending complete unavailability',
+    ],
+    toneExplanation: 'Friendly out-of-office messages serve the sender — they answer the implied questions so people know what to do.',
+    popularityScore: 69,
+    relatedSlugs: ['meeting-request-email', 'slack-meeting-announcement', 'professional-follow-up-email', 'management-delegation-message'],
+    dateAdded: '2025-02-04',
+  },
+
+  {
+    slug: 'difficult-colleague-feedback',
+    title: 'Feedback to a Difficult Colleague',
+    seoTitle: 'How to Give Feedback to a Difficult Colleague — Before & After | TextGlow',
+    seoDescription: 'See how an emotional, avoidant colleague feedback message becomes direct, professional, and resolvable. Full before/after.',
+    tone: 'Direct',
+    context: 'Gmail',
+    category: 'Management',
+    problems: ['Passive-Aggressive', 'Unclear'],
+    difficulty: 'Major Rewrite',
+    before: `Hey, I've been meaning to bring this up for a while. I feel like sometimes in meetings you tend to kind of talk over people and it makes the environment feel a bit uncomfortable. I just wanted to mention it because I think it's something worth thinking about. I know you probably don't mean anything by it.`,
+    after: `Hey Mark, I want to raise something directly because I think it's fixable. In our last three sprint meetings, you've cut off Jess and Dani mid-sentence — I've noticed both of them stop contributing after it happens. I don't think it's intentional, but it's affecting team dynamics. Can we talk about it for 10 minutes this week?`,
+    whatChanged: [
+      'Named the specific behavior (cutting off), the specific people affected, and the impact (they stop contributing)',
+      'Removed the minimizing language ("kind of", "a bit", "I know you don\'t mean anything by it") that dilutes the message',
+      'Opened a resolution path (10-minute talk) instead of leaving the feedback to linger',
+    ],
+    toneExplanation: 'Direct peer feedback focuses on observable behavior and impact — it avoids judgment of character while making the problem clear.',
+    popularityScore: 82,
+    relatedSlugs: ['management-performance-feedback', 'slack-passive-aggressive-dm', 'slack-feedback-message', 'personal-apology-message'],
+    dateAdded: '2025-02-05',
+  },
+
+  {
+    slug: 'linkedin-post-job-announcement',
+    title: 'LinkedIn Job Announcement Post',
+    seoTitle: 'LinkedIn New Job Announcement — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a generic LinkedIn job announcement becomes an engaging post that tells your story. Full before/after rewrite.',
+    tone: 'Enthusiastic',
+    context: 'LinkedIn',
+    category: 'LinkedIn',
+    problems: ['Too Formal', 'Weak Opening'],
+    difficulty: 'Tone Shift',
+    before: `I am thrilled to announce that I have accepted a position as Head of Product at Nexova. This is an exciting new chapter in my career journey and I am grateful for this opportunity. I look forward to contributing to the team and continuing to grow professionally. Thank you to everyone who has supported me along the way.`,
+    after: `Starting Monday as Head of Product at Nexova.\n\nI spent the last six years building payments infrastructure that most people never think about but use every day. I want to apply that systems thinking to something people feel directly. Nexova is doing that — healthcare scheduling that actually works for patients, not just administrators.\n\nSix months ago this felt impossible. Grateful for everyone who helped me see otherwise. Let's build something useful.`,
+    whatChanged: [
+      'Led with what makes this role personally meaningful rather than just announcing the title',
+      'Told a brief, honest story (six years, six months ago) that makes the achievement feel earned',
+      'Ended with a forward-looking line that invites engagement instead of generic thanks',
+    ],
+    toneExplanation: 'Enthusiastic LinkedIn announcements work when they share a real reason — readers engage with stories, not titles.',
+    popularityScore: 81,
+    relatedSlugs: ['linkedin-post-thought-leadership', 'linkedin-connection-request-job-seeker', 'cover-letter-opening-paragraph', 'thank-you-email-after-interview'],
+    dateAdded: '2025-02-05',
+  },
+
+  {
+    slug: 'freelance-proposal-email',
+    title: 'Freelance Project Proposal',
+    seoTitle: 'Freelance Proposal Email — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a vague freelance proposal becomes a confident, scoped pitch that wins projects. Full before/after rewrite.',
+    tone: 'Confident',
+    context: 'Gmail',
+    category: 'Sales',
+    problems: ['Unclear', 'Missing CTA'],
+    difficulty: 'Major Rewrite',
+    before: `Hi, I saw your job posting and I think I'd be a great fit for this project. I have done similar work in the past and I am very skilled in the areas you are looking for. I would love to work with you on this and I'm confident I can deliver great results. Please let me know if you'd like to discuss further.`,
+    after: `Hi Nina, I've built 11 Shopify stores in the home goods space, two of which hit six-figure months within 90 days of launch. I noticed the gap in your current product photography — I have a retoucher I work with who could tighten that before launch. Scope and timeline: I can have the full site done in 3 weeks for $4,800, with a mid-point review built in. Want to see the portfolio before we talk?`,
+    whatChanged: [
+      'Replaced "I\'m very skilled" with a specific number (11 stores) and a proof point (six-figure months)',
+      'Identified a specific gap in their current setup — showing the person actually looked at their site',
+      'Included a scoped offer (timeline + price) immediately rather than asking for a call to discuss everything',
+    ],
+    toneExplanation: 'Confident freelance proposals lead with evidence and specific scope — they make the client\'s decision easy.',
+    popularityScore: 85,
+    relatedSlugs: ['sales-proposal-email', 'cold-email-outreach', 'sales-objection-response', 'linkedin-inmail-outreach'],
+    dateAdded: '2025-02-06',
+  },
+
+  {
+    slug: 'resignation-letter',
+    title: 'Resignation Letter',
+    seoTitle: 'Resignation Letter Example — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a clunky resignation letter becomes a graceful, relationship-preserving departure. Full before/after rewrite.',
+    tone: 'Professional',
+    context: 'Gmail',
+    category: 'Email',
+    problems: ['Unclear', 'Too Formal'],
+    difficulty: 'Tone Shift',
+    before: `Dear HR, I am writing this letter to inform you of my intention to resign from my position as Marketing Manager at XYZ Company, effective two weeks from today. I have decided to pursue other opportunities. I appreciate the opportunities provided to me during my tenure. I will do my best to assist with the transition.`,
+    after: `Hi Rachel, I'm writing to let you know I've decided to leave XYZ — my last day will be March 21, giving us two full weeks. This was a genuinely hard decision. The work on the Beacon launch is something I'm proud of, and I've learned more from this team than I expected when I joined. I'll do whatever makes the transition smoothest — documenting handoffs, training someone up, or staying an extra week if needed. Thank you for the opportunity.`,
+    whatChanged: [
+      'Personalized the letter to an actual person (Rachel) rather than "Dear HR"',
+      'Named a specific project to show the gratitude is genuine rather than boilerplate',
+      'Made the transition offer concrete and flexible instead of the vague "I will assist"',
+    ],
+    toneExplanation: 'Professional resignation letters burn no bridges — how you leave is remembered as long as how you performed.',
+    popularityScore: 74,
+    relatedSlugs: ['salary-negotiation-email', 'email-apology-professional', 'professional-follow-up-email', 'management-bad-news-delivery'],
+    dateAdded: '2025-02-06',
+  },
+
+  {
+    slug: 'sales-voicemail-script',
+    title: 'Sales Voicemail Script',
+    seoTitle: 'Sales Voicemail Script — Before & After Rewrite | TextGlow',
+    seoDescription: 'See how a rambling sales voicemail becomes a tight, callback-earning message. Full before/after rewrite.',
+    tone: 'Concise',
+    context: 'Gmail',
+    category: 'Sales',
+    problems: ['Too Long', 'Unclear'],
+    difficulty: 'Quick Fix',
+    before: `Hi this is James from TechForward, I wanted to reach out because I saw that your company has been growing a lot and I thought there might be some opportunities for us to work together on some things that could be helpful for your team. We do a lot of work in the software space and we've helped companies like yours with various challenges. Give me a call back if you'd like to hear more.`,
+    after: `Hi Claudette, James from TechForward — 30 seconds. You grew from 50 to 200 employees this year, and that\'s usually when DevOps costs spike 3x. We cut that in half for two companies your size last quarter. I'll email you a one-pager today. Call me back at 555-0199 if you want to hear the specifics.`,
+    whatChanged: [
+      'Signaled brevity upfront ("30 seconds") so the recipient keeps listening instead of deleting',
+      'Referenced a specific growth fact about their company — showing it is not a mass dial',
+      'Named a concrete proof point and offered tangible next step (one-pager today)',
+    ],
+    toneExplanation: 'Concise voicemails get returned because they respect the listener\'s time and give them a reason to respond before hanging up.',
+    popularityScore: 76,
+    relatedSlugs: ['cold-email-outreach', 'sales-proposal-email', 'proposal-follow-up-sales', 'sales-objection-response'],
+    dateAdded: '2025-02-07',
+  },
+
+];

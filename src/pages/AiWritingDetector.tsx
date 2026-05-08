@@ -1,0 +1,312 @@
+import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Chrome, ChevronDown, ChevronUp, AlertCircle, CheckCircle2, Info, Lightbulb } from 'lucide-react';
+import { Button } from '../components/ui/Button';
+import { analyzeAiWriting } from '../utils/aiDetector';
+import type { AiDetectorResult } from '../utils/aiDetector';
+
+const CHROME_URL = "https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf";
+
+const FAQItem = ({ q, a }: { q: string; a: string }) => {
+    const [open, setOpen] = useState(false);
+    return (
+        <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white mb-3">
+            <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between p-5 text-left hover:bg-slate-50 transition-colors">
+                <span className="font-semibold text-slate-900 pr-4">{q}</span>
+                {open ? <ChevronUp className="w-5 h-5 text-slate-400 flex-shrink-0" /> : <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />}
+            </button>
+            {open && <div className="px-5 pb-5"><p className="text-slate-600 leading-relaxed">{a}</p></div>}
+        </div>
+    );
+};
+
+export const AiWritingDetector = () => {
+    const [text, setText] = useState('');
+    const [result, setResult] = useState<AiDetectorResult | null>(null);
+    const [hoveredSentenceIndex, setHoveredSentenceIndex] = useState<number | null>(null);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (text.trim()) {
+                setResult(analyzeAiWriting(text));
+            } else {
+                setResult(null);
+            }
+        }, 300);
+        return () => clearTimeout(timer);
+    }, [text]);
+
+    const getScoreColorHex = (score: number) => {
+        if (score <= 20) return '#16a34a'; // green-600
+        if (score <= 40) return '#65a30d'; // lime-600
+        if (score <= 60) return '#d97706'; // amber-600
+        if (score <= 80) return '#ea580c'; // orange-600
+        return '#dc2626'; // red-600
+    };
+
+    const getScoreColorClass = (score: number) => {
+        if (score <= 20) return 'text-green-600';
+        if (score <= 40) return 'text-lime-600';
+        if (score <= 60) return 'text-amber-600';
+        if (score <= 80) return 'text-orange-600';
+        return 'text-red-600';
+    };
+
+    const getSentenceStyle = (aiScore: number, humanScore: number) => {
+        if (aiScore >= 3) return 'bg-red-100 text-red-900 border-b-2 border-red-300';
+        if (aiScore > 0) return 'bg-amber-100 text-amber-900 border-b-2 border-amber-300';
+        if (humanScore > 0) return 'bg-green-50 text-green-900 border-b-2 border-green-200';
+        return 'text-slate-700 hover:bg-slate-50'; // Neutral
+    };
+
+    const renderGauge = (score: number) => {
+        const radius = 60;
+        const circumference = Math.PI * radius;
+        const strokeDashoffset = circumference - (score / 100) * circumference;
+
+        return (
+            <div className="relative w-48 h-24 overflow-hidden mx-auto">
+                <svg className="w-full h-full" viewBox="0 0 140 70">
+                    <path d="M 10 70 A 60 60 0 0 1 130 70" fill="none" stroke="#e2e8f0" strokeWidth="12" strokeLinecap="round" />
+                    <path 
+                        d="M 10 70 A 60 60 0 0 1 130 70" 
+                        fill="none" 
+                        stroke={getScoreColorHex(score)} 
+                        strokeWidth="12" 
+                        strokeLinecap="round" 
+                        strokeDasharray={circumference} 
+                        strokeDashoffset={strokeDashoffset} 
+                        className="transition-all duration-1000 ease-out" 
+                    />
+                </svg>
+                <div className="absolute bottom-0 left-0 w-full text-center">
+                    <span className={`text-4xl font-black ${getScoreColorClass(score)}`}>{score}</span>
+                    <span className="text-slate-400 font-bold ml-1">/100</span>
+                </div>
+            </div>
+        );
+    };
+
+    return (
+        <div className="bg-slate-50 min-h-screen">
+            <Helmet>
+                <title>Free AI Writing Detector — Does Your Text Sound Like ChatGPT? | TextGlow</title>
+                <meta name="description" content="Paste your text and find out if it sounds AI-generated. Get a 0-100 AI score with specific phrases flagged and human alternatives suggested. Free, instant, private." />
+                <link rel="canonical" href="https://textglow.io/tools/ai-writing-detector" />
+            </Helmet>
+
+            <section className="pt-20 pb-12 bg-white border-b border-slate-200">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-sm font-medium mb-6">
+                            <span>AI Writing Detector</span>
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Does this sound like AI?</h1>
+                        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+                            Paste your text to get an AI score from 0-100. See exactly which phrases give it away and how to fix them.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-12">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto">
+                        
+                        {/* Editor Section */}
+                        <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden mb-8">
+                            <div className="p-4 bg-slate-50 border-b border-slate-200 flex justify-between items-center">
+                                <span className="text-sm font-bold text-slate-400 uppercase tracking-wider">Paste your text here</span>
+                                {result && (
+                                    <span className={`text-xs font-bold px-2 py-1 rounded-md ${result.hasEnoughText ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                                        {result.wordCount} words
+                                    </span>
+                                )}
+                            </div>
+                            <textarea
+                                value={text}
+                                onChange={(e) => setText(e.target.value)}
+                                placeholder="e.g., In today's fast-paced digital landscape, it's paramount to seamlessly integrate robust solutions..."
+                                className="w-full p-6 text-lg text-slate-700 focus:outline-none resize-none h-40 border-none"
+                            />
+                        </div>
+
+                        {result && (
+                            <>
+                                {!result.hasEnoughText && result.wordCount > 0 && (
+                                    <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-2xl flex items-start text-red-800">
+                                        <AlertCircle className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-bold">Not enough text for reliable detection</h4>
+                                            <p className="text-sm mt-1 opacity-90">Please paste at least 50 words. Short snippets don't contain enough stylistic patterns to differentiate humans from AI.</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {/* Score & Breakdown Grid */}
+                                <div className="grid lg:grid-cols-3 gap-8 mb-12">
+                                    
+                                    {/* Left Column: Gauge & Tips */}
+                                    <div className="space-y-8">
+                                        {/* Score Card */}
+                                        <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 text-center">
+                                            <div className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-6">AI Score</div>
+                                            {renderGauge(result.overallScore)}
+                                            <div className="mt-6">
+                                                <h3 className={`text-2xl font-bold mb-2 ${getScoreColorClass(result.overallScore)}`}>{result.scoreLabel}</h3>
+                                                <p className="text-slate-600 font-medium">{result.scoreDescription}</p>
+                                            </div>
+                                        </div>
+
+                                        {/* Tips Card */}
+                                        <div className="bg-brand-50 rounded-3xl border border-brand-100 p-6">
+                                            <h3 className="text-lg font-bold text-brand-900 flex items-center mb-4">
+                                                <Lightbulb className="w-5 h-5 mr-2 text-brand-500" /> Make it sound human
+                                            </h3>
+                                            <ul className="space-y-3 text-brand-800 text-sm">
+                                                <li className="flex items-start">
+                                                    <span className="text-brand-500 mr-2 mt-0.5">•</span>
+                                                    <span>Mix up your sentence lengths — AI tends to write uniformly medium sentences.</span>
+                                                </li>
+                                                <li className="flex items-start">
+                                                    <span className="text-brand-500 mr-2 mt-0.5">•</span>
+                                                    <span>Add a personal anecdote or specific opinion — AI never has those.</span>
+                                                </li>
+                                                <li className="flex items-start">
+                                                    <span className="text-brand-500 mr-2 mt-0.5">•</span>
+                                                    <span>Use contractions ("don't" instead of "do not") and start sentences with "And" or "But".</span>
+                                                </li>
+                                                <li className="flex items-start">
+                                                    <span className="text-brand-500 mr-2 mt-0.5">•</span>
+                                                    <span>Cut generic transition words like "Moreover" and "Furthermore".</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {/* Right Column: Sentence Breakdown & Flagged Phrases */}
+                                    <div className="lg:col-span-2 space-y-8">
+                                        
+                                        {/* Sentence Breakdown */}
+                                        <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col h-[400px]">
+                                            <div className="p-4 border-b border-slate-100 bg-slate-50 flex items-center justify-between">
+                                                <span className="text-sm font-bold text-slate-700">Sentence Analysis</span>
+                                                <div className="flex space-x-3 text-xs font-medium">
+                                                    <span className="flex items-center"><span className="w-2 h-2 rounded-full bg-red-400 mr-1"></span> AI</span>
+                                                    <span className="flex items-center"><span className="w-2 h-2 rounded-full bg-amber-400 mr-1"></span> Mixed</span>
+                                                    <span className="flex items-center"><span className="w-2 h-2 rounded-full bg-green-400 mr-1"></span> Human</span>
+                                                </div>
+                                            </div>
+                                            <div className="p-6 overflow-y-auto flex-grow text-lg leading-relaxed font-serif">
+                                                {result.sentences.map((s, i) => (
+                                                    <span 
+                                                        key={i} 
+                                                        className={`transition-colors cursor-pointer rounded px-1 py-0.5 mr-1 ${getSentenceStyle(s.aiScore, s.humanScore)}`}
+                                                        onMouseEnter={() => setHoveredSentenceIndex(i)}
+                                                        onMouseLeave={() => setHoveredSentenceIndex(null)}
+                                                    >
+                                                        {s.text}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            
+                                            {/* Hover info panel */}
+                                            {hoveredSentenceIndex !== null && result.sentences[hoveredSentenceIndex].matches.length > 0 && (
+                                                <div className="p-4 bg-slate-800 text-white border-t border-slate-700 animate-in fade-in slide-in-from-bottom-2">
+                                                    <div className="font-bold text-xs uppercase tracking-wider text-slate-400 mb-2">Detected in this sentence:</div>
+                                                    <div className="space-y-2 max-h-32 overflow-y-auto">
+                                                        {result.sentences[hoveredSentenceIndex].matches.map((m, idx) => (
+                                                            <div key={idx} className="flex items-start">
+                                                                {m.isAiSignal ? (
+                                                                    <AlertCircle className="w-4 h-4 text-red-400 mr-2 mt-0.5 flex-shrink-0" />
+                                                                ) : (
+                                                                    <CheckCircle2 className="w-4 h-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" />
+                                                                )}
+                                                                <div>
+                                                                    <span className="font-bold">"{m.text}"</span>: <span className="text-slate-300 text-sm">{m.reason}</span>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {/* Flagged Phrases */}
+                                        {result.flaggedPhrases.length > 0 && (
+                                            <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-6">
+                                                <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Flagged AI Phrases</h3>
+                                                <div className="space-y-3">
+                                                    {result.flaggedPhrases.map((phrase, i) => (
+                                                        <div key={i} className="flex items-start p-3 bg-red-50 rounded-xl border border-red-100">
+                                                            <Info className="w-5 h-5 text-red-400 mr-3 flex-shrink-0 mt-0.5" />
+                                                            <div>
+                                                                <div className="font-bold text-red-900 mb-1">"{phrase.text}"</div>
+                                                                <p className="text-sm text-red-700 mb-1">{phrase.reason}</p>
+                                                                {phrase.alternative && (
+                                                                    <p className="text-xs font-bold text-red-600 bg-red-100 inline-block px-2 py-1 rounded">Try instead: {phrase.alternative}</p>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
+                                    </div>
+                                </div>
+                            </>
+                        )}
+
+                        {/* CTA Banner */}
+                        <section className="rounded-3xl py-12 bg-slate-900 text-center mb-16 overflow-hidden relative">
+                            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-400 via-slate-900 to-slate-900"></div>
+                            <div className="container mx-auto px-4 max-w-4xl relative z-10">
+                                <h2 className="text-3xl font-bold text-white mb-4">Sound too much like AI?</h2>
+                                <p className="text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto">
+                                    TextGlow rewrites your text with real human tones — Professional, Friendly, Confident, and 7 more. Your voice, not a robot's.
+                                </p>
+                                <Button href={CHROME_URL} variant="pro" size="lg" className="px-8 py-4 text-lg">
+                                    <Chrome className="w-6 h-6 mr-3" /> Install TextGlow — Free
+                                </Button>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* SEO Content / FAQ */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4 max-w-3xl">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
+                    
+                    <FAQItem 
+                        q="How does this detect AI writing?" 
+                        a="It analyzes vocabulary, phrase patterns, sentence structure, and stylistic signals that are statistically more common in AI-generated text than human writing." 
+                    />
+                    <FAQItem 
+                        q="Is this 100% accurate?" 
+                        a="No AI detection tool is 100% accurate — including paid ones. This tool identifies patterns commonly associated with AI writing, but a skilled human editor can produce similar patterns, and a well-prompted AI can avoid them. Use it as a guide, not a verdict." 
+                    />
+                    <FAQItem 
+                        q="Which AI models does it detect?" 
+                        a="It's tuned for ChatGPT and Claude output patterns, but many signals (formulaic structure, overused transitions, lack of personality) apply to most large language models." 
+                    />
+                    <FAQItem 
+                        q="Can I use this to check my students' work?" 
+                        a="You can use it as a directional signal, but we strongly recommend against using any AI detector as the sole basis for academic accusations. False positives happen." 
+                    />
+                    <FAQItem 
+                        q="How do I make my writing sound less like AI?" 
+                        a="Use contractions, add personal examples, vary your sentence length, cut transition words like 'Moreover' and 'Furthermore,' and include specific opinions or anecdotes that only you could know." 
+                    />
+                    <FAQItem 
+                        q="Is my text stored?" 
+                        a="No. Everything runs in your browser. Nothing is sent to any server." 
+                    />
+                </div>
+            </section>
+        </div>
+    );
+};

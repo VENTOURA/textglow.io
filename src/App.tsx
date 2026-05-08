@@ -21,6 +21,15 @@ import { EmailRewriter } from './pages/EmailRewriter';
 import { FormalityChecker } from './pages/FormalityChecker';
 import { LinkedinPostPreview } from './pages/LinkedinPostPreview';
 import { ColdEmailGenerator } from './pages/ColdEmailGenerator';
+import { JargonTranslator } from './pages/JargonTranslator';
+import { AiWritingDetector } from './pages/AiWritingDetector';
+import { PassiveAggressiveChecker } from './pages/PassiveAggressiveChecker';
+import { GenzTranslator } from './pages/GenzTranslator';
+import { ExamplesGallery } from './pages/tools/ExamplesGallery';
+import { ExampleDetail } from './pages/tools/ExampleDetail';
+import { WritingQuiz } from './pages/tools/WritingQuiz';
+import { SubjectLineScorer } from './pages/tools/SubjectLineScorer';
+import { OutOfOffice } from './pages/tools/OutOfOffice';
 import { Tools } from './pages/Tools';
 
 function App() {
@@ -50,6 +59,15 @@ function App() {
             <Route path="/tools/formality-checker" element={<FormalityChecker />} />
             <Route path="/tools/linkedin-post-preview" element={<LinkedinPostPreview />} />
             <Route path="/tools/cold-email-generator" element={<ColdEmailGenerator />} />
+            <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
+            <Route path="/tools/ai-writing-detector" element={<AiWritingDetector />} />
+            <Route path="/tools/passive-aggressive-checker" element={<PassiveAggressiveChecker />} />
+            <Route path="/tools/genz-translator" element={<GenzTranslator />} />
+            <Route path="/tools/writing-quiz" element={<WritingQuiz />} />
+            <Route path="/tools/subject-line-scorer" element={<SubjectLineScorer />} />
+            <Route path="/tools/out-of-office" element={<OutOfOffice />} />
+            <Route path="/tools/examples" element={<ExamplesGallery />} />
+            <Route path="/tools/examples/:slug" element={<ExampleDetail />} />
           </Routes>
         </Layout>
       </Router>

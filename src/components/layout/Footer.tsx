@@ -24,6 +24,15 @@ export const Footer = () => {
                             <li><Link to="/slack" className="text-sm text-slate-600 hover:text-slate-900">For Slack</Link></li>
                             <li><Link to="/tinder" className="text-sm text-slate-600 hover:text-slate-900">For Dating Apps</Link></li>
                             <li><Link to="/translate" className="text-sm text-slate-600 hover:text-slate-900">For Translation</Link></li>
+                            <li><Link to="/customer-support" className="text-sm text-slate-600 hover:text-slate-900">Customer Support</Link></li>
+                            <li><Link to="/sales" className="text-sm text-slate-600 hover:text-slate-900">Sales & Outreach</Link></li>
+                            <li><Link to="/job-applications" className="text-sm text-slate-600 hover:text-slate-900">Job Applications</Link></li>
+                            <li><Link to="/managers" className="text-sm text-slate-600 hover:text-slate-900">For Managers</Link></li>
+                            <li><Link to="/freelancers" className="text-sm text-slate-600 hover:text-slate-900">For Freelancers</Link></li>
+                            <li><Link to="/academic" className="text-sm text-slate-600 hover:text-slate-900">For Academic</Link></li>
+                            <li><Link to="/hr" className="text-sm text-slate-600 hover:text-slate-900">For HR & Recruiting</Link></li>
+                            <li><Link to="/customer-success" className="text-sm text-slate-600 hover:text-slate-900">Customer Success</Link></li>
+                            <li><Link to="/remote-teams" className="text-sm text-slate-600 hover:text-slate-900">Remote Teams</Link></li>
                         </ul>
                     </div>
 

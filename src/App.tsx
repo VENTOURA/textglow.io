@@ -30,6 +30,15 @@ import { ExampleDetail } from './pages/tools/ExampleDetail';
 import { WritingQuiz } from './pages/tools/WritingQuiz';
 import { SubjectLineScorer } from './pages/tools/SubjectLineScorer';
 import { OutOfOffice } from './pages/tools/OutOfOffice';
+import { CustomerSupport } from './pages/use-cases/CustomerSupport';
+import { Sales } from './pages/use-cases/Sales';
+import { JobApplications } from './pages/use-cases/JobApplications';
+import { Managers } from './pages/use-cases/Managers';
+import { Freelancers } from './pages/use-cases/Freelancers';
+import { Academic } from './pages/use-cases/Academic';
+import { HR } from './pages/use-cases/HR';
+import { CustomerSuccess } from './pages/use-cases/CustomerSuccess';
+import { RemoteTeams } from './pages/use-cases/RemoteTeams';
 import { Tools } from './pages/Tools';
 
 function App() {
@@ -66,6 +75,15 @@ function App() {
             <Route path="/tools/writing-quiz" element={<WritingQuiz />} />
             <Route path="/tools/subject-line-scorer" element={<SubjectLineScorer />} />
             <Route path="/tools/out-of-office" element={<OutOfOffice />} />
+            <Route path="/customer-support" element={<CustomerSupport />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/job-applications" element={<JobApplications />} />
+            <Route path="/managers" element={<Managers />} />
+            <Route path="/freelancers" element={<Freelancers />} />
+            <Route path="/academic" element={<Academic />} />
+            <Route path="/hr" element={<HR />} />
+            <Route path="/customer-success" element={<CustomerSuccess />} />
+            <Route path="/remote-teams" element={<RemoteTeams />} />
             <Route path="/tools/examples" element={<ExamplesGallery />} />
             <Route path="/tools/examples/:slug" element={<ExampleDetail />} />
           </Routes>

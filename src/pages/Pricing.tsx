@@ -59,9 +59,9 @@ export const Pricing = () => {
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">What's One-Click Polish?</h2>
                             <div className="prose prose-slate text-lg text-slate-600">
                                 <p>With the free plan, you click the ✨ icon and choose from 10 tones — Professional, Friendly, Confident, and more. It takes 2 clicks and about 3 seconds.</p>
-                                <p>With One-Click Polish, TextGlow <strong>learns which tone works best in each context</strong>. Writing an email in Gmail? It defaults to Professional. Replying on Slack? Friendly. Posting on LinkedIn? Confident.</p>
-                                <p>One click. Perfect tone. No menu. No thinking.</p>
-                                <p>It's the difference between choosing a gear and having automatic transmission. Both get you there — but one lets you just drive.</p>
+                                <p>With One-Click Polish, you <strong>set your favorite default tone</strong>. Then, simply click the ✨ icon and TextGlow instantly polishes your text using your preferred tone.</p>
+                                <p>One click. Perfect tone. No menu. No waiting.</p>
+                                <p>When you're writing dozens of messages a day, skipping the menu every time saves you valuable focus and keeps you in your flow.</p>
                             </div>
                         </div>
                         <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200">

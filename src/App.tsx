@@ -17,6 +17,10 @@ import { BlogPost } from './pages/BlogPost';
 import { Offer } from './pages/Offer';
 import { EmailToneAnalyzer } from './pages/EmailToneAnalyzer';
 import { WordCounter } from './pages/WordCounter';
+import { EmailRewriter } from './pages/EmailRewriter';
+import { FormalityChecker } from './pages/FormalityChecker';
+import { LinkedinPostPreview } from './pages/LinkedinPostPreview';
+import { ColdEmailGenerator } from './pages/ColdEmailGenerator';
 import { Tools } from './pages/Tools';
 
 function App() {
@@ -42,6 +46,10 @@ function App() {
             <Route path="/tools" element={<Tools />} />
             <Route path="/tools/email-tone-analyzer" element={<EmailToneAnalyzer />} />
             <Route path="/tools/word-counter" element={<WordCounter />} />
+            <Route path="/tools/email-rewriter" element={<EmailRewriter />} />
+            <Route path="/tools/formality-checker" element={<FormalityChecker />} />
+            <Route path="/tools/linkedin-post-preview" element={<LinkedinPostPreview />} />
+            <Route path="/tools/cold-email-generator" element={<ColdEmailGenerator />} />
           </Routes>
         </Layout>
       </Router>

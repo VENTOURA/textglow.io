@@ -4,8 +4,12 @@ import { Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const tools = [
+  { title: 'Email Rewriter (Live Demo)', description: 'Paste your email, pick from 10 tones, and see it rewritten instantly using the TextGlow AI engine.', icon: '✨', href: '/tools/email-rewriter', color: 'from-brand-500 to-indigo-500' },
   { title: 'Email Tone Analyzer', description: 'Paste your email and instantly see its tone breakdown — passive-aggressive, apologetic, too formal, or just right.', icon: '🎭', href: '/tools/email-tone-analyzer', color: 'from-orange-500 to-red-500' },
   { title: 'Word Counter & Readability Checker', description: 'Count words, characters, sentences. Check readability score, grade level, and platform character limits — all in real time.', icon: '📊', href: '/tools/word-counter', color: 'from-cyan-500 to-blue-500' },
+  { title: 'Formality Level Checker', description: 'Paste your text. See if it is too formal, too casual, or just right — with specific phrases flagged and suggestions to adjust.', icon: '⚖️', href: '/tools/formality-checker', color: 'from-purple-500 to-fuchsia-500' },
+  { title: 'LinkedIn Post Preview & Scorer', description: 'Preview your LinkedIn post exactly as it will appear on desktop and mobile. Get scored on hook strength, length, readability, and formatting.', icon: '💼', href: '/tools/linkedin-post-preview', color: 'from-blue-600 to-cyan-500' },
+  { title: 'Cold Email Generator', description: 'Fill in your details. Get 3 ready-to-send cold emails in Professional, Persuasive, and Friendly tones — instantly.', icon: '✉️', href: '/tools/cold-email-generator', color: 'from-emerald-500 to-teal-500' },
 ];
 
 export const Tools = () => {

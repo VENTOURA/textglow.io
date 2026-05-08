@@ -32,6 +32,10 @@ export const Footer = () => {
                         <ul className="space-y-2">
                             <li><Link to="/tools/email-tone-analyzer" className="text-sm text-slate-600 hover:text-slate-900">Email Tone Analyzer</Link></li>
                             <li><Link to="/tools/word-counter" className="text-sm text-slate-600 hover:text-slate-900">Word Counter</Link></li>
+                            <li><Link to="/tools/email-rewriter" className="text-sm text-slate-600 hover:text-slate-900">Email Rewriter</Link></li>
+                            <li><Link to="/tools/formality-checker" className="text-sm text-slate-600 hover:text-slate-900">Formality Checker</Link></li>
+                            <li><Link to="/tools/linkedin-post-preview" className="text-sm text-slate-600 hover:text-slate-900">LinkedIn Post Preview</Link></li>
+                            <li><Link to="/tools/cold-email-generator" className="text-sm text-slate-600 hover:text-slate-900">Cold Email Generator</Link></li>
                         </ul>
                     </div>
 

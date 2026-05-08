@@ -2,21 +2,21 @@ import { DemoCard } from './DemoCard';
 
 const demos = [
     {
-        originalText: "john, iam sick today, can we do the meeting tomorrrow, cant today. thankyou",
-        polishedText: "Dear John,\n\nI am unwell today and would like to reschedule our meeting for tomorrow. I appreciate your understanding.\n\nThank you.",
+        originalText: "hey john, im sick today, can we reschedule the meeting? sorry about this",
+        polishedText: "Hi John, I'm feeling under the weather today and won't be able to make our meeting. Could we reschedule for tomorrow or later this week? Apologies for the short notice — happy to work around your availability.",
         tone: "Professional",
         delay: 0
     },
     {
-        originalText: "john, iam sick today, can we do the meeting tomorrrow, cant today. thankyou in french languge",
-        polishedText: "John, je suis malade aujourd'hui, peut-on faire la réunion demain ? Je ne peux pas aujourd'hui. Merci beaucoup ! (Et si tu as un remède miracle, je suis preneur !)",
-        tone: "Funny",
+        originalText: "hey john, im sick today, can we reschedule the meeting? sorry about this",
+        polishedText: "Hey John! I'm not feeling great today — think I need to sit this one out. Any chance we can push the meeting to tomorrow? Sorry to shuffle things around! 😊",
+        tone: "Friendly",
         delay: 2000
     },
     {
-        originalText: "john, iam sick today, can we do the meeting tomorrrow, cant today. thankyou",
-        polishedText: "Hey John, I'm feeling a bit under the weather today. How about we reschedule our meeting for tomorrow? I promise I'll be in much better shape to help out then! Thanks a bunch! 😊",
-        tone: "Flirty",
+        originalText: "TextGlow works in French, Spanish, German, and 50+ languages",
+        polishedText: "John, je suis malade aujourd'hui, peut-on faire la réunion demain ? Je ne peux pas aujourd'hui. Merci beaucoup ! (Et si tu as un remède miracle, je suis preneur !)",
+        tone: "Funny (French)",
         delay: 4000
     }
 ];

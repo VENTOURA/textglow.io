@@ -17,9 +17,9 @@ export const PricingSection = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Simple, Transparent Pricing</h2>
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Better Writing Shouldn't Cost a Fortune</h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-                        Choose the plan that fits your writing needs. No hidden fees.
+                        Start free. Upgrade when you can't live without it. Cancel anytime.
                     </p>
 
                     {/* Billing Toggle */}
@@ -45,15 +45,16 @@ export const PricingSection = () => {
                 <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <PricingCard
                         title="Free"
-                        subtitle="Perfect for getting started"
+                        subtitle="Try it — no strings attached"
                         price="$0"
                         period="month"
                         features={[
                             "10 polishes per day",
-                            "No API key required",
-                            "Up to 800 characters per polish",
                             "All 10 tones included",
-                            "Works on all supported sites"
+                            "Works inside Gmail, Slack, LinkedIn",
+                            "Up to 800 characters per polish",
+                            "No account required — install and go",
+                            "Privacy-first — text is never stored"
                         ]}
                         buttonText="Install Free"
                         buttonLink="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
@@ -62,15 +63,18 @@ export const PricingSection = () => {
                     <PricingCard
                         isPro={true}
                         title="Pro"
-                        subtitle="For daily writers"
-                        price={billingCycle === 'monthly' ? '$4.99' : '$39'}
-                        period={billingCycle === 'monthly' ? 'month' : 'year'}
+                        subtitle="For professionals who write for a living"
+                        price={billingCycle === 'monthly' ? '$4.99' : '$3.25'}
+                        originalPrice={billingCycle === 'yearly' ? '$4.99' : undefined}
+                        period="month"
+                        yearlyNote={billingCycle === 'yearly' ? "Billed $39/year · Save $20.88" : undefined}
                         features={[
-                            "One-Click Polish (Exclusive)",
+                            "⚡ One-Click Polish (Exclusive)",
                             "150 polishes per day",
                             "Up to 3,000 characters per polish",
-                            "Faster, priority AI responses",
-                            "Early access to new features"
+                            "Priority AI — responses in under 1s",
+                            "Early access to new features",
+                            "Support the indie developer ❤️"
                         ]}
                         buttonText="Upgrade to Pro"
                         buttonLink={billingCycle === 'monthly' ? monthlyLink : yearlyLink}
@@ -82,4 +86,3 @@ export const PricingSection = () => {
         </section>
     );
 };
-

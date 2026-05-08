@@ -18,17 +18,13 @@ export const Navbar = () => {
             <div className="bg-gradient-to-r from-brand-600 via-purple-600 to-indigo-600 text-white text-center py-3 px-4 shadow-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 relative z-10 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                 <div className="flex items-center gap-2 relative z-20">
-                    <span className="text-2xl animate-bounce drop-shadow-md">🎁</span>
+                    <span className="text-2xl animate-bounce drop-shadow-md">🚀</span>
                     <span className="text-sm sm:text-base font-bold tracking-wide text-shadow-sm flex items-center flex-wrap justify-center gap-1">
-                        EARLY BIRD LAUNCH: First 20 yearly subscribers get $1,030 in 
-                        <span className="bg-amber-400 text-amber-950 px-2 py-0.5 rounded text-xs sm:text-sm font-extrabold shadow-sm uppercase tracking-wider mx-1 border border-amber-300">
-                            Anthropic Claude
-                        </span>
-                        API Credits!
+                        LAUNCH SPECIAL: Get Pro for $39/year — that's $0.11/day for better writing everywhere.
                     </span>
                 </div>
-                <Link to="/offer" className="relative z-20 bg-white text-purple-700 px-5 py-1.5 rounded-full text-sm font-extrabold hover:bg-slate-50 hover:scale-105 transition-all shadow border border-purple-100 whitespace-nowrap">
-                    Claim Offer &rarr;
+                <Link to="/pricing" className="relative z-20 bg-white text-purple-700 px-5 py-1.5 rounded-full text-sm font-extrabold hover:bg-slate-50 hover:scale-105 transition-all shadow border border-purple-100 whitespace-nowrap">
+                    Upgrade to Pro &rarr;
                 </Link>
             </div>
             <div className="bg-white/80 backdrop-blur-md border-b border-slate-100 w-full">

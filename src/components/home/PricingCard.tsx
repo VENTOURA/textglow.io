@@ -6,10 +6,12 @@ interface PricingCardProps {
     title: string;
     subtitle: string;
     price: string;
+    originalPrice?: string;
     period: string;
     features: string[];
     isPro?: boolean;
     isYearly?: boolean;
+    yearlyNote?: string;
     buttonText: string;
     buttonLink: string;
     delay?: number;
@@ -19,10 +21,12 @@ export const PricingCard = ({
     title,
     subtitle,
     price,
+    originalPrice,
     period,
     features,
     isPro = false,
     isYearly = false,
+    yearlyNote,
     buttonText,
     buttonLink,
     delay = 0
@@ -61,15 +65,20 @@ export const PricingCard = ({
 
             <div className="mb-6">
                 <div className="flex items-baseline">
+                    {originalPrice && isYearly && (
+                        <span className="text-xl text-slate-500 line-through mr-2 font-semibold">
+                            {originalPrice}
+                        </span>
+                    )}
                     <span className={`text-4xl font-bold ${isPro ? 'text-white' : 'text-slate-900'}`}>
                         {price}
                     </span>
                     <span className={`ml-1 ${isPro ? 'text-slate-400' : 'text-slate-500'}`}>/{period}</span>
                 </div>
-                {isYearly && isPro && (
+                {isYearly && isPro && yearlyNote && (
                     <div className="text-sm text-brand-400 mt-1 font-medium flex items-center">
                         <span className="w-1 h-1 bg-brand-400 rounded-full mr-2"></span>
-                        Save $21 a year
+                        {yearlyNote}
                     </div>
                 )}
             </div>

@@ -1,0 +1,71 @@
+---
+const currentPath = Astro.url.pathname.endsWith("/")
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+
+const isActive = (path: string) => currentPath === path;
+const linkClass = (path: string) =>
+  `text-sm font-medium transition-colors ${
+    isActive(path) ? "text-brand-600 font-bold" : "text-slate-600 hover:text-slate-900"
+  }`;
+---
+
+<div class="fixed top-0 w-full z-50 flex flex-col">
+  <div class="bg-gradient-to-r from-brand-600 via-purple-600 to-indigo-600 text-white text-center py-3 px-4 shadow-md flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 relative z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <div class="flex items-center gap-2 relative z-20">
+      <span class="text-2xl animate-bounce drop-shadow-md">🚀</span>
+      <span class="text-sm sm:text-base font-bold tracking-wide text-shadow-sm flex items-center flex-wrap justify-center gap-1">
+        LAUNCH SPECIAL: Get Pro for $39/year — that's $0.11/day for better writing everywhere.
+      </span>
+    </div>
+    <a href="/pricing/" class="relative z-20 bg-white text-purple-700 px-5 py-1.5 rounded-full text-sm font-extrabold hover:bg-slate-50 hover:scale-105 transition-all shadow border border-purple-100 whitespace-nowrap">
+      Upgrade to Pro &rarr;
+    </a>
+  </div>
+
+  <div class="bg-white/80 backdrop-blur-md border-b border-slate-100 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="/" class="flex items-center space-x-2">
+          <img src="/logo.png" alt="Textglow Logo" class="w-8 h-8" />
+          <span class="font-bold text-xl tracking-tight text-slate-900">Textglow</span>
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class={linkClass("/")}>Home</a>
+          <a href="/how-to-use/" class={linkClass("/how-to-use/")}>How to Use</a>
+          <a href="/pricing/" class={linkClass("/pricing/")}>Pricing</a>
+          <a href="/tools/" class={linkClass("/tools/")}>Tools</a>
+          <a
+            href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
+            class="inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800 focus:ring-slate-900 shadow-md h-9 px-4 text-sm"
+          >
+            Install Free
+          </a>
+        </div>
+
+        <details class="md:hidden relative">
+          <summary class="list-none cursor-pointer text-slate-600 hover:text-slate-900 p-2 -mr-2">
+            <span class="sr-only">Open menu</span>
+            <span class="block w-6 h-0.5 bg-current mb-1.5"></span>
+            <span class="block w-6 h-0.5 bg-current mb-1.5"></span>
+            <span class="block w-6 h-0.5 bg-current"></span>
+          </summary>
+          <div class="absolute right-0 top-12 w-64 bg-white border border-slate-100 rounded-xl shadow-xl px-4 py-4 space-y-2">
+            <a href="/" class="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Home</a>
+            <a href="/how-to-use/" class="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">How to Use</a>
+            <a href="/pricing/" class="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Pricing</a>
+            <a href="/tools/" class="block py-2 text-base font-medium text-slate-600 hover:text-slate-900">Tools</a>
+            <a
+              href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
+              class="mt-2 inline-flex w-full items-center justify-center font-medium rounded-lg bg-slate-900 text-white hover:bg-slate-800 h-10 px-6 text-sm"
+            >
+              Install Free
+            </a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>

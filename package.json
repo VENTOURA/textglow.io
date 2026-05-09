@@ -4,17 +4,25 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
-    "postbuild": "react-snap && node scripts/patch-seo.mjs",
-    "check": "tsc -b",
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "dev:vite": "vite",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "build:vite": "tsc -b && vite build && cp dist/index.html dist/404.html && react-snap && node scripts/patch-seo.mjs",
+    "check": "tsc -b && ASTRO_TELEMETRY_DISABLED=1 astro check",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "preview:vite": "vite preview",
+    "astro:dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "astro:build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "astro:preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "astro:check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "route:check": "node scripts/check-route-registry.mjs"
   },
   "reactSnap": {
     "source": "dist",
     "waitFor": "#root > *",
-    "delay": 3000,
+    "delay": 1000,
+    "concurrency": 1,
     "crawl": false,
     "minifyHtml": {
       "collapseWhitespace": true,
@@ -125,6 +133,9 @@
     ]
   },
   "dependencies": {
+    "@astrojs/react": "^5.0.4",
+    "@astrojs/sitemap": "^3.7.2",
+    "astro": "^6.3.1",
     "canvas-confetti": "^1.9.4",
     "diff": "^9.0.0",
     "framer-motion": "^12.23.26",
@@ -136,6 +147,7 @@
     "react-router-dom": "^7.11.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
     "@eslint/js": "^9.39.1",
     "@tailwindcss/typography": "^0.5.19",
     "@types/canvas-confetti": "^1.9.0",

@@ -1,8 +1,13 @@
 import { PricingCard } from './PricingCard';
 import { useState } from 'react';
 
-export const PricingSection = () => {
+interface PricingSectionProps {
+    headingLevel?: 'h1' | 'h2';
+}
+
+export const PricingSection = ({ headingLevel = 'h2' }: PricingSectionProps) => {
     const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
+    const Heading = headingLevel;
 
     const monthlyLink = "https://buy.stripe.com/9B6fZjeoVfP8dAg6oIc3m08";
     const yearlyLink = "https://buy.stripe.com/9B69AV5SpbyS8fW3cwc3m07";
@@ -17,7 +22,7 @@ export const PricingSection = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Better Writing Shouldn't Cost a Fortune</h2>
+                    <Heading className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Better Writing Shouldn't Cost a Fortune</Heading>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
                         Start free. Upgrade when you can't live without it. Cancel anytime.
                     </p>

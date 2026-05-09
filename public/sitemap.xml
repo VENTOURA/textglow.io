@@ -61,6 +61,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://textglow.io/offer/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://textglow.io/blog/</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>daily</changefreq>
@@ -482,12 +488,6 @@
   </url>
   <url>
     <loc>https://textglow.io/tools/examples/sales-voicemail-script/</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://textglow.io/tools/writing-quiz/</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

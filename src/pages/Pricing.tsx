@@ -39,7 +39,7 @@ export const Pricing = () => {
                 <meta property="twitter:description" content="Rewrite any text in 2 clicks for free — or go Pro for $39/year. 10 tones, works inside Gmail, LinkedIn, Slack. No copy-pasting." />
             </Helmet>
 
-            <PricingSection />
+            <PricingSection headingLevel="h1" />
 
             {/* Trust Badges */}
             <div className="border-b border-slate-200 bg-slate-50 pb-8">

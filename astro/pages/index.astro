@@ -1,0 +1,16 @@
+---
+import { ReactRoute } from "../components/ReactRoute";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getRouteByPath } from "../../src/seo/routes";
+
+const route = getRouteByPath("/");
+
+if (!route) {
+  throw new Error("Missing route metadata for /");
+}
+
+---
+
+<BaseLayout meta={route.meta}>
+  <ReactRoute route={route.path} pattern={route.pattern} component={route.component} client:load />
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+import "../../src/index.css";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import type { SeoMeta } from "../../src/seo/routes";
+
+interface Props {
+  meta: SeoMeta;
+}
+
+const { meta } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-prerender="true">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYV9B526SC"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FYV9B526SC');
+    </script>
+
+    <title data-rh="true">{meta.title}</title>
+    <meta data-rh="true" name="description" content={meta.description} />
+    <link data-rh="true" rel="canonical" href={meta.canonical} />
+    <meta data-rh="true" property="og:type" content={meta.ogType} />
+    <meta data-rh="true" property="og:url" content={meta.ogUrl} />
+    <meta data-rh="true" property="og:title" content={meta.ogTitle} />
+    <meta data-rh="true" property="og:description" content={meta.ogDescription} />
+    <meta data-rh="true" property="og:image" content={meta.ogImage} />
+    <meta data-rh="true" property="twitter:card" content={meta.twitterCard} />
+    <meta data-rh="true" property="twitter:title" content={meta.twitterTitle} />
+    <meta data-rh="true" property="twitter:description" content={meta.twitterDescription} />
+
+    <noscript>
+      <style>
+        [style*="opacity: 0"], [style*="opacity:0"] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col bg-white">
+      <Navbar />
+      <main class="flex-grow pt-32">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

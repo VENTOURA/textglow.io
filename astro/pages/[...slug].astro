@@ -1,0 +1,22 @@
+---
+import { ReactRoute } from "../components/ReactRoute";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { nonRootRoutes, type SiteRoute } from "../../src/seo/routes";
+
+export function getStaticPaths() {
+  return nonRootRoutes.map((route) => ({
+    params: { slug: route.path.replace(/^\/|\/$/g, "") },
+    props: { route },
+  }));
+}
+
+interface Props {
+  route: SiteRoute;
+}
+
+const { route } = Astro.props;
+---
+
+<BaseLayout meta={route.meta}>
+  <ReactRoute route={route.path} pattern={route.pattern} component={route.component} client:load />
+</BaseLayout>

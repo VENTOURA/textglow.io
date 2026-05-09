@@ -1,0 +1,113 @@
+---
+const year = new Date().getFullYear();
+
+const sections = [
+  {
+    title: "Use Cases",
+    links: [
+      ["For LinkedIn", "/linkedin/"],
+      ["For Gmail", "/gmail/"],
+      ["For Slack", "/slack/"],
+      ["For Dating Apps", "/tinder/"],
+      ["For Translation", "/translate/"],
+      ["Customer Support", "/customer-support/"],
+      ["Sales & Outreach", "/sales/"],
+      ["Job Applications", "/job-applications/"],
+      ["For Managers", "/managers/"],
+      ["For Freelancers", "/freelancers/"],
+      ["For Academic", "/academic/"],
+      ["For HR & Recruiting", "/hr/"],
+      ["Customer Success", "/customer-success/"],
+      ["Remote Teams", "/remote-teams/"],
+    ],
+  },
+  {
+    title: "Free Tools",
+    links: [
+      ["Email Tone Analyzer", "/tools/email-tone-analyzer/"],
+      ["Word Counter", "/tools/word-counter/"],
+      ["Email Rewriter", "/tools/email-rewriter/"],
+      ["Formality Checker", "/tools/formality-checker/"],
+      ["LinkedIn Post Preview", "/tools/linkedin-post-preview/"],
+      ["Cold Email Generator", "/tools/cold-email-generator/"],
+      ["Jargon Translator", "/tools/jargon-translator/"],
+      ["AI Writing Detector", "/tools/ai-writing-detector/"],
+      ["Passive-Aggressive Checker", "/tools/passive-aggressive-checker/"],
+      ["Gen Z Translator", "/tools/genz-translator/"],
+      ["Subject Line Scorer", "/tools/subject-line-scorer/"],
+      ["Out-of-Office Generator", "/tools/out-of-office/"],
+      ["Writing Personality Quiz", "/tools/writing-quiz/"],
+      ["Writing Examples", "/tools/examples/"],
+    ],
+  },
+  {
+    title: "Product",
+    links: [
+      ["Features", "/"],
+      ["Pricing", "/pricing/"],
+      ["Blog", "/blog/"],
+      [
+        "Chrome Extension",
+        "https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf",
+      ],
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      ["Privacy Policy", "/privacy/"],
+      ["Terms of Service", "/terms/"],
+    ],
+  },
+];
+---
+
+<footer class="bg-slate-50 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-8">
+      <div class="md:col-span-1 space-y-4">
+        <div class="flex items-center space-x-2">
+          <img src="/logo.png" alt="Textglow Logo" class="w-6 h-6" />
+          <span class="font-bold text-lg text-slate-900">Textglow</span>
+        </div>
+        <p class="text-sm text-slate-500">
+          Rewrite and rewrite your text instantly, anywhere on the web.
+        </p>
+      </div>
+
+      {
+        sections.map((section) => (
+          <div>
+            <h3 class="font-semibold text-slate-900 mb-4">{section.title}</h3>
+            <ul class="space-y-2">
+              {section.links.map(([label, href]) => (
+                <li>
+                  <a
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    class="text-sm text-slate-600 hover:text-slate-900"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+
+      <div>
+        <h3 class="font-semibold text-slate-900 mb-4">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="mailto:support@textglow.io" class="text-sm text-slate-600 hover:text-slate-900">Contact Us</a></li>
+          <li><a href="mailto:support@textglow.io" class="text-sm text-slate-600 hover:text-slate-900 font-medium">support@textglow.io</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-sm text-slate-500">&copy; {year} Textglow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -14,16 +14,16 @@ export const Home = () => {
         <div className="overflow-x-hidden">
             <Helmet>
                 <title>TextGlow — AI Writing Assistant That Rewrites Your Tone in 2 Clicks</title>
-                <meta name="description" content="Stop copy-pasting into ChatGPT. TextGlow rewrites your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
+                <meta name="description" content="Rewrite emails, Slack messages, and LinkedIn posts in 2 clicks with TextGlow. Choose 10 tones and write naturally across the web without copy-pasting." />
                 <link rel="canonical" href="https://textglow.io/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/" />
                 <meta property="og:title" content="TextGlow — AI Writing Assistant That Rewrites Your Tone in 2 Clicks" />
-                <meta property="og:description" content="Stop copy-pasting into ChatGPT. TextGlow rewrites your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
+                <meta property="og:description" content="Rewrite emails, Slack messages, and LinkedIn posts in 2 clicks with TextGlow. Choose 10 tones and write naturally across the web without copy-pasting." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="TextGlow — AI Writing Assistant That Rewrites Your Tone in 2 Clicks" />
-                <meta property="twitter:description" content="Stop copy-pasting into ChatGPT. TextGlow rewrites your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
+                <meta property="twitter:description" content="Rewrite emails, Slack messages, and LinkedIn posts in 2 clicks with TextGlow. Choose 10 tones and write naturally across the web without copy-pasting." />
             </Helmet>
 
             <script type="application/ld+json">

@@ -40,6 +40,7 @@ import { HR } from './pages/use-cases/HR';
 import { CustomerSuccess } from './pages/use-cases/CustomerSuccess';
 import { RemoteTeams } from './pages/use-cases/RemoteTeams';
 import { Tools } from './pages/Tools';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
             <Route path="/remote-teams" element={<RemoteTeams />} />
             <Route path="/tools/examples" element={<ExamplesGallery />} />
             <Route path="/tools/examples/:slug" element={<ExampleDetail />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </Router>

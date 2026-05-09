@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "rm -rf dist && cp -r _prebuilt dist"
+  }
+}

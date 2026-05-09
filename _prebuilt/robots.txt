@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /offer
+
+Sitemap: https://textglow.io/sitemap.xml

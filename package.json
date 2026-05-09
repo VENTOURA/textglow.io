@@ -13,7 +13,8 @@
   },
   "reactSnap": {
     "source": "dist",
-    "waitFor": "[data-rh=\"true\"]",
+    "waitFor": "#root > *",
+    "delay": 1000,
     "minifyHtml": {
       "collapseWhitespace": true,
       "removeComments": true

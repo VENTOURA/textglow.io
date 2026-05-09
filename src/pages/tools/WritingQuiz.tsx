@@ -124,7 +124,6 @@ export const WritingQuiz = () => {
       <meta property="twitter:description" content="Discover your unique writing personality. Are you a Diplomat, a Commander, or a Ghost? Take our 2-minute quiz to find out and improve your communication. Free." />
     </Helmet>
     );
-  }
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">

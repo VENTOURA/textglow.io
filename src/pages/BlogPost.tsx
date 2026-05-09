@@ -10,7 +10,7 @@ export const BlogPost = () => {
     const post = blogPosts.find(p => p.slug === slug);
 
     if (!post) {
-        return <Navigate to="/blog" replace />;
+        return <Navigate to="/blog/" replace />;
     }
 
     return (
@@ -18,9 +18,9 @@ export const BlogPost = () => {
             <Helmet>
                 <title>{post.title} – Textglow Blog</title>
                 <meta name="description" content={post.excerpt} />
-                <link rel="canonical" href={`https://textglow.io/blog/${post.slug}`} />
+                <link rel="canonical" href={`https://textglow.io/blog/${post.slug}/`} />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content={`https://textglow.io/blog/${post.slug}`} />
+                <meta property="og:url" content={`https://textglow.io/blog/${post.slug}/`} />
                 <meta property="og:title" content={`${post.title} – Textglow Blog`} />
                 <meta property="og:description" content={post.excerpt} />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
@@ -30,7 +30,7 @@ export const BlogPost = () => {
             </Helmet>
 
             <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <Link to="/blog" className="inline-flex items-center text-sm text-slate-500 hover:text-slate-900 mb-8 transition-colors">
+                <Link to="/blog/" className="inline-flex items-center text-sm text-slate-500 hover:text-slate-900 mb-8 transition-colors">
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to all posts
                 </Link>

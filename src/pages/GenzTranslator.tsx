@@ -147,7 +147,7 @@ export const GenzTranslator = () => {
             <Helmet>
                 <title>Gen Z ↔ Corporate Translator — Decode Workplace Slang | TextGlow</title>
                 <meta name="description" content="Translate Gen Z slang to corporate speak and back. 'No cap' → 'I assure you this is accurate.' Free, fun, and instant. 150+ phrase dictionary." />
-                <link rel="canonical" href="https://textglow.io/tools/genz-translator" />
+                <link rel="canonical" href="https://textglow.io/tools/genz-translator/" />
             </Helmet>
 
             {/* Hero */}

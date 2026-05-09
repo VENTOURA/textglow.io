@@ -28,9 +28,9 @@ export const Pricing = () => {
             <Helmet>
                 <title>TextGlow Pricing — AI Writing Assistant from $0/month | 3x Cheaper Than Grammarly</title>
                 <meta name="description" content="Polish your writing in 2 clicks for free — or upgrade to Pro for $39/year. 10 tones, works inside Gmail, Slack, LinkedIn. 3x cheaper than Grammarly, no copy-pasting like ChatGPT." />
-                <link rel="canonical" href="https://textglow.io/pricing" />
+                <link rel="canonical" href="https://textglow.io/pricing/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/pricing" />
+                <meta property="og:url" content="https://textglow.io/pricing/" />
                 <meta property="og:title" content="TextGlow Pricing — AI Writing Assistant from $0/month" />
                 <meta property="og:description" content="Polish your writing in 2 clicks for free — or upgrade to Pro for $39/year. 3x cheaper than Grammarly." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />

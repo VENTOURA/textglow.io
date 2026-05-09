@@ -56,11 +56,11 @@ export const Tinder = () => {
             <Helmet>
                 <title>AI Dating Message Assistant — Write Better Tinder, Bumble & Hinge Messages | TextGlow</title>
                 <meta name="description" content="Stop sending 'hey' and getting ghosted. TextGlow's Flirty tone turns your basic dating app messages into witty, confident openers that actually get replies. Free Chrome extension." />
-                <link rel="canonical" href="https://textglow.io/tinder" />
+                <link rel="canonical" href="https://textglow.io/tinder/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="AI Dating Message Assistant — Tinder, Bumble & Hinge | TextGlow" />
                 <meta property="og:description" content="Stop sending 'hey' and getting ghosted. TextGlow turns your messages into witty, confident openers." />
-                <meta property="og:url" content="https://textglow.io/tinder" />
+                <meta property="og:url" content="https://textglow.io/tinder/" />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="AI Dating Message Assistant | TextGlow" />

@@ -34,7 +34,7 @@ export const ExamplesGallery = () => {
             <Helmet>
                 <title>Before & After Writing Examples — Email, Slack & LinkedIn Rewrites | TextGlow</title>
                 <meta name="description" content="Browse 100+ real before/after writing examples. See how TextGlow transforms emails, Slack messages, LinkedIn posts, cover letters, and more with AI-powered tone selection." />
-                <link rel="canonical" href="https://textglow.io/tools/examples" />
+                <link rel="canonical" href="https://textglow.io/tools/examples/" />
                 <script type="application/ld+json">
                     {`
                         {
@@ -42,7 +42,7 @@ export const ExamplesGallery = () => {
                             "@type": "CollectionPage",
                             "name": "Before & After Writing Examples",
                             "description": "100+ real before/after writing examples showing email, Slack, LinkedIn, and professional writing transformed by tone.",
-                            "url": "https://textglow.io/tools/examples"
+                            "url": "https://textglow.io/tools/examples/"
                         }
                     `}
                 </script>

@@ -136,10 +136,10 @@ export const OutOfOffice = () => {
       <Helmet>
         <title>Free Out-of-Office Message Generator — OOO Auto-Reply Templates | TextGlow</title>
         <meta name="description" content="Generate the perfect out-of-office message in seconds. 6 tones, 10 scenarios. Professional, funny, minimal — pick your style. Free, no signup." />
-        <link rel="canonical" href="https://textglow.io/tools/out-of-office" />
+        <link rel="canonical" href="https://textglow.io/tools/out-of-office/" />
         <meta property="og:title" content="Free Out-of-Office Message Generator | TextGlow" />
         <meta property="og:description" content="Create professional, friendly, or funny OOO messages instantly. 60 templates, no signup required." />
-        <meta property="og:url" content="https://textglow.io/tools/out-of-office" />
+        <meta property="og:url" content="https://textglow.io/tools/out-of-office/" />
       </Helmet>
 
       {/* Hero Section */}

@@ -92,7 +92,7 @@ export const AiWritingDetector = () => {
             <Helmet>
                 <title>Free AI Writing Detector — Does Your Text Sound Like ChatGPT? | TextGlow</title>
                 <meta name="description" content="Paste your text and find out if it sounds AI-generated. Get a 0-100 AI score with specific phrases flagged and human alternatives suggested. Free, instant, private." />
-                <link rel="canonical" href="https://textglow.io/tools/ai-writing-detector" />
+                <link rel="canonical" href="https://textglow.io/tools/ai-writing-detector/" />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

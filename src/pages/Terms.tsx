@@ -7,9 +7,9 @@ export const Terms = () => {
             <Helmet>
                 <title>Terms of Service – Textglow</title>
                 <meta name="description" content="Terms of Service for using the Textglow Chrome Extension. Read our usage policies and subscription terms." />
-                <link rel="canonical" href="https://textglow.io/terms" />
+                <link rel="canonical" href="https://textglow.io/terms/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/terms" />
+                <meta property="og:url" content="https://textglow.io/terms/" />
                 <meta property="og:title" content="Terms of Service – Textglow" />
                 <meta property="og:description" content="Terms of Service for using the Textglow Chrome Extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />

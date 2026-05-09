@@ -7,9 +7,9 @@ export const Privacy = () => {
             <Helmet>
                 <title>Privacy Policy – Textglow</title>
                 <meta name="description" content="Textglow Privacy Policy. We never store your text. Learn how we handle data securely and transparently." />
-                <link rel="canonical" href="https://textglow.io/privacy" />
+                <link rel="canonical" href="https://textglow.io/privacy/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/privacy" />
+                <meta property="og:url" content="https://textglow.io/privacy/" />
                 <meta property="og:title" content="Privacy Policy – Textglow" />
                 <meta property="og:description" content="Textglow Privacy Policy. We never store your text. Learn how we handle data securely." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />

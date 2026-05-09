@@ -13,7 +13,7 @@ const getBadgeColor = (difficulty: DifficultyBadge) => {
 export const ExampleCard = memo(({ example }: { example: BeforeAfterExample }) => {
     return (
         <Link 
-            to={`/tools/examples/${example.slug}`}
+            to={`/tools/examples/${example.slug}/`}
             className="block group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all hover:border-brand-300 flex flex-col h-full"
         >
             <div className="p-5 flex-grow flex flex-col">

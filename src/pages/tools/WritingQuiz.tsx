@@ -115,7 +115,7 @@ export const WritingQuiz = () => {
       <meta name="description" content="Discover your writing personality type in 2 minutes. Are you The Diplomat, The Commander, or The Rambler? Fun quiz with 16 shareable result types." />
       <meta property="og:title" content="What's Your Writing Personality?" />
       <meta property="og:description" content="Take the free quiz and find out which of 16 writing personalities you are — plus which TextGlow tone fits you best." />
-      <meta property="og:url" content="https://textglow.io/tools/writing-quiz" />
+      <meta property="og:url" content="https://textglow.io/tools/writing-quiz/" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>

@@ -8,9 +8,9 @@ export const Offer = () => {
                 <title>Special Offer – Textglow Pro Early Bird Deal</title>
                 <meta name="description" content="Exclusive early bird offer for Textglow Pro. Get $1,030 in AI API credits when you subscribe yearly." />
                 <meta name="robots" content="noindex" />
-                <link rel="canonical" href="https://textglow.io/offer" />
+                <link rel="canonical" href="https://textglow.io/offer/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/offer" />
+                <meta property="og:url" content="https://textglow.io/offer/" />
                 <meta property="og:title" content="Special Offer – Textglow Pro Early Bird Deal" />
                 <meta property="og:description" content="Exclusive early bird offer for Textglow Pro. Get $1,030 in AI API credits." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
@@ -97,7 +97,7 @@ export const Offer = () => {
                     </div>
 
                     <div className="flex justify-center mt-10">
-                        <Button href="/pricing" className="w-full sm:w-auto text-lg px-8 py-3">
+                        <Button href="/pricing/" className="w-full sm:w-auto text-lg px-8 py-3">
                             View Pricing & Upgrade Now
                         </Button>
                     </div>

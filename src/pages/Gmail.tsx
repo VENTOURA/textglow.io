@@ -57,11 +57,11 @@ export const Gmail = () => {
             <Helmet>
                 <title>AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow</title>
                 <meta name="description" content="Stop spending 10 minutes writing a 3-sentence email. TextGlow polishes your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension." />
-                <link rel="canonical" href="https://textglow.io/gmail" />
+                <link rel="canonical" href="https://textglow.io/gmail/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />
                 <meta property="og:description" content="Stop spending 10 minutes writing a 3-sentence email. TextGlow polishes your Gmail messages in 2 clicks." />
-                <meta property="og:url" content="https://textglow.io/gmail" />
+                <meta property="og:url" content="https://textglow.io/gmail/" />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />

@@ -30,7 +30,7 @@ export const ExampleDetail = () => {
                 <div className="text-center">
                     <h1 className="text-3xl font-bold text-slate-900 mb-4">Example Not Found</h1>
                     <p className="text-slate-600 mb-8">We couldn't find the writing example you're looking for.</p>
-                    <Link to="/tools/examples">
+                    <Link to="/tools/examples/">
                         <Button variant="primary">Browse All Examples</Button>
                     </Link>
                 </div>
@@ -47,7 +47,7 @@ export const ExampleDetail = () => {
             <Helmet>
                 <title>{example.seoTitle}</title>
                 <meta name="description" content={example.seoDescription} />
-                <link rel="canonical" href={`https://textglow.io/tools/examples/${example.slug}`} />
+                <link rel="canonical" href={`https://textglow.io/tools/examples/${example.slug}/`} />
                 <script type="application/ld+json">
                     {`
                         {
@@ -75,9 +75,9 @@ export const ExampleDetail = () => {
             <div className="container mx-auto px-4 max-w-5xl pt-8">
                 {/* Breadcrumb */}
                 <nav className="flex items-center text-sm text-slate-500 mb-10 font-medium">
-                    <Link to="/tools" className="hover:text-brand-600 transition-colors">Tools</Link>
+                    <Link to="/tools/" className="hover:text-brand-600 transition-colors">Tools</Link>
                     <ChevronRight className="w-4 h-4 mx-2 text-slate-400" />
-                    <Link to="/tools/examples" className="hover:text-brand-600 transition-colors">Writing Examples</Link>
+                    <Link to="/tools/examples/" className="hover:text-brand-600 transition-colors">Writing Examples</Link>
                     <ChevronRight className="w-4 h-4 mx-2 text-slate-400" />
                     <span className="text-slate-900 truncate">{example.title}</span>
                 </nav>
@@ -191,7 +191,7 @@ export const ExampleDetail = () => {
                             <Button href={CHROME_URL} variant="pro" size="lg" className="px-8 py-4 text-lg shadow-xl shadow-brand-500/20 w-full sm:w-auto">
                                 <Chrome className="w-6 h-6 mr-3" /> Add to Chrome — Free
                             </Button>
-                            <Link to="/tools/examples" className="w-full sm:w-auto">
+                            <Link to="/tools/examples/" className="w-full sm:w-auto">
                                 <Button variant="secondary" size="lg" className="px-8 py-4 text-lg w-full bg-white/10 text-white border-white/20 hover:bg-white/20">
                                     See all examples →
                                 </Button>

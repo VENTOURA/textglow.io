@@ -92,7 +92,7 @@ export const JargonTranslator = () => {
             <Helmet>
                 <title>Corporate Jargon Translator — Convert Buzzwords to Plain English | TextGlow</title>
                 <meta name="description" content="Paste corporate-speak and get plain English. See every buzzword replaced, get a jargon score, and laugh at what your emails really mean. Free, instant, private." />
-                <link rel="canonical" href="https://textglow.io/tools/jargon-translator" />
+                <link rel="canonical" href="https://textglow.io/tools/jargon-translator/" />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

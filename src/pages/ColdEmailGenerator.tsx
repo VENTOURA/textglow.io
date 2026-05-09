@@ -154,7 +154,7 @@ export const ColdEmailGenerator = () => {
             <Helmet>
                 <title>Free Cold Email Generator — Professional, Persuasive & Friendly Templates | TextGlow</title>
                 <meta name="description" content="Generate cold email templates in 3 tones instantly. Fill in your details, get ready-to-send emails for partnerships, sales, networking, and more. Free, no signup." />
-                <link rel="canonical" href="https://textglow.io/tools/cold-email-generator" />
+                <link rel="canonical" href="https://textglow.io/tools/cold-email-generator/" />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

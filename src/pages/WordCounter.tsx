@@ -93,17 +93,17 @@ export const WordCounter = () => {
   const otherPlatforms = platforms.filter(p => !p.relevant);
   const maxFreq = frequency[0]?.count || 1;
 
-  const jsonLd = { "@context": "https://schema.org", "@type": "WebApplication", "name": "Word Counter & Readability Checker", "description": "Count words, characters, sentences, and check readability — free and private.", "url": "https://textglow.io/tools/word-counter", "applicationCategory": "UtilityApplication", "operatingSystem": "Web", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } };
+  const jsonLd = { "@context": "https://schema.org", "@type": "WebApplication", "name": "Word Counter & Readability Checker", "description": "Count words, characters, sentences, and check readability — free and private.", "url": "https://textglow.io/tools/word-counter/", "applicationCategory": "UtilityApplication", "operatingSystem": "Web", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } };
 
   return (
     <div className="bg-white">
       <Helmet>
         <title>Free Word Counter & Readability Checker — Character Count, Reading Time | TextGlow</title>
         <meta name="description" content="Count words, characters, sentences, and paragraphs. Check readability score, grade level, and platform character limits. Free, instant, private. No signup required." />
-        <link rel="canonical" href="https://textglow.io/tools/word-counter" />
+        <link rel="canonical" href="https://textglow.io/tools/word-counter/" />
         <meta property="og:type" content="website" /><meta property="og:title" content="Free Word Counter & Readability Checker | TextGlow" />
         <meta property="og:description" content="Count words, characters, sentences. Check readability and platform limits. Free, instant, private." />
-        <meta property="og:url" content="https://textglow.io/tools/word-counter" /><meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="og:url" content="https://textglow.io/tools/word-counter/" /><meta property="og:image" content="https://textglow.io/og-image.png" />
         <meta property="twitter:card" content="summary_large_image" /><meta property="twitter:title" content="Free Word Counter & Readability Checker | TextGlow" />
         <meta property="twitter:description" content="Count words, characters, sentences. Check readability and platform limits. Free, instant, private." />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>

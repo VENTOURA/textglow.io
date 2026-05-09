@@ -119,7 +119,7 @@ export const FormalityChecker = () => {
             <Helmet>
                 <title>Free Formality Checker — Is Your Email Too Formal or Too Casual? | TextGlow</title>
                 <meta name="description" content="Paste your text and instantly check if it's too formal, too casual, or just right for your context. Get specific phrase-level suggestions. Free, private, no signup." />
-                <link rel="canonical" href="https://textglow.io/tools/formality-checker" />
+                <link rel="canonical" href="https://textglow.io/tools/formality-checker/" />
             </Helmet>
 
             {/* Hero Section */}

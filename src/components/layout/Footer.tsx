@@ -19,40 +19,40 @@ export const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-slate-900 mb-4">Use Cases</h3>
                         <ul className="space-y-2">
-                            <li><Link to="/linkedin" className="text-sm text-slate-600 hover:text-slate-900">For LinkedIn</Link></li>
-                            <li><Link to="/gmail" className="text-sm text-slate-600 hover:text-slate-900">For Gmail</Link></li>
-                            <li><Link to="/slack" className="text-sm text-slate-600 hover:text-slate-900">For Slack</Link></li>
-                            <li><Link to="/tinder" className="text-sm text-slate-600 hover:text-slate-900">For Dating Apps</Link></li>
-                            <li><Link to="/translate" className="text-sm text-slate-600 hover:text-slate-900">For Translation</Link></li>
-                            <li><Link to="/customer-support" className="text-sm text-slate-600 hover:text-slate-900">Customer Support</Link></li>
-                            <li><Link to="/sales" className="text-sm text-slate-600 hover:text-slate-900">Sales & Outreach</Link></li>
-                            <li><Link to="/job-applications" className="text-sm text-slate-600 hover:text-slate-900">Job Applications</Link></li>
-                            <li><Link to="/managers" className="text-sm text-slate-600 hover:text-slate-900">For Managers</Link></li>
-                            <li><Link to="/freelancers" className="text-sm text-slate-600 hover:text-slate-900">For Freelancers</Link></li>
-                            <li><Link to="/academic" className="text-sm text-slate-600 hover:text-slate-900">For Academic</Link></li>
-                            <li><Link to="/hr" className="text-sm text-slate-600 hover:text-slate-900">For HR & Recruiting</Link></li>
-                            <li><Link to="/customer-success" className="text-sm text-slate-600 hover:text-slate-900">Customer Success</Link></li>
-                            <li><Link to="/remote-teams" className="text-sm text-slate-600 hover:text-slate-900">Remote Teams</Link></li>
+                            <li><Link to="/linkedin/" className="text-sm text-slate-600 hover:text-slate-900">For LinkedIn</Link></li>
+                            <li><Link to="/gmail/" className="text-sm text-slate-600 hover:text-slate-900">For Gmail</Link></li>
+                            <li><Link to="/slack/" className="text-sm text-slate-600 hover:text-slate-900">For Slack</Link></li>
+                            <li><Link to="/tinder/" className="text-sm text-slate-600 hover:text-slate-900">For Dating Apps</Link></li>
+                            <li><Link to="/translate/" className="text-sm text-slate-600 hover:text-slate-900">For Translation</Link></li>
+                            <li><Link to="/customer-support/" className="text-sm text-slate-600 hover:text-slate-900">Customer Support</Link></li>
+                            <li><Link to="/sales/" className="text-sm text-slate-600 hover:text-slate-900">Sales & Outreach</Link></li>
+                            <li><Link to="/job-applications/" className="text-sm text-slate-600 hover:text-slate-900">Job Applications</Link></li>
+                            <li><Link to="/managers/" className="text-sm text-slate-600 hover:text-slate-900">For Managers</Link></li>
+                            <li><Link to="/freelancers/" className="text-sm text-slate-600 hover:text-slate-900">For Freelancers</Link></li>
+                            <li><Link to="/academic/" className="text-sm text-slate-600 hover:text-slate-900">For Academic</Link></li>
+                            <li><Link to="/hr/" className="text-sm text-slate-600 hover:text-slate-900">For HR & Recruiting</Link></li>
+                            <li><Link to="/customer-success/" className="text-sm text-slate-600 hover:text-slate-900">Customer Success</Link></li>
+                            <li><Link to="/remote-teams/" className="text-sm text-slate-600 hover:text-slate-900">Remote Teams</Link></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="font-semibold text-slate-900 mb-4">Free Tools</h3>
                         <ul className="space-y-2">
-                            <li><Link to="/tools/email-tone-analyzer" className="text-sm text-slate-600 hover:text-slate-900">Email Tone Analyzer</Link></li>
-                            <li><Link to="/tools/word-counter" className="text-sm text-slate-600 hover:text-slate-900">Word Counter</Link></li>
-                            <li><Link to="/tools/email-rewriter" className="text-sm text-slate-600 hover:text-slate-900">Email Rewriter</Link></li>
-                            <li><Link to="/tools/formality-checker" className="text-sm text-slate-600 hover:text-slate-900">Formality Checker</Link></li>
-                            <li><Link to="/tools/linkedin-post-preview" className="text-sm text-slate-600 hover:text-slate-900">LinkedIn Post Preview</Link></li>
-                            <li><Link to="/tools/cold-email-generator" className="text-sm text-slate-600 hover:text-slate-900">Cold Email Generator</Link></li>
-                            <li><Link to="/tools/jargon-translator" className="text-sm text-slate-600 hover:text-slate-900">Jargon Translator</Link></li>
-                            <li><Link to="/tools/ai-writing-detector" className="text-sm text-slate-600 hover:text-slate-900">AI Writing Detector</Link></li>
-                            <li><Link to="/tools/passive-aggressive-checker" className="text-sm text-slate-600 hover:text-slate-900">Passive-Aggressive Checker</Link></li>
-                            <li><Link to="/tools/genz-translator" className="text-sm text-slate-600 hover:text-slate-900">Gen Z Translator</Link></li>
-                            <li><Link to="/tools/subject-line-scorer" className="text-sm text-slate-600 hover:text-slate-900">Subject Line Scorer</Link></li>
-                            <li><Link to="/tools/out-of-office" className="text-sm text-slate-600 hover:text-slate-900">Out-of-Office Generator</Link></li>
-                            <li><Link to="/tools/writing-quiz" className="text-sm text-slate-600 hover:text-slate-900">Writing Personality Quiz</Link></li>
-                            <li><Link to="/tools/examples" className="text-sm text-slate-600 hover:text-slate-900">Writing Examples</Link></li>
+                            <li><Link to="/tools/email-tone-analyzer/" className="text-sm text-slate-600 hover:text-slate-900">Email Tone Analyzer</Link></li>
+                            <li><Link to="/tools/word-counter/" className="text-sm text-slate-600 hover:text-slate-900">Word Counter</Link></li>
+                            <li><Link to="/tools/email-rewriter/" className="text-sm text-slate-600 hover:text-slate-900">Email Rewriter</Link></li>
+                            <li><Link to="/tools/formality-checker/" className="text-sm text-slate-600 hover:text-slate-900">Formality Checker</Link></li>
+                            <li><Link to="/tools/linkedin-post-preview/" className="text-sm text-slate-600 hover:text-slate-900">LinkedIn Post Preview</Link></li>
+                            <li><Link to="/tools/cold-email-generator/" className="text-sm text-slate-600 hover:text-slate-900">Cold Email Generator</Link></li>
+                            <li><Link to="/tools/jargon-translator/" className="text-sm text-slate-600 hover:text-slate-900">Jargon Translator</Link></li>
+                            <li><Link to="/tools/ai-writing-detector/" className="text-sm text-slate-600 hover:text-slate-900">AI Writing Detector</Link></li>
+                            <li><Link to="/tools/passive-aggressive-checker/" className="text-sm text-slate-600 hover:text-slate-900">Passive-Aggressive Checker</Link></li>
+                            <li><Link to="/tools/genz-translator/" className="text-sm text-slate-600 hover:text-slate-900">Gen Z Translator</Link></li>
+                            <li><Link to="/tools/subject-line-scorer/" className="text-sm text-slate-600 hover:text-slate-900">Subject Line Scorer</Link></li>
+                            <li><Link to="/tools/out-of-office/" className="text-sm text-slate-600 hover:text-slate-900">Out-of-Office Generator</Link></li>
+                            <li><Link to="/tools/writing-quiz/" className="text-sm text-slate-600 hover:text-slate-900">Writing Personality Quiz</Link></li>
+                            <li><Link to="/tools/examples/" className="text-sm text-slate-600 hover:text-slate-900">Writing Examples</Link></li>
                         </ul>
                     </div>
 
@@ -60,8 +60,8 @@ export const Footer = () => {
                         <h3 className="font-semibold text-slate-900 mb-4">Product</h3>
                         <ul className="space-y-2">
                             <li><Link to="/" className="text-sm text-slate-600 hover:text-slate-900">Features</Link></li>
-                            <li><Link to="/pricing" className="text-sm text-slate-600 hover:text-slate-900">Pricing</Link></li>
-                            <li><Link to="/blog" className="text-sm text-slate-600 hover:text-slate-900">Blog</Link></li>
+                            <li><Link to="/pricing/" className="text-sm text-slate-600 hover:text-slate-900">Pricing</Link></li>
+                            <li><Link to="/blog/" className="text-sm text-slate-600 hover:text-slate-900">Blog</Link></li>
                             <li><a href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-slate-900">Chrome Extension</a></li>
                         </ul>
                     </div>
@@ -69,8 +69,8 @@ export const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-slate-900 mb-4">Legal</h3>
                         <ul className="space-y-2">
-                            <li><Link to="/privacy" className="text-sm text-slate-600 hover:text-slate-900">Privacy Policy</Link></li>
-                            <li><Link to="/terms" className="text-sm text-slate-600 hover:text-slate-900">Terms of Service</Link></li>
+                            <li><Link to="/privacy/" className="text-sm text-slate-600 hover:text-slate-900">Privacy Policy</Link></li>
+                            <li><Link to="/terms/" className="text-sm text-slate-600 hover:text-slate-900">Terms of Service</Link></li>
                         </ul>
                     </div>
 

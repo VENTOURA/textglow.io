@@ -9,9 +9,9 @@ export const BlogIndex = () => {
             <Helmet>
                 <title>Textglow Blog – AI Writing Tips & Guides</title>
                 <meta name="description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology from Textglow." />
-                <link rel="canonical" href="https://textglow.io/blog" />
+                <link rel="canonical" href="https://textglow.io/blog/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/blog" />
+                <meta property="og:url" content="https://textglow.io/blog/" />
                 <meta property="og:title" content="Textglow Blog – AI Writing Tips & Guides" />
                 <meta property="og:description" content="Read the latest tips on AI writing, email productivity, cold outreach, and communication psychology." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
@@ -50,7 +50,7 @@ export const BlogIndex = () => {
                         >
                             <div className="text-sm font-medium text-blue-600 mb-2">{post.category}</div>
                             <h2 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
-                                <Link to={`/blog/${post.slug}`} className="hover:text-blue-600 transition-colors">
+                                <Link to={`/blog/${post.slug}/`} className="hover:text-blue-600 transition-colors">
                                     {post.title}
                                 </Link>
                             </h2>

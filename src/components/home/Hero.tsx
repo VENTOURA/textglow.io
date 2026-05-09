@@ -53,7 +53,7 @@ export const Hero = () => {
                         Install Free Extension
                         <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
-                    <Button size="lg" variant="pro" to="/pricing" className="w-full sm:w-auto">
+                    <Button size="lg" variant="pro" to="/pricing/" className="w-full sm:w-auto">
                         Upgrade to Pro
                         <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>

@@ -65,8 +65,8 @@ export const UseCaseLayout: React.FC<UseCaseLayoutProps> = ({
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
-        <meta property="og:url" content={`https://textglow.io${meta.url}`} />
-        <link rel="canonical" href={`https://textglow.io${meta.url}`} />
+        <meta property="og:url" content={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
+        <link rel="canonical" href={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
       </Helmet>
 
       {/* Hero Section */}

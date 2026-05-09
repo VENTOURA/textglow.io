@@ -94,7 +94,7 @@ export const SubjectLineScorer = () => {
         <meta name="description" content="Score your email subject line instantly. Check length, spam triggers, personalization, and engagement. Get 3 improved alternatives. Free, private, no signup." />
         <meta property="og:title" content="Free Email Subject Line Scorer — Test Your Subject Line" />
         <meta property="og:description" content="Score your email subject line instantly. Check length, spam triggers, personalization, and engagement. Get 3 improved alternatives. Free, private, no signup." />
-        <meta property="og:url" content="https://textglow.io/tools/subject-line-scorer" />
+        <meta property="og:url" content="https://textglow.io/tools/subject-line-scorer/" />
       </Helmet>
 
       {/* Hero Section */}

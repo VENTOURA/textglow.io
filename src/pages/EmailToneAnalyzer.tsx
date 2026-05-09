@@ -69,7 +69,7 @@ export const EmailToneAnalyzer = () => {
   const jsonLd = {
     "@context": "https://schema.org", "@type": "WebApplication", "name": "Email Tone Analyzer",
     "description": "Free tool to analyze the tone of your emails — detect passive-aggressive, overly formal, or apologetic phrasing.",
-    "url": "https://textglow.io/tools/email-tone-analyzer", "applicationCategory": "UtilityApplication",
+    "url": "https://textglow.io/tools/email-tone-analyzer/", "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   };
 
@@ -78,11 +78,11 @@ export const EmailToneAnalyzer = () => {
       <Helmet>
         <title>Free Email Tone Analyzer — Check How Your Email Sounds | TextGlow</title>
         <meta name="description" content="Paste your email and instantly see its tone breakdown — professional, friendly, passive-aggressive, or too formal. Free, private, no signup. Powered by TextGlow." />
-        <link rel="canonical" href="https://textglow.io/tools/email-tone-analyzer" />
+        <link rel="canonical" href="https://textglow.io/tools/email-tone-analyzer/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Free Email Tone Analyzer — Check How Your Email Sounds | TextGlow" />
         <meta property="og:description" content="Paste your email and instantly see its tone breakdown. Free, private, no signup." />
-        <meta property="og:url" content="https://textglow.io/tools/email-tone-analyzer" />
+        <meta property="og:url" content="https://textglow.io/tools/email-tone-analyzer/" />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Free Email Tone Analyzer | TextGlow" />

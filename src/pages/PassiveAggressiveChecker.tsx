@@ -88,7 +88,7 @@ export const PassiveAggressiveChecker = () => {
             <Helmet>
                 <title>How Passive-Aggressive Is Your Email? Free Checker | TextGlow</title>
                 <meta name="description" content="Paste your email and find out if it sounds passive-aggressive. Get a 0-100 score with phrase-by-phrase breakdown and rewrite suggestions. Free, funny, private." />
-                <link rel="canonical" href="https://textglow.io/tools/passive-aggressive-checker" />
+                <link rel="canonical" href="https://textglow.io/tools/passive-aggressive-checker/" />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

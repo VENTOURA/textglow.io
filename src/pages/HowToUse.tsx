@@ -11,9 +11,9 @@ export const HowToUse = () => {
                 <title>How to Use Textglow – Step-by-Step Guide</title>
                 <meta name="description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide on rewriting text, changing tones, and using the Chrome extension." />
                 <meta name="keywords" content="how to use textglow, AI writing guide, text polisher tutorial, tone changer, chrome extension guide" />
-                <link rel="canonical" href="https://textglow.io/how-to-use" />
+                <link rel="canonical" href="https://textglow.io/how-to-use/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://textglow.io/how-to-use" />
+                <meta property="og:url" content="https://textglow.io/how-to-use/" />
                 <meta property="og:title" content="How to Use Textglow – Step-by-Step Guide" />
                 <meta property="og:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
@@ -35,21 +35,21 @@ export const HowToUse = () => {
                                     "name": "Install & Pin",
                                     "text": "Add Textglow to Chrome from the Web Store and pin it to your toolbar.",
                                     "image": "https://textglow.io/images/step-install.png",
-                                    "url": "https://textglow.io/how-to-use#step1"
+                                    "url": "https://textglow.io/how-to-use/#step1"
                                 },
                                 {
                                     "@type": "HowToStep",
                                     "name": "Type Your Text",
                                     "text": "Open any website like Gmail or LinkedIn and type your draft.",
                                     "image": "https://textglow.io/images/step-type.png",
-                                    "url": "https://textglow.io/how-to-use#step2"
+                                    "url": "https://textglow.io/how-to-use/#step2"
                                 },
                                 {
                                     "@type": "HowToStep",
                                     "name": "Click to Polish",
                                     "text": "Click the Textglow icon, choose a tone, and click Polish to instantly replace your text.",
                                     "image": "https://textglow.io/images/step-polish.png",
-                                    "url": "https://textglow.io/how-to-use#step3"
+                                    "url": "https://textglow.io/how-to-use/#step3"
                                 }
                             ]
                         }

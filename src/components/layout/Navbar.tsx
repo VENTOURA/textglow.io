@@ -23,7 +23,7 @@ export const Navbar = () => {
                         LAUNCH SPECIAL: Get Pro for $39/year — that's $0.11/day for better writing everywhere.
                     </span>
                 </div>
-                <Link to="/pricing" className="relative z-20 bg-white text-purple-700 px-5 py-1.5 rounded-full text-sm font-extrabold hover:bg-slate-50 hover:scale-105 transition-all shadow border border-purple-100 whitespace-nowrap">
+                <Link to="/pricing/" className="relative z-20 bg-white text-purple-700 px-5 py-1.5 rounded-full text-sm font-extrabold hover:bg-slate-50 hover:scale-105 transition-all shadow border border-purple-100 whitespace-nowrap">
                     Upgrade to Pro &rarr;
                 </Link>
             </div>
@@ -37,9 +37,9 @@ export const Navbar = () => {
 
                     <div className="hidden md:flex items-center space-x-8">
                         <Link to="/" className={linkClass('/')}>Home</Link>
-                        <Link to="/how-to-use" className={linkClass('/how-to-use')}>How to Use</Link>
-                        <Link to="/pricing" className={linkClass('/pricing')}>Pricing</Link>
-                        <Link to="/tools" className={linkClass('/tools')}>Tools</Link>
+                        <Link to="/how-to-use/" className={linkClass('/how-to-use/')}>How to Use</Link>
+                        <Link to="/pricing/" className={linkClass('/pricing/')}>Pricing</Link>
+                        <Link to="/tools/" className={linkClass('/tools/')}>Tools</Link>
                         {/* Hidden links
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">About</a>
             <a href="#" className="text-sm font-medium text-slate-600 hover:text-slate-900">Blog</a>
@@ -65,9 +65,9 @@ export const Navbar = () => {
                     >
                         <div className="px-4 pt-2 pb-6 space-y-2">
                             <Link to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/')}>Home</Link>
-                            <Link to="/how-to-use" onClick={() => setIsOpen(false)} className={mobileLinkClass('/how-to-use')}>How to Use</Link>
-                            <Link to="/pricing" onClick={() => setIsOpen(false)} className={mobileLinkClass('/pricing')}>Pricing</Link>
-                            <Link to="/tools" onClick={() => setIsOpen(false)} className={mobileLinkClass('/tools')}>Tools</Link>
+                            <Link to="/how-to-use/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/how-to-use/')}>How to Use</Link>
+                            <Link to="/pricing/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/pricing/')}>Pricing</Link>
+                            <Link to="/tools/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/tools/')}>Tools</Link>
                             <div className="pt-2">
                                 <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install Free</Button>
                             </div>

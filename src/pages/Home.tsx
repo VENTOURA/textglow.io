@@ -53,7 +53,7 @@ export const Home = () => {
                                 "@context": "https://schema.org",
                                 "@type": "Organization",
                                 "name": "Textglow",
-                                "url": "https://textglow.io",
+                                "url": "https://textglow.io/",
                                 "logo": "https://textglow.io/logo.png",
                                 "sameAs": [
                                     "https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"

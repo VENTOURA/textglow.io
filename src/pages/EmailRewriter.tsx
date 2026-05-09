@@ -119,7 +119,7 @@ export const EmailRewriter = () => {
     "@type": "WebApplication", 
     "name": "Free Email Rewriter", 
     "description": "Rewrite any email or message in 10 different tones with AI.", 
-    "url": "https://textglow.io/tools/email-rewriter", 
+    "url": "https://textglow.io/tools/email-rewriter/", 
     "applicationCategory": "UtilityApplication", 
     "operatingSystem": "Web", 
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } 
@@ -132,11 +132,11 @@ export const EmailRewriter = () => {
       <Helmet>
         <title>Free Email Rewriter — Rewrite Any Message in 10 Different Tones | TextGlow</title>
         <meta name="description" content="Paste your email, pick a tone, and see it rewritten instantly. Professional, Friendly, Confident, and 7 more tones. 3 free rewrites per day. No signup. Powered by TextGlow." />
-        <link rel="canonical" href="https://textglow.io/tools/email-rewriter" />
+        <link rel="canonical" href="https://textglow.io/tools/email-rewriter/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Free Email Rewriter | TextGlow" />
         <meta property="og:description" content="Paste your email, pick a tone, and see it rewritten instantly. Professional, Friendly, Confident, and 7 more tones. 3 free rewrites per day." />
-        <meta property="og:url" content="https://textglow.io/tools/email-rewriter" />
+        <meta property="og:url" content="https://textglow.io/tools/email-rewriter/" />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

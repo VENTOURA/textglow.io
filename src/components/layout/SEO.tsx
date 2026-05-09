@@ -16,7 +16,7 @@ export const SEO = () => {
         "author": {
             "@type": "Organization",
             "name": "Textglow",
-            "url": "https://textglow.io"
+            "url": "https://textglow.io/"
         }
     };
 

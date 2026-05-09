@@ -96,7 +96,7 @@ export const LinkedinPostPreview = () => {
             <Helmet>
                 <title>Free LinkedIn Post Preview & Scorer — See How Your Post Looks Before Publishing | TextGlow</title>
                 <meta name="description" content="Preview your LinkedIn post exactly as it will appear on desktop and mobile. Get scored on hook strength, length, readability, and formatting. Free, instant, no signup." />
-                <link rel="canonical" href="https://textglow.io/tools/linkedin-post-preview" />
+                <link rel="canonical" href="https://textglow.io/tools/linkedin-post-preview/" />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

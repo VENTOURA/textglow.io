@@ -26,11 +26,11 @@ export const Translate = () => {
             <Helmet>
                 <title>AI Writing Tool for Non-Native English Speakers — Sound Like a Native | TextGlow</title>
                 <meta name="description" content="You think in your language but write in English. Grammarly fixes grammar — TextGlow fixes how you sound. Polish your English writing to native fluency in 2 clicks. Free Chrome extension." />
-                <link rel="canonical" href="https://textglow.io/translate" />
+                <link rel="canonical" href="https://textglow.io/translate/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="AI Writing Tool for Non-Native English Speakers | TextGlow" />
                 <meta property="og:description" content="You think in your language but write in English. TextGlow fixes how you sound — not just your grammar." />
-                <meta property="og:url" content="https://textglow.io/translate" />
+                <meta property="og:url" content="https://textglow.io/translate/" />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="AI Writing Tool for Non-Native Speakers | TextGlow" />

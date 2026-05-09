@@ -5,9 +5,9 @@ export const Sales: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Sales Email Writer — Rewrite Cold Outreach That Converts",
-        description: "Rewrite sales emails in the right tone instantly. TextGlow helps SDRs and AEs craft cold outreach, follow-ups, and proposals that sound confident, not pushy. Chrome extension.",
-        url: "/sales"
+        title: "AI Writing Assistant for Sales Teams — Close More Deals | TextGlow",
+        description: "Scale your sales outreach without losing the human touch. Use TextGlow to rewrite cold emails, follow-ups, and LinkedIn pitches for maximum conversion.",
+        url: "/use-cases/sales/"
       }}
       hero={{
         title: "Your Cold Email Sounds Exactly Like the Last 11 They Deleted",

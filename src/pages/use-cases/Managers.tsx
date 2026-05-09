@@ -5,9 +5,9 @@ export const Managers: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Tool for Managers — Get the Tone Right | TextGlow",
-        description: "Rewrite feedback, difficult conversations, and team communication with the right tone. TextGlow helps managers lead through better writing. Free Chrome extension.",
-        url: "/managers"
+        title: "AI Writing Assistant for Managers — Clear Communication | TextGlow",
+        description: "Improve team communication and leadership. Use TextGlow to rewrite performance reviews, difficult feedback, and Slack announcements in the perfect tone.",
+        url: "/use-cases/managers/"
       }}
       hero={{
         title: "The Hardest Part of Managing Isn't the Decisions — It's Writing Them Down",

@@ -45,16 +45,24 @@ export const ExampleDetail = () => {
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
             <Helmet>
-                <title>{example.seoTitle}</title>
-                <meta name="description" content={example.seoDescription} />
+                <title>{example.title} — AI Writing Example | TextGlow</title>
+                <meta name="description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
                 <link rel="canonical" href={`https://textglow.io/tools/examples/${example.slug}/`} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={`https://textglow.io/tools/examples/${example.slug}/`} />
+                <meta property="og:title" content={`${example.title} — AI Writing Example | TextGlow`} />
+                <meta property="og:description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content={`${example.title} — AI Writing Example | TextGlow`} />
+                <meta property="twitter:description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
                 <script type="application/ld+json">
                     {`
                         {
                             "@context": "https://schema.org",
                             "@type": "HowTo",
-                            "name": "${example.seoTitle}",
-                            "description": "${example.seoDescription}",
+                            "name": "Rewrite Example: ${example.title} — TextGlow",
+                            "description": "See how TextGlow rewrote this message into ${example.tone} tone. Before and after examples of AI message rewriting for ${example.context}.",
                             "step": [
                                 {
                                     "@type": "HowToStep",

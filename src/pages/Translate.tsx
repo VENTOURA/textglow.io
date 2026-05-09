@@ -24,17 +24,17 @@ export const Translate = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI Writing Tool for Non-Native English Speakers — Sound Like a Native | TextGlow</title>
-                <meta name="description" content="You think in your language but write in English. Grammarly fixes grammar — TextGlow fixes how you sound. Polish your English writing to native fluency in 2 clicks. Free Chrome extension." />
+                <title>Translate Slang to English — Gen Z to Corporate Translator | TextGlow</title>
+                <meta name="description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
                 <link rel="canonical" href="https://textglow.io/translate/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="AI Writing Tool for Non-Native English Speakers | TextGlow" />
-                <meta property="og:description" content="You think in your language but write in English. TextGlow fixes how you sound — not just your grammar." />
                 <meta property="og:url" content="https://textglow.io/translate/" />
+                <meta property="og:title" content="Translate Slang to English — Gen Z to Corporate Translator | TextGlow" />
+                <meta property="og:description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI Writing Tool for Non-Native Speakers | TextGlow" />
-                <meta property="twitter:description" content="You think in your language but write in English. TextGlow fixes how you sound." />
+                <meta property="twitter:title" content="Translate Slang to English — Gen Z to Corporate Translator | TextGlow" />
+                <meta property="twitter:description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">

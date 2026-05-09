@@ -111,25 +111,18 @@ export const WritingQuiz = () => {
   // Determine Meta Tags
   let helmetContext = (
     <Helmet>
-      <title>What's Your Writing Personality? — Free Communication Style Quiz | TextGlow</title>
-      <meta name="description" content="Discover your writing personality type in 2 minutes. Are you The Diplomat, The Commander, or The Rambler? Fun quiz with 16 shareable result types." />
-      <meta property="og:title" content="What's Your Writing Personality?" />
-      <meta property="og:description" content="Take the free quiz and find out which of 16 writing personalities you are — plus which TextGlow tone fits you best." />
-      <meta property="og:url" content="https://textglow.io/tools/writing-quiz/" />
+      <title>Writing Personality Quiz — What's Your Writing Style? | TextGlow</title>
+      <meta name="description" content="Discover your unique writing personality. Are you a Diplomat, a Commander, or a Ghost? Take our 2-minute quiz to find out and improve your communication. Free." />
+      <link rel="canonical" href="https://textglow.io/tools/writing-quiz/" />
       <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:url" content="https://textglow.io/tools/writing-quiz/" />
+      <meta property="og:title" content="Writing Personality Quiz — What's Your Writing Style? | TextGlow" />
+      <meta property="og:description" content="Discover your unique writing personality. Are you a Diplomat, a Commander, or a Ghost? Take our 2-minute quiz to find out and improve your communication. Free." />
+      <meta property="og:image" content="https://textglow.io/og-image.png" />
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:title" content="Writing Personality Quiz — What's Your Writing Style? | TextGlow" />
+      <meta property="twitter:description" content="Discover your unique writing personality. Are you a Diplomat, a Commander, or a Ghost? Take our 2-minute quiz to find out and improve your communication. Free." />
     </Helmet>
-  );
-
-  if (state.result && personalityTypes[state.result]) {
-    const type = personalityTypes[state.result];
-    helmetContext = (
-      <Helmet>
-        <title>{type.name} ({type.code}) — Writing Personality Quiz | TextGlow</title>
-        <meta name="description" content={`I'm ${type.name} (${type.code}) — ${type.description.slice(0, 120)}... What's your writing personality?`} />
-        <meta property="og:title" content={`I'm ${type.name} — What's Your Writing Personality?`} />
-        <meta property="og:url" content={`https://textglow.io/tools/writing-quiz?result=${type.code}`} />
-      </Helmet>
     );
   }
 

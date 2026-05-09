@@ -94,9 +94,17 @@ export const LinkedinPostPreview = () => {
     return (
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
-                <title>Free LinkedIn Post Preview & Scorer — See How Your Post Looks Before Publishing | TextGlow</title>
-                <meta name="description" content="Preview your LinkedIn post exactly as it will appear on desktop and mobile. Get scored on hook strength, length, readability, and formatting. Free, instant, no signup." />
+                <title>LinkedIn Post Preview & Scorer — Optimize Your Hook | TextGlow</title>
+                <meta name="description" content="Preview your LinkedIn posts on desktop and mobile before posting. Get AI insights on hook strength, formatting, and readability to maximize your reach. Free tool." />
                 <link rel="canonical" href="https://textglow.io/tools/linkedin-post-preview/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/linkedin-post-preview/" />
+                <meta property="og:title" content="LinkedIn Post Preview & Scorer — Optimize Your Hook | TextGlow" />
+                <meta property="og:description" content="Preview your LinkedIn posts on desktop and mobile before posting. Get AI insights on hook strength, formatting, and readability to maximize your reach. Free tool." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="LinkedIn Post Preview & Scorer — Optimize Your Hook | TextGlow" />
+                <meta property="twitter:description" content="Preview your LinkedIn posts on desktop and mobile before posting. Get AI insights on hook strength, formatting, and readability to maximize your reach. Free tool." />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

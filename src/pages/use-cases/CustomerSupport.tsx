@@ -5,9 +5,9 @@ export const CustomerSupport: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Customer Support Writing Tool — Rewrite Replies Instantly",
-        description: "Rewrite customer support responses in the right tone instantly. TextGlow helps support agents craft empathetic, professional replies in 2 clicks inside Zendesk, Intercom, and more.",
-        url: "/customer-support"
+        title: "AI Writing Assistant for Customer Support — Empathy at Scale | TextGlow",
+        description: "Improve customer satisfaction and response times. Use TextGlow to rewrite support tickets, emails, and live chat messages to be more empathetic and professional.",
+        url: "/use-cases/customer-support/"
       }}
       hero={{
         title: "Your 47th Empathetic Response Today Shouldn't Sound Like It",

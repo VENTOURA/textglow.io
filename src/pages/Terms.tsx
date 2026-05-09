@@ -5,17 +5,17 @@ export const Terms = () => {
     return (
         <div className="relative overflow-hidden min-h-screen bg-slate-50 pt-24 pb-20">
             <Helmet>
-                <title>Terms of Service – Textglow</title>
-                <meta name="description" content="Terms of Service for using the Textglow Chrome Extension. Read our usage policies and subscription terms." />
+                <title>Terms of Service — TextGlow</title>
+                <meta name="description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/terms/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/terms/" />
-                <meta property="og:title" content="Terms of Service – Textglow" />
-                <meta property="og:description" content="Terms of Service for using the Textglow Chrome Extension." />
+                <meta property="og:title" content="Terms of Service — TextGlow" />
+                <meta property="og:description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Terms of Service – Textglow" />
-                <meta property="twitter:description" content="Terms of Service for using the Textglow Chrome Extension." />
+                <meta property="twitter:title" content="Terms of Service — TextGlow" />
+                <meta property="twitter:description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
             </Helmet>
 
             {/* Background blobs */}
@@ -42,7 +42,7 @@ export const Terms = () => {
                 >
                     <div className="prose prose-slate prose-lg max-w-none hover:prose-a:text-brand-600 prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600">
                         <p className="lead mb-10 text-xl text-slate-600 leading-relaxed">
-                            Welcome to Textglow. By accessing, installing, or using the Textglow Chrome Extension ("Service"), you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.
+                            Welcome to TextGlow. By accessing, installing, or using the TextGlow Chrome Extension ("Service"), you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.
                         </p>
 
                         <div className="space-y-12">
@@ -53,7 +53,7 @@ export const Terms = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        By installing and using the Textglow Chrome Extension, you agree to these Terms of Service. If you do not agree, please do not use the extension. You must be at least 13 years old to use this Service.
+                                        By installing and using the TextGlow Chrome Extension, you agree to these Terms of Service. If you do not agree, please do not use the extension. You must be at least 13 years old to use this Service.
                                     </p>
                                 </div>
                             </section>
@@ -65,16 +65,16 @@ export const Terms = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        Textglow provides AI-powered text polishing and rewriting services directly within your browser.
+                                        TextGlow provides AI-powered text rewriting services directly within your browser.
                                     </p>
                                     <ul className="list-none pl-0 space-y-3">
                                         <li className="flex items-start">
                                             <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                                            <span className="leading-relaxed"><strong>Free Plan:</strong> Includes 10 polishes per day using our high-speed AI infrastructure. No technical setup required. You may optionally provide your own OpenAI API key to use your own quota.</span>
+                                            <span className="leading-relaxed"><strong>Free Plan:</strong> Includes 10 rewrites per day using our high-speed AI infrastructure. No technical setup required. You may optionally provide your own OpenAI API key to use your own quota.</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="w-2 h-2 bg-brand-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                                            <span className="leading-relaxed"><strong>Pro Plan:</strong> Includes premium AI access, 150 polishes per day, the exclusive One-Click Magic mode, and priority processing.</span>
+                                            <span className="leading-relaxed"><strong>Pro Plan:</strong> Includes premium AI access, 150 rewrites per day, the exclusive One-Click Magic mode, and priority processing.</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -105,7 +105,7 @@ export const Terms = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        You are responsible for the content you process using Textglow. You agree not to use the service to generate harmful, illegal, abusive, or fraudulent content. We reserve the right to terminate access for users who violate these guidelines or abuse the API limits.
+                                        You are responsible for the content you process using TextGlow. You agree not to use the service to generate harmful, illegal, abusive, or fraudulent content. We reserve the right to terminate access for users who violate these guidelines or abuse the API limits.
                                     </p>
                                 </div>
                             </section>
@@ -117,7 +117,7 @@ export const Terms = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        The Textglow extension, including its code, design, features, and branding, is owned by Textglow. The text content you generate using the service belongs to you, subject to the terms of the underlying AI provider (e.g., OpenAI).
+                                        The TextGlow extension, including its code, design, features, and branding, is owned by TextGlow. The text content you generate using the service belongs to you, subject to the terms of the underlying AI provider (e.g., OpenAI).
                                     </p>
                                 </div>
                             </section>
@@ -141,7 +141,7 @@ export const Terms = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        To the fullest extent permitted by law, Textglow shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits or data, arising from your use of the service.
+                                        To the fullest extent permitted by law, TextGlow shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits or data, arising from your use of the service.
                                     </p>
                                 </div>
                             </section>

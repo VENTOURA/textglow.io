@@ -5,9 +5,9 @@ export const JobApplications: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Cover Letter & Job Email Writer — Nail the Right Tone",
-        description: "Rewrite cover letters, recruiter emails, and follow-ups in the right tone instantly. TextGlow helps job seekers sound confident, professional, and memorable. Chrome extension.",
-        url: "/job-applications"
+        title: "AI Writing Assistant for Job Seekers — Land More Interviews | TextGlow",
+        description: "Stand out to recruiters and hiring managers. Use TextGlow to rewrite cover letters, LinkedIn outreach, and follow-up emails for a professional and confident tone.",
+        url: "/use-cases/job-applications/"
       }}
       hero={{
         title: "The Most Important Emails You'll Ever Write, and You're Writing Them Stressed",

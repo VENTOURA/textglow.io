@@ -76,17 +76,17 @@ export const EmailToneAnalyzer = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Free Email Tone Analyzer — Check How Your Email Sounds | TextGlow</title>
-        <meta name="description" content="Paste your email and instantly see its tone breakdown — professional, friendly, passive-aggressive, or too formal. Free, private, no signup. Powered by TextGlow." />
+        <title>Free AI Email Tone Analyzer — Fix Your Tone Instantly | TextGlow</title>
+        <meta name="description" content="Analyze the tone of your emails before hitting send. Use TextGlow to detect passive-aggression, over-formality, or hidden tones. Rewrite for the perfect impact. Free." />
         <link rel="canonical" href="https://textglow.io/tools/email-tone-analyzer/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Free Email Tone Analyzer — Check How Your Email Sounds | TextGlow" />
-        <meta property="og:description" content="Paste your email and instantly see its tone breakdown. Free, private, no signup." />
         <meta property="og:url" content="https://textglow.io/tools/email-tone-analyzer/" />
+        <meta property="og:title" content="Free AI Email Tone Analyzer — Fix Your Tone Instantly | TextGlow" />
+        <meta property="og:description" content="Analyze the tone of your emails before hitting send. Use TextGlow to detect passive-aggression, over-formality, or hidden tones. Rewrite for the perfect impact. Free." />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Free Email Tone Analyzer | TextGlow" />
-        <meta property="twitter:description" content="Paste your email and instantly see its tone breakdown. Free, private, no signup." />
+        <meta property="twitter:title" content="Free AI Email Tone Analyzer — Fix Your Tone Instantly | TextGlow" />
+        <meta property="twitter:description" content="Analyze the tone of your emails before hitting send. Use TextGlow to detect passive-aggression, over-formality, or hidden tones. Rewrite for the perfect impact. Free." />
       </Helmet>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 

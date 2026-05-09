@@ -26,17 +26,17 @@ export const Pricing = () => {
     return (
         <div className="bg-white pt-10">
             <Helmet>
-                <title>TextGlow Pricing — AI Writing Assistant from $0/month | 3x Cheaper Than Grammarly</title>
-                <meta name="description" content="Polish your writing in 2 clicks for free — or upgrade to Pro for $39/year. 10 tones, works inside Gmail, Slack, LinkedIn. 3x cheaper than Grammarly, no copy-pasting like ChatGPT." />
+                <title>Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow</title>
+                <meta name="description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
                 <link rel="canonical" href="https://textglow.io/pricing/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/pricing/" />
-                <meta property="og:title" content="TextGlow Pricing — AI Writing Assistant from $0/month" />
-                <meta property="og:description" content="Polish your writing in 2 clicks for free — or upgrade to Pro for $39/year. 3x cheaper than Grammarly." />
+                <meta property="og:title" content="Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow" />
+                <meta property="og:description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="TextGlow Pricing — AI Writing Assistant from $0/month" />
-                <meta property="twitter:description" content="Polish your writing in 2 clicks for free — or upgrade to Pro for $39/year. 3x cheaper than Grammarly." />
+                <meta property="twitter:title" content="Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow" />
+                <meta property="twitter:description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
             </Helmet>
 
             <PricingSection />
@@ -56,7 +56,7 @@ export const Pricing = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-3xl font-bold text-slate-900 mb-6">What's One-Click Polish?</h2>
+                            <h2 className="text-3xl font-bold text-slate-900 mb-6">What's One-Click Rewrite?</h2>
                             <div className="prose prose-slate text-lg text-slate-600">
                                 <p>With the free plan, you click the ✨ icon and choose from 10 tones — Professional, Friendly, Confident, and more. It takes 2 clicks and about 3 seconds.</p>
                                 <p>With One-Click Polish, you <strong>set your favorite default tone</strong>. Then, simply click the ✨ icon and TextGlow instantly polishes your text using your preferred tone.</p>

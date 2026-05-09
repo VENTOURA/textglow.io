@@ -55,17 +55,17 @@ export const Gmail = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow</title>
-                <meta name="description" content="Stop spending 10 minutes writing a 3-sentence email. TextGlow polishes your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension." />
+                <title>Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow</title>
+                <meta name="description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
                 <link rel="canonical" href="https://textglow.io/gmail/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />
-                <meta property="og:description" content="Stop spending 10 minutes writing a 3-sentence email. TextGlow polishes your Gmail messages in 2 clicks." />
                 <meta property="og:url" content="https://textglow.io/gmail/" />
+                <meta property="og:title" content="Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow" />
+                <meta property="og:description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />
-                <meta property="twitter:description" content="Stop spending 10 minutes writing a 3-sentence email. TextGlow polishes your Gmail messages in 2 clicks." />
+                <meta property="twitter:title" content="Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow" />
+                <meta property="twitter:description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">

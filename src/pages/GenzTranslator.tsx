@@ -145,9 +145,17 @@ export const GenzTranslator = () => {
     return (
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
-                <title>Gen Z ↔ Corporate Translator — Decode Workplace Slang | TextGlow</title>
-                <meta name="description" content="Translate Gen Z slang to corporate speak and back. 'No cap' → 'I assure you this is accurate.' Free, fun, and instant. 150+ phrase dictionary." />
+                <title>Gen Z Translator — Slang to English Translator | TextGlow</title>
+                <meta name="description" content="Translate Gen Z slang into plain English instantly. Use TextGlow to understand what your kids, students, or younger coworkers are saying. Free online tool." />
                 <link rel="canonical" href="https://textglow.io/tools/genz-translator/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/genz-translator/" />
+                <meta property="og:title" content="Gen Z Translator — Slang to English Translator | TextGlow" />
+                <meta property="og:description" content="Translate Gen Z slang into plain English instantly. Use TextGlow to understand what your kids, students, or younger coworkers are saying. Free online tool." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Gen Z Translator — Slang to English Translator | TextGlow" />
+                <meta property="twitter:description" content="Translate Gen Z slang into plain English instantly. Use TextGlow to understand what your kids, students, or younger coworkers are saying. Free online tool." />
             </Helmet>
 
             {/* Hero */}

@@ -90,11 +90,17 @@ export const SubjectLineScorer = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Free Email Subject Line Scorer — Test Your Subject Line | TextGlow</title>
-        <meta name="description" content="Score your email subject line instantly. Check length, spam triggers, personalization, and engagement. Get 3 improved alternatives. Free, private, no signup." />
-        <meta property="og:title" content="Free Email Subject Line Scorer — Test Your Subject Line" />
-        <meta property="og:description" content="Score your email subject line instantly. Check length, spam triggers, personalization, and engagement. Get 3 improved alternatives. Free, private, no signup." />
+        <title>Free Email Subject Line Scorer — Optimize Your Open Rate | TextGlow</title>
+        <meta name="description" content="Score your email subject lines instantly. Get AI insights on length, spam triggers, and personalization to improve your open rates. Free online tool." />
+        <link rel="canonical" href="https://textglow.io/tools/subject-line-scorer/" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://textglow.io/tools/subject-line-scorer/" />
+        <meta property="og:title" content="Free Email Subject Line Scorer — Optimize Your Open Rate | TextGlow" />
+        <meta property="og:description" content="Score your email subject lines instantly. Get AI insights on length, spam triggers, and personalization to improve your open rates. Free online tool." />
+        <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Free Email Subject Line Scorer — Optimize Your Open Rate | TextGlow" />
+        <meta property="twitter:description" content="Score your email subject lines instantly. Get AI insights on length, spam triggers, and personalization to improve your open rates. Free online tool." />
       </Helmet>
 
       {/* Hero Section */}

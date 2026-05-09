@@ -32,20 +32,17 @@ export const ExamplesGallery = () => {
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
             <Helmet>
-                <title>Before & After Writing Examples — Email, Slack & LinkedIn Rewrites | TextGlow</title>
-                <meta name="description" content="Browse 100+ real before/after writing examples. See how TextGlow transforms emails, Slack messages, LinkedIn posts, cover letters, and more with AI-powered tone selection." />
+                <title>AI Writing Examples Gallery — Before & After | TextGlow</title>
+                <meta name="description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
                 <link rel="canonical" href="https://textglow.io/tools/examples/" />
-                <script type="application/ld+json">
-                    {`
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "CollectionPage",
-                            "name": "Before & After Writing Examples",
-                            "description": "100+ real before/after writing examples showing email, Slack, LinkedIn, and professional writing transformed by tone.",
-                            "url": "https://textglow.io/tools/examples/"
-                        }
-                    `}
-                </script>
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/examples/" />
+                <meta property="og:title" content="AI Writing Examples Gallery — Before & After | TextGlow" />
+                <meta property="og:description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="AI Writing Examples Gallery — Before & After | TextGlow" />
+                <meta property="twitter:description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
             </Helmet>
 
             {/* Hero */}

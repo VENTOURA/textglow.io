@@ -13,24 +13,17 @@ export const Home = () => {
     return (
         <div className="overflow-x-hidden">
             <Helmet>
-                <title>TextGlow — AI Writing Assistant That Polishes Your Tone in 2 Clicks</title>
-                <meta name="description" content="Stop copy-pasting into ChatGPT. TextGlow polishes your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
-                <meta name="keywords" content="AI text polisher, email rewriter, grammar checker chrome extension, formalize text, AI writing assistant, text improver, professional writing tool" />
+                <title>TextGlow — AI Writing Assistant for Better Messages | TextGlow</title>
+                <meta name="description" content="Rewrite your emails, Slack messages, and LinkedIn posts for better tone and clarity. TextGlow is your AI writing assistant that works everywhere you type. Free." />
                 <link rel="canonical" href="https://textglow.io/" />
-
-                {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/" />
-                <meta property="og:title" content="TextGlow — AI Writing Assistant That Polishes Your Tone in 2 Clicks" />
-                <meta property="og:description" content="Stop copy-pasting into ChatGPT. TextGlow polishes your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
+                <meta property="og:title" content="TextGlow — AI Writing Assistant for Better Messages | TextGlow" />
+                <meta property="og:description" content="Rewrite your emails, Slack messages, and LinkedIn posts for better tone and clarity. TextGlow is your AI writing assistant that works everywhere you type. Free." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
-
-                {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://textglow.io/" />
-                <meta property="twitter:title" content="TextGlow — AI Writing Assistant That Polishes Your Tone in 2 Clicks" />
-                <meta property="twitter:description" content="Stop copy-pasting into ChatGPT. TextGlow polishes your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
-                <meta property="twitter:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:title" content="TextGlow — AI Writing Assistant for Better Messages | TextGlow" />
+                <meta property="twitter:description" content="Rewrite your emails, Slack messages, and LinkedIn posts for better tone and clarity. TextGlow is your AI writing assistant that works everywhere you type. Free." />
             </Helmet>
 
             <script type="application/ld+json">
@@ -47,7 +40,7 @@ export const Home = () => {
                                 "price": "0",
                                 "priceCurrency": "USD"
                             },
-                            "description": "Textglow is an AI-powered Chrome extension that helps you polish, rewrite, and improve your emails, messages, and documents instantly inside any website."
+                            "description": "Textglow is an AI-powered Chrome extension that helps you rewrite, improve, and rewrite your emails, messages, and documents instantly inside any website."
                         },
                         {
                             "@context": "https://schema.org",

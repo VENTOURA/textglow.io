@@ -24,14 +24,17 @@ export const Tools = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Free Writing Tools — Word Counter, Tone Analyzer & More | TextGlow</title>
-        <meta name="description" content="Improve your writing with free, instant, browser-based tools. Analyze email tone, count words, check readability — no signup required. 100% private." />
+        <title>Free AI Writing Tools — Rewrite, Analyze & More | TextGlow</title>
+        <meta name="description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
         <link rel="canonical" href="https://textglow.io/tools/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Free Writing Tools | TextGlow" />
-        <meta property="og:description" content="Free, instant, browser-based writing tools. No signup required." />
         <meta property="og:url" content="https://textglow.io/tools/" />
+        <meta property="og:title" content="Free AI Writing Tools — Rewrite, Analyze & More | TextGlow" />
+        <meta property="og:description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Free AI Writing Tools — Rewrite, Analyze & More | TextGlow" />
+        <meta property="twitter:description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
       </Helmet>
 
       <section className="pt-24 pb-20 bg-gradient-to-b from-slate-900 to-slate-800">

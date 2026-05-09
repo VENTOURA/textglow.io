@@ -6,7 +6,7 @@ export default function NotFound() {
     return (
         <div className="min-h-[70vh] flex items-center justify-center bg-white px-4">
             <Helmet>
-                <title>Page Not Found | TextGlow</title>
+                <title>Page Not Found — TextGlow</title>
                 <meta name="description" content="The page you're looking for doesn't exist." />
                 <meta name="robots" content="noindex" />
             </Helmet>

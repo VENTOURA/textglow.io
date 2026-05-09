@@ -5,17 +5,17 @@ export const Privacy = () => {
     return (
         <div className="relative overflow-hidden min-h-screen bg-slate-50 pt-24 pb-20">
             <Helmet>
-                <title>Privacy Policy – Textglow</title>
-                <meta name="description" content="Textglow Privacy Policy. We never store your text. Learn how we handle data securely and transparently." />
+                <title>Privacy Policy — TextGlow</title>
+                <meta name="description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/privacy/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/privacy/" />
-                <meta property="og:title" content="Privacy Policy – Textglow" />
-                <meta property="og:description" content="Textglow Privacy Policy. We never store your text. Learn how we handle data securely." />
+                <meta property="og:title" content="Privacy Policy — TextGlow" />
+                <meta property="og:description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Privacy Policy – Textglow" />
-                <meta property="twitter:description" content="Textglow Privacy Policy. We never store your text. Learn how we handle data securely." />
+                <meta property="twitter:title" content="Privacy Policy — TextGlow" />
+                <meta property="twitter:description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
             </Helmet>
 
             {/* Background blobs */}
@@ -43,7 +43,7 @@ export const Privacy = () => {
                 >
                     <div className="prose prose-slate prose-lg max-w-none hover:prose-a:text-brand-600 prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600">
                         <p className="lead mb-10 text-xl text-slate-600 leading-relaxed">
-                            At Textglow, we take your privacy seriously. This Privacy Policy explains how we collect, use, and disclose information, and your rights in relation to that information. This policy applies to the Textglow Chrome Extension.
+                            At TextGlow, we take your privacy seriously. This Privacy Policy explains how we collect, use, and disclose information, and your rights in relation to that information. This policy applies to the TextGlow Chrome Extension.
                         </p>
 
                         <div className="space-y-12">
@@ -54,7 +54,7 @@ export const Privacy = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        <strong>Website Content (Selected Text):</strong> The core functionality of Textglow requires accessing text that you explicitly select on web pages. We <strong>only</strong> access and process the specific text you highlight and choose to submit for polishing. We do not passively monitor, record, or store your browsing history, passwords, or other page content.
+                                        <strong>Website Content (Selected Text):</strong> The core functionality of TextGlow requires accessing text that you explicitly select on web pages. We <strong>only</strong> access and process the specific text you highlight and choose to submit for rewriting. We do not passively monitor, record, or store your browsing history, passwords, or other page content.
                                     </p>
                                     <p className="leading-relaxed">
                                         <strong>Account Information (Pro Users):</strong> If you upgrade to our Pro plan, we collect your email address to manage your subscription and verify your "Pro" status across devices.
@@ -63,7 +63,7 @@ export const Privacy = () => {
                                         <strong>Payment Information:</strong> All payments are processed securely by our third-party payment processor, Stripe. We <strong>do not</strong> store or have access to your credit card numbers or banking information.
                                     </p>
                                     <p className="leading-relaxed">
-                                        <strong>Usage Data:</strong> We may collect anonymous, aggregated usage statistics (e.g., number of polishes performed) to improve service stability and performance.
+                                        <strong>Usage Data:</strong> We may collect anonymous, aggregated usage statistics (e.g., number of rewrites performed) to improve service stability and performance.
                                     </p>
                                 </div>
                             </section>
@@ -101,7 +101,7 @@ export const Privacy = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        We do <strong>not</strong> permanently store the text content you submit for polishing. Once the rewritten text is returned to your browser, the original and processed text data is discarded from our processing servers. Account information (email) is retained only as long as your subscription is active or as required by law.
+                                        We do <strong>not</strong> permanently store the text content you submit for rewriting. Once the rewritten text is returned to your browser, the original and processed text data is discarded from our processing servers. Account information (email) is retained only as long as your subscription is active or as required by law.
                                     </p>
                                 </div>
                             </section>

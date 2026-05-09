@@ -130,14 +130,17 @@ export const EmailRewriter = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Free Email Rewriter — Rewrite Any Message in 10 Different Tones | TextGlow</title>
-        <meta name="description" content="Paste your email, pick a tone, and see it rewritten instantly. Professional, Friendly, Confident, and 7 more tones. 3 free rewrites per day. No signup. Powered by TextGlow." />
+        <title>Free AI Email Rewriter — Professional Email Writing Tool | TextGlow</title>
+        <meta name="description" content="Rewrite your emails for better clarity, tone, and impact. Use TextGlow to turn rough drafts into polished professional messages instantly. Free Chrome extension." />
         <link rel="canonical" href="https://textglow.io/tools/email-rewriter/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Free Email Rewriter | TextGlow" />
-        <meta property="og:description" content="Paste your email, pick a tone, and see it rewritten instantly. Professional, Friendly, Confident, and 7 more tones. 3 free rewrites per day." />
         <meta property="og:url" content="https://textglow.io/tools/email-rewriter/" />
+        <meta property="og:title" content="Free AI Email Rewriter — Professional Email Writing Tool | TextGlow" />
+        <meta property="og:description" content="Rewrite your emails for better clarity, tone, and impact. Use TextGlow to turn rough drafts into polished professional messages instantly. Free Chrome extension." />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Free AI Email Rewriter — Professional Email Writing Tool | TextGlow" />
+        <meta property="twitter:description" content="Rewrite your emails for better clarity, tone, and impact. Use TextGlow to turn rough drafts into polished professional messages instantly. Free Chrome extension." />
       </Helmet>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 

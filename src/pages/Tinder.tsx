@@ -54,17 +54,17 @@ export const Tinder = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI Dating Message Assistant — Write Better Tinder, Bumble & Hinge Messages | TextGlow</title>
-                <meta name="description" content="Stop sending 'hey' and getting ghosted. TextGlow's Flirty tone turns your basic dating app messages into witty, confident openers that actually get replies. Free Chrome extension." />
+                <title>AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow</title>
+                <meta name="description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
                 <link rel="canonical" href="https://textglow.io/tinder/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="AI Dating Message Assistant — Tinder, Bumble & Hinge | TextGlow" />
-                <meta property="og:description" content="Stop sending 'hey' and getting ghosted. TextGlow turns your messages into witty, confident openers." />
                 <meta property="og:url" content="https://textglow.io/tinder/" />
+                <meta property="og:title" content="AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow" />
+                <meta property="og:description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI Dating Message Assistant | TextGlow" />
-                <meta property="twitter:description" content="Stop sending 'hey' and getting ghosted. TextGlow turns your messages into witty, confident openers." />
+                <meta property="twitter:title" content="AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow" />
+                <meta property="twitter:description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">

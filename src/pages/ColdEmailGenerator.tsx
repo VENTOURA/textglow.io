@@ -152,9 +152,17 @@ export const ColdEmailGenerator = () => {
     return (
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
-                <title>Free Cold Email Generator — Professional, Persuasive & Friendly Templates | TextGlow</title>
-                <meta name="description" content="Generate cold email templates in 3 tones instantly. Fill in your details, get ready-to-send emails for partnerships, sales, networking, and more. Free, no signup." />
+                <title>Free AI Cold Email Generator — Write High-Converting Outreach | TextGlow</title>
+                <meta name="description" content="Generate personalized, high-converting cold emails in seconds. Use TextGlow to rewrite your outreach for better response rates and engagement. Free online tool." />
                 <link rel="canonical" href="https://textglow.io/tools/cold-email-generator/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/cold-email-generator/" />
+                <meta property="og:title" content="Free AI Cold Email Generator — Write High-Converting Outreach | TextGlow" />
+                <meta property="og:description" content="Generate personalized, high-converting cold emails in seconds. Use TextGlow to rewrite your outreach for better response rates and engagement. Free online tool." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Free AI Cold Email Generator — Write High-Converting Outreach | TextGlow" />
+                <meta property="twitter:description" content="Generate personalized, high-converting cold emails in seconds. Use TextGlow to rewrite your outreach for better response rates and engagement. Free online tool." />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

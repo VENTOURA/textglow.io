@@ -86,9 +86,17 @@ export const PassiveAggressiveChecker = () => {
     return (
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
-                <title>How Passive-Aggressive Is Your Email? Free Checker | TextGlow</title>
-                <meta name="description" content="Paste your email and find out if it sounds passive-aggressive. Get a 0-100 score with phrase-by-phrase breakdown and rewrite suggestions. Free, funny, private." />
+                <title>Free Passive-Aggressive Email Checker — AI Tone Tool | TextGlow</title>
+                <meta name="description" content="Stop sending passive-aggressive emails. Use TextGlow's checker to detect hidden tones and rewrite your messages for professional clarity and impact. Free online tool." />
                 <link rel="canonical" href="https://textglow.io/tools/passive-aggressive-checker/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/passive-aggressive-checker/" />
+                <meta property="og:title" content="Free Passive-Aggressive Email Checker — AI Tone Tool | TextGlow" />
+                <meta property="og:description" content="Stop sending passive-aggressive emails. Use TextGlow's checker to detect hidden tones and rewrite your messages for professional clarity and impact. Free online tool." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Free Passive-Aggressive Email Checker — AI Tone Tool | TextGlow" />
+                <meta property="twitter:description" content="Stop sending passive-aggressive emails. Use TextGlow's checker to detect hidden tones and rewrite your messages for professional clarity and impact. Free online tool." />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

@@ -5,9 +5,9 @@ export const RemoteTeams: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Tool for Remote Teams — Fix Tone Fast | TextGlow",
-        description: "Remote work means 80% of communication is written. TextGlow rewrites your Slack messages and emails with the right tone — so nothing gets lost in text.",
-        url: "/remote-teams"
+        title: "AI Writing Assistant for Remote Teams — Better Collaboration | TextGlow",
+        description: "Eliminate communication friction and misunderstandings. Use TextGlow to rewrite Slack messages, project updates, and emails to be clearer and more intentional.",
+        url: "/use-cases/remote-teams/"
       }}
       hero={{
         title: "In Remote Work, Every Message Carries the Weight of a Conversation",

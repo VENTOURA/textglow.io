@@ -117,9 +117,17 @@ export const FormalityChecker = () => {
     return (
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
-                <title>Free Formality Checker — Is Your Email Too Formal or Too Casual? | TextGlow</title>
-                <meta name="description" content="Paste your text and instantly check if it's too formal, too casual, or just right for your context. Get specific phrase-level suggestions. Free, private, no signup." />
+                <title>Free AI Formality Checker — Professional Writing Tool | TextGlow</title>
+                <meta name="description" content="Check and adjust the formality of your writing instantly. Use TextGlow to rewrite informal text into professional language for emails, reports, and more. Free tool." />
                 <link rel="canonical" href="https://textglow.io/tools/formality-checker/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://textglow.io/tools/formality-checker/" />
+                <meta property="og:title" content="Free AI Formality Checker — Professional Writing Tool | TextGlow" />
+                <meta property="og:description" content="Check and adjust the formality of your writing instantly. Use TextGlow to rewrite informal text into professional language for emails, reports, and more. Free tool." />
+                <meta property="og:image" content="https://textglow.io/og-image.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:title" content="Free AI Formality Checker — Professional Writing Tool | TextGlow" />
+                <meta property="twitter:description" content="Check and adjust the formality of your writing instantly. Use TextGlow to rewrite informal text into professional language for emails, reports, and more. Free tool." />
             </Helmet>
 
             {/* Hero Section */}

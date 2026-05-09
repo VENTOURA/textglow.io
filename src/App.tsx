@@ -51,7 +51,7 @@ function App() {
           <Route path="/linkedin" element={<LinkedIn />} />
           <Route path="/gmail" element={<Gmail />} />
           <Route path="/slack" element={<Slack />} />
-          <Route path="/tinder" element={<Tinder />} />
+          <Route path="/dating" element={<Tinder />} />
           <Route path="/translate" element={<Translate />} />
           <Route path="/blog" element={<BlogIndex />} />
           <Route path="/blog/:slug" element={<BlogPost />} />

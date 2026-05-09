@@ -134,12 +134,17 @@ export const OutOfOffice = () => {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Free Out-of-Office Message Generator — OOO Auto-Reply Templates | TextGlow</title>
-        <meta name="description" content="Generate the perfect out-of-office message in seconds. 6 tones, 10 scenarios. Professional, funny, minimal — pick your style. Free, no signup." />
+        <title>Free AI Out-of-Office Generator — Professional OOO | TextGlow</title>
+        <meta name="description" content="Generate the perfect out-of-office message in seconds. Use TextGlow to create professional, funny, or short OOO replies for your vacation or sick leave. Free." />
         <link rel="canonical" href="https://textglow.io/tools/out-of-office/" />
-        <meta property="og:title" content="Free Out-of-Office Message Generator | TextGlow" />
-        <meta property="og:description" content="Create professional, friendly, or funny OOO messages instantly. 60 templates, no signup required." />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://textglow.io/tools/out-of-office/" />
+        <meta property="og:title" content="Free AI Out-of-Office Generator — Professional OOO | TextGlow" />
+        <meta property="og:description" content="Generate the perfect out-of-office message in seconds. Use TextGlow to create professional, funny, or short OOO replies for your vacation or sick leave. Free." />
+        <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Free AI Out-of-Office Generator — Professional OOO | TextGlow" />
+        <meta property="twitter:description" content="Generate the perfect out-of-office message in seconds. Use TextGlow to create professional, funny, or short OOO replies for your vacation or sick leave. Free." />
       </Helmet>
 
       {/* Hero Section */}

@@ -5,9 +5,9 @@ export const CustomerSuccess: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Tool for Customer Success Teams | TextGlow",
-        description: "CSMs write the emails that decide if revenue stays or churns. TextGlow rewrites renewal, upsell, and check-in messages with the perfect tone — inside Gainsight, Gmail, and Slack.",
-        url: "/customer-success"
+        title: "AI Writing Assistant for Customer Success — Build Stronger Relationships | TextGlow",
+        description: "Retain more customers and drive product adoption. Use TextGlow to rewrite renewal emails, expansion pitches, and onboarding check-ins with a confident tone.",
+        url: "/use-cases/customer-success/"
       }}
       hero={{
         title: "Your Emails Decide Whether Revenue Stays or Churns",

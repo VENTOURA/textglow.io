@@ -56,17 +56,17 @@ export const Slack = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Write Better Slack Messages Instantly — AI Tone Assistant | TextGlow</title>
-                <meta name="description" content="Stop second-guessing every Slack message. TextGlow polishes your tone in 2 clicks — right inside Slack. Sound professional, friendly, or direct without the overthinking. Free Chrome extension." />
+                <title>Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow</title>
+                <meta name="description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
                 <link rel="canonical" href="https://textglow.io/slack/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Write Better Slack Messages Instantly — AI Tone Assistant | TextGlow" />
-                <meta property="og:description" content="Stop second-guessing every Slack message. TextGlow polishes your tone in 2 clicks — right inside Slack." />
                 <meta property="og:url" content="https://textglow.io/slack/" />
+                <meta property="og:title" content="Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow" />
+                <meta property="og:description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Write Better Slack Messages Instantly — AI Tone Assistant | TextGlow" />
-                <meta property="twitter:description" content="Stop second-guessing every Slack message. TextGlow polishes your tone in 2 clicks — right inside Slack." />
+                <meta property="twitter:title" content="Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow" />
+                <meta property="twitter:description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
             </Helmet>
 
             {/* ───── HERO ───── */}

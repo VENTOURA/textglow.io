@@ -8,18 +8,17 @@ export const HowToUse = () => {
     return (
         <div className="bg-white min-h-screen">
             <Helmet>
-                <title>How to Use Textglow – Step-by-Step Guide</title>
-                <meta name="description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide on rewriting text, changing tones, and using the Chrome extension." />
-                <meta name="keywords" content="how to use textglow, AI writing guide, text polisher tutorial, tone changer, chrome extension guide" />
+                <title>How to Use TextGlow — Step-by-Step Guide | TextGlow</title>
+                <meta name="description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
                 <link rel="canonical" href="https://textglow.io/how-to-use/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/how-to-use/" />
-                <meta property="og:title" content="How to Use Textglow – Step-by-Step Guide" />
-                <meta property="og:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
+                <meta property="og:title" content="How to Use TextGlow — Step-by-Step Guide | TextGlow" />
+                <meta property="og:description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="How to Use Textglow – Step-by-Step Guide" />
-                <meta property="twitter:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
+                <meta property="twitter:title" content="How to Use TextGlow — Step-by-Step Guide | TextGlow" />
+                <meta property="twitter:description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
             </Helmet>
 
             {/* Structured Data (JSON-LD) for HowTo */}
@@ -28,13 +27,13 @@ export const HowToUse = () => {
                     {
                         "@context": "https://schema.org",
                         "@type": "HowTo",
-                        "name": "How to Use Textglow to Polish Text",
-                        "description": "A simple guide to using the Textglow Chrome extension to instantly improve your writing.",
+                        "name": "How to Use TextGlow to Rewrite Text",
+                        "description": "A simple guide to using the TextGlow Chrome extension to instantly improve your writing.",
                         "step": [
                             {
                                 "@type": "HowToStep",
                                 "name": "Install & Pin",
-                                "text": "Add Textglow to Chrome from the Web Store and pin it to your toolbar.",
+                                "text": "Add TextGlow to Chrome from the Web Store and pin it to your toolbar.",
                                 "image": "https://textglow.io/images/step-install.png",
                                 "url": "https://textglow.io/how-to-use/#step1"
                             },
@@ -47,8 +46,8 @@ export const HowToUse = () => {
                             },
                             {
                                 "@type": "HowToStep",
-                                "name": "Click to Polish",
-                                "text": "Click the Textglow icon, choose a tone, and click Polish to instantly replace your text.",
+                                "name": "Click to Rewrite",
+                                "text": "Click the TextGlow icon, choose a tone, and click Rewrite to instantly replace your text.",
                                 "image": "https://textglow.io/images/step-polish.png",
                                 "url": "https://textglow.io/how-to-use/#step3"
                             }

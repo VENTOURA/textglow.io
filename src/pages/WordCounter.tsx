@@ -98,14 +98,17 @@ export const WordCounter = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Free Word Counter & Readability Checker — Character Count, Reading Time | TextGlow</title>
-        <meta name="description" content="Count words, characters, sentences, and paragraphs. Check readability score, grade level, and platform character limits. Free, instant, private. No signup required." />
+        <title>Free Online Word Counter — Count Words, Chars & More | TextGlow</title>
+        <meta name="description" content="Free online word counter tool. Count words, characters, sentences, and paragraphs in real-time. Use TextGlow to rewrite and improve your content instantly." />
         <link rel="canonical" href="https://textglow.io/tools/word-counter/" />
-        <meta property="og:type" content="website" /><meta property="og:title" content="Free Word Counter & Readability Checker | TextGlow" />
-        <meta property="og:description" content="Count words, characters, sentences. Check readability and platform limits. Free, instant, private." />
-        <meta property="og:url" content="https://textglow.io/tools/word-counter/" /><meta property="og:image" content="https://textglow.io/og-image.png" />
-        <meta property="twitter:card" content="summary_large_image" /><meta property="twitter:title" content="Free Word Counter & Readability Checker | TextGlow" />
-        <meta property="twitter:description" content="Count words, characters, sentences. Check readability and platform limits. Free, instant, private." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://textglow.io/tools/word-counter/" />
+        <meta property="og:title" content="Free Online Word Counter — Count Words, Chars & More | TextGlow" />
+        <meta property="og:description" content="Free online word counter tool. Count words, characters, sentences, and paragraphs in real-time. Use TextGlow to rewrite and improve your content instantly." />
+        <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Free Online Word Counter — Count Words, Chars & More | TextGlow" />
+        <meta property="twitter:description" content="Free online word counter tool. Count words, characters, sentences, and paragraphs in real-time. Use TextGlow to rewrite and improve your content instantly." />
       </Helmet>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 

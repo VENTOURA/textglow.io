@@ -54,17 +54,17 @@ export const LinkedIn = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI LinkedIn Post Writer & Message Assistant | TextGlow</title>
-                <meta name="description" content="Write LinkedIn posts, DMs, and comments that get engagement — without the cringe. TextGlow polishes your tone in 2 clicks, right inside LinkedIn. No copy-pasting. Free Chrome extension." />
+                <title>Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow</title>
+                <meta name="description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/linkedin/" />
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="AI LinkedIn Post Writer & Message Assistant | TextGlow" />
-                <meta property="og:description" content="Write LinkedIn posts, DMs, and comments that get engagement — without the cringe." />
                 <meta property="og:url" content="https://textglow.io/linkedin/" />
+                <meta property="og:title" content="Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow" />
+                <meta property="og:description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI LinkedIn Post Writer & Message Assistant | TextGlow" />
-                <meta property="twitter:description" content="Write LinkedIn posts, DMs, and comments that get engagement — without the cringe." />
+                <meta property="twitter:title" content="Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow" />
+                <meta property="twitter:description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">

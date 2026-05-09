@@ -106,8 +106,8 @@ export const WordCounter = () => {
         <meta property="og:url" content="https://textglow.io/tools/word-counter/" /><meta property="og:image" content="https://textglow.io/og-image.png" />
         <meta property="twitter:card" content="summary_large_image" /><meta property="twitter:title" content="Free Word Counter & Readability Checker | TextGlow" />
         <meta property="twitter:description" content="Count words, characters, sentences. Check readability and platform limits. Free, instant, private." />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
       {/* Hero + Input */}
       <section className="pt-20 pb-8 bg-gradient-to-b from-slate-900 to-slate-800">

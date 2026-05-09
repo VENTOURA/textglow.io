@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
+import { HelmetProvider } from 'react-helmet-async'
+import { BrowserRouter } from 'react-router-dom'
 
 const rootElement = document.getElementById('root')!;
 
@@ -18,13 +20,21 @@ if (rootElement.hasChildNodes()) {
   hydrateRoot(
     rootElement,
     <StrictMode>
-      <App />
+      <HelmetProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </HelmetProvider>
     </StrictMode>
   );
 } else {
   createRoot(rootElement).render(
     <StrictMode>
-      <App />
+      <HelmetProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </HelmetProvider>
     </StrictMode>,
   );
 }

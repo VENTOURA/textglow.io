@@ -20,42 +20,42 @@ export const HowToUse = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="How to Use Textglow – Step-by-Step Guide" />
                 <meta property="twitter:description" content="Learn how to use Textglow to polish your writing instantly. Step-by-step guide." />
-
-                {/* Structured Data (JSON-LD) for HowTo */}
-                <script type="application/ld+json">
-                    {`
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "HowTo",
-                            "name": "How to Use Textglow to Polish Text",
-                            "description": "A simple guide to using the Textglow Chrome extension to instantly improve your writing.",
-                            "step": [
-                                {
-                                    "@type": "HowToStep",
-                                    "name": "Install & Pin",
-                                    "text": "Add Textglow to Chrome from the Web Store and pin it to your toolbar.",
-                                    "image": "https://textglow.io/images/step-install.png",
-                                    "url": "https://textglow.io/how-to-use/#step1"
-                                },
-                                {
-                                    "@type": "HowToStep",
-                                    "name": "Type Your Text",
-                                    "text": "Open any website like Gmail or LinkedIn and type your draft.",
-                                    "image": "https://textglow.io/images/step-type.png",
-                                    "url": "https://textglow.io/how-to-use/#step2"
-                                },
-                                {
-                                    "@type": "HowToStep",
-                                    "name": "Click to Polish",
-                                    "text": "Click the Textglow icon, choose a tone, and click Polish to instantly replace your text.",
-                                    "image": "https://textglow.io/images/step-polish.png",
-                                    "url": "https://textglow.io/how-to-use/#step3"
-                                }
-                            ]
-                        }
-                    `}
-                </script>
             </Helmet>
+
+            {/* Structured Data (JSON-LD) for HowTo */}
+            <script type="application/ld+json">
+                {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "HowTo",
+                        "name": "How to Use Textglow to Polish Text",
+                        "description": "A simple guide to using the Textglow Chrome extension to instantly improve your writing.",
+                        "step": [
+                            {
+                                "@type": "HowToStep",
+                                "name": "Install & Pin",
+                                "text": "Add Textglow to Chrome from the Web Store and pin it to your toolbar.",
+                                "image": "https://textglow.io/images/step-install.png",
+                                "url": "https://textglow.io/how-to-use/#step1"
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "name": "Type Your Text",
+                                "text": "Open any website like Gmail or LinkedIn and type your draft.",
+                                "image": "https://textglow.io/images/step-type.png",
+                                "url": "https://textglow.io/how-to-use/#step2"
+                            },
+                            {
+                                "@type": "HowToStep",
+                                "name": "Click to Polish",
+                                "text": "Click the Textglow icon, choose a tone, and click Polish to instantly replace your text.",
+                                "image": "https://textglow.io/images/step-polish.png",
+                                "url": "https://textglow.io/how-to-use/#step3"
+                            }
+                        ]
+                    }
+                `}
+            </script>
 
             {/* Section 1: Hero / Overview */}
             <section className="pt-32 pb-16 bg-white relative overflow-hidden">

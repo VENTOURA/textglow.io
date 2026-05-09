@@ -87,8 +87,8 @@ export const EmailToneAnalyzer = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Free Email Tone Analyzer | TextGlow" />
         <meta property="twitter:description" content="Paste your email and instantly see its tone breakdown. Free, private, no signup." />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
       {/* Hero / Tool Input */}
       <section className="pt-20 pb-12 bg-gradient-to-b from-slate-900 to-slate-800">

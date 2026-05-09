@@ -31,38 +31,37 @@ export const Home = () => {
                 <meta property="twitter:title" content="TextGlow — AI Writing Assistant That Polishes Your Tone in 2 Clicks" />
                 <meta property="twitter:description" content="Stop copy-pasting into ChatGPT. TextGlow polishes your emails, Slack messages, and LinkedIn posts in 2 clicks — right where you type. 10 tones. Works everywhere. Free Chrome extension." />
                 <meta property="twitter:image" content="https://textglow.io/og-image.png" />
-
-                {/* Structured Data (JSON-LD) */}
-                <script type="application/ld+json">
-                    {`
-                        [
-                            {
-                                "@context": "https://schema.org",
-                                "@type": "SoftwareApplication",
-                                "name": "Textglow",
-                                "operatingSystem": "Chrome, Chromium",
-                                "applicationCategory": "ProductivityApplication",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "0",
-                                    "priceCurrency": "USD"
-                                },
-                                "description": "Textglow is an AI-powered Chrome extension that helps you polish, rewrite, and improve your emails, messages, and documents instantly inside any website."
-                            },
-                            {
-                                "@context": "https://schema.org",
-                                "@type": "Organization",
-                                "name": "Textglow",
-                                "url": "https://textglow.io/",
-                                "logo": "https://textglow.io/logo.png",
-                                "sameAs": [
-                                    "https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
-                                ]
-                            }
-                        ]
-                    `}
-                </script>
             </Helmet>
+
+            <script type="application/ld+json">
+                {`
+                    [
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "SoftwareApplication",
+                            "name": "Textglow",
+                            "operatingSystem": "Chrome, Chromium",
+                            "applicationCategory": "ProductivityApplication",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "0",
+                                "priceCurrency": "USD"
+                            },
+                            "description": "Textglow is an AI-powered Chrome extension that helps you polish, rewrite, and improve your emails, messages, and documents instantly inside any website."
+                        },
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            "name": "Textglow",
+                            "url": "https://textglow.io/",
+                            "logo": "https://textglow.io/logo.png",
+                            "sameAs": [
+                                "https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf"
+                            ]
+                        }
+                    ]
+                `}
+            </script>
 
             <Hero />
             <LiveDemoSection />

@@ -138,8 +138,8 @@ export const EmailRewriter = () => {
         <meta property="og:description" content="Paste your email, pick a tone, and see it rewritten instantly. Professional, Friendly, Confident, and 7 more tones. 3 free rewrites per day." />
         <meta property="og:url" content="https://textglow.io/tools/email-rewriter/" />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
+      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-white border-b border-slate-200">

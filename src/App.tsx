@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { ScrollToTop } from './components/layout/ScrollToTop';
 import { Home } from './pages/Home';
@@ -44,54 +43,52 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <HelmetProvider>
-      <Router>
-        <ScrollToTop />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/linkedin" element={<LinkedIn />} />
-            <Route path="/gmail" element={<Gmail />} />
-            <Route path="/slack" element={<Slack />} />
-            <Route path="/tinder" element={<Tinder />} />
-            <Route path="/translate" element={<Translate />} />
-            <Route path="/blog" element={<BlogIndex />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/how-to-use" element={<HowToUse />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/offer" element={<Offer />} />
-            <Route path="/tools" element={<Tools />} />
-            <Route path="/tools/email-tone-analyzer" element={<EmailToneAnalyzer />} />
-            <Route path="/tools/word-counter" element={<WordCounter />} />
-            <Route path="/tools/email-rewriter" element={<EmailRewriter />} />
-            <Route path="/tools/formality-checker" element={<FormalityChecker />} />
-            <Route path="/tools/linkedin-post-preview" element={<LinkedinPostPreview />} />
-            <Route path="/tools/cold-email-generator" element={<ColdEmailGenerator />} />
-            <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
-            <Route path="/tools/ai-writing-detector" element={<AiWritingDetector />} />
-            <Route path="/tools/passive-aggressive-checker" element={<PassiveAggressiveChecker />} />
-            <Route path="/tools/genz-translator" element={<GenzTranslator />} />
-            <Route path="/tools/writing-quiz" element={<WritingQuiz />} />
-            <Route path="/tools/subject-line-scorer" element={<SubjectLineScorer />} />
-            <Route path="/tools/out-of-office" element={<OutOfOffice />} />
-            <Route path="/customer-support" element={<CustomerSupport />} />
-            <Route path="/sales" element={<Sales />} />
-            <Route path="/job-applications" element={<JobApplications />} />
-            <Route path="/managers" element={<Managers />} />
-            <Route path="/freelancers" element={<Freelancers />} />
-            <Route path="/academic" element={<Academic />} />
-            <Route path="/hr" element={<HR />} />
-            <Route path="/customer-success" element={<CustomerSuccess />} />
-            <Route path="/remote-teams" element={<RemoteTeams />} />
-            <Route path="/tools/examples" element={<ExamplesGallery />} />
-            <Route path="/tools/examples/:slug" element={<ExampleDetail />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </Router>
-    </HelmetProvider>
+    <>
+      <ScrollToTop />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/linkedin" element={<LinkedIn />} />
+          <Route path="/gmail" element={<Gmail />} />
+          <Route path="/slack" element={<Slack />} />
+          <Route path="/tinder" element={<Tinder />} />
+          <Route path="/translate" element={<Translate />} />
+          <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/how-to-use" element={<HowToUse />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/offer" element={<Offer />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/tools/email-tone-analyzer" element={<EmailToneAnalyzer />} />
+          <Route path="/tools/word-counter" element={<WordCounter />} />
+          <Route path="/tools/email-rewriter" element={<EmailRewriter />} />
+          <Route path="/tools/formality-checker" element={<FormalityChecker />} />
+          <Route path="/tools/linkedin-post-preview" element={<LinkedinPostPreview />} />
+          <Route path="/tools/cold-email-generator" element={<ColdEmailGenerator />} />
+          <Route path="/tools/jargon-translator" element={<JargonTranslator />} />
+          <Route path="/tools/ai-writing-detector" element={<AiWritingDetector />} />
+          <Route path="/tools/passive-aggressive-checker" element={<PassiveAggressiveChecker />} />
+          <Route path="/tools/genz-translator" element={<GenzTranslator />} />
+          <Route path="/tools/writing-quiz" element={<WritingQuiz />} />
+          <Route path="/tools/subject-line-scorer" element={<SubjectLineScorer />} />
+          <Route path="/tools/out-of-office" element={<OutOfOffice />} />
+          <Route path="/customer-support" element={<CustomerSupport />} />
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/job-applications" element={<JobApplications />} />
+          <Route path="/managers" element={<Managers />} />
+          <Route path="/freelancers" element={<Freelancers />} />
+          <Route path="/academic" element={<Academic />} />
+          <Route path="/hr" element={<HR />} />
+          <Route path="/customer-success" element={<CustomerSuccess />} />
+          <Route path="/remote-teams" element={<RemoteTeams />} />
+          <Route path="/tools/examples" element={<ExamplesGallery />} />
+          <Route path="/tools/examples/:slug" element={<ExampleDetail />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
 

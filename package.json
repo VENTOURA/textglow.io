@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
-    "postbuild": "react-snap || echo 'Pre-rendering failed (common on CI), skipping...'",
+    "postbuild": "react-snap",
     "check": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -15,6 +15,7 @@
     "source": "dist",
     "waitFor": "#root > *",
     "delay": 1000,
+    "crawl": false,
     "minifyHtml": {
       "collapseWhitespace": true,
       "removeComments": true

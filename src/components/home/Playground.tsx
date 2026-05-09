@@ -10,12 +10,12 @@ const TONES = [
 
 export const Playground = () => {
     const [inputText, setInputText] = useState('');
-    const [polishedText, setPolishedText] = useState('');
+    const [rewrittenText, setRewrittenText] = useState('');
     const [tone, setTone] = useState('Professional');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState('');
 
-    const handlePolish = async () => {
+    const handleRewrite = async () => {
         if (!inputText.trim()) return;
 
         setIsLoading(true);
@@ -44,7 +44,7 @@ export const Playground = () => {
                 return;
             }
 
-            setPolishedText(data.data);
+            setRewrittenText(data.data);
         } catch (err) {
             setError('Failed to connect to the AI. Please check your internet.');
         } finally {
@@ -54,7 +54,7 @@ export const Playground = () => {
 
     const handleReset = () => {
         setInputText('');
-        setPolishedText('');
+        setRewrittenText('');
         setError('');
     };
 
@@ -101,13 +101,13 @@ export const Playground = () => {
                         <textarea
                             value={inputText}
                             onChange={(e) => setInputText(e.target.value.slice(0, 800))}
-                            placeholder="Type something here to polish... e.g. 'can u help me with this task tomorrow thx'"
+                            placeholder="Type something here to rewrite... e.g. 'can u help me with this task tomorrow thx'"
                             className="w-full h-48 md:h-64 resize-none border-none focus:ring-0 p-0 text-slate-700 placeholder-slate-300 text-lg leading-relaxed"
                         />
 
                         <div className="mt-4 flex justify-end">
                             <motion.button
-                                onClick={handlePolish}
+                                onClick={handleRewrite}
                                 disabled={isLoading || !inputText.trim()}
                                 whileHover={!isLoading && inputText.trim() ? { scale: 1.02 } : {}}
                                 whileTap={!isLoading && inputText.trim() ? { scale: 0.98 } : {}}
@@ -140,7 +140,7 @@ export const Playground = () => {
                                         </motion.div>
                                     </div>
                                 )}
-                                {isLoading ? 'Polishing...' : 'Polish Text'}
+                                {isLoading ? 'Rewriting...' : 'Rewrite Text'}
                             </motion.button>
                         </div>
                     </div>
@@ -148,8 +148,8 @@ export const Playground = () => {
                     {/* Output Area */}
                     <div className="relative p-6 bg-slate-50/50">
                         <div className="flex items-center justify-between mb-3">
-                            <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Polished Result</span>
-                            {polishedText && (
+                            <span className="text-xs font-bold uppercase tracking-wider text-slate-400">Rewritten Result</span>
+                            {rewrittenText && (
                                 <span className="bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded-full font-bold">READY</span>
                             )}
                         </div>
@@ -169,7 +169,7 @@ export const Playground = () => {
                                             <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 1, delay: 0.2 }} className="w-2 h-2 bg-brand-400 rounded-full" />
                                             <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ repeat: Infinity, duration: 1, delay: 0.4 }} className="w-2 h-2 bg-brand-400 rounded-full" />
                                         </div>
-                                        <p className="text-sm font-medium animate-pulse">Polishing your message...</p>
+                                        <p className="text-sm font-medium animate-pulse">Rewriting your message...</p>
                                     </motion.div>
                                 ) : error ? (
                                     <motion.div
@@ -183,28 +183,28 @@ export const Playground = () => {
                                             Install Extension
                                         </Button>
                                     </motion.div>
-                                ) : polishedText ? (
+                                ) : rewrittenText ? (
                                     <motion.div
                                         key="result"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         className="text-slate-800 text-lg leading-relaxed whitespace-pre-wrap"
                                     >
-                                        {polishedText}
+                                        {rewrittenText}
                                     </motion.div>
                                 ) : (
                                     <div className="h-full flex flex-col items-center justify-center text-slate-300 text-center px-8">
                                         <Sparkles className="w-12 h-12 mb-4 opacity-20" />
-                                        <p className="text-sm">Your polished message will appear here instantly.</p>
+                                        <p className="text-sm">Your rewritten message will appear here instantly.</p>
                                     </div>
                                 )}
                             </AnimatePresence>
                         </div>
 
-                        {polishedText && !isLoading && (
+                        {rewrittenText && !isLoading && (
                             <div className="mt-4 flex justify-end">
                                 <button
-                                    onClick={() => navigator.clipboard.writeText(polishedText)}
+                                    onClick={() => navigator.clipboard.writeText(rewrittenText)}
                                     className="text-xs font-bold text-brand-600 hover:text-brand-700 underline underline-offset-4"
                                 >
                                     Copy to clipboard

@@ -49,10 +49,10 @@ export const PricingSection = () => {
                         price="$0"
                         period="month"
                         features={[
-                            "10 polishes per day",
+                            "10 rewrites per day",
                             "All 10 tones included",
                             "Works inside Gmail, Slack, LinkedIn",
-                            "Up to 800 characters per polish",
+                            "Up to 800 characters per rewrite",
                             "No account required — install and go",
                             "Privacy-first — text is never stored"
                         ]}
@@ -69,9 +69,9 @@ export const PricingSection = () => {
                         period="month"
                         yearlyNote={billingCycle === 'yearly' ? "Billed $39/year · Save $20.88" : undefined}
                         features={[
-                            "⚡ One-Click Polish (Exclusive)",
-                            "150 polishes per day",
-                            "Up to 3,000 characters per polish",
+                            "⚡ One-Click Rewrite (Exclusive)",
+                            "150 rewrites per day",
+                            "Up to 3,000 characters per rewrite",
                             "Priority AI — responses in under 1s",
                             "Early access to new features",
                             "Support the indie developer ❤️"

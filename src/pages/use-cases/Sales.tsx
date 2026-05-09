@@ -5,9 +5,9 @@ export const Sales: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Assistant for Sales Teams — Close More Deals | TextGlow",
+        title: "TextGlow for Sales — AI Writing Assistant",
         description: "Scale your sales outreach without losing the human touch. Use TextGlow to rewrite cold emails, follow-ups, and LinkedIn pitches for maximum conversion.",
-        url: "/use-cases/sales/"
+        url: "/sales/"
       }}
       hero={{
         title: "Your Cold Email Sounds Exactly Like the Last 11 They Deleted",

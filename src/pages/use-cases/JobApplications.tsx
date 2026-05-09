@@ -5,9 +5,9 @@ export const JobApplications: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Assistant for Job Seekers — Land More Interviews | TextGlow",
-        description: "Stand out to recruiters and hiring managers. Use TextGlow to rewrite cover letters, LinkedIn outreach, and follow-up emails for a professional and confident tone.",
-        url: "/use-cases/job-applications/"
+        title: "TextGlow for Job Seekers — AI Writing Assistant",
+        description: "Stand out to recruiters. Use TextGlow to rewrite your cover letters, LinkedIn messages, and follow-up emails to sound confident and professional.",
+        url: "/job-applications/"
       }}
       hero={{
         title: "The Most Important Emails You'll Ever Write, and You're Writing Them Stressed",
@@ -128,13 +128,13 @@ export const JobApplications: React.FC = () => {
           role: "UX Designer"
         },
         {
-          quote: "At my level, every email is a negotiation. TextGlow cut my drafting time by half. My recruiter said my communication was 'unusually polished and consistent'.",
+          quote: "At my level, every email is a negotiation. TextGlow cut my drafting time by half. My recruiter said my communication was 'unusually rewritten and consistent'.",
           author: "Catherine Liang",
           role: "VP of Operations"
         }
       ]}
       faqs={[
-        { q: "Does TextGlow write cover letters from scratch?", a: "No. TextGlow rewrites your draft. You provide the experience and qualifications, and TextGlow adjusts the tone so it sounds polished and intentional." },
+        { q: "Does TextGlow write cover letters from scratch?", a: "No. TextGlow rewrites your draft. You provide the experience and qualifications, and TextGlow adjusts the tone so it sounds rewritten and intentional." },
         { q: "Can it adapt tone for different company cultures?", a: "Yes. Use Professional for corporate roles, Friendly for startups, Enthusiastic for mission-driven roles, and Confident for executive positions." },
         { q: "Is it ethical to use AI for job applications?", a: "Yes. It's a writing tool, not a replacement for your own qualifications. It works like a highly advanced spell-check or having a mentor review your draft." },
         { q: "Does it work for LinkedIn applications?", a: "Yes. TextGlow works inside LinkedIn's message fields, InMails, connection requests, and Easy Apply text fields." },

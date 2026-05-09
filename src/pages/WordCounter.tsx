@@ -255,11 +255,11 @@ export const WordCounter = () => {
             {/* CTA */}
             <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-center mt-8">
               <h3 className="text-2xl font-bold text-white mb-3">Your text has the right length — but does it have the right <em>tone</em>?</h3>
-              <p className="text-slate-400 mb-6 max-w-xl mx-auto">TextGlow polishes your writing in 2 clicks — right inside Gmail, Slack, and LinkedIn. Choose a tone, click, done.</p>
+              <p className="text-slate-400 mb-6 max-w-xl mx-auto">TextGlow rewrites your writing in 2 clicks — right inside Gmail, Slack, and LinkedIn. Choose a tone, click, done.</p>
               <Button href={CHROME_URL} variant="secondary" className="px-8 py-3.5 text-lg !bg-white !text-slate-900 font-bold hover:!bg-cyan-50 shadow-[0_0_40px_rgba(255,255,255,0.15)] border-none">
                 <Chrome className="w-5 h-5 mr-2" />Add to Chrome — Free
               </Button>
-              <p className="text-xs text-slate-500 mt-4">Free: 10 polishes/day. Pro: 150/day for $39/year.</p>
+              <p className="text-xs text-slate-500 mt-4">Free: 10 rewrites/day. Pro: 150/day for $39/year.</p>
             </div>
           </div></div>
         </section>
@@ -279,7 +279,7 @@ export const WordCounter = () => {
             <p>Every platform has its limits. A tweet caps at <strong>280 characters</strong>, a LinkedIn post at <strong>3,000</strong>, and even email subject lines perform best under <strong>60 characters</strong>. Knowing your word count isn't just about fitting — it's about optimizing for engagement.</p>
             <p><strong>Readability</strong> is equally critical. The Flesch-Kincaid reading ease score measures how easy your text is to understand. Business writing should target <strong>Grade 8 readability</strong> — the same level used by major newspapers and successful marketing copy. Every grade level above that costs you readers.</p>
             <p>Research from Boomerang found that emails written at a <strong>3rd-grade reading level</strong> receive 36% more responses than those at a college level. Simpler doesn't mean dumbed-down — it means <em>clearer</em>. Short sentences, common words, and direct phrasing make your message land faster.</p>
-            <p>This tool gives you the numbers. For the fix, try <a href={CHROME_URL} className="text-cyan-600 hover:text-cyan-700 font-medium">TextGlow</a> — our Chrome extension that rewrites your text in 10 different tones, right inside any text field. Check your readability here, then polish it with TextGlow.</p>
+            <p>This tool gives you the numbers. For the fix, try <a href={CHROME_URL} className="text-cyan-600 hover:text-cyan-700 font-medium">TextGlow</a> — our Chrome extension that rewrites your text in 10 different tones, right inside any text field. Check your readability here, then rewrite it with TextGlow.</p>
           </div>
         </div></div>
       </section>

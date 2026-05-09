@@ -32,7 +32,7 @@ const faqs = [
     { q: "Does TextGlow work on Tinder, Bumble, and Hinge?", a: "Yes — on their web versions accessed through your browser (Chrome, Edge, or Brave). Open tinder.com, bumble.com, or hinge.co in your browser, and TextGlow works in every message box." },
     { q: "Will the other person know I'm using AI?", a: "No. TextGlow rewrites your message before you send it. There's no watermark, no signature, no trace." },
     { q: "Isn't this... cheating?", a: "Is it cheating to dress well on a first date? To practice your stories? To ask a friend what to text back? TextGlow helps you express who you already are, without the anxiety getting in the way." },
-    { q: "What if my messages sound too polished?", a: "TextGlow doesn't make you sound like Shakespeare. It makes you sound like the best, most confident version of yourself. The Flirty and Funny tones are designed to be natural and conversational." },
+    { q: "What if my messages sound too rewritten?", a: "TextGlow doesn't make you sound like Shakespeare. It makes you sound like the best, most confident version of yourself. The Flirty and Funny tones are designed to be natural and conversational." },
     { q: "Does it work for keeping conversations going, or just openers?", a: "Both. TextGlow works in any message input — first messages, mid-conversation replies, the ask-out message, everything." },
     { q: "What's the \"Flirty\" tone actually like?", a: "Playful, charming, confident — but not creepy. Think: clever banter at a bar, not a cheesy pickup line from 2005." },
 ];
@@ -54,17 +54,17 @@ export const Tinder = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow</title>
-                <meta name="description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
+                <title>AI Dating Message Assistant — Better Tinder, Bumble & Hinge Messages | TextGlow</title>
+                <meta name="description" content="Stop sending hey and getting ghosted. TextGlow's Flirty tone turns basic dating app messages into witty openers that get replies. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/tinder/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/tinder/" />
-                <meta property="og:title" content="AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow" />
-                <meta property="og:description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
+                <meta property="og:title" content="AI Dating Message Assistant — Better Tinder, Bumble & Hinge Messages | TextGlow" />
+                <meta property="og:description" content="Stop sending hey and getting ghosted. TextGlow's Flirty tone turns basic dating app messages into witty openers that get replies. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI Wingman for Tinder & Dating Apps — Better Openers | TextGlow" />
-                <meta property="twitter:description" content="Never run out of things to say. Use TextGlow to rewrite your dating app messages for better engagement and more dates. Sound confident, funny, or charming. Free." />
+                <meta property="twitter:title" content="AI Dating Message Assistant — Better Tinder, Bumble & Hinge Messages | TextGlow" />
+                <meta property="twitter:description" content="Stop sending hey and getting ghosted. TextGlow's Flirty tone turns basic dating app messages into witty openers that get replies. Free Chrome extension." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">
@@ -217,7 +217,7 @@ export const Tinder = () => {
                 <div className="container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Your Next Date Starts With a{' '}<span className="bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">Better First Message</span></h2>
-                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 polishes per day. No signup required. Works on Tinder, Bumble, Hinge, and every dating platform in your browser.</p>
+                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 rewrites per day. No signup required. Works on Tinder, Bumble, Hinge, and every dating platform in your browser.</p>
                         <Button href={CHROME_URL} variant="secondary" className="px-10 py-4 text-lg !bg-white !text-pink-700 font-bold hover:!bg-pink-50 shadow-[0_0_50px_rgba(255,255,255,0.2)] border-none">
                             <Chrome className="w-5 h-5 mr-2" />Add to Chrome — It's Free
                         </Button>

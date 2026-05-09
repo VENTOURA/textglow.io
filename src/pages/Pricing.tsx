@@ -26,17 +26,17 @@ export const Pricing = () => {
     return (
         <div className="bg-white pt-10">
             <Helmet>
-                <title>Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow</title>
-                <meta name="description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
+                <title>TextGlow Pricing — Free & Pro Plans | 3x Cheaper Than Grammarly</title>
+                <meta name="description" content="Rewrite any text in 2 clicks for free — or go Pro for $39/year. 10 tones, works inside Gmail, LinkedIn, Slack. No copy-pasting." />
                 <link rel="canonical" href="https://textglow.io/pricing/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/pricing/" />
-                <meta property="og:title" content="Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow" />
-                <meta property="og:description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
+                <meta property="og:title" content="TextGlow Pricing — Free & Pro Plans | 3x Cheaper Than Grammarly" />
+                <meta property="og:description" content="Rewrite any text in 2 clicks for free — or go Pro for $39/year. 10 tones, works inside Gmail, LinkedIn, Slack. No copy-pasting." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Simple Pricing for TextGlow Pro — Unlimited AI Writing | TextGlow" />
-                <meta property="twitter:description" content="Get TextGlow Pro for unlimited AI-powered rewrites, custom tones, and priority support. Choose the plan that fits your writing needs. Start for free." />
+                <meta property="twitter:title" content="TextGlow Pricing — Free & Pro Plans | 3x Cheaper Than Grammarly" />
+                <meta property="twitter:description" content="Rewrite any text in 2 clicks for free — or go Pro for $39/year. 10 tones, works inside Gmail, LinkedIn, Slack. No copy-pasting." />
             </Helmet>
 
             <PricingSection />
@@ -51,7 +51,7 @@ export const Pricing = () => {
                 </div>
             </div>
 
-            {/* What is One-Click Polish? */}
+            {/* What is One-Click Rewrite? */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -59,7 +59,7 @@ export const Pricing = () => {
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">What's One-Click Rewrite?</h2>
                             <div className="prose prose-slate text-lg text-slate-600">
                                 <p>With the free plan, you click the ✨ icon and choose from 10 tones — Professional, Friendly, Confident, and more. It takes 2 clicks and about 3 seconds.</p>
-                                <p>With One-Click Polish, you <strong>set your favorite default tone</strong>. Then, simply click the ✨ icon and TextGlow instantly polishes your text using your preferred tone.</p>
+                                <p>With One-Click Rewrite, you <strong>set your favorite default tone</strong>. Then, simply click the ✨ icon and TextGlow instantly rewrites your text using your preferred tone.</p>
                                 <p>One click. Perfect tone. No menu. No waiting.</p>
                                 <p>When you're writing dozens of messages a day, skipping the menu every time saves you valuable focus and keeps you in your flow.</p>
                             </div>
@@ -82,11 +82,11 @@ export const Pricing = () => {
                                     <tr>
                                         <td className="py-4 text-sm font-medium text-slate-500">Step 2</td>
                                         <td className="py-4 text-slate-800">Choose a tone</td>
-                                        <td className="py-4 text-brand-600 italic text-sm">(done — already polished)</td>
+                                        <td className="py-4 text-brand-600 italic text-sm">(done — already rewritten)</td>
                                     </tr>
                                     <tr>
                                         <td className="py-4 text-sm font-medium text-slate-500">Step 3</td>
-                                        <td className="py-4 text-slate-800">Text is polished</td>
+                                        <td className="py-4 text-slate-800">Text is rewritten</td>
                                         <td className="py-4"></td>
                                     </tr>
                                     <tr className="bg-slate-100/50">
@@ -96,7 +96,7 @@ export const Pricing = () => {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p className="text-xs text-slate-500 mt-6 text-center italic">When you polish 30-50 messages a day, those saved seconds add up to 15+ minutes daily.</p>
+                            <p className="text-xs text-slate-500 mt-6 text-center italic">When you rewrite 30-50 messages a day, those saved seconds add up to 15+ minutes daily.</p>
                         </div>
                     </div>
                 </div>
@@ -219,15 +219,15 @@ export const Pricing = () => {
                     <div>
                         <FAQItem 
                             q="Can I try Pro before paying?" 
-                            a="The free plan gives you 10 polishes per day with all 10 tones — forever. That's enough to experience the full quality of TextGlow's AI. When you're ready for more, Pro is one click away." 
+                            a="The free plan gives you 10 rewrites per day with all 10 tones — forever. That's enough to experience the full quality of TextGlow's AI. When you're ready for more, Pro is one click away." 
                         />
                         <FAQItem 
                             q="Can I cancel anytime?" 
                             a="Yes. Cancel with one click from your account settings. No cancellation fees, no hoops. If you cancel a yearly plan, you keep Pro access until the end of your billing period." 
                         />
                         <FAQItem 
-                            q="What happens when I hit my daily polish limit?" 
-                            a="On the Free plan, your 10 polishes reset every 24 hours. On Pro, you get 150 per day — more than enough for even the busiest communicators. If you somehow hit the limit, it resets at midnight." 
+                            q="What happens when I hit my daily rewrite limit?" 
+                            a="On the Free plan, your 10 rewrites reset every 24 hours. On Pro, you get 150 per day — more than enough for even the busiest communicators. If you somehow hit the limit, it resets at midnight." 
                         />
                         <FAQItem 
                             q="What payment methods do you accept?" 
@@ -235,7 +235,7 @@ export const Pricing = () => {
                         />
                         <FAQItem 
                             q="Is my data private?" 
-                            a="Yes. TextGlow processes your text in real-time to polish it, then discards it immediately. We never store your text, never use it for training, and never share it with third parties. Your writing stays yours." 
+                            a="Yes. TextGlow processes your text in real-time to rewrite it, then discards it immediately. We never store your text, never use it for training, and never share it with third parties. Your writing stays yours." 
                         />
                         <FAQItem 
                             q="Does TextGlow work with my browser?" 
@@ -258,7 +258,7 @@ export const Pricing = () => {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-white mb-6">Start Writing Better — In the Next 30 Seconds</h2>
                     <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Install TextGlow, open Gmail (or Slack, or LinkedIn, or anywhere you write), and polish your first message. Free. No signup. No credit card.
+                        Install TextGlow, open Gmail (or Slack, or LinkedIn, or anywhere you write), and rewrite your first message. Free. No signup. No credit card.
                         <br /><br />
                         <span className="text-brand-400 font-semibold">If you love it — and you will — Pro is $0.11/day.</span>
                     </p>
@@ -273,7 +273,7 @@ export const Pricing = () => {
                             Add to Chrome — It's Free
                         </Button>
                         <p className="mt-6 text-slate-400 text-sm font-medium">
-                            Free forever: 10 polishes/day · All 10 tones · Works everywhere
+                            Free forever: 10 rewrites/day · All 10 tones · Works everywhere
                         </p>
                     </div>
                 </div>

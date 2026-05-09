@@ -5,9 +5,9 @@ export const Academic: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Assistant for Students & Academics — Better Essays | TextGlow",
-        description: "Improve your academic writing and research communication. Use TextGlow to rewrite essays, research papers, and emails to professors for a more formal tone.",
-        url: "/use-cases/academic/"
+        title: "TextGlow for Students — AI Writing Assistant",
+        description: "Elevate your academic writing. Use TextGlow to rewrite emails to professors, group projects, and formal requests to be polite and clear.",
+        url: "/academic/"
       }}
       hero={{
         title: "That Email to Your Professor Shouldn't Take an Hour to Write",

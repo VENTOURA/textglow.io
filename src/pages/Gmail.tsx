@@ -32,10 +32,10 @@ const testimonials = [
 const faqs = [
     { q: "Does TextGlow work inside Gmail?", a: "Yes. TextGlow works inside Gmail's compose window in any Chromium browser (Chrome, Edge, Brave). The ✨ icon appears whenever you're typing a new email, reply, or forward." },
     { q: "Does it work with Google Workspace / business Gmail?", a: "Yes. TextGlow works with personal Gmail accounts and Google Workspace (business) accounts identically." },
-    { q: "Will my company's IT department see that I'm using TextGlow?", a: "TextGlow is a Chrome extension installed on your browser. It does not integrate with your company's Google Workspace admin panel. Your IT team can see the extension is installed but cannot see what you type or polish." },
-    { q: "Does TextGlow read all my emails?", a: "No. TextGlow only processes the text you actively choose to polish by clicking the ✨ icon. It does not read, scan, or store your inbox, drafts, or sent emails." },
+    { q: "Will my company's IT department see that I'm using TextGlow?", a: "TextGlow is a Chrome extension installed on your browser. It does not integrate with your company's Google Workspace admin panel. Your IT team can see the extension is installed but cannot see what you type or rewrite." },
+    { q: "Does TextGlow read all my emails?", a: "No. TextGlow only processes the text you actively choose to rewrite by clicking the ✨ icon. It does not read, scan, or store your inbox, drafts, or sent emails." },
     { q: "Does it work with other email providers (Outlook, Yahoo)?", a: "Yes. TextGlow works in any web-based email client — Gmail, Outlook.com, Yahoo Mail, ProtonMail, and any other email you access through a browser." },
-    { q: "Can it help me write emails from scratch?", a: "TextGlow works best with the \"vomit draft\" method: type your rough thoughts first, then let TextGlow polish them. This is faster than writing from a blank page because your original intent is preserved." },
+    { q: "Can it help me write emails from scratch?", a: "TextGlow works best with the \"vomit draft\" method: type your rough thoughts first, then let TextGlow rewrite them. This is faster than writing from a blank page because your original intent is preserved." },
 ];
 
 const FAQItem = ({ q, a }: { q: string; a: string }) => {
@@ -55,17 +55,17 @@ export const Gmail = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow</title>
-                <meta name="description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
+                <title>AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow</title>
+                <meta name="description" content="TextGlow rewrites your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/gmail/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/gmail/" />
-                <meta property="og:title" content="Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow" />
-                <meta property="og:description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
+                <meta property="og:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />
+                <meta property="og:description" content="TextGlow rewrites your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Free AI Writing Assistant for Gmail — Write Better Emails | TextGlow" />
-                <meta property="twitter:description" content="Rewrite your Gmail drafts for better tone and clarity in 2 clicks. TextGlow works natively inside Gmail to help you sound professional, confident, or friendly. Free." />
+                <meta property="twitter:title" content="AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow" />
+                <meta property="twitter:description" content="TextGlow rewrites your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">
@@ -114,7 +114,7 @@ export const Gmail = () => {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4"><div className="max-w-5xl mx-auto">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Polish Any Email in <span className="text-red-600">2 Clicks</span> — Without Leaving Gmail</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Rewrite Any Email in <span className="text-red-600">2 Clicks</span> — Without Leaving Gmail</h2>
                     </motion.div>
                     <div className="grid md:grid-cols-3 gap-8 mb-20">
                         {[{ step: "1", title: "Type your email draft", desc: "Don't overthink it — just get your thoughts down in Gmail's compose window.", icon: "✍️" }, { step: "2", title: "Click the ✨ icon", desc: "The TextGlow button appears right inside the compose box.", icon: "✨" }, { step: "3", title: "Choose a tone", desc: "Pick the tone that matches your intent. Your draft is replaced instantly. Hit send.", icon: "🎯" }].map((s, i) => (
@@ -217,7 +217,7 @@ export const Gmail = () => {
                 <div className="container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Write Emails That Get the{' '}<span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">Response You Want</span></h2>
-                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 polishes per day. No signup required. Works inside Gmail's compose window instantly.</p>
+                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 rewrites per day. No signup required. Works inside Gmail's compose window instantly.</p>
                         <Button href={CHROME_URL} variant="secondary" className="px-10 py-4 text-lg !bg-white !text-red-700 font-bold hover:!bg-red-50 shadow-[0_0_50px_rgba(255,255,255,0.2)] border-none">
                             <Chrome className="w-5 h-5 mr-2" />Add to Chrome — It's Free
                         </Button>

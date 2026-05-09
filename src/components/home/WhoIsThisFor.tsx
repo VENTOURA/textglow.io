@@ -6,14 +6,14 @@ const audiences = [
     {
         icon: "✉️",
         title: "Email Power Users",
-        description: "Stop agonizing over every reply. Polish client emails, follow-ups, and difficult conversations in Gmail and Outlook — in 2 clicks.",
+        description: "Stop agonizing over every reply. Rewrite client emails, follow-ups, and difficult conversations in Gmail and Outlook — in 2 clicks.",
         linkText: "See how it works in Gmail",
         linkTo: "/gmail"
     },
     {
         icon: "💼",
         title: "LinkedIn Creators",
-        description: "Write posts that sound like you — not ChatGPT. Polish your voice for thought leadership, DMs, and comments without losing authenticity.",
+        description: "Write posts that sound like you — not ChatGPT. Rewrite your voice for thought leadership, DMs, and comments without losing authenticity.",
         linkText: "See how it works on LinkedIn",
         linkTo: "/linkedin"
     },

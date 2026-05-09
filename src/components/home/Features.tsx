@@ -5,7 +5,7 @@ const features = [
     {
         icon: Zap,
         title: "One-Click Magic (Pro)",
-        description: "Bypass the modal entirely. Click the sparkle icon and your text is instantly replaced with a polished version. Pure speed."
+        description: "Bypass the modal entirely. Click the sparkle icon and your text is instantly replaced with a rewritten version. Pure speed."
     },
     {
         icon: Globe,

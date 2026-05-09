@@ -45,17 +45,17 @@ export const ExampleDetail = () => {
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
             <Helmet>
-                <title>{example.title} — AI Writing Example | TextGlow</title>
-                <meta name="description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
+                <title>{`${example.title} — Before & After | TextGlow`}</title>
+                <meta name="description" content={`See how TextGlow rewrites a ${example.title.toLowerCase()}. Before and after comparison with tone analysis.`} />
                 <link rel="canonical" href={`https://textglow.io/tools/examples/${example.slug}/`} />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={`https://textglow.io/tools/examples/${example.slug}/`} />
-                <meta property="og:title" content={`${example.title} — AI Writing Example | TextGlow`} />
-                <meta property="og:description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
+                <meta property="og:title" content={`${example.title} — Before & After | TextGlow`} />
+                <meta property="og:description" content={`See how TextGlow rewrites a ${example.title.toLowerCase()}.`} />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content={`${example.title} — AI Writing Example | TextGlow`} />
-                <meta property="twitter:description" content={`See how TextGlow rewrote this ${example.context} message into a ${example.tone} tone. Real before and after AI writing examples. Free.`} />
+                <meta property="twitter:title" content={`${example.title} — Before & After | TextGlow`} />
+                <meta property="twitter:description" content={`See how TextGlow rewrites a ${example.title.toLowerCase()}.`} />
                 <script type="application/ld+json">
                     {`
                         {

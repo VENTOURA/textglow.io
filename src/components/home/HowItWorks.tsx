@@ -15,7 +15,7 @@ const steps = [
     {
         icon: MessageSquare,
         title: "Magic Transformation",
-        description: "Your draft is instantly replaced with a polished version. Ready to impress!"
+        description: "Your draft is instantly replaced with a rewritten version. Ready to impress!"
     }
 ];
 

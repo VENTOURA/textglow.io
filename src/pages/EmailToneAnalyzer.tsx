@@ -189,11 +189,11 @@ export const EmailToneAnalyzer = () => {
               {/* CTA */}
               <div className="bg-slate-900 rounded-2xl p-8 md:p-12 text-center">
                 <h3 className="text-2xl font-bold text-white mb-3">Want to <em>fix</em> your tone instantly?</h3>
-                <p className="text-slate-400 mb-6 max-w-xl mx-auto">TextGlow polishes your writing in 2 clicks — right inside Gmail, Slack, and LinkedIn. Choose a tone, click, done.</p>
+                <p className="text-slate-400 mb-6 max-w-xl mx-auto">TextGlow rewrites your writing in 2 clicks — right inside Gmail, Slack, and LinkedIn. Choose a tone, click, done.</p>
                 <Button href={CHROME_URL} variant="secondary" className="px-8 py-3.5 text-lg !bg-white !text-slate-900 font-bold hover:!bg-orange-50 shadow-[0_0_40px_rgba(255,255,255,0.15)] border-none">
                   <Chrome className="w-5 h-5 mr-2" />Add to Chrome — Free
                 </Button>
-                <p className="text-xs text-slate-500 mt-4">Free: 10 polishes/day. Pro: 150/day for $39/year.</p>
+                <p className="text-xs text-slate-500 mt-4">Free: 10 rewrites/day. Pro: 150/day for $39/year.</p>
               </div>
 
             </div></div>
@@ -220,7 +220,7 @@ export const EmailToneAnalyzer = () => {
           <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
           <div className="space-y-3">
             <FAQItem q="Is my text stored or sent anywhere?" a="No. The analysis runs 100% in your browser using JavaScript. Your text never leaves your device — nothing is sent to any server." />
-            <FAQItem q="How accurate is the tone analysis?" a="The analyzer uses heuristic pattern matching with over 150 curated phrases and sentence patterns. It catches the most common tone signals in professional email. For nuanced or context-dependent tone, we recommend pairing it with TextGlow's AI-powered polishing." />
+            <FAQItem q="How accurate is the tone analysis?" a="The analyzer uses heuristic pattern matching with over 150 curated phrases and sentence patterns. It catches the most common tone signals in professional email. For nuanced or context-dependent tone, we recommend pairing it with TextGlow's AI-powered rewriting." />
             <FAQItem q="What tones can it detect?" a="Professional, Friendly, Confident, Passive-Aggressive, Apologetic, Urgent, Formal, Casual, Blunt, and Neutral. Each is detected through specific phrase patterns and sentence-level signals." />
             <FAQItem q="How is this different from Grammarly?" a="Grammarly checks grammar and spelling. This tool checks tone — whether your email sounds passive-aggressive, overly formal, or apologetic. They solve different problems." />
             <FAQItem q="Can I use this for Slack messages too?" a="Absolutely. While it's optimized for email, it works for any text — Slack messages, LinkedIn posts, cover letters, or any professional writing." />

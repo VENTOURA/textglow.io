@@ -5,17 +5,17 @@ export const Terms = () => {
     return (
         <div className="relative overflow-hidden min-h-screen bg-slate-50 pt-24 pb-20">
             <Helmet>
-                <title>Terms of Service — TextGlow</title>
-                <meta name="description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
+                <title>Terms of Service | TextGlow</title>
+                <meta name="description" content="Please read our terms of service before using TextGlow." />
                 <link rel="canonical" href="https://textglow.io/terms/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/terms/" />
-                <meta property="og:title" content="Terms of Service — TextGlow" />
-                <meta property="og:description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
+                <meta property="og:title" content="Terms of Service | TextGlow" />
+                <meta property="og:description" content="Please read our terms of service before using TextGlow." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Terms of Service — TextGlow" />
-                <meta property="twitter:description" content="Read the TextGlow Terms of Service. Understand your rights and responsibilities when using our AI writing assistant and Chrome extension." />
+                <meta property="twitter:title" content="Terms of Service | TextGlow" />
+                <meta property="twitter:description" content="Please read our terms of service before using TextGlow." />
             </Helmet>
 
             {/* Background blobs */}

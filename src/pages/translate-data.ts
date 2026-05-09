@@ -24,9 +24,9 @@ export const testimonials = [
 ];
 
 export const faqs = [
-    { q: "Does TextGlow work if I write in my native language?", a: "TextGlow is optimized for polishing text that's already in the target language. It's not a translator — it's a fluency enhancer. Write in the language you need the output in, and TextGlow makes it sound natural." },
+    { q: "Does TextGlow work if I write in my native language?", a: "TextGlow is optimized for rewriting text that's already in the target language. It's not a translator — it's a fluency enhancer. Write in the language you need the output in, and TextGlow makes it sound natural." },
     { q: "Is this different from Google Translate?", a: "Completely. Google Translate converts one language to another. TextGlow takes text that's already in English and makes it sound like a native speaker wrote it." },
-    { q: "Does it work for languages other than English?", a: "Yes. TextGlow auto-detects the language and applies native-level polishing. It works particularly well with English, Spanish, French, German, Portuguese, Italian, Dutch, and other widely-used languages." },
+    { q: "Does it work for languages other than English?", a: "Yes. TextGlow auto-detects the language and applies native-level rewriting. It works particularly well with English, Spanish, French, German, Portuguese, Italian, Dutch, and other widely-used languages." },
     { q: "Will my original meaning change?", a: "No. TextGlow preserves your intent and meaning. It changes how your message sounds, not what it says." },
     { q: "Does it work with technical writing?", a: "Yes. TextGlow understands context. It preserves technical terminology while making the surrounding phrasing more natural." },
     { q: "I already use Grammarly. Why would I need TextGlow?", a: "Grammarly catches grammar and spelling errors. TextGlow fixes the things Grammarly can't: unnatural phrasing, over-formality, tone mismatches, and the subtle patterns that mark writing as non-native. Many users run both." },

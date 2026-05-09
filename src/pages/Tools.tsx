@@ -24,17 +24,17 @@ export const Tools = () => {
   return (
     <div className="bg-white">
       <Helmet>
-        <title>Free AI Writing Tools — Rewrite, Analyze & More | TextGlow</title>
-        <meta name="description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
+        <title>Free AI Writing Tools & Converters | TextGlow</title>
+        <meta name="description" content="A collection of free tools to analyze tone, count words, generate cold emails, and more. All powered by TextGlow AI." />
         <link rel="canonical" href="https://textglow.io/tools/" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://textglow.io/tools/" />
-        <meta property="og:title" content="Free AI Writing Tools — Rewrite, Analyze & More | TextGlow" />
-        <meta property="og:description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
+        <meta property="og:title" content="Free AI Writing Tools & Converters | TextGlow" />
+        <meta property="og:description" content="A collection of free tools to analyze tone, count words, generate cold emails, and more. All powered by TextGlow AI." />
         <meta property="og:image" content="https://textglow.io/og-image.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Free AI Writing Tools — Rewrite, Analyze & More | TextGlow" />
-        <meta property="twitter:description" content="Access our collection of free AI writing tools. From formality checkers and tone analyzers to Gen Z translators, TextGlow helps you communicate better. Free online." />
+        <meta property="twitter:title" content="Free AI Writing Tools & Converters | TextGlow" />
+        <meta property="twitter:description" content="A collection of free tools to analyze tone, count words, generate cold emails, and more. All powered by TextGlow AI." />
       </Helmet>
 
       <section className="pt-24 pb-20 bg-gradient-to-b from-slate-900 to-slate-800">

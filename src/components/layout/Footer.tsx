@@ -12,7 +12,7 @@ export const Footer = () => {
                             <span className="font-bold text-lg text-slate-900">Textglow</span>
                         </div>
                         <p className="text-sm text-slate-500">
-                            Polish and rewrite your text instantly, anywhere on the web.
+                            Rewrite and rewrite your text instantly, anywhere on the web.
                         </p>
                     </div>
 

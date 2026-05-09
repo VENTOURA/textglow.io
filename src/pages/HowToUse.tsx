@@ -9,16 +9,16 @@ export const HowToUse = () => {
         <div className="bg-white min-h-screen">
             <Helmet>
                 <title>How to Use TextGlow — Step-by-Step Guide | TextGlow</title>
-                <meta name="description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
+                <meta name="description" content="Learn how to install and use the TextGlow Chrome extension to rewrite your messages in 2 clicks. Master our 10 tone filters today." />
                 <link rel="canonical" href="https://textglow.io/how-to-use/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/how-to-use/" />
                 <meta property="og:title" content="How to Use TextGlow — Step-by-Step Guide | TextGlow" />
-                <meta property="og:description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
+                <meta property="og:description" content="Learn how to install and use the TextGlow Chrome extension to rewrite your messages in 2 clicks. Master our 10 tone filters today." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="How to Use TextGlow — Step-by-Step Guide | TextGlow" />
-                <meta property="twitter:description" content="Learn how to install and use the TextGlow Chrome extension. Rewrite messages in Gmail, Slack, LinkedIn, and more with our AI writing assistant. Get started in minutes." />
+                <meta property="twitter:description" content="Learn how to install and use the TextGlow Chrome extension to rewrite your messages in 2 clicks. Master our 10 tone filters today." />
             </Helmet>
 
             {/* Structured Data (JSON-LD) for HowTo */}
@@ -48,7 +48,7 @@ export const HowToUse = () => {
                                 "@type": "HowToStep",
                                 "name": "Click to Rewrite",
                                 "text": "Click the TextGlow icon, choose a tone, and click Rewrite to instantly replace your text.",
-                                "image": "https://textglow.io/images/step-polish.png",
+                                "image": "https://textglow.io/images/step-rewrite.png",
                                 "url": "https://textglow.io/how-to-use/#step3"
                             }
                         ]
@@ -109,41 +109,41 @@ export const HowToUse = () => {
                             </div>
                         </div>
 
-                        {/* Step 3: Standard Polish */}
+                        {/* Step 3: Standard Rewrite */}
                         <div className="flex flex-col md:flex-row gap-8 items-start">
                             <div className="bg-white p-4 rounded-xl shadow-sm border border-slate-200 flex-shrink-0">
                                 <Zap className="w-8 h-8 text-brand-600" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-2">3. Polish & Refine</h3>
+                                <h3 className="text-xl font-bold text-slate-900 mb-2">3. Rewrite & Refine</h3>
                                 <div className="prose text-slate-600">
-                                    <p className="mb-2">Click the Textglow icon to open the polishing menu.</p>
+                                    <p className="mb-2">Click the Textglow icon to open the rewriting menu.</p>
                                     <ul className="list-disc list-inside space-y-2 mt-2">
                                         <li>Choose a <strong>Tone</strong> (your default tone is pre-selected).</li>
-                                        <li>Click <strong>Polish</strong>.</li>
+                                        <li>Click <strong>Rewrite</strong>.</li>
                                         <li>The menu closes and your text is <strong>instantly replaced</strong> by the AI-improved version. It's like magic!</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Step 4: Pro One-Click Polish */}
+                        {/* Step 4: Pro One-Click Rewrite */}
                         <div id="one-click" className="flex flex-col md:flex-row gap-8 items-start p-8 rounded-2xl bg-brand-50 border border-brand-100">
                             <div className="bg-white p-4 rounded-xl shadow-sm border border-brand-200 flex-shrink-0">
                                 <Sparkles className="w-8 h-8 text-brand-600" />
                             </div>
                             <div>
                                 <div className="flex items-center gap-2 mb-2">
-                                    <h3 className="text-xl font-bold text-slate-900">One-Click Polish</h3>
+                                    <h3 className="text-xl font-bold text-slate-900">One-Click Rewrite</h3>
                                     <span className="bg-brand-600 text-white text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Pro</span>
                                 </div>
                                 <div className="prose text-slate-600">
                                     <p className="mb-2 font-medium text-slate-900 text-lg">The ultimate productivity hack.</p>
-                                    <p className="mb-4 text-slate-600">Enable <strong>One-Click Polish</strong> in settings to bypass all menus.</p>
+                                    <p className="mb-4 text-slate-600">Enable <strong>One-Click Rewrite</strong> in settings to bypass all menus.</p>
                                     <ul className="list-disc list-inside space-y-2 mt-2">
                                         <li><strong>No menus.</strong> No need to open any windows.</li>
                                         <li><strong>No selecting.</strong> Just click the ✨ Sparkle Icon in the corner of your text field.</li>
-                                        <li><strong>Instant magic.</strong> Your draft is replaced with the polished version in a single click.</li>
+                                        <li><strong>Instant magic.</strong> Your draft is replaced with the rewritten version in a single click.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -200,7 +200,7 @@ export const HowToUse = () => {
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-600"><strong>10 polishes</strong> per day</span>
+                                    <span className="text-slate-600"><strong>10 rewrites</strong> per day</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5" />
@@ -219,7 +219,7 @@ export const HowToUse = () => {
                             <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-700"><strong>One-Click Polish</strong> (Instant replacement)</span>
+                                    <span className="text-slate-700"><strong>One-Click Rewrite</strong> (Instant replacement)</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
@@ -227,7 +227,7 @@ export const HowToUse = () => {
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
-                                    <span className="text-slate-700"><strong>150 polishes</strong> per day</span>
+                                    <span className="text-slate-700"><strong>150 rewrites</strong> per day</span>
                                 </li>
                                 <li className="flex items-start">
                                     <Check className="w-5 h-5 text-brand-500 mr-3 mt-0.5" />
@@ -266,7 +266,7 @@ export const HowToUse = () => {
                                 Viewing your dashboard shows:
                             </p>
                             <ul className="list-disc list-inside text-slate-600 space-y-2">
-                                <li>Daily polishes remaining</li>
+                                <li>Daily rewrites remaining</li>
                                 <li>Current plan status</li>
                                 <li>Character limits</li>
                             </ul>

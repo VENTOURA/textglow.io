@@ -5,9 +5,9 @@ export const Freelancers: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Assistant for Freelancers — Sound Like a Pro | TextGlow",
-        description: "Win more clients and manage project communication with ease. Use TextGlow to rewrite proposals, invoices, and difficult client emails for a confident tone.",
-        url: "/use-cases/freelancers/"
+        title: "TextGlow for Freelancers — AI Writing Assistant",
+        description: "Pitch better and manage clients with ease. Use TextGlow to rewrite proposals, invoices, and status updates for a more professional impression.",
+        url: "/freelancers/"
       }}
       hero={{
         title: "When You're Freelance, Every Email IS Your Brand",

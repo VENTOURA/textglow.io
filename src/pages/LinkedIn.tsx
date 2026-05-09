@@ -24,14 +24,14 @@ const useCases = [
 ];
 
 const testimonials = [
-    { quote: "I went from posting once a month to 3x a week. I just dump my thoughts and let TextGlow make them sound polished. My engagement is up 400%.", author: "Startup Founder", context: "12K followers" },
+    { quote: "I went from posting once a month to 3x a week. I just dump my thoughts and let TextGlow make them sound rewritten. My engagement is up 400%.", author: "Startup Founder", context: "12K followers" },
     { quote: "My LinkedIn DM response rate went from 8% to 31% after I started using the Persuasive tone for cold outreach.", author: "Sales Development Rep", context: "B2B SaaS" },
     { quote: "I'm an engineer, not a writer. But LinkedIn matters for my career. TextGlow lets me share my expertise without spending an hour agonizing over phrasing.", author: "Senior Software Engineer", context: "FAANG" },
 ];
 
 const faqs = [
     { q: "Does TextGlow work inside LinkedIn?", a: "Yes. TextGlow works inside every text field on LinkedIn — post composer, comments, DMs, InMails, and connection request messages." },
-    { q: "Will LinkedIn flag or penalize my content?", a: "No. TextGlow polishes YOUR words — it doesn't generate content from scratch. LinkedIn's AI detection targets fully AI-generated content, not human-written content that's been edited for tone." },
+    { q: "Will LinkedIn flag or penalize my content?", a: "No. TextGlow rewrites YOUR words — it doesn't generate content from scratch. LinkedIn's AI detection targets fully AI-generated content, not human-written content that's been edited for tone." },
     { q: "Does TextGlow write LinkedIn posts for me?", a: "No — and that's the point. Tools that generate posts from scratch produce generic content that hurts your reach. TextGlow takes what you've already written and improves the tone, clarity, and impact." },
     { q: "Can it help with LinkedIn comments?", a: "Yes. Comments are the #1 underused growth strategy on LinkedIn. Type a quick thought, click ✨, and turn it into something worth noticing." },
     { q: "Does it work on LinkedIn Sales Navigator?", a: "Yes. TextGlow works in any text field rendered in your browser, including Sales Navigator InMails and messages." },
@@ -54,17 +54,17 @@ export const LinkedIn = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow</title>
-                <meta name="description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
+                <title>AI LinkedIn Post Writer & Message Assistant | TextGlow</title>
+                <meta name="description" content="Write LinkedIn posts, DMs, and comments that get engagement. TextGlow rewrites your tone in 2 clicks, right inside LinkedIn. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/linkedin/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/linkedin/" />
-                <meta property="og:title" content="Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow" />
-                <meta property="og:description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
+                <meta property="og:title" content="AI LinkedIn Post Writer & Message Assistant | TextGlow" />
+                <meta property="og:description" content="Write LinkedIn posts, DMs, and comments that get engagement. TextGlow rewrites your tone in 2 clicks, right inside LinkedIn. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Free AI Writing Assistant for LinkedIn — Post & DM Polisher | TextGlow" />
-                <meta property="twitter:description" content="Rewrite your LinkedIn posts and DMs for better professional impact. Use TextGlow to sound confident, helpful, or professional in 2 clicks. Free Chrome extension." />
+                <meta property="twitter:title" content="AI LinkedIn Post Writer & Message Assistant | TextGlow" />
+                <meta property="twitter:description" content="Write LinkedIn posts, DMs, and comments that get engagement. TextGlow rewrites your tone in 2 clicks, right inside LinkedIn. Free Chrome extension." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">
@@ -80,7 +80,7 @@ export const LinkedIn = () => {
                         Stop Copy-Pasting Into ChatGPT to Write{' '}<span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">LinkedIn Posts</span>
                     </motion.h1>
                     <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-                        You know the drill. Open ChatGPT. "Write me a LinkedIn post about [topic]." Copy. Paste. Edit for 15 minutes because it sounds like a robot wrote it. TextGlow polishes your own words in 2 clicks — right inside LinkedIn. Your voice. Your ideas. Just better.
+                        You know the drill. Open ChatGPT. "Write me a LinkedIn post about [topic]." Copy. Paste. Edit for 15 minutes because it sounds like a robot wrote it. TextGlow rewrites your own words in 2 clicks — right inside LinkedIn. Your voice. Your ideas. Just better.
                     </motion.p>
                     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                         <Button href={CHROME_URL} className="px-10 py-4 text-lg bg-blue-600 hover:bg-blue-700 text-white shadow-[0_0_40px_rgba(37,99,235,0.35)]">
@@ -98,9 +98,9 @@ export const LinkedIn = () => {
                         <p className="text-lg text-slate-600 mb-6">But writing a compelling LinkedIn post from scratch takes <strong>20-45 minutes</strong>. So you reach for ChatGPT — and get punished for it.</p>
                         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl mb-8">
                             <p className="text-blue-900 font-semibold text-lg mb-2">The real problem isn't writing. It's editing.</p>
-                            <p className="text-blue-800">You have the ideas. You just struggle to make them sound polished and engaging. That's a <strong>tone problem</strong>, not a content problem.</p>
+                            <p className="text-blue-800">You have the ideas. You just struggle to make them sound rewritten and engaging. That's a <strong>tone problem</strong>, not a content problem.</p>
                         </div>
-                        <p className="text-lg text-slate-600">TextGlow doesn't write FOR you. It polishes what you've already written — preserving your voice, your stories, your perspective.</p>
+                        <p className="text-lg text-slate-600">TextGlow doesn't write FOR you. It rewrites what you've already written — preserving your voice, your stories, your perspective.</p>
                     </motion.div>
                 </div></div>
             </section>
@@ -108,10 +108,10 @@ export const LinkedIn = () => {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4"><div className="max-w-5xl mx-auto">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Polish Posts, DMs, and Comments in <span className="text-blue-600">2 Clicks</span></h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Rewrite Posts, DMs, and Comments in <span className="text-blue-600">2 Clicks</span></h2>
                     </motion.div>
                     <div className="grid md:grid-cols-3 gap-8 mb-20">
-                        {[{ title: "Posts", desc: "Type your rough draft in \"Start a post.\" Click ✨. Pick a tone. Your draft becomes a polished post that sounds like you on your best day.", icon: "📝" }, { title: "Comments", desc: "Turn a forgettable \"Great post!\" into an insightful response that gets noticed by the poster and their entire network.", icon: "💬" }, { title: "DMs & InMails", desc: "Pick Persuasive for outreach, Professional for follow-ups, or Friendly for warm connections. All polished in-place.", icon: "📩" }].map((s, i) => (
+                        {[{ title: "Posts", desc: "Type your rough draft in \"Start a post.\" Click ✨. Pick a tone. Your draft becomes a rewritten post that sounds like you on your best day.", icon: "📝" }, { title: "Comments", desc: "Turn a forgettable \"Great post!\" into an insightful response that gets noticed by the poster and their entire network.", icon: "💬" }, { title: "DMs & InMails", desc: "Pick Persuasive for outreach, Professional for follow-ups, or Friendly for warm connections. All rewritten in-place.", icon: "📩" }].map((s, i) => (
                             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
                                 <div className="text-4xl mb-4">{s.icon}</div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-2">{s.title}</h3><p className="text-slate-600">{s.desc}</p>
@@ -211,7 +211,7 @@ export const LinkedIn = () => {
                 <div className="container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Your Ideas Deserve{' '}<span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Better Words</span></h2>
-                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 polishes per day. No signup required. Works inside every text field on LinkedIn.</p>
+                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 rewrites per day. No signup required. Works inside every text field on LinkedIn.</p>
                         <Button href={CHROME_URL} variant="secondary" className="px-10 py-4 text-lg !bg-white !text-blue-700 font-bold hover:!bg-blue-50 shadow-[0_0_50px_rgba(255,255,255,0.2)] border-none">
                             <Chrome className="w-5 h-5 mr-2" />Add to Chrome — It's Free
                         </Button>

@@ -63,10 +63,15 @@ export const UseCaseLayout: React.FC<UseCaseLayoutProps> = ({
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
+        <link rel="canonical" href={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
-        <meta property="og:url" content={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
-        <link rel="canonical" href={`https://textglow.io${meta.url.endsWith('/') ? meta.url : meta.url + '/'}`} />
+        <meta property="og:image" content="https://textglow.io/og-image.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={meta.title} />
+        <meta property="twitter:description" content={meta.description} />
       </Helmet>
 
       {/* Hero Section */}
@@ -117,7 +122,7 @@ export const UseCaseLayout: React.FC<UseCaseLayoutProps> = ({
               <ol className="space-y-6 text-brand-800">
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold mt-0.5">1</span>
-                  <p className="leading-relaxed">Type your message as you normally would — rough, unpolished, just getting thoughts down.</p>
+                  <p className="leading-relaxed">Type your message as you normally would — rough, unrewritten, just getting thoughts down.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold mt-0.5">2</span>

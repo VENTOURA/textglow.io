@@ -24,17 +24,17 @@ export const Translate = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Translate Slang to English — Gen Z to Corporate Translator | TextGlow</title>
-                <meta name="description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
+                <title>AI Translator — Rewrite Messages in Any Language with Perfect Tone | TextGlow</title>
+                <meta name="description" content="Don't just translate words. TextGlow rewrites your messages in any language while maintaining the perfect professional or friendly tone. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/translate/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/translate/" />
-                <meta property="og:title" content="Translate Slang to English — Gen Z to Corporate Translator | TextGlow" />
-                <meta property="og:description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
+                <meta property="og:title" content="AI Translator — Rewrite Messages in Any Language with Perfect Tone | TextGlow" />
+                <meta property="og:description" content="Don't just translate words. TextGlow rewrites your messages in any language while maintaining the perfect professional or friendly tone. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Translate Slang to English — Gen Z to Corporate Translator | TextGlow" />
-                <meta property="twitter:description" content="Understand Gen Z slang or translate corporate jargon into plain English. Use TextGlow to bridge the communication gap between generations and departments. Free tool." />
+                <meta property="twitter:title" content="AI Translator — Rewrite Messages in Any Language with Perfect Tone | TextGlow" />
+                <meta property="twitter:description" content="Don't just translate words. TextGlow rewrites your messages in any language while maintaining the perfect professional or friendly tone. Free Chrome extension." />
             </Helmet>
 
             <section className="relative pt-24 pb-32 overflow-hidden bg-slate-900">
@@ -208,7 +208,7 @@ export const Translate = () => {
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Your Ideas Deserve to Be Heard —{' '}<span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Not Lost in Translation</span></h2>
                         <p className="text-slate-400 mb-4">You're not learning English. You already speak it. You just need the last 10%.</p>
-                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 polishes per day. No signup required.</p>
+                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 rewrites per day. No signup required.</p>
                         <Button href={CHROME_URL} variant="secondary" className="px-10 py-4 text-lg !bg-white !text-emerald-700 font-bold hover:!bg-emerald-50 shadow-[0_0_50px_rgba(255,255,255,0.2)] border-none">
                             <Chrome className="w-5 h-5 mr-2" />Add to Chrome — It's Free
                         </Button>

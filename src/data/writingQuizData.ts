@@ -111,7 +111,7 @@ export const personalityTypes: Record<PersonalityCode, PersonalityType> = {
       "Gets responses because every message has a clear purpose."
     ],
     weaknesses: [
-      "Can come across as too polished or rehearsed.",
+      "Can come across as too rewritten or rehearsed.",
       "May prioritize clarity over nuance in complex situations.",
       "Warmth can feel performative if overused."
     ],

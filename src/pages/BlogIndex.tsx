@@ -7,17 +7,17 @@ export const BlogIndex = () => {
     return (
         <div className="bg-slate-50 min-h-screen pt-24 pb-20">
             <Helmet>
-                <title>TextGlow Blog — Writing Tips, AI Insights & Communication | TextGlow</title>
-                <meta name="description" content="Master the art of professional communication. Read our latest articles on AI writing, tone management, remote work collaboration, and more on the TextGlow blog." />
+                <title>AI Writing Blog — Tips, Guides & AI Strategy | TextGlow</title>
+                <meta name="description" content="Master the art of AI-assisted writing. Tips for better emails, LinkedIn growth, and Slack productivity from the TextGlow team." />
                 <link rel="canonical" href="https://textglow.io/blog/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/blog/" />
-                <meta property="og:title" content="TextGlow Blog — Writing Tips, AI Insights & Communication | TextGlow" />
-                <meta property="og:description" content="Master the art of professional communication. Read our latest articles on AI writing, tone management, remote work collaboration, and more on the TextGlow blog." />
+                <meta property="og:title" content="AI Writing Blog — Tips, Guides & AI Strategy | TextGlow" />
+                <meta property="og:description" content="Master the art of AI-assisted writing. Tips for better emails, LinkedIn growth, and Slack productivity from the TextGlow team." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="TextGlow Blog — Writing Tips, AI Insights & Communication | TextGlow" />
-                <meta property="twitter:description" content="Master the art of professional communication. Read our latest articles on AI writing, tone management, remote work collaboration, and more on the TextGlow blog." />
+                <meta property="twitter:title" content="AI Writing Blog — Tips, Guides & AI Strategy | TextGlow" />
+                <meta property="twitter:description" content="Master the art of AI-assisted writing. Tips for better emails, LinkedIn growth, and Slack productivity from the TextGlow team." />
             </Helmet>
 
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

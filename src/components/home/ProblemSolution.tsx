@@ -78,7 +78,7 @@ export const ProblemSolution = () => {
                                 <div className="bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</div>
                                 <div>
                                     <p className="font-bold text-slate-900">Magical Rewrite</p>
-                                    <p className="text-sm text-slate-600">Your text is replaced with a polished version in place.</p>
+                                    <p className="text-sm text-slate-600">Your text is replaced with a rewritten version in place.</p>
                                 </div>
                             </div>
                         </div>

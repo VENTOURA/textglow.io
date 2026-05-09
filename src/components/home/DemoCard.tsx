@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface DemoCardProps {
     originalText: string;
-    polishedText: string;
+    rewrittenText: string;
     tone: string;
     delay?: number;
 }
 
-type AnimationState = 'IDLE' | 'TYPING' | 'PRE_POLISH' | 'MOVING_CURSOR' | 'CLICKING' | 'POLISHING' | 'POLISHED' | 'RESETTING';
+type AnimationState = 'IDLE' | 'TYPING' | 'PRE_REWRITE' | 'MOVING_CURSOR' | 'CLICKING' | 'REWRITING' | 'REWRITTEN' | 'RESETTING';
 
-export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCardProps) => {
+export const DemoCard = ({ originalText, rewrittenText, tone, delay = 0 }: DemoCardProps) => {
     const [text, setText] = useState('');
     const [state, setState] = useState<AnimationState>('IDLE');
     const [cursorVisible, setCursorVisible] = useState(true);
@@ -66,11 +66,11 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
                     const speed = Math.random() * 40 + 30;
                     addTimeout(typeChar, speed);
                 } else {
-                    setState('PRE_POLISH');
+                    setState('PRE_REWRITE');
                 }
             };
             typeChar();
-        } else if (state === 'PRE_POLISH') {
+        } else if (state === 'PRE_REWRITE') {
             // Short pause before cursor starts moving
             addTimeout(() => {
                 setState('MOVING_CURSOR');
@@ -83,15 +83,15 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
         } else if (state === 'CLICKING') {
             // Click animation
             addTimeout(() => {
-                setState('POLISHING');
+                setState('REWRITING');
             }, 300);
-        } else if (state === 'POLISHING') {
+        } else if (state === 'REWRITING') {
             // Simulate processing time + button animation
             addTimeout(() => {
-                setText(polishedText);
-                setState('POLISHED');
+                setText(rewrittenText);
+                setState('REWRITTEN');
             }, 800);
-        } else if (state === 'POLISHED') {
+        } else if (state === 'REWRITTEN') {
             // Wait so user can read the result
             addTimeout(() => {
                 setState('RESETTING');
@@ -100,7 +100,7 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
             setText('');
             setState('TYPING'); // Loop back to typing immediately or after small delay
         }
-    }, [state, originalText, polishedText]);
+    }, [state, originalText, rewrittenText]);
 
     return (
         <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:shadow-xl relative">
@@ -115,14 +115,14 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
             <div className="p-4 flex-grow bg-white relative">
                 <div className="font-mono text-base text-slate-800 leading-relaxed min-h-[140px] whitespace-pre-wrap">
                     {text}
-                    {(state === 'TYPING' || state === 'IDLE' || state === 'PRE_POLISH') && (
+                    {(state === 'TYPING' || state === 'IDLE' || state === 'PRE_REWRITE') && (
                         <span className={`${cursorVisible ? 'opacity-100' : 'opacity-0'} text-brand-500 font-bold`}>|</span>
                     )}
                 </div>
 
                 {/* Tone Badge */}
                 <AnimatePresence>
-                    {state === 'POLISHED' && (
+                    {state === 'REWRITTEN' && (
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -138,14 +138,14 @@ export const DemoCard = ({ originalText, polishedText, tone, delay = 0 }: DemoCa
             {/* Toolbar / Action Area */}
             <div className="bg-slate-50 p-3 border-t border-slate-100 flex justify-end items-center relative z-10">
                 <motion.button
-                    animate={state === 'CLICKING' || state === 'POLISHING' ? { scale: 0.95 } : { scale: 1 }}
-                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${state === 'POLISHED'
+                    animate={state === 'CLICKING' || state === 'REWRITING' ? { scale: 0.95 } : { scale: 1 }}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${state === 'REWRITTEN'
                         ? 'bg-green-100 text-green-700'
                         : 'bg-brand-600 text-white shadow-md shadow-brand-500/20'
                         }`}
                 >
-                    <Sparkles className={`w-4 h-4 ${state === 'POLISHING' ? 'animate-spin' : ''}`} />
-                    <span>{state === 'POLISHED' ? 'Polished!' : 'Polish'}</span>
+                    <Sparkles className={`w-4 h-4 ${state === 'REWRITING' ? 'animate-spin' : ''}`} />
+                    <span>{state === 'REWRITTEN' ? 'Rewritten!' : 'Rewrite'}</span>
                 </motion.button>
             </div>
 

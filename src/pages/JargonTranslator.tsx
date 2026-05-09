@@ -91,16 +91,16 @@ export const JargonTranslator = () => {
         <div className="bg-slate-50 min-h-screen">
             <Helmet>
                 <title>Corporate Jargon Translator — Plain English AI Tool | TextGlow</title>
-                <meta name="description" content="Translate corporate jargon and &quot;business speak&quot; into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
+                <meta name="description" content="Translate corporate jargon and 'business speak' into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
                 <link rel="canonical" href="https://textglow.io/tools/jargon-translator/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/tools/jargon-translator/" />
                 <meta property="og:title" content="Corporate Jargon Translator — Plain English AI Tool | TextGlow" />
-                <meta property="og:description" content="Translate corporate jargon and &quot;business speak&quot; into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
+                <meta property="og:description" content="Translate corporate jargon and 'business speak' into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="Corporate Jargon Translator — Plain English AI Tool | TextGlow" />
-                <meta property="twitter:description" content="Translate corporate jargon and &quot;business speak&quot; into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
+                <meta property="twitter:description" content="Translate corporate jargon and 'business speak' into plain English. Use TextGlow to understand what your boss or colleagues really mean. Free online tool." />
             </Helmet>
 
             <section className="pt-20 pb-12 bg-white border-b border-slate-200">

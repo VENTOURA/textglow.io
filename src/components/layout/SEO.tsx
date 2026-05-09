@@ -12,7 +12,7 @@ export const SEO = () => {
             "lowPrice": "0",
             "offerCount": "2"
         },
-        "description": "The tailored AI writing assistant for Chrome. Instantly polish, rewrite, and fix grammar in emails, chats, and docs without copy-pasting.",
+        "description": "The tailored AI writing assistant for Chrome. Instantly refine, rewrite, and fix grammar in emails, chats, and docs without copy-pasting.",
         "author": {
             "@type": "Organization",
             "name": "Textglow",

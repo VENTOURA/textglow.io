@@ -5,9 +5,9 @@ export const HR: React.FC = () => {
   return (
     <UseCaseLayout
       meta={{
-        title: "AI Writing Assistant for HR Teams — Clear & Empathetic | TextGlow",
-        description: "Improve employee experience and employer branding. Use TextGlow to rewrite internal announcements, sensitive emails, and recruiting outreach in the right tone.",
-        url: "/use-cases/hr/"
+        title: "TextGlow for HR — AI Writing Assistant",
+        description: "Streamline HR communication. Use TextGlow to rewrite recruiting emails, policy updates, and internal memos to be clear and professional.",
+        url: "/hr/"
       }}
       hero={{
         title: "HR Writes the Most Sensitive Emails in the Company — 50 Times a Day",

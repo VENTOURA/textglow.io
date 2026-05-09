@@ -30,8 +30,8 @@ const testimonials = [
 
 const faqs = [
     { q: "Does TextGlow work in Slack's desktop app?", a: "TextGlow works in Slack's web version (app.slack.com) in any browser where the Chrome extension is installed. The native Slack desktop app is not currently supported — but most teams can access Slack via the browser with the same experience." },
-    { q: "Can my teammates or manager see that I'm using TextGlow?", a: "No. TextGlow rewrites your text before you hit send. The polished message appears as if you typed it yourself. No watermarks, no signatures, no traces." },
-    { q: "Does TextGlow read my Slack messages or DMs?", a: "No. TextGlow only processes the text you actively choose to polish. It does not monitor, read, or store your Slack conversations. Your text is processed ephemerally and never saved." },
+    { q: "Can my teammates or manager see that I'm using TextGlow?", a: "No. TextGlow rewrites your text before you hit send. The rewritten message appears as if you typed it yourself. No watermarks, no signatures, no traces." },
+    { q: "Does TextGlow read my Slack messages or DMs?", a: "No. TextGlow only processes the text you actively choose to rewrite. It does not monitor, read, or store your Slack conversations. Your text is processed ephemerally and never saved." },
     { q: "Does it work in Slack threads and DMs?", a: "Yes. TextGlow works in any text input field in Slack's web version — channels, threads, DMs, and even Slack Connect conversations with external partners." },
 ];
 
@@ -56,17 +56,17 @@ export const Slack = () => {
     return (
         <div className="bg-white">
             <Helmet>
-                <title>Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow</title>
-                <meta name="description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
+                <title>AI Writing Assistant for Slack — Sound Professional in Every Message | TextGlow</title>
+                <meta name="description" content="Rewrite your Slack messages before sending. TextGlow adjusts your tone in 2 clicks — right inside Slack. Free Chrome extension." />
                 <link rel="canonical" href="https://textglow.io/slack/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/slack/" />
-                <meta property="og:title" content="Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow" />
-                <meta property="og:description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
+                <meta property="og:title" content="AI Writing Assistant for Slack — Sound Professional in Every Message | TextGlow" />
+                <meta property="og:description" content="Rewrite your Slack messages before sending. TextGlow adjusts your tone in 2 clicks — right inside Slack. Free Chrome extension." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Free AI Writing Assistant for Slack — Professional Slack Messages | TextGlow" />
-                <meta property="twitter:description" content="Rewrite your Slack messages for better tone and clarity in 2 clicks. TextGlow works natively inside Slack to help you sound professional, confident, or friendly. Free." />
+                <meta property="twitter:title" content="AI Writing Assistant for Slack — Sound Professional in Every Message | TextGlow" />
+                <meta property="twitter:description" content="Rewrite your Slack messages before sending. TextGlow adjusts your tone in 2 clicks — right inside Slack. Free Chrome extension." />
             </Helmet>
 
             {/* ───── HERO ───── */}
@@ -84,7 +84,7 @@ export const Slack = () => {
                             Stop Overthinking Every{' '}<span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">Slack Message</span>
                         </motion.h1>
                         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-                            You've typed it. Deleted it. Retyped it. Changed "Thanks" to "Thank you" to "Appreciate it" and back again. TextGlow ends the Slack anxiety loop — polish your tone in 2 clicks, right inside the message box.
+                            You've typed it. Deleted it. Retyped it. Changed "Thanks" to "Thank you" to "Appreciate it" and back again. TextGlow ends the Slack anxiety loop — rewrite your tone in 2 clicks, right inside the message box.
                         </motion.p>
                         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                             <Button href={CHROME_URL} className="px-10 py-4 text-lg bg-purple-600 hover:bg-purple-700 text-white shadow-[0_0_40px_rgba(168,85,247,0.35)]">
@@ -120,7 +120,7 @@ export const Slack = () => {
             <section className="py-24 bg-slate-50">
                 <div className="container mx-auto px-4"><div className="max-w-5xl mx-auto">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Polish Any Slack Message in <span className="text-purple-600">2 Clicks</span></h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Rewrite Any Slack Message in <span className="text-purple-600">2 Clicks</span></h2>
                     </motion.div>
                     <div className="grid md:grid-cols-3 gap-8 mb-20">
                         {[{ step: "1", title: "Type your rough message", desc: "Don't overthink it. Just get the words out.", icon: "✍️" }, { step: "2", title: "Click the ✨ icon", desc: "The TextGlow button appears right inside the Slack message box.", icon: "✨" }, { step: "3", title: "Pick your tone", desc: "Choose the tone that matches your intent. Replaced instantly.", icon: "🎯" }].map((s, i) => (
@@ -236,7 +236,7 @@ export const Slack = () => {
                 <div className="container mx-auto px-4"><div className="max-w-3xl mx-auto text-center">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">Write Slack Messages That Sound Like You —{' '}<span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">But Better</span></h2>
-                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 polishes per day. No signup required. Just install and start writing with confidence.</p>
+                        <p className="text-lg text-slate-400 mb-10">Free to use. 10 rewrites per day. No signup required. Just install and start writing with confidence.</p>
                         <Button href={CHROME_URL} variant="secondary" className="px-10 py-4 text-lg !bg-white !text-purple-700 font-bold hover:!bg-purple-50 shadow-[0_0_50px_rgba(255,255,255,0.2)] border-none">
                             <Chrome className="w-5 h-5 mr-2" />Add to Chrome — It's Free
                         </Button>

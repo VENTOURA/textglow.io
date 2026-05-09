@@ -5,17 +5,17 @@ export const Privacy = () => {
     return (
         <div className="relative overflow-hidden min-h-screen bg-slate-50 pt-24 pb-20">
             <Helmet>
-                <title>Privacy Policy — TextGlow</title>
-                <meta name="description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
+                <title>Privacy Policy | TextGlow</title>
+                <meta name="description" content="Your data privacy is our priority. Read our privacy policy to understand how we protect your information." />
                 <link rel="canonical" href="https://textglow.io/privacy/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/privacy/" />
-                <meta property="og:title" content="Privacy Policy — TextGlow" />
-                <meta property="og:description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
+                <meta property="og:title" content="Privacy Policy | TextGlow" />
+                <meta property="og:description" content="Your data privacy is our priority. Read our privacy policy to understand how we protect your information." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="Privacy Policy — TextGlow" />
-                <meta property="twitter:description" content="Read the TextGlow Privacy Policy. Learn how we protect your data and privacy when using our AI writing assistant and Chrome extension." />
+                <meta property="twitter:title" content="Privacy Policy | TextGlow" />
+                <meta property="twitter:description" content="Your data privacy is our priority. Read our privacy policy to understand how we protect your information." />
             </Helmet>
 
             {/* Background blobs */}
@@ -75,7 +75,7 @@ export const Privacy = () => {
                                 </h3>
                                 <div className="pl-0 md:pl-16 space-y-4">
                                     <p className="leading-relaxed">
-                                        The text you submit is sent to our AI processing providers solely for the purpose of generating the polished or rewritten version.
+                                        The text you submit is sent to our AI processing providers solely for the purpose of generating the rewritten or rewritten version.
                                     </p>
                                     <ul className="list-none pl-0 space-y-3">
                                         <li className="flex items-start">

@@ -3,19 +3,19 @@ import { DemoCard } from './DemoCard';
 const demos = [
     {
         originalText: "hey john, im sick today, can we reschedule the meeting? sorry about this",
-        polishedText: "Hi John, I'm feeling under the weather today and won't be able to make our meeting. Could we reschedule for tomorrow or later this week? Apologies for the short notice — happy to work around your availability.",
+        rewrittenText: "Hi John, I'm feeling under the weather today and won't be able to make our meeting. Could we reschedule for tomorrow or later this week? Apologies for the short notice — happy to work around your availability.",
         tone: "Professional",
         delay: 0
     },
     {
         originalText: "hey john, im sick today, can we reschedule the meeting? sorry about this",
-        polishedText: "Hey John! I'm not feeling great today — think I need to sit this one out. Any chance we can push the meeting to tomorrow? Sorry to shuffle things around! 😊",
+        rewrittenText: "Hey John! I'm not feeling great today — think I need to sit this one out. Any chance we can push the meeting to tomorrow? Sorry to shuffle things around! 😊",
         tone: "Friendly",
         delay: 2000
     },
     {
         originalText: "TextGlow works in French, Spanish, German, and 50+ languages",
-        polishedText: "John, je suis malade aujourd'hui, peut-on faire la réunion demain ? Je ne peux pas aujourd'hui. Merci beaucoup ! (Et si tu as un remède miracle, je suis preneur !)",
+        rewrittenText: "John, je suis malade aujourd'hui, peut-on faire la réunion demain ? Je ne peux pas aujourd'hui. Merci beaucoup ! (Et si tu as un remède miracle, je suis preneur !)",
         tone: "Funny (French)",
         delay: 4000
     }
@@ -40,7 +40,7 @@ export const LiveDemoSection = () => {
                         <div key={index} className="h-80">
                             <DemoCard
                                 originalText={demo.originalText}
-                                polishedText={demo.polishedText}
+                                rewrittenText={demo.rewrittenText}
                                 tone={demo.tone}
                                 delay={demo.delay}
                             />

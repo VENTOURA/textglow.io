@@ -13,19 +13,19 @@ const faqs = [
     },
     {
         question: "Do I need an OpenAI API key to use it?",
-        answer: "Nope! We’ve made it incredibly easy. Free users get 10 polishes per day using our own high-speed AI infrastructure. No keys, no technical setup. Just install and write."
+        answer: "Nope! We’ve made it incredibly easy. Free users get 10 rewrites per day using our own high-speed AI infrastructure. No keys, no technical setup. Just install and write."
     },
     {
         question: "What is the 'One-Click Magic' feature?",
-        answer: "Exclusive to Pro users, One-Click Magic allows you to polish your text instantly without ever opening a selection modal. Your draft is replaced with a polished version in a single click, saving you even more time."
+        answer: "Exclusive to Pro users, One-Click Magic allows you to rewrite your text instantly without ever opening a selection modal. Your draft is replaced with a rewritten version in a single click, saving you even more time."
     },
     {
         question: "What are the benefits of Textglow Pro?",
-        answer: "Pro unlocks the full potential of Textglow: **150 polishes per day**, the **One-Click Magic** mode, a massive **3,000 character limit** per message, and priority access to our fastest AI models."
+        answer: "Pro unlocks the full potential of Textglow: **150 rewrites per day**, the **One-Click Magic** mode, a massive **3,000 character limit** per message, and priority access to our fastest AI models."
     },
     {
         question: "Is my writing private and secure?",
-        answer: "Absolutely. We believe your words are yours alone. Your text is processed securely to generate the rewrite and is **never stored, sold, or used to train AI models.** Once the polish is done, the data is gone."
+        answer: "Absolutely. We believe your words are yours alone. Your text is processed securely to generate the rewrite and is **never stored, sold, or used to train AI models.** Once the rewrite is done, the data is gone."
     }
 ];
 

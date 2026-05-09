@@ -32,17 +32,17 @@ export const ExamplesGallery = () => {
     return (
         <div className="bg-slate-50 min-h-screen pb-20">
             <Helmet>
-                <title>AI Writing Examples Gallery — Before & After | TextGlow</title>
-                <meta name="description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
+                <title>AI Writing Examples — Before & After Library | TextGlow</title>
+                <meta name="description" content="Browse our library of 40+ before and after writing examples. See how AI rewrites messages for any professional situation." />
                 <link rel="canonical" href="https://textglow.io/tools/examples/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://textglow.io/tools/examples/" />
-                <meta property="og:title" content="AI Writing Examples Gallery — Before & After | TextGlow" />
-                <meta property="og:description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
+                <meta property="og:title" content="AI Writing Examples — Before & After Library | TextGlow" />
+                <meta property="og:description" content="Browse our library of 40+ before and after writing examples. See how AI rewrites messages for any professional situation." />
                 <meta property="og:image" content="https://textglow.io/og-image.png" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="AI Writing Examples Gallery — Before & After | TextGlow" />
-                <meta property="twitter:description" content="Browse our collection of 100+ real before-and-after AI writing examples. See how TextGlow transforms emails, Slack messages, and LinkedIn posts for better impact. Free." />
+                <meta property="twitter:title" content="AI Writing Examples — Before & After Library | TextGlow" />
+                <meta property="twitter:description" content="Browse our library of 40+ before and after writing examples. See how AI rewrites messages for any professional situation." />
             </Helmet>
 
             {/* Hero */}

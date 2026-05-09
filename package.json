@@ -14,7 +14,7 @@
   "reactSnap": {
     "source": "dist",
     "waitFor": "#root > *",
-    "delay": 1000,
+    "delay": 3000,
     "crawl": false,
     "minifyHtml": {
       "collapseWhitespace": true,

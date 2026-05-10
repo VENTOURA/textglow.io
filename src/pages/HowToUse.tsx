@@ -64,10 +64,10 @@ export const HowToUse = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6"
                     >
-                        How to Use Textglow
+                        How to Use TextGlow
                     </motion.h1>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                        Textglow is your instant AI writing assistant. It works directly inside Gmail, Slack, LinkedIn, and almost anywhere else you type on the web. It fixes grammar, improves clarity, and changes the tone of your text without any copy-pasting.
+                        TextGlow is your instant AI writing assistant. It works directly inside Gmail, Slack, LinkedIn, and almost anywhere else you type on the web. It fixes grammar, improves clarity, and changes the tone of your text without any copy-pasting.
                     </p>
                 </div>
                 {/* Decorative blob */}
@@ -90,7 +90,7 @@ export const HowToUse = () => {
                             <div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-2">1. Install & Pin</h3>
                                 <p className="text-slate-600 mb-4">
-                                    Add Textglow to Chrome from the Web Store. Once installed, we recommend pinning it to your browser toolbar for easy access.
+                                    Add TextGlow to Chrome from the Web Store. Once installed, we recommend pinning it to your browser toolbar for easy access.
                                 </p>
                                 <Button size="sm" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" variant="secondary">Install Extension</Button>
                             </div>
@@ -117,7 +117,7 @@ export const HowToUse = () => {
                             <div>
                                 <h3 className="text-xl font-bold text-slate-900 mb-2">3. Rewrite & Refine</h3>
                                 <div className="prose text-slate-600">
-                                    <p className="mb-2">Click the Textglow icon to open the rewriting menu.</p>
+                                    <p className="mb-2">Click the TextGlow icon to open the rewriting menu.</p>
                                     <ul className="list-disc list-inside space-y-2 mt-2">
                                         <li>Choose a <strong>Tone</strong> (your default tone is pre-selected).</li>
                                         <li>Click <strong>Rewrite</strong>.</li>
@@ -282,7 +282,7 @@ export const HowToUse = () => {
                     <Shield className="w-12 h-12 text-slate-400 mx-auto mb-6" />
                     <h2 className="text-2xl font-bold text-slate-900 mb-4">Your Data is Safe</h2>
                     <p className="text-slate-600">
-                        Textglow is designed with privacy first. Your text is sent securely to the AI solely for the purpose of rewriting it and is not stored, tracked, or used for training. 
+                        TextGlow is designed with privacy first. Your text is sent securely to the AI solely for the purpose of rewriting it and is not stored, tracked, or used for training. 
                     </p>
                 </div>
             </section>

@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
             <h2>Why Tone is the New Standard</h2>
             <p>For the last decade, writing tools focused entirely on making us sound smart. But in 2026, spelling mistakes rarely ruin relationships. Bad tone does. Sending an overly direct email to a sensitive client, or a hesitant Slack message to a demanding boss, can derail your career.</p>
             
-            <p>Our internal research team analyzed over 50,000 professional messages rewritten through <a href="https://textglow.io">Textglow</a>. The data was shocking: <strong>Messages adjusted using the "Confident" or "Empathetic" tone filters received a 42% higher positive reply rate</strong> than the raw drafts, even when the underlying message was identical.</p>
+            <p>Our internal research team analyzed over 50,000 professional messages rewritten through <a href="https://textglow.io">TextGlow</a>. The data was shocking: <strong>Messages adjusted using the "Confident" or "Empathetic" tone filters received a 42% higher positive reply rate</strong> than the raw drafts, even when the underlying message was identical.</p>
 
             <h2>A Real-World Example</h2>
             <p>Let's look at how adjusting the emotional intelligence of a message changes its reception entirely. Notice how the rewritten version completely diffuses the tension while maintaining authority.</p>
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"As I stated in my previous email, the attachment contains the updated figures. Please review them immediately so we do not miss the Friday deadline."</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The High-EQ (Textglow) Rewrite</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The High-EQ (TextGlow) Rewrite</span>
                     <p class="text-sm italic text-slate-700">"I've attached the updated figures for your review. Let me know if you have any questions before we finalize everything on Friday!"</p>
                 </div>
             </div>
@@ -84,11 +84,11 @@ export const blogPosts: BlogPost[] = [
             <h3>Case Study: The "Feedback Sandwich" is Dead</h3>
             <p>For years, managers were taught to use the "Feedback Sandwich" (compliment, criticism, compliment). But modern workers see right through it; it feels manipulative. Today, emotional intelligence in writing requires <strong>Direct Empathy</strong>.</p>
             <p>Instead of wrapping a harsh critique in fake compliments, High-EQ writers state the critique clearly but wrap it in a tone of support and collaboration. For example: <em>"I noticed the Q3 projections in this draft are based on outdated metrics. Let's hop on a 5-minute call tomorrow so I can walk you through the new dashboard, and we can get this updated before the presentation."</em></p>
-            <p>This is where AI tone assistants are revolutionary. You can type your raw, frustrated thought: <em>"The Q3 projections are wrong again. Update them before Friday."</em> And with one click, Textglow transforms it into Direct Empathy. You get the speed of raw writing with the relationship-saving power of High-EQ editing.</p>
+            <p>This is where AI tone assistants are revolutionary. You can type your raw, frustrated thought: <em>"The Q3 projections are wrong again. Update them before Friday."</em> And with one click, TextGlow transforms it into Direct Empathy. You get the speed of raw writing with the relationship-saving power of High-EQ editing.</p>
 
             <h2>The Evolution of the Executive Assistant</h2>
             <p>In the past, high-level executives relied on human Chief of Staffs or Executive Assistants to review their communications. An executive would dictate a rough, aggressive email, and the assistant would spend twenty minutes softening the edges, adding pleasantries, and ensuring it wouldn't cause a corporate crisis before sending it out.</p>
-            <p>Today, AI is democratizing this level of support. You no longer need a C-suite title to have a dedicated communications buffer. Textglow serves as that executive assistant for everyone from entry-level developers to freelance designers. It provides the crucial "cooling off" period between your raw emotional reaction and the final sent message. By getting into the habit of running your most important, high-stakes messages through a tone check, you are essentially hiring a seasoned PR professional to review your outbox for pennies a day.</p>
+            <p>Today, AI is democratizing this level of support. You no longer need a C-suite title to have a dedicated communications buffer. TextGlow serves as that executive assistant for everyone from entry-level developers to freelance designers. It provides the crucial "cooling off" period between your raw emotional reaction and the final sent message. By getting into the habit of running your most important, high-stakes messages through a tone check, you are essentially hiring a seasoned PR professional to review your outbox for pennies a day.</p>
             <p>Furthermore, as AI models become more context-aware, they will soon be able to analyze the previous emails in a thread and suggest the exact tone needed to de-escalate a conflict or close a sale. The professionals who adopt these High-EQ workflows now will have a massive competitive advantage over those who still rely solely on spellcheckers.</p>
 
             <h2>How to Choose the Right Tone for Every Situation</h2>
@@ -152,7 +152,7 @@ export const blogPosts: BlogPost[] = [
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
                     <li>Writer's block is not a creativity problem — it's a <strong>perfectionism problem</strong>. You're trying to write the final draft on the first attempt.</li>
                     <li>The "Vomit Draft" method eliminates the blank page: write garbage first, rewrite second.</li>
-                    <li>Textglow users who adopt the Vomit Draft → Rewrite workflow write 3x faster on average.</li>
+                    <li>TextGlow users who adopt the Vomit Draft → Rewrite workflow write 3x faster on average.</li>
                 </ul>
             </div>
 
@@ -179,24 +179,24 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"ok so basically our product is like grammarly but faster and u dont need to copy paste anything u just highlight and it fixes it also it changes the tone which grammarly doesnt do and its free to start"</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After Textglow Rewrite</span>
-                    <p class="text-sm italic text-slate-700">"Textglow is the fastest AI writing assistant on the market. Unlike traditional grammar checkers, it rewrites your text in-line — no copy-pasting required. Choose from 10+ tone filters to match any context, and get started for free."</p>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After TextGlow Rewrite</span>
+                    <p class="text-sm italic text-slate-700">"TextGlow is the fastest AI writing assistant on the market. Unlike traditional grammar checkers, it rewrites your text in-line — no copy-pasting required. Choose from 10+ tone filters to match any context, and get started for free."</p>
                 </div>
             </div>
 
             <h2>Why AI Makes This Method 10x More Powerful</h2>
-            <p>The Vomit Draft method has existed since the 1990s. What's changed is that AI can now do the rewriting step <em>instantly</em>. Before <a href="https://textglow.io">Textglow</a>, you'd write the ugly draft and then spend 20 minutes cleaning it up yourself — which often triggered the same perfectionism spiral.</p>
+            <p>The Vomit Draft method has existed since the 1990s. What's changed is that AI can now do the rewriting step <em>instantly</em>. Before <a href="https://textglow.io">TextGlow</a>, you'd write the ugly draft and then spend 20 minutes cleaning it up yourself — which often triggered the same perfectionism spiral.</p>
             <p>Now, the workflow is:</p>
             <ol>
                 <li><strong>Write garbage</strong> — 30 seconds of raw brain dump</li>
                 <li><strong>Highlight everything</strong> — select the entire mess</li>
-                <li><strong>Click "Professional"</strong> — Textglow rewrites it in 1 second</li>
+                <li><strong>Click "Professional"</strong> — TextGlow rewrites it in 1 second</li>
                 <li><strong>Hit send</strong> — done. Move on to the next thing.</li>
             </ol>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">We tracked 8,000 Textglow users who adopted the Vomit Draft → Rewrite workflow. On average, they produced written content <strong>3.2x faster</strong> than users who tried to write rewritten text from the start. The quality scores (rated by recipients) were statistically identical.</p>
+                <p class="text-amber-800 mb-0">We tracked 8,000 TextGlow users who adopted the Vomit Draft → Rewrite workflow. On average, they produced written content <strong>3.2x faster</strong> than users who tried to write rewritten text from the start. The quality scores (rated by recipients) were statistically identical.</p>
             </div>
 
             <h2>3 More Real-World Examples</h2>
@@ -209,7 +209,7 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"hey sorry about missing the call today i totally forgot and then had another meeting, can we reschedule maybe tomorrow or whenever works for u"</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After Textglow (Empathetic)</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After TextGlow (Empathetic)</span>
                     <p class="text-sm italic text-slate-700">"I sincerely apologize for missing our call today — that was entirely on me. I'd love to reschedule at your earliest convenience. Would tomorrow afternoon work for you?"</p>
                 </div>
             </div>
@@ -221,7 +221,7 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"you seem cool, nice pictures, what do you do for work"</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After Textglow (Flirty)</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After TextGlow (Flirty)</span>
                     <p class="text-sm italic text-slate-700">"Okay but your travel photos are making me seriously reconsider my life choices. What's the most spontaneous trip you've ever taken?"</p>
                 </div>
             </div>
@@ -233,14 +233,14 @@ export const blogPosts: BlogPost[] = [
 
             <h2>The Editor Persona vs. The Creator Persona</h2>
             <p>Every writer has two distinct personas in their head: the Creator and the Editor. The Creator is messy, fast, and generates ideas. The Editor is critical, precise, and rewrites those ideas. Writer's block occurs when you try to make these two personas work at exactly the same time. The Editor keeps interrupting the Creator to fix a comma, causing the Creator to lose their train of thought.</p>
-            <p>The Vomit Draft method forces these personas to work sequentially. The Creator gets 100% control of the keyboard until the draft is finished. Then, instead of bringing in your own internal Editor (who is often tired and biased), you outsource the Editor role to AI. Textglow doesn't just fix typos; it acts as a world-class Editor, taking your Creator's raw clay and sculpting it into a masterpiece.</p>
+            <p>The Vomit Draft method forces these personas to work sequentially. The Creator gets 100% control of the keyboard until the draft is finished. Then, instead of bringing in your own internal Editor (who is often tired and biased), you outsource the Editor role to AI. TextGlow doesn't just fix typos; it acts as a world-class Editor, taking your Creator's raw clay and sculpting it into a masterpiece.</p>
 
             <h2>Building the Habit</h2>
             <p>Like any productivity technique, the Vomit Draft method only works if it becomes automatic. Here's how to build the habit:</p>
             <ul>
                 <li><strong>Start with low-stakes writing.</strong> Practice on Slack messages and internal emails before using it for client-facing communication.</li>
                 <li><strong>Set a timer.</strong> Give yourself exactly 60 seconds to write the vomit draft. When the timer goes off, stop writing and start rewriting. The constraint forces you to bypass your inner editor.</li>
-                <li><strong>Never delete a vomit draft.</strong> Always rewrite it with <a href="https://textglow.io">Textglow</a> first. You'll be surprised how often your "garbage" contained genuinely good ideas that just needed better packaging.</li>
+                <li><strong>Never delete a vomit draft.</strong> Always rewrite it with <a href="https://textglow.io">TextGlow</a> first. You'll be surprised how often your "garbage" contained genuinely good ideas that just needed better packaging.</li>
                 <li><strong>Track your speed.</strong> After a week of using this method, compare how long it takes you to produce a finished message versus your old approach. The data will convince you to never go back.</li>
             </ul>
 
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
             </div>
 
             <h2>The Cover Letter Template</h2>
-            <p>Here's a framework you can use right now. Write your cover letter in your own words — messy, imperfect, authentic. Then highlight each paragraph and run it through <a href="https://textglow.io/translate/">Textglow's Professional tone</a>.</p>
+            <p>Here's a framework you can use right now. Write your cover letter in your own words — messy, imperfect, authentic. Then highlight each paragraph and run it through <a href="https://textglow.io/translate/">TextGlow's Professional tone</a>.</p>
 
             <div class="grid md:grid-cols-2 gap-6 my-10">
                 <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
@@ -322,19 +322,19 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"Hello, I saw your job posting and I think I am a good fit because I have done similar work before. I managed a team and we did good results. I am very motivated and hard working."</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After Textglow</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After TextGlow</span>
                     <p class="text-sm italic text-slate-700">"Your opening for a Marketing Lead caught my eye — it closely mirrors the work I've been doing for the past three years. I led a cross-functional team of 8 that drove a 40% increase in qualified leads. I'd love to bring that same energy to your team."</p>
                 </div>
             </div>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">Among Textglow users who identify as non-native English speakers, those who applied the "Professional" or "Confident" tone to their cover letters reported a <strong>2.8x higher interview callback rate</strong> compared to sending unrewritten applications.</p>
+                <p class="text-amber-800 mb-0">Among TextGlow users who identify as non-native English speakers, those who applied the "Professional" or "Confident" tone to their cover letters reported a <strong>2.8x higher interview callback rate</strong> compared to sending unrewritten applications.</p>
             </div>
 
             <h2>The Interview Preparation Gap</h2>
             <p>Resumes and cover letters are just the first hurdle. Non-native speakers face an even bigger challenge during interviews, where they can't rely on AI for real-time assistance. But here's the secret: <strong>preparation eliminates most language anxiety.</strong></p>
-            <p>Write out your answers to the 10 most common interview questions in your own words. Then rewrite each answer with Textglow's "Confident" tone. Practice reading the rewritten versions out loud until they feel natural. This isn't cheating — it's preparation. Native speakers rehearse their answers too. You're just adding a language-leveling step.</p>
+            <p>Write out your answers to the 10 most common interview questions in your own words. Then rewrite each answer with TextGlow's "Confident" tone. Practice reading the rewritten versions out loud until they feel natural. This isn't cheating — it's preparation. Native speakers rehearse their answers too. You're just adding a language-leveling step.</p>
 
             <h2>The Networking Email That Opens Doors</h2>
             <p>Beyond applications, non-native speakers often struggle with networking emails — the informal, relationship-building messages that actually get you hired in many markets. Here's a template:</p>
@@ -345,14 +345,14 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"Hello, I am [Name] and I found your profile on LinkedIn. I am interested in working at your company. Can you help me with some advice about how to apply?"</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After Textglow</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✨ After TextGlow</span>
                     <p class="text-sm italic text-slate-700">"Hi [Name] — I came across your work at [Company] and was really impressed by [specific project]. I'm exploring opportunities in [field] and would love to learn about your experience there. Would you be open to a 15-minute chat sometime this week?"</p>
                 </div>
             </div>
 
             <h2>The Cover Letter Strategy: Ditch the Templates</h2>
             <p>Many non-native speakers rely heavily on downloaded cover letter templates because they feel safe. But recruiters can spot a template instantly, and it signals a lack of effort. Even worse, if you use a formal template but your actual conversational English in the interview doesn't match, the dissonance creates immediate distrust.</p>
-            <p>The solution is to write the cover letter yourself, in your own words, focusing entirely on your specific achievements. Don't worry if the phrasing is slightly awkward. Once you have your authentic story on the page, use Textglow's "Professional" tone to smooth out the grammar and vocabulary. This ensures the cover letter sounds native, but the underlying structure and ideas remain entirely your own. It's an authentic reflection of you, just rewritten to perfection.</p>
+            <p>The solution is to write the cover letter yourself, in your own words, focusing entirely on your specific achievements. Don't worry if the phrasing is slightly awkward. Once you have your authentic story on the page, use TextGlow's "Professional" tone to smooth out the grammar and vocabulary. This ensures the cover letter sounds native, but the underlying structure and ideas remain entirely your own. It's an authentic reflection of you, just rewritten to perfection.</p>
 
             <h2>5 Resume Power Words for Non-Native Speakers</h2>
             <p>Replace weak, generic verbs with strong action words that native-speaking recruiters respond to:</p>
@@ -363,7 +363,7 @@ export const blogPosts: BlogPost[] = [
                 <li>❌ "Was in charge of" → ✅ <strong>"Managed"</strong> or <strong>"Oversaw"</strong></li>
                 <li>❌ "Made better" → ✅ <strong>"Optimized"</strong> or <strong>"Improved by X%"</strong></li>
             </ul>
-            <p>Notice the pattern: strong resume language is <em>specific</em> and <em>active</em>. It puts you as the subject performing an action, not a passive observer. Textglow's "Confident" tone naturally transforms passive language into active, result-oriented phrasing.</p>
+            <p>Notice the pattern: strong resume language is <em>specific</em> and <em>active</em>. It puts you as the subject performing an action, not a passive observer. TextGlow's "Confident" tone naturally transforms passive language into active, result-oriented phrasing.</p>
 
             <h2>The ATS Reality Check: Formatting Matters Too</h2>
             <p>While perfect English and strong action verbs will impress the human recruiter, you first have to get past the robot. Applicant Tracking Systems (ATS) are the software programs that scan resumes before a human ever sees them. Over 70% of large companies use them, and they are notoriously bad at parsing complex formatting.</p>
@@ -373,7 +373,7 @@ export const blogPosts: BlogPost[] = [
             <h2>You Deserve to Be Judged on Your Skills</h2>
             <p>Language should never be the barrier that stops a brilliant professional from getting the job they deserve. The global economy needs your expertise, your unique perspective, and your hard-earned skills. Whether you're <a href="/blog/multilingual-emails-native/">writing business emails in a second language</a> or crafting your next cover letter, AI can close the gap between what you <em>mean</em> and how it <em>sounds</em>. Don't let imperfect grammar hold you back from perfect opportunities.</p>
 
-            <p>Write authentically. Let the AI handle the fluency. Use the <a href="/blog/overcome-writers-block-ai/">Vomit Draft method</a> to get your ideas down fast, then let Textglow make you sound like the expert you are. Your expertise speaks for itself — Textglow just makes sure it sounds that way too.</p>
+            <p>Write authentically. Let the AI handle the fluency. Use the <a href="/blog/overcome-writers-block-ai/">Vomit Draft method</a> to get your ideas down fast, then let TextGlow make you sound like the expert you are. Your expertise speaks for itself — TextGlow just makes sure it sounds that way too.</p>
         `
     },
     {
@@ -457,11 +457,11 @@ export const blogPosts: BlogPost[] = [
 
             <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-blue-900 font-bold mt-0 mb-2">🌍 The Iceberg Problem</h4>
-                <p class="text-blue-800 mb-0">Language is an iceberg. The words are the 10% above the surface. The cultural context, power dynamics, and emotional expectations are the 90% below. Translation tools only handle the top 10%. <a href="https://textglow.io/translate/">Textglow</a> handles the other 90% by adapting tone to cultural norms.</p>
+                <p class="text-blue-800 mb-0">Language is an iceberg. The words are the 10% above the surface. The cultural context, power dynamics, and emotional expectations are the 90% below. Translation tools only handle the top 10%. <a href="https://textglow.io/translate/">TextGlow</a> handles the other 90% by adapting tone to cultural norms.</p>
             </div>
 
             <h2>The Solution: Tone-Aware Translation</h2>
-            <p>What you need is not just a translator — you need an AI that understands the cultural <em>tone</em> of your target audience. Write your email in your native language or in English. Then use Textglow's tone filters to adapt the emotional delivery:</p>
+            <p>What you need is not just a translator — you need an AI that understands the cultural <em>tone</em> of your target audience. Write your email in your native language or in English. Then use TextGlow's tone filters to adapt the emotional delivery:</p>
             <ul>
                 <li><strong>"Friendly" tone</strong> for Latin American and Southern European clients</li>
                 <li><strong>"Direct" tone</strong> for German, Dutch, and Scandinavian communication</li>
@@ -470,7 +470,7 @@ export const blogPosts: BlogPost[] = [
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">Among Textglow users writing in non-native languages, those who applied a culturally appropriate tone filter saw a <strong>51% improvement in response time</strong> from international clients compared to using raw translations.</p>
+                <p class="text-amber-800 mb-0">Among TextGlow users writing in non-native languages, those who applied a culturally appropriate tone filter saw a <strong>51% improvement in response time</strong> from international clients compared to using raw translations.</p>
             </div>
 
             <h2>The Email Opening: Where Most People Get It Wrong</h2>
@@ -492,7 +492,7 @@ export const blogPosts: BlogPost[] = [
                         <tr>
                             <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 border-b border-slate-200">Culture</th>
                             <th class="px-6 py-4 text-center text-sm font-semibold text-slate-900 border-b border-slate-200">Default Formality</th>
-                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 border-b border-slate-200">Recommended Textglow Tone</th>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 border-b border-slate-200">Recommended TextGlow Tone</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
@@ -522,7 +522,7 @@ export const blogPosts: BlogPost[] = [
 
             <h2>The Idiom Trap: Why Local Slang Fails Globally</h2>
             <p>Another major trap in multilingual business communication is the use of idioms and local slang. American business English is famously saturated with sports idioms: "touch base," "hit a home run," "drop the ball," "step up to the plate." To a non-native speaker, these phrases are confusing and exclusionary.</p>
-            <p>Similarly, British phrases like "throw a spanner in the works" or "swings and roundabouts" will completely derail a conversation with an American or Asian client. When writing for an international audience, you must strip your language of regional idioms. Textglow's "Professional" tone is specifically trained to recognize and replace localized idioms with clear, universally understood language, ensuring your message translates seamlessly across borders.</p>
+            <p>Similarly, British phrases like "throw a spanner in the works" or "swings and roundabouts" will completely derail a conversation with an American or Asian client. When writing for an international audience, you must strip your language of regional idioms. TextGlow's "Professional" tone is specifically trained to recognize and replace localized idioms with clear, universally understood language, ensuring your message translates seamlessly across borders.</p>
 
             <h2>The Role of Empathy in Translation</h2>
             <p>The core issue with literal translation is that it lacks empathy. Empathy requires understanding not just what the other person is saying, but how they perceive the world based on their cultural background. An AI translator reads the words; an AI tone assistant reads the room.</p>
@@ -533,7 +533,7 @@ export const blogPosts: BlogPost[] = [
             <p>Whether you're writing to a client in Tokyo or a partner in São Paulo, follow this workflow to ensure your emails land perfectly:</p>
             <ol>
                 <li><strong>Write naturally</strong> — Draft your email in whatever language feels most comfortable. Don't try to sound formal or native. Just get your ideas down.</li>
-                <li><strong>Choose the culturally appropriate tone</strong> — Based on the formality spectrum above, select the right Textglow tone for your target culture.</li>
+                <li><strong>Choose the culturally appropriate tone</strong> — Based on the formality spectrum above, select the right TextGlow tone for your target culture.</li>
                 <li><strong>Rewrite and send</strong> — Highlight the entire email, apply the tone, and review the output. The AI will replace your literal translations with culturally natural phrasing.</li>
             </ol>
             <p>This workflow eliminates the anxiety of "am I saying this right?" that plagues every professional who communicates across borders. You don't need to master four languages — you need one good AI tool that understands cultural context.</p>
@@ -556,7 +556,7 @@ export const blogPosts: BlogPost[] = [
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
                     <li>In remote work, your Slack tone <strong>is</strong> your body language. People judge you entirely by how your messages read.</li>
                     <li>There are 5 common Slack scenarios where tone goes wrong: pushback, bad news, feedback, deadlines, and disagreements.</li>
-                    <li>Textglow users who apply the "Confident" tone filter report 38% fewer miscommunication incidents in team surveys.</li>
+                    <li>TextGlow users who apply the "Confident" tone filter report 38% fewer miscommunication incidents in team surveys.</li>
                 </ul>
             </div>
 
@@ -574,7 +574,7 @@ export const blogPosts: BlogPost[] = [
             </div>
 
             <h2>5 Real Slack Scenarios (Before & After)</h2>
-            <p>Here are the five most common workplace situations where Slack tone goes catastrophically wrong — and exactly how to fix each one with <a href="https://textglow.io">Textglow</a>.</p>
+            <p>Here are the five most common workplace situations where Slack tone goes catastrophically wrong — and exactly how to fix each one with <a href="https://textglow.io">TextGlow</a>.</p>
 
             <h3>Scenario 1: Responding to Criticism</h3>
             <div class="grid md:grid-cols-2 gap-6 my-8">
@@ -638,7 +638,7 @@ export const blogPosts: BlogPost[] = [
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">Our internal analysis of 12,000 workplace messages rewritten through Textglow found that messages using the "Confident" filter were rated <strong>38% more favorably</strong> by recipients compared to the unrewritten originals — even when the core message was identical.</p>
+                <p class="text-amber-800 mb-0">Our internal analysis of 12,000 workplace messages rewritten through TextGlow found that messages using the "Confident" filter were rated <strong>38% more favorably</strong> by recipients compared to the unrewritten originals — even when the core message was identical.</p>
             </div>
 
             <h2>Async vs. Sync: Knowing When to Slack</h2>
@@ -652,13 +652,13 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Use emojis strategically.</strong> A 👍 after a message softens it. A bare "ok" without any emoji reads as annoyed. Emojis aren't unprofessional — they're the replacement for facial expressions.</li>
                 <li><strong>Front-load the context.</strong> Don't say "Can we chat?" (which triggers anxiety). Say "Can we chat about the timeline for Project X? Nothing urgent, just want to align." Context eliminates fear.</li>
                 <li><strong>Match the energy.</strong> If your boss writes casually, don't reply with a formal paragraph. If a client writes formally, don't reply with slang. Tone-matching builds subconscious rapport.</li>
-                <li><strong>Read before you send.</strong> Or better yet, highlight and rewrite. The 2 seconds it takes to run a message through <a href="https://textglow.io/slack/">Textglow</a> can save you a 30-minute damage-control conversation later. A quick pause to review your tone is the highest-leverage productivity habit you can build in a remote-first organization. It prevents the cascading effect of miscommunication and ensures your team remains aligned and motivated.</li>
+                <li><strong>Read before you send.</strong> Or better yet, highlight and rewrite. The 2 seconds it takes to run a message through <a href="https://textglow.io/slack/">TextGlow</a> can save you a 30-minute damage-control conversation later. A quick pause to review your tone is the highest-leverage productivity habit you can build in a remote-first organization. It prevents the cascading effect of miscommunication and ensures your team remains aligned and motivated.</li>
             </ol>
 
             <h2>The Financial Cost of Miscommunication</h2>
             <p>We often think of bad tone as a social faux pas, but it is actually a massive financial liability. A 2025 study by the Project Management Institute found that inefficient or poor communication costs companies an average of $1.2 million annually per 100 employees.</p>
             <p>On Slack, this cost manifests in two specific ways: "Rework" and "Turnover." When a manager sends a rushed, poorly toned message ("Just fix the design, it's not right"), the employee often spends hours guessing what the manager meant, doing the wrong work, and having to redo it. This is the Rework cost. When that same employee receives daily messages that feel passive-aggressive or dismissive, their job satisfaction plummets. They eventually leave, forcing the company to spend thousands recruiting and training a replacement. This is the Turnover cost.</p>
-            <p>Both of these costs are entirely preventable. By treating Slack messages with the same respect and care as a formal email, and by using tools like Textglow to ensure the tone is collaborative rather than combative, companies can instantly boost both productivity and employee retention.</p>
+            <p>Both of these costs are entirely preventable. By treating Slack messages with the same respect and care as a formal email, and by using tools like TextGlow to ensure the tone is collaborative rather than combative, companies can instantly boost both productivity and employee retention.</p>
 
             <h2>The Emoji Cheat Sheet for Professionals</h2>
             <p>Emojis in professional Slack channels are a minefield. Here's a quick guide to using them without looking unprofessional:</p>
@@ -669,7 +669,7 @@ export const blogPosts: BlogPost[] = [
             </ul>
 
             <h2>The One Rule That Changes Everything</h2>
-            <p>Before you hit Enter on any Slack message that could be misread, highlight it and ask yourself: "If my boss read this without any context, would they think I'm being helpful or hostile?" If there's any doubt, run it through <a href="https://textglow.io/slack/">Textglow's tone filter</a>. It takes one second and it protects relationships you've spent months building.</p>
+            <p>Before you hit Enter on any Slack message that could be misread, highlight it and ask yourself: "If my boss read this without any context, would they think I'm being helpful or hostile?" If there's any doubt, run it through <a href="https://textglow.io/slack/">TextGlow's tone filter</a>. It takes one second and it protects relationships you've spent months building.</p>
 
             <p>Your words on Slack are your professional reputation. Protect them the same way you'd protect your <a href="/blog/how-to-write-cold-emails-that-get-replies/">cold emails</a> or your <a href="/blog/why-tone-matters-more-than-grammar/">client communications</a>.</p>
         `
@@ -695,7 +695,7 @@ export const blogPosts: BlogPost[] = [
 
             <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="LinkedIn on a smartphone" class="rounded-3xl shadow-xl my-8 w-full object-cover h-80" />
             
-            <p class="lead text-xl text-slate-600 mb-8">Last month I ran an experiment. I posted two pieces of content on LinkedIn on the same day: one written entirely by ChatGPT, and one written by me and rewritten with Textglow. The ChatGPT post got 12 likes. The rewritten post got 847.</p>
+            <p class="lead text-xl text-slate-600 mb-8">Last month I ran an experiment. I posted two pieces of content on LinkedIn on the same day: one written entirely by ChatGPT, and one written by me and rewritten with TextGlow. The ChatGPT post got 12 likes. The rewritten post got 847.</p>
 
             <h2>The Robot Epidemic</h2>
             <p>Scroll through LinkedIn today and you'll see the same phrases recycled endlessly: "In today's fast-paced digital landscape..." and "I'm thrilled to announce..." and "Let's unpack this." These are the linguistic fingerprints of ChatGPT, and everyone — including LinkedIn's algorithm — can spot them immediately.</p>
@@ -708,7 +708,7 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-xs text-red-600 font-bold mt-3 mb-0">Result: 12 likes, 0 comments, 200 impressions</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The "Textglow" Post</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The "TextGlow" Post</span>
                     <p class="text-sm italic text-slate-700">"We just completely changed our strategy. Honestly, it was terrifying. But here are the 3 things we learned from pivoting our product this week:"</p>
                     <p class="text-xs text-emerald-600 font-bold mt-3 mb-0">Result: 847 likes, 63 comments, 41,000 impressions</p>
                 </div>
@@ -719,7 +719,7 @@ export const blogPosts: BlogPost[] = [
 
             <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-blue-900 font-bold mt-0 mb-2">💡 The Winning Formula</h4>
-                <p class="text-blue-800 mb-0"><strong>Step 1:</strong> Write your raw, unfiltered thoughts in the LinkedIn compose box.<br/><strong>Step 2:</strong> Highlight the text and use <a href="https://textglow.io/linkedin/">Textglow</a> to rewrite the grammar and structure.<br/><strong>Step 3:</strong> Post. Your voice stays authentic. The delivery becomes professional.<br/>This is the difference between "AI-written" and "AI-rewritten."</p>
+                <p class="text-blue-800 mb-0"><strong>Step 1:</strong> Write your raw, unfiltered thoughts in the LinkedIn compose box.<br/><strong>Step 2:</strong> Highlight the text and use <a href="https://textglow.io/linkedin/">TextGlow</a> to rewrite the grammar and structure.<br/><strong>Step 3:</strong> Post. Your voice stays authentic. The delivery becomes professional.<br/>This is the difference between "AI-written" and "AI-rewritten."</p>
             </div>
 
             <h2>5 Signs Your Post Was Written by AI</h2>
@@ -783,7 +783,7 @@ export const blogPosts: BlogPost[] = [
             <p>It looks like this.</p>
             <p>It's designed to make you keep scrolling.</p>
             <p>And it's exhausting to read.</p>
-            <p>While spacing out your text is important for mobile readability, the extreme version of this trend is beginning to face algorithmic penalties. Users are actively clicking "I don't want to see this" on hyper-formatted, low-value posts. The best creators in 2026 use a mix: a strong one-line hook, a short paragraph of 2-3 sentences for context, and bullet points for the main takeaways. This creates visual rhythm without insulting the reader's intelligence. Textglow helps by structuring your brain dumps into these natural, readable paragraphs rather than forcing everything into single lines.</p>
+            <p>While spacing out your text is important for mobile readability, the extreme version of this trend is beginning to face algorithmic penalties. Users are actively clicking "I don't want to see this" on hyper-formatted, low-value posts. The best creators in 2026 use a mix: a strong one-line hook, a short paragraph of 2-3 sentences for context, and bullet points for the main takeaways. This creates visual rhythm without insulting the reader's intelligence. TextGlow helps by structuring your brain dumps into these natural, readable paragraphs rather than forcing everything into single lines.</p>
 
             <h2>The Algorithm's Penalty on External Links</h2>
             <p>Here is a critical mistake that destroys engagement, whether you wrote the post yourself or used AI: putting a link to your website in the main body of the post.</p>
@@ -793,13 +793,13 @@ export const blogPosts: BlogPost[] = [
             <h2>The Future of LinkedIn Algorithms</h2>
             <p>As we look toward the future, the war between AI-generated content and platform algorithms will only intensify. LinkedIn's engineering team is constantly deploying newer, more sophisticated detection models. What worked in 2024 to bypass AI detectors no longer works today, and what works today will fail tomorrow.</p>
             <p>The only sustainable strategy is to stop trying to trick the algorithm and start working with it. The algorithm wants human connection. It wants stories, vulnerabilities, and hard-earned professional insights. No language model can invent the specific challenge you faced closing a deal last Tuesday, or the nuanced conversation you had with a mentor. The human experience is the last remaining moat in content creation.</p>
-            <p>Therefore, the creators who will dominate LinkedIn over the next five years are the ones who use AI as an editor, not a writer. They will leverage tools like Textglow to wrap their unique human experiences in perfect, compelling, and tonally appropriate language. The creators who continue to copy-paste prompts into ChatGPT will watch their reach slowly decline to zero as the platform shadowbans robotic content.</p>
+            <p>Therefore, the creators who will dominate LinkedIn over the next five years are the ones who use AI as an editor, not a writer. They will leverage tools like TextGlow to wrap their unique human experiences in perfect, compelling, and tonally appropriate language. The creators who continue to copy-paste prompts into ChatGPT will watch their reach slowly decline to zero as the platform shadowbans robotic content.</p>
 
             <h2>The 3-Step Daily LinkedIn Routine</h2>
             <p>Consistency beats perfection. Here's a realistic daily routine that takes less than 15 minutes and will grow your LinkedIn presence steadily:</p>
             <ol>
                 <li><strong>Morning (5 min):</strong> Write a raw thought about something you experienced at work yesterday. Don't edit it. Don't format it. Just dump it into the compose box.</li>
-                <li><strong>Rewrite (1 min):</strong> Highlight everything and run it through <a href="https://textglow.io/linkedin/">Textglow's Professional or Confident tone</a>. Fix any AI-isms that crept in. Add a hook as the first line.</li>
+                <li><strong>Rewrite (1 min):</strong> Highlight everything and run it through <a href="https://textglow.io/linkedin/">TextGlow's Professional or Confident tone</a>. Fix any AI-isms that crept in. Add a hook as the first line.</li>
                 <li><strong>Engage (9 min):</strong> Comment on 5 posts from people in your network. Genuine, thoughtful comments — not "Great post!" LinkedIn's algorithm rewards users who comment as much as users who post.</li>
             </ol>
             <p>This routine, done consistently for 90 days, will grow your LinkedIn following faster than any content strategy agency could achieve. The secret is that most people overcomplicate it. Write what you know, rewrite how it sounds, engage with your community.</p>
@@ -822,7 +822,7 @@ export const blogPosts: BlogPost[] = [
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
                     <li>The average executive receives 140+ emails/day. Generic templates get deleted in 1.4 seconds.</li>
                     <li>Master 3 pillars: <strong>Pattern Interrupt</strong> subject lines, the <strong>50-Word Rule</strong>, and the <strong>Soft CTA</strong>.</li>
-                    <li>Textglow's "Persuasive" tone filter increases cold email reply rates by an average of 40%.</li>
+                    <li>TextGlow's "Persuasive" tone filter increases cold email reply rates by an average of 40%.</li>
                 </ul>
             </div>
 
@@ -847,7 +847,7 @@ export const blogPosts: BlogPost[] = [
             </ul>
 
             <h2>The "Tone" Problem: A Before & After Analysis</h2>
-            <p>Many founders struggle deeply with the <em>tone</em> of their cold emails. Finding that perfect balance of <em>Confident</em> and <em>Professional</em> is emotionally exhausting. This is where AI writing assistants like <a href="https://textglow.io/gmail/">Textglow</a> become your secret weapon.</p>
+            <p>Many founders struggle deeply with the <em>tone</em> of their cold emails. Finding that perfect balance of <em>Confident</em> and <em>Professional</em> is emotionally exhausting. This is where AI writing assistants like <a href="https://textglow.io/gmail/">TextGlow</a> become your secret weapon.</p>
             
             <div class="grid md:grid-cols-2 gap-6 my-10">
                 <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
@@ -855,14 +855,14 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-sm italic text-slate-700">"Hi John, I know you are busy but please let me know if you have 5 minutes to chat about our SEO software. We are the best in the business and I'd love to show you a demo. Please reply!"</p>
                 </div>
                 <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
-                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The "Textglow" Rewrite</span>
+                    <span class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-4">✅ The "TextGlow" Rewrite</span>
                     <p class="text-sm italic text-slate-700">"John, noticed [Company] is scaling its content team this quarter. We recently helped [Competitor] cut their SEO publishing time in half. Open to a brief overview of how we did it?"</p>
                 </div>
             </div>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">We analyzed 25,000 cold emails sent by Textglow users. Emails rewritten with the "Persuasive" tone filter had a <strong>40% average reply rate</strong> compared to just 3% for unrewritten drafts.</p>
+                <p class="text-amber-800 mb-0">We analyzed 25,000 cold emails sent by TextGlow users. Emails rewritten with the "Persuasive" tone filter had a <strong>40% average reply rate</strong> compared to just 3% for unrewritten drafts.</p>
             </div>
 
             <h2>5 Subject Lines That Actually Get Opened</h2>
@@ -883,7 +883,7 @@ export const blogPosts: BlogPost[] = [
                 <li><strong>Day 7:</strong> Share a relevant resource (case study, article, or data point) with no ask</li>
                 <li><strong>Day 14:</strong> The "breakup email" — <em>"Totally understand if the timing isn't right. Just wanted to leave the door open in case [pain point] becomes a priority."</em></li>
             </ul>
-            <p>Each follow-up should be shorter than the last. By the breakup email, you should be under 30 words. The goal is persistence without desperation — and that balance is exactly what Textglow's tone filters help you maintain.</p>
+            <p>Each follow-up should be shorter than the last. By the breakup email, you should be under 30 words. The goal is persistence without desperation — and that balance is exactly what TextGlow's tone filters help you maintain.</p>
 
             <h2>7 Mistakes That Kill Your Reply Rate</h2>
             <p>Even experienced salespeople make these errors. If your reply rate is below 10%, you are probably guilty of at least three:</p>
@@ -911,8 +911,8 @@ export const blogPosts: BlogPost[] = [
             <p>First, ensure your domain authentication (DMARC, DKIM, SPF) is perfectly configured. Without this, your emails are functionally dead on arrival. Second, warm up your inbox. Never start sending 100 cold emails on day one. Send 5 the first day, 10 the next, and gradually scale. Third, eliminate HTML. The more images, complex signatures, and tracking pixels you include, the higher your spam score. Keep it to plain text with a simple, clean signature.</p>
 
             <h2>Using AI as Your Dedicated Email Assistant</h2>
-            <p>Instead of staring at a blank Gmail compose window sweating over word choice, the top 1% of sales professionals are using in-line AI tools. You brain-dump your messy thoughts into the draft, select the <strong>"Persuasive"</strong> tone from the Textglow icon, and the AI formats it into a polite, high-converting cold email instantly.</p>
-            <p>The workflow is simple: write your ugly first draft in 30 seconds using the <a href="/blog/overcome-writers-block-ai/">Vomit Draft method</a>. Then highlight the entire message, click "Persuasive," and watch Textglow rewrite it into something a recipient would actually want to respond to. No copying to external tools. No switching tabs. No friction.</p>
+            <p>Instead of staring at a blank Gmail compose window sweating over word choice, the top 1% of sales professionals are using in-line AI tools. You brain-dump your messy thoughts into the draft, select the <strong>"Persuasive"</strong> tone from the TextGlow icon, and the AI formats it into a polite, high-converting cold email instantly.</p>
+            <p>The workflow is simple: write your ugly first draft in 30 seconds using the <a href="/blog/overcome-writers-block-ai/">Vomit Draft method</a>. Then highlight the entire message, click "Persuasive," and watch TextGlow rewrite it into something a recipient would actually want to respond to. No copying to external tools. No switching tabs. No friction.</p>
 
             <p>Stop overthinking your outreach. Write the raw idea, let the AI rewrite the execution, and hit send. Your future clients are waiting.</p>
         `
@@ -930,9 +930,9 @@ export const blogPosts: BlogPost[] = [
             <div class="bg-slate-100 p-6 rounded-2xl mb-10 border border-slate-200">
                 <h4 class="text-slate-900 font-bold mt-0 mb-3 flex items-center"><span class="text-xl mr-2">⚡</span> TL;DR</h4>
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
-                    <li><strong>Grammarly</strong> excels at catching individual errors in long-form documents. <strong>Textglow</strong> excels at instantly rewriting entire blocks of text with the right tone.</li>
-                    <li>Grammarly fixes your commas. Textglow fixes how you <em>sound</em>.</li>
-                    <li>For daily emails, Slack, and social media, Textglow saves an average of 45 minutes per day.</li>
+                    <li><strong>Grammarly</strong> excels at catching individual errors in long-form documents. <strong>TextGlow</strong> excels at instantly rewriting entire blocks of text with the right tone.</li>
+                    <li>Grammarly fixes your commas. TextGlow fixes how you <em>sound</em>.</li>
+                    <li>For daily emails, Slack, and social media, TextGlow saves an average of 45 minutes per day.</li>
                 </ul>
             </div>
 
@@ -953,16 +953,16 @@ export const blogPosts: BlogPost[] = [
                 </ul>
             </div>
 
-            <h2>Enter Textglow: The Context-Aware Assistant</h2>
-            <p>This is where modern tools like <a href="https://textglow.io">Textglow</a> step in. Instead of highlighting your mistakes and making you fix them one by one, Textglow acts as a holistic <strong>tone changer</strong>.</p>
+            <h2>Enter TextGlow: The Context-Aware Assistant</h2>
+            <p>This is where modern tools like <a href="https://textglow.io">TextGlow</a> step in. Instead of highlighting your mistakes and making you fix them one by one, TextGlow acts as a holistic <strong>tone changer</strong>.</p>
             
             <p>You highlight a messy, grammatical nightmare of a paragraph, select "Professional", and the AI rewrites the entire block of text instantly. It fixes the grammar natively, but more importantly, it adjusts the <em>vibe</em>.</p>
 
             <h2>Our 30-Day Test: Using Both Tools Side by Side</h2>
             <p>To write this comparison honestly, I used both tools for 30 days across every platform I write on: Gmail, Slack, LinkedIn, Twitter, and WhatsApp. Here's what I found:</p>
             <p>With <strong>Grammarly</strong>, I spent an average of 3-4 minutes per email fixing individual errors. The tool was thorough but slow. It caught typos I would have missed, but it never told me that my email to a frustrated client sounded condescending. It fixed the <em>what</em> but ignored the <em>how</em>.</p>
-            <p>With <strong>Textglow</strong>, the same email took 15 seconds. I'd write my messy draft, highlight everything, click "Empathetic," and the entire message was rewritten with the right emotional tone. The grammar was fixed as a side effect, not the main event.</p>
-            <p>The most telling moment came during week two. I was writing a follow-up to a client who hadn't replied in 5 days. I was annoyed, and my draft reflected it. Grammarly said it was grammatically perfect. Textglow's "Professional" filter turned my passive-aggressive message into a confident, non-threatening follow-up. The client replied within the hour.</p>
+            <p>With <strong>TextGlow</strong>, the same email took 15 seconds. I'd write my messy draft, highlight everything, click "Empathetic," and the entire message was rewritten with the right emotional tone. The grammar was fixed as a side effect, not the main event.</p>
+            <p>The most telling moment came during week two. I was writing a follow-up to a client who hadn't replied in 5 days. I was annoyed, and my draft reflected it. Grammarly said it was grammatically perfect. TextGlow's "Professional" filter turned my passive-aggressive message into a confident, non-threatening follow-up. The client replied within the hour.</p>
 
             <h3>The Feature Breakdown</h3>
             <div class="overflow-x-auto my-8">
@@ -971,7 +971,7 @@ export const blogPosts: BlogPost[] = [
                         <tr>
                             <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 border-b border-slate-200">Feature</th>
                             <th class="px-6 py-4 text-center text-sm font-bold text-slate-500 border-b border-slate-200">Grammarly</th>
-                            <th class="px-6 py-4 text-center text-sm font-bold text-blue-600 border-b border-slate-200">Textglow</th>
+                            <th class="px-6 py-4 text-center text-sm font-bold text-blue-600 border-b border-slate-200">TextGlow</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
@@ -1000,27 +1000,27 @@ export const blogPosts: BlogPost[] = [
             </div>
             <h2>The Pricing Reality Check</h2>
             <p>Grammarly's free tier handles basic spelling and grammar. But the features most professionals actually need — full-sentence rewrites, tone detection, and clarity suggestions — are locked behind Grammarly Premium at <strong>$12/month</strong> (billed annually). The Business tier jumps to $15/user/month.</p>
-            <p>Textglow offers its core rewriting and tone-adjustment features on a generous free tier. For power users who need unlimited rewrites and access to all 10+ tones, the Pro plan is significantly more affordable. The fundamental difference isn't just price — it's philosophy. Grammarly charges you to fix problems one at a time. Textglow fixes the entire paragraph in one click.</p>
+            <p>TextGlow offers its core rewriting and tone-adjustment features on a generous free tier. For power users who need unlimited rewrites and access to all 10+ tones, the Pro plan is significantly more affordable. The fundamental difference isn't just price — it's philosophy. Grammarly charges you to fix problems one at a time. TextGlow fixes the entire paragraph in one click.</p>
 
             <h2>Who Should Use What? A Decision Tree</h2>
             <p>After testing both tools extensively for 30 days across email, Slack, LinkedIn, and Google Docs, here's our honest recommendation based on your use case:</p>
             <ul>
                 <li><strong>You're a student writing a thesis</strong> → Use Grammarly. Its citation checker and plagiarism scanner are unmatched for academic work.</li>
-                <li><strong>You're a professional sending 20+ emails/day</strong> → Use Textglow. The in-line rewriting saves you from the copy-paste tax and Grammarly's one-error-at-a-time approach.</li>
-                <li><strong>You manage a remote team on Slack</strong> → Use Textglow. The tone adjustment feature prevents the <a href="/blog/sound-confident-on-slack/">miscommunication disasters</a> that plague remote teams.</li>
-                <li><strong>You're a content creator on LinkedIn</strong> → Use Textglow. Grammarly can't transform a boring draft into an <a href="/blog/stop-chatgpt-copy-paste-linkedin/">engaging, authentic post</a>.</li>
-                <li><strong>You write in multiple languages</strong> → Use Textglow. It handles <a href="/blog/multilingual-emails-native/">multilingual tone adaptation</a> that Grammarly simply doesn't offer.</li>
+                <li><strong>You're a professional sending 20+ emails/day</strong> → Use TextGlow. The in-line rewriting saves you from the copy-paste tax and Grammarly's one-error-at-a-time approach.</li>
+                <li><strong>You manage a remote team on Slack</strong> → Use TextGlow. The tone adjustment feature prevents the <a href="/blog/sound-confident-on-slack/">miscommunication disasters</a> that plague remote teams.</li>
+                <li><strong>You're a content creator on LinkedIn</strong> → Use TextGlow. Grammarly can't transform a boring draft into an <a href="/blog/stop-chatgpt-copy-paste-linkedin/">engaging, authentic post</a>.</li>
+                <li><strong>You write in multiple languages</strong> → Use TextGlow. It handles <a href="/blog/multilingual-emails-native/">multilingual tone adaptation</a> that Grammarly simply doesn't offer.</li>
                 <li><strong>You're a novelist or journalist</strong> → Use Grammarly. Long-form creative writing benefits from detailed, line-by-line feedback.</li>
             </ul>
 
             <h2>The Security and Privacy Concern</h2>
             <p>One of the biggest hidden differences between legacy tools and modern AI writers is how they handle your data. If you are typing sensitive client information, financial data, or proprietary code into a text box, you need to know where that data is going.</p>
             <p>Grammarly has faced scrutiny over the years because its free tier processes everything you type across your browser. While they have strong enterprise security features, the consumer version fundamentally requires reading all your keystrokes to function properly.</p>
-            <p>Textglow takes a different approach. Because it operates strictly on the text you explicitly highlight and send for rewriting, it never passively logs your keystrokes. You control exactly which paragraphs the AI sees. Furthermore, Textglow's enterprise tier guarantees zero data retention, meaning your sensitive emails are never used to train future language models.</p>
+            <p>TextGlow takes a different approach. Because it operates strictly on the text you explicitly highlight and send for rewriting, it never passively logs your keystrokes. You control exactly which paragraphs the AI sees. Furthermore, TextGlow's enterprise tier guarantees zero data retention, meaning your sensitive emails are never used to train future language models.</p>
 
             <h2>The Enterprise Use Case: Why Teams Are Switching</h2>
             <p>When you scale these tools from an individual to a team of 50 people, the differences compound. A sales team using Grammarly will still sound like 50 different people — some formal, some casual, some aggressive. Grammarly ensures they all use proper commas, but it does not unify the brand voice.</p>
-            <p>Textglow allows teams to standardize their communication. If a company decides its brand voice is "Confident but Empathetic," every sales rep can highlight their drafts and apply those exact tone filters. The result is a unified, highly professional brand experience for every client, regardless of which rep they are talking to. It's not just a writing tool; it's a brand compliance engine.</p>
+            <p>TextGlow allows teams to standardize their communication. If a company decides its brand voice is "Confident but Empathetic," every sales rep can highlight their drafts and apply those exact tone filters. The result is a unified, highly professional brand experience for every client, regardless of which rep they are talking to. It's not just a writing tool; it's a brand compliance engine.</p>
 
             <h2>A Real-World Workflow Comparison</h2>
             <p>Let's say you need to write a follow-up email to a client who hasn't responded. Here's what the workflow looks like with each tool:</p>
@@ -1039,7 +1039,7 @@ export const blogPosts: BlogPost[] = [
                     </ol>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                    <span class="inline-block bg-blue-200 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Textglow Workflow</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-4">TextGlow Workflow</span>
                     <ol class="text-sm text-slate-700 mb-0">
                         <li>Write draft in Gmail</li>
                         <li>Highlight the entire email</li>
@@ -1049,17 +1049,17 @@ export const blogPosts: BlogPost[] = [
                     </ol>
                 </div>
             </div>
-            <p>The difference is not marginal. Over the course of a workday with 20 emails, Grammarly's approach costs you roughly 80 minutes. Textglow's approach costs you 5 minutes. That's over an hour of your life back, every single day.</p>
+            <p>The difference is not marginal. Over the course of a workday with 20 emails, Grammarly's approach costs you roughly 80 minutes. TextGlow's approach costs you 5 minutes. That's over an hour of your life back, every single day.</p>
 
             <h2>The Final Verdict</h2>
-            <p>If you are an academic researcher citing sources for a thesis, stick with <strong>Grammarly</strong>. But if you are a modern professional, founder, or creator whose daily life revolves around emails, Slack chats, and social media, <strong>Textglow</strong> is vastly superior. It saves you the editing time and guarantees you always sound like the best version of yourself.</p>
+            <p>If you are an academic researcher citing sources for a thesis, stick with <strong>Grammarly</strong>. But if you are a modern professional, founder, or creator whose daily life revolves around emails, Slack chats, and social media, <strong>TextGlow</strong> is vastly superior. It saves you the editing time and guarantees you always sound like the best version of yourself.</p>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">In our internal benchmarks, Textglow users saved an average of <strong>45 minutes per day</strong> on written communication compared to users of traditional grammar checkers.</p>
+                <p class="text-amber-800 mb-0">In our internal benchmarks, TextGlow users saved an average of <strong>45 minutes per day</strong> on written communication compared to users of traditional grammar checkers.</p>
             </div>
 
-            <p>For another comparison, see our <a href="/blog/quillbot-vs-textglow/">Quillbot vs. Textglow</a> breakdown. Or learn <a href="/blog/why-tone-matters-more-than-grammar/">why tone is more important than grammar</a> in 2026.</p>
+            <p>For another comparison, see our <a href="/blog/quillbot-vs-textglow/">Quillbot vs. TextGlow</a> breakdown. Or learn <a href="/blog/why-tone-matters-more-than-grammar/">why tone is more important than grammar</a> in 2026.</p>
         `
     },
     {
@@ -1075,9 +1075,9 @@ export const blogPosts: BlogPost[] = [
             <div class="bg-slate-100 p-6 rounded-2xl mb-10 border border-slate-200">
                 <h4 class="text-slate-900 font-bold mt-0 mb-3 flex items-center"><span class="text-xl mr-2">⚡</span> TL;DR</h4>
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
-                    <li><strong>Quillbot</strong> is best for academic paraphrasing on a separate website. <strong>Textglow</strong> is best for in-line rewriting wherever you type.</li>
+                    <li><strong>Quillbot</strong> is best for academic paraphrasing on a separate website. <strong>TextGlow</strong> is best for in-line rewriting wherever you type.</li>
                     <li>Context-switching between tabs costs professionals an average of 23 minutes of focus per day.</li>
-                    <li>If your daily writing is emails, Slack, and social media (not research papers), Textglow is significantly faster.</li>
+                    <li>If your daily writing is emails, Slack, and social media (not research papers), TextGlow is significantly faster.</li>
                 </ul>
             </div>
 
@@ -1094,8 +1094,8 @@ export const blogPosts: BlogPost[] = [
                 <p class="text-indigo-800 mb-0">A UC Irvine study found that it takes an average of <strong>23 minutes and 15 seconds</strong> to return to full focus after a task interruption. If you switch tabs 10 times a day to use an external paraphrasing tool, you're losing nearly 4 hours of deep work per week.</p>
             </div>
 
-            <h2>Textglow: The In-Line Alternative</h2>
-            <p>This is where <a href="https://textglow.io">Textglow</a> fundamentally changes the workflow. It operates entirely in-line — meaning you never leave the page you're on. If you're composing a Slack message and the phrasing feels awkward, you highlight it, click a tone, and the text transforms inside the same text box. No copying. No pasting. No new tabs.</p>
+            <h2>TextGlow: The In-Line Alternative</h2>
+            <p>This is where <a href="https://textglow.io">TextGlow</a> fundamentally changes the workflow. It operates entirely in-line — meaning you never leave the page you're on. If you're composing a Slack message and the phrasing feels awkward, you highlight it, click a tone, and the text transforms inside the same text box. No copying. No pasting. No new tabs.</p>
 
             <h3>Head-to-Head Comparison</h3>
             <div class="overflow-x-auto my-8">
@@ -1104,7 +1104,7 @@ export const blogPosts: BlogPost[] = [
                         <tr>
                             <th class="px-6 py-4 text-left text-sm font-semibold text-slate-900 border-b border-slate-200">Feature</th>
                             <th class="px-6 py-4 text-center text-sm font-bold text-slate-500 border-b border-slate-200">Quillbot</th>
-                            <th class="px-6 py-4 text-center text-sm font-bold text-blue-600 border-b border-slate-200">Textglow</th>
+                            <th class="px-6 py-4 text-center text-sm font-bold text-blue-600 border-b border-slate-200">TextGlow</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
@@ -1141,43 +1141,43 @@ export const blogPosts: BlogPost[] = [
                     <p class="text-xs text-slate-500 mt-3 mb-0">Verdict: Changed some words but the corporate jargon remains. The tone is identical.</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                    <span class="inline-block bg-blue-200 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-4">Textglow's Output (Professional Tone)</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-4">TextGlow's Output (Professional Tone)</span>
                     <p class="text-sm italic text-slate-700">"Team — following up on last week's meeting. Can we finalize the timeline for each deliverable by Thursday? Happy to jump on a quick call if that's easier."</p>
                     <p class="text-xs text-blue-600 mt-3 mb-0">Verdict: Completely restructured. Clear, direct, actionable. Different tone entirely.</p>
                 </div>
             </div>
 
-            <p>This test illustrates the fundamental difference. Quillbot <em>paraphrases</em> — it swaps synonyms and restructures sentences. Textglow <em>rewrites</em> — it understands the intent behind your message and delivers it with the emotional intelligence your audience expects.</p>
+            <p>This test illustrates the fundamental difference. Quillbot <em>paraphrases</em> — it swaps synonyms and restructures sentences. TextGlow <em>rewrites</em> — it understands the intent behind your message and delivers it with the emotional intelligence your audience expects.</p>
 
             <h2>When Each Tool Shines</h2>
             <p>Both tools have legitimate use cases. The mistake most people make is using an academic tool for professional communication, or vice versa. Here's a clear breakdown:</p>
             <ul>
                 <li><strong>Academic papers & research</strong> → Quillbot. Its synonym slider gives you fine-grained control over how closely the output matches the original, which is essential for avoiding self-plagiarism.</li>
-                <li><strong>Client emails & proposals</strong> → Textglow. Clients judge you by how your emails <a href="/blog/why-tone-matters-more-than-grammar/">feel</a>, not by whether you used a different synonym for "important."</li>
-                <li><strong>Slack messages & team updates</strong> → Textglow. You need speed, not precision paraphrasing. The in-line approach means zero friction.</li>
-                <li><strong>Blog posts & content marketing</strong> → Quillbot for rephrasing quotes; Textglow for adjusting the tone of entire sections.</li>
-                <li><strong>Dating apps & social media</strong> → Textglow exclusively. Quillbot has no concept of "Flirty" or "Casual" tones.</li>
+                <li><strong>Client emails & proposals</strong> → TextGlow. Clients judge you by how your emails <a href="/blog/why-tone-matters-more-than-grammar/">feel</a>, not by whether you used a different synonym for "important."</li>
+                <li><strong>Slack messages & team updates</strong> → TextGlow. You need speed, not precision paraphrasing. The in-line approach means zero friction.</li>
+                <li><strong>Blog posts & content marketing</strong> → Quillbot for rephrasing quotes; TextGlow for adjusting the tone of entire sections.</li>
+                <li><strong>Dating apps & social media</strong> → TextGlow exclusively. Quillbot has no concept of "Flirty" or "Casual" tones.</li>
             </ul>
 
             <h2>The Plagiarism Checker Trap</h2>
             <p>Many students use Quillbot specifically to bypass plagiarism checkers like Turnitin. They will copy a Wikipedia article, run it through Quillbot's "Fluency" or "Creative" modes, and submit it as their own work. This is a dangerous game. Modern AI detection tools are increasingly sophisticated and can identify the specific syntactic patterns that paraphrasing tools leave behind. Because Quillbot restructures text algorithmically rather than generating it from scratch, it often leaves a detectable signature.</p>
-            <p>Textglow, on the other hand, is not designed for academic deception. It is designed to elevate your own authentic thoughts. If you write a rough draft of your own ideas, Textglow rewrites your tone without changing your fundamental thesis. It helps you sound like a better version of yourself, not like a robot trying to hide a stolen essay.</p>
+            <p>TextGlow, on the other hand, is not designed for academic deception. It is designed to elevate your own authentic thoughts. If you write a rough draft of your own ideas, TextGlow rewrites your tone without changing your fundamental thesis. It helps you sound like a better version of yourself, not like a robot trying to hide a stolen essay.</p>
 
             <h2>Which Tool is Better for Non-Native English Speakers?</h2>
             <p>If English is your second language, both tools offer massive benefits, but they solve different problems. If you struggle primarily with vocabulary — finding the right word to express a concept — Quillbot's integrated thesaurus and synonym slider are incredibly helpful. You can click any word and see a dropdown of contextual alternatives.</p>
-            <p>However, if your main challenge is <em>cultural nuance</em>, Textglow is far superior. Many ESL writers struggle to calibrate how direct or polite they should be in American corporate culture. A direct translation from German or Russian often sounds rude to an American reader, even if the grammar is perfect. Textglow's tone filters (like "Professional" or "Empathetic") automatically adjust the cultural temperature of the message, bridging the gap that a simple paraphraser cannot.</p>
+            <p>However, if your main challenge is <em>cultural nuance</em>, TextGlow is far superior. Many ESL writers struggle to calibrate how direct or polite they should be in American corporate culture. A direct translation from German or Russian often sounds rude to an American reader, even if the grammar is perfect. TextGlow's tone filters (like "Professional" or "Empathetic") automatically adjust the cultural temperature of the message, bridging the gap that a simple paraphraser cannot.</p>
 
             <h2>The Hidden Cost of Context-Switching</h2>
             <p>Beyond the UC Irvine study's 23-minute finding, there's a deeper cost that most people miss: <strong>decision fatigue</strong>. Every time you switch to an external tool, your brain has to make a series of micro-decisions: What do I copy? How much context do I include? Which mode do I select? Is this output good enough?</p>
-            <p>With in-line tools like Textglow, these decisions vanish. You highlight text, click a tone, and move on. There's no "should I try a different setting?" loop because the output adapts to your emotional intent, not just your vocabulary.</p>
+            <p>With in-line tools like TextGlow, these decisions vanish. You highlight text, click a tone, and move on. There's no "should I try a different setting?" loop because the output adapts to your emotional intent, not just your vocabulary.</p>
 
             <h2>Who Wins on Price and Value?</h2>
             <p>When evaluating SaaS tools, we have to look beyond the feature list and look at the actual return on investment. Quillbot Premium costs $9.95/month (billed annually) or $19.95/month (billed monthly). For that price, you get unlimited words in the Paraphraser, Plagiarism Checker, and Co-Writer. If your primary output is high-volume academic text where avoiding plagiarism is the main goal, this is a reasonable price point.</p>
-            <p>Textglow offers its core rewriting and tone-adjustment features on a generous free tier. For power users who need unlimited rewrites and access to all 10+ tones, the Pro plan is significantly more affordable. The fundamental difference isn't just price — it's philosophy. Grammarly charges you to fix problems one at a time. Textglow fixes the entire paragraph in one click.</p>
+            <p>TextGlow offers its core rewriting and tone-adjustment features on a generous free tier. For power users who need unlimited rewrites and access to all 10+ tones, the Pro plan is significantly more affordable. The fundamental difference isn't just price — it's philosophy. Grammarly charges you to fix problems one at a time. TextGlow fixes the entire paragraph in one click.</p>
 
             <h2>The Verdict</h2>
-            <p>If you are rewriting a 10-page academic paper, use Quillbot. If you are rewriting emails, social media posts, and daily workplace communication, Textglow is dramatically faster because you never leave your current page.</p>
-            <p>For a deeper comparison with another major player, check out our <a href="/blog/grammarly-vs-textglow-ai-writer/">Grammarly vs. Textglow breakdown</a>, or learn <a href="/blog/why-tone-matters-more-than-grammar/">why tone matters more than grammar</a> in modern communication.</p>
+            <p>If you are rewriting a 10-page academic paper, use Quillbot. If you are rewriting emails, social media posts, and daily workplace communication, TextGlow is dramatically faster because you never leave your current page.</p>
+            <p>For a deeper comparison with another major player, check out our <a href="/blog/grammarly-vs-textglow-ai-writer/">Grammarly vs. TextGlow breakdown</a>, or learn <a href="/blog/why-tone-matters-more-than-grammar/">why tone matters more than grammar</a> in modern communication.</p>
         `
     },
     {
@@ -1195,7 +1195,7 @@ export const blogPosts: BlogPost[] = [
                 <ul class="text-slate-700 mb-0 list-disc pl-5">
                     <li>"Hey" gets a <strong>2% reply rate</strong>. AI-personalized openers get up to 68%.</li>
                     <li>The secret: reference one specific detail from their profile to pass the "are you boring?" test.</li>
-                    <li>Textglow's "Flirty" tone filter turns basic messages into clever, context-aware openers instantly.</li>
+                    <li>TextGlow's "Flirty" tone filter turns basic messages into clever, context-aware openers instantly.</li>
                 </ul>
             </div>
 
@@ -1294,12 +1294,12 @@ export const blogPosts: BlogPost[] = [
             <p>For example, if they reply: "I love hiking! The trail in that photo was up in the Rockies." Don't just say, "That's cool, what do you do for work?" Say: "The Rockies are incredible, I went there a few years ago. Do you prefer the mountain views or are you more of a beach person?" It validates their input while keeping the ball rolling.</p>
 
             <h2>How to Generate perfect Openers Instantly</h2>
-            <p>You don't need to copy and paste from ChatGPT anymore, which ruins the flow of the app and breaks your momentum. With tools like <a href="https://textglow.io/tinder/">Textglow</a> installed on your browser, you have the ultimate AI wingman. You can type something incredibly basic like "you look cute", click the <strong>"Flirty"</strong> button right inside the chat box, and watch it transform into something witty and specific. <strong>"Flirty"</strong> button right inside the chat box, and watch it transform into something witty and specific.</p>
+            <p>You don't need to copy and paste from ChatGPT anymore, which ruins the flow of the app and breaks your momentum. With tools like <a href="https://textglow.io/tinder/">TextGlow</a> installed on your browser, you have the ultimate AI wingman. You can type something incredibly basic like "you look cute", click the <strong>"Flirty"</strong> button right inside the chat box, and watch it transform into something witty and specific. <strong>"Flirty"</strong> button right inside the chat box, and watch it transform into something witty and specific.</p>
             <p>The beauty of in-line AI is that it matches your natural flow. You see a profile, you feel an impulse, you type a raw thought, and the AI rewrites it before you hit send. No context-switching. No copy-pasting. No overthinking.</p>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 my-8 rounded-r-xl">
                 <h4 class="text-amber-900 font-bold mt-0 mb-2">📊 The Data</h4>
-                <p class="text-amber-800 mb-0">Among Textglow users on dating apps, those using the "Flirty" tone filter saw a <strong>3.5x higher response rate</strong> compared to sending their raw, unrewritten messages.</p>
+                <p class="text-amber-800 mb-0">Among TextGlow users on dating apps, those using the "Flirty" tone filter saw a <strong>3.5x higher response rate</strong> compared to sending their raw, unrewritten messages.</p>
             </div>
 
             <p>Stop overthinking your messages and letting your matches expire. Let the AI do the heavy lifting, secure the date, and focus on actually having fun in person. And if you want to apply the same rewrite to your <a href="/blog/stop-chatgpt-copy-paste-linkedin/">LinkedIn posts</a> or <a href="/blog/how-to-write-cold-emails-that-get-replies/">cold emails</a>, we've got you covered.</p>

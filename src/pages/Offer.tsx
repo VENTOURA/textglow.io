@@ -32,7 +32,7 @@ export const Offer = () => {
                     </div>
 
                     <p>
-                        We have partnered with <strong>Hyperagent.com</strong> to offer an exclusive <strong>launch early bird bonus</strong>. The first 20 users to upgrade to our <strong>Textglow yearly plan</strong> will receive an exclusive referral link.
+                        We have partnered with <strong>Hyperagent.com</strong> to offer an exclusive <strong>launch early bird bonus</strong>. The first 20 users to upgrade to our <strong>TextGlow yearly plan</strong> will receive an exclusive referral link.
                     </p>
                     <p>
                         When you use this link to subscribe to any <strong>Hyperagent paid plan (starting at just $20/m)</strong>, you will instantly unlock a massive <span className="font-bold text-brand-600">$1,030 API credit bonus</span> ($1,000 baseline + $30 minimum bonus) to use on the latest LLMs, including the flagship <strong>Anthropic Claude Opus 4.7</strong>!
@@ -40,9 +40,9 @@ export const Offer = () => {
 
                     <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">How it works</h2>
                     <ol className="list-decimal pl-6 space-y-4">
-                        <li><strong>Upgrade to the Textglow Yearly Plan:</strong> Subscribe to our yearly plan today.</li>
+                        <li><strong>Upgrade to the TextGlow Yearly Plan:</strong> Subscribe to our yearly plan today.</li>
                         <li><strong>Be among the first 20:</strong> Spots are strictly limited. If you are reading this page, there are likely still spots available!</li>
-                        <li><strong>Leave a Review:</strong> Leave a 5-star review for the Textglow extension in the <a href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Google Chrome Extension Marketplace</a>.</li>
+                        <li><strong>Leave a Review:</strong> Leave a 5-star review for the TextGlow extension in the <a href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Google Chrome Extension Marketplace</a>.</li>
                         <li><strong>Receive your Link:</strong> We will automatically send your exclusive Hyperagent link to your Stripe email (or contact us at support@textglow.io).</li>
                         <li><strong>Subscribe to Hyperagent & Get Credits:</strong> Use the link to sign up for any Hyperagent paid plan (starting at $20/m) to instantly receive your $1,030 in API credits!</li>
                     </ol>

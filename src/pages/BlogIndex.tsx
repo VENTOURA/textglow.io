@@ -27,7 +27,7 @@ export const BlogIndex = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-5xl font-bold text-slate-900 mb-6"
                     >
-                        The <span className="text-blue-600">Textglow</span> Blog
+                        The <span className="text-blue-600">TextGlow</span> Blog
                     </motion.h1>
                     <motion.p 
                         initial={{ opacity: 0, y: 20 }}

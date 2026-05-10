@@ -8,8 +8,8 @@ export const Footer = () => {
                 <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
                     <div className="md:col-span-1 space-y-4">
                         <div className="flex items-center space-x-2">
-                            <img src={logo} alt="Textglow Logo" className="w-6 h-6" />
-                            <span className="font-bold text-lg text-slate-900">Textglow</span>
+                            <img src={logo} alt="TextGlow Logo" className="w-6 h-6" />
+                            <span className="font-bold text-lg text-slate-900">TextGlow</span>
                         </div>
                         <p className="text-sm text-slate-500">
                             Rewrite and rewrite your text instantly, anywhere on the web.
@@ -85,7 +85,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="text-sm text-slate-500">© {new Date().getFullYear()} Textglow. All rights reserved.</p>
+                    <p className="text-sm text-slate-500">© {new Date().getFullYear()} TextGlow. All rights reserved.</p>
                 </div>
             </div>
         </footer>

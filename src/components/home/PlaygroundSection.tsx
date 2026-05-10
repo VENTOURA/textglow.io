@@ -13,7 +13,7 @@ export const PlaygroundSection = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Try it yourself</h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                        Type a messy draft below and see how Textglow rewrites it in seconds.
+                        Type a messy draft below and see how TextGlow rewrites it in seconds.
                     </p>
                 </div>
 

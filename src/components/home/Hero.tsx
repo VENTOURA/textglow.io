@@ -50,7 +50,7 @@ export const Hero = () => {
                     className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4"
                 >
                     <Button size="lg" href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full sm:w-auto">
-                        Install Free Extension
+                        Install TextGlow Free
                         <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                     <Button size="lg" variant="pro" to="/pricing/" className="w-full sm:w-auto">

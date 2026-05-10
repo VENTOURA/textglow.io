@@ -47,7 +47,7 @@ export const ProblemSolution = () => {
                         </div>
                     </motion.div>
 
-                    {/* The Textglow Way */}
+                    {/* The TextGlow Way */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ export const ProblemSolution = () => {
                         <div className="absolute top-0 left-0 w-full h-1 bg-brand-500"></div>
                         <div className="flex items-center mb-6 text-brand-600 font-semibold">
                             <Check className="w-5 h-5 mr-2" />
-                            With Textglow
+                            With TextGlow
                         </div>
                         <div className="space-y-4 text-slate-600">
                             <div className="flex items-start p-3 bg-brand-50/50 rounded-xl border border-brand-100">

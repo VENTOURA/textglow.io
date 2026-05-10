@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
     {
-        question: "What exactly does Textglow do?",
-        answer: "Textglow is your secret weapon for writing. It lives in your browser and helps you instantly rewrite emails, LinkedIn posts, or chat messages. Whether you want to sound more professional, friendlier, or more concise, Textglow does the heavy lifting for you."
+        question: "What exactly does TextGlow do?",
+        answer: "TextGlow is your secret weapon for writing. It lives in your browser and helps you instantly rewrite emails, LinkedIn posts, or chat messages. Whether you want to sound more professional, friendlier, or more concise, TextGlow does the heavy lifting for you."
     },
     {
         question: "Does it work on my favorite sites?",
-        answer: "Yes! Textglow works seamlessly on Gmail, LinkedIn, Facebook, Slack (Web), Discord, and almost any other text area on the web. Just click the sparkle icon that appears when you focus on a text field."
+        answer: "Yes! TextGlow works seamlessly on Gmail, LinkedIn, Facebook, Slack (Web), Discord, and almost any other text area on the web. Just click the sparkle icon that appears when you focus on a text field."
     },
     {
         question: "Do I need an OpenAI API key to use it?",
@@ -20,8 +20,8 @@ const faqs = [
         answer: "Exclusive to Pro users, One-Click Magic allows you to rewrite your text instantly without ever opening a selection modal. Your draft is replaced with a rewritten version in a single click, saving you even more time."
     },
     {
-        question: "What are the benefits of Textglow Pro?",
-        answer: "Pro unlocks the full potential of Textglow: **150 rewrites per day**, the **One-Click Magic** mode, a massive **3,000 character limit** per message, and priority access to our fastest AI models."
+        question: "What are the benefits of TextGlow Pro?",
+        answer: "Pro unlocks the full potential of TextGlow: **150 rewrites per day**, the **One-Click Magic** mode, a massive **3,000 character limit** per message, and priority access to our fastest AI models."
     },
     {
         question: "Is my writing private and secure?",

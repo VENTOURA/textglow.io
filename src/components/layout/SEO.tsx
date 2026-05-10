@@ -2,7 +2,7 @@ export const SEO = () => {
     const schemaData = {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Textglow",
+        "name": "TextGlow",
         "operatingSystem": "Chrome, Edge, Brave",
         "applicationCategory": "WritingAssistant",
         "offers": {
@@ -15,7 +15,7 @@ export const SEO = () => {
         "description": "The tailored AI writing assistant for Chrome. Instantly refine, rewrite, and fix grammar in emails, chats, and docs without copy-pasting.",
         "author": {
             "@type": "Organization",
-            "name": "Textglow",
+            "name": "TextGlow",
             "url": "https://textglow.io/"
         }
     };

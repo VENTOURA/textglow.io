@@ -31,8 +31,8 @@ export const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     <Link to="/" className="flex items-center space-x-2">
-                        <img src={logo} alt="Textglow Logo" className="w-8 h-8" />
-                        <span className="font-bold text-xl tracking-tight text-slate-900">Textglow</span>
+                        <img src={logo} alt="TextGlow Logo" className="w-8 h-8" />
+                        <span className="font-bold text-xl tracking-tight text-slate-900">TextGlow</span>
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-8">
@@ -68,8 +68,9 @@ export const Navbar = () => {
                             <Link to="/how-to-use/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/how-to-use/')}>How to Use</Link>
                             <Link to="/pricing/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/pricing/')}>Pricing</Link>
                             <Link to="/tools/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/tools/')}>Tools</Link>
+                            <p className="text-slate-600 mb-6">Join thousands of professionals who write 10x faster with TextGlow.</p>
                             <div className="pt-2">
-                                <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install Free</Button>
+                                <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf" className="w-full justify-center">Install TextGlow Free</Button>
                             </div>
                         </div>
                     </motion.div>

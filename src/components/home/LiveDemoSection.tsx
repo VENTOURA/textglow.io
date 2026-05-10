@@ -31,7 +31,7 @@ export const LiveDemoSection = () => {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">See it in Action</h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-                        Watch how Textglow instantly transforms your writing in any context.
+                        Watch how TextGlow instantly transforms your writing in any context.
                     </p>
                 </div>
 

@@ -73,9 +73,9 @@ export const BlogPost = () => {
 
                     <div className="bg-slate-50 rounded-3xl p-8 text-center border border-slate-100">
                         <h3 className="text-2xl font-bold text-slate-900 mb-4">Stop reading. Start writing.</h3>
-                        <p className="text-slate-600 mb-6">Join thousands of professionals who write 10x faster with Textglow.</p>
+                        <p className="text-slate-600 mb-6">Join thousands of professionals who write 10x faster with TextGlow.</p>
                         <Button href="https://chromewebstore.google.com/detail/textglow-ai-message-polis/bjjbefpiaedgddoflnjhpnadenlibfhf">
-                            Install Textglow Free
+                            Install TextGlow Free
                         </Button>
                     </div>
                 </motion.div>

@@ -5,7 +5,7 @@ const steps = [
     {
         icon: MousePointerClick,
         title: "Write Your Draft",
-        description: "Just type naturally in any email, chat, or document. Textglow is already watching."
+        description: "Just type naturally in any email, chat, or document. TextGlow is already watching."
     },
     {
         icon: Wand2,

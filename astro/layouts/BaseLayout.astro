@@ -6,9 +6,10 @@ import type { SeoMeta } from "../../src/seo/routes";
 
 interface Props {
   meta: SeoMeta;
+  jsonLd?: any;
 }
 
-const { meta } = Astro.props;
+const { meta, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +18,12 @@ const { meta } = Astro.props;
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {jsonLd && (
+      Array.isArray(jsonLd) 
+        ? jsonLd.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)
+        : <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYV9B526SC"></script>
     <script is:inline>

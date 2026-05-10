@@ -2,6 +2,9 @@
 import { ReactRoute } from "../components/ReactRoute";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { nonRootRoutes, type SiteRoute } from "../../src/seo/routes";
+import { blogPosts } from "../../src/data/blogPosts";
+import { examples } from "../../src/data/beforeAfterExamples";
+import { toISODate } from "../../src/utils/dateFormatting";
 
 export function getStaticPaths() {
   return nonRootRoutes.map((route) => ({
@@ -15,8 +18,123 @@ interface Props {
 }
 
 const { route } = Astro.props;
+
+let jsonLdSchemas = [];
+
+if (route.category === "blog") {
+  const slug = route.path.split('/').filter(Boolean).pop();
+  const post = blogPosts.find(p => p.slug === slug);
+  
+  if (post) {
+    const isoDate = toISODate(post.date);
+    jsonLdSchemas.push({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.excerpt,
+      "author": {
+        "@type": "Person",
+        "name": post.author.name
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TextGlow",
+        "url": "https://textglow.io",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://textglow.io/logo.png"
+        }
+      },
+      "datePublished": isoDate,
+      "dateModified": isoDate,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://textglow.io/blog/${post.slug}/`
+      },
+      "image": "https://textglow.io/og-image.png"
+    });
+  }
+}
+
+if (route.category === "example") {
+  const slug = route.path.split('/').filter(Boolean).pop();
+  const example = examples.find(e => e.slug === slug);
+  
+  if (example) {
+    // Build HowTo schema
+    const problemsText = example.problems.join(", ");
+    const firstStepText = `Original text has these issues: ${problemsText}. ${example.toneExplanation}`;
+    
+    const secondStepText =
+      example.whatChanged.length === 1
+        ? example.whatChanged[0]
+        : example.whatChanged[0] ?? "";
+
+    const remainingChanges =
+      example.whatChanged.length === 1
+        ? example.whatChanged[0]
+        : example.whatChanged.slice(1).join(". ");
+
+    jsonLdSchemas.push({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": example.title,
+      "description": example.seoDescription,
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Identify the problem",
+          "text": firstStepText,
+        },
+        {
+          "@type": "HowToStep",
+          "name": `Apply the ${example.tone} tone rewrite`,
+          "text": secondStepText,
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Review what changed",
+          "text": remainingChanges,
+        },
+      ],
+      "tool": {
+        "@type": "HowToTool",
+        "name": "TextGlow AI Writing Assistant",
+      },
+      "totalTime": "PT1M",
+      "supply": [],
+      "image": "https://textglow.io/og-image.png",
+    });
+
+    // Build BreadcrumbList schema
+    jsonLdSchemas.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tools",
+          "item": "https://textglow.io/tools/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Examples",
+          "item": "https://textglow.io/tools/examples/",
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": example.title,
+          "item": `https://textglow.io/tools/examples/${example.slug}/`,
+        },
+      ],
+    });
+  }
+}
 ---
 
-<BaseLayout meta={route.meta}>
+<BaseLayout meta={route.meta} jsonLd={jsonLdSchemas.length > 0 ? jsonLdSchemas : null}>
   <ReactRoute route={route.path} pattern={route.pattern} component={route.component} client:load />
 </BaseLayout>

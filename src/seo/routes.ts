@@ -157,7 +157,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/gmail/",
     component: "gmail",
     category: "static",
-    title: "AI Email Assistant for Gmail — Write Better Emails in 2 Clicks | TextGlow",
+    title: "AI Email Assistant for Gmail — Rewrite in 2 Clicks | TextGlow",
     description:
       "TextGlow rewrites your Gmail messages in 2 clicks — right inside the compose window. Choose your tone, hit send with confidence. Free Chrome extension.",
   }),
@@ -173,7 +173,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/slack/",
     component: "slack",
     category: "static",
-    title: "AI Writing Assistant for Slack — Sound Professional in Every Message | TextGlow",
+    title: "AI Slack Assistant — Sound Professional Every Time | TextGlow",
     description:
       "Rewrite your Slack messages before sending. TextGlow adjusts your tone in 2 clicks — right inside Slack. Free Chrome extension.",
   }),
@@ -181,7 +181,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/tinder/",
     component: "tinder",
     category: "static",
-    title: "AI Dating Message Assistant — Better Tinder, Bumble & Hinge Messages | TextGlow",
+    title: "AI Dating Message Assistant — Tinder, Bumble & Hinge | TextGlow",
     description:
       "Stop sending hey and getting ghosted. TextGlow's Flirty tone turns basic dating app messages into witty openers that get replies. Free Chrome extension.",
   }),
@@ -189,7 +189,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/translate/",
     component: "translate",
     category: "static",
-    title: "AI Translator — Rewrite Messages in Any Language with Perfect Tone | TextGlow",
+    title: "AI Tone Translator — Rewrite in Any Language | TextGlow",
     description:
       "Don't just translate words. TextGlow rewrites your messages in any language while maintaining the perfect professional or friendly tone. Free Chrome extension.",
   }),
@@ -197,7 +197,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/privacy/",
     component: "privacy",
     category: "static",
-    title: "Privacy Policy | TextGlow",
+    title: "Privacy Policy | TextGlow — AI Writing Assistant",
     description:
       "Your data privacy is our priority. Read our privacy policy to understand how we protect your information.",
   }),
@@ -205,8 +205,8 @@ const staticRoutes: SiteRoute[] = [
     path: "/terms/",
     component: "terms",
     category: "static",
-    title: "Terms of Service | TextGlow",
-    description: "Please read our terms of service before using TextGlow.",
+    title: "Terms of Service | TextGlow — AI Writing Assistant",
+    description: "Read the terms of service for TextGlow, the AI writing assistant. Covers usage rights, subscription billing, refund policy, and acceptable use of the extension.",
   }),
   route({
     path: "/offer/",
@@ -276,7 +276,7 @@ const staticRoutes: SiteRoute[] = [
     path: "/tools/cold-email-generator/",
     component: "coldEmailGenerator",
     category: "tool",
-    title: "Free AI Cold Email Generator — Write High-Converting Outreach | TextGlow",
+    title: "Free AI Cold Email Generator — High-Converting | TextGlow",
     description:
       "Generate personalized, high-converting cold emails in seconds. Use TextGlow to rewrite your outreach for better response rates and engagement. Free online tool.",
   }),

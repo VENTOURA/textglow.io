@@ -1,10 +1,19 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^www\.textglow\.io$ [NC]
-  RewriteRule ^(.*)$ https://textglow.io/$1 [L,R=301]
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+
+# ── Force HTTPS ──────────────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ── www → apex ───────────────────────────────────────────────
+RewriteCond %{HTTP_HOST} ^www\.textglow\.io$ [NC]
+RewriteRule ^(.*)$ https://textglow.io/$1 [R=301,L]
+
+# ── 301 Redirects (old URLs → new URLs) ──────────────────────
+RewriteRule ^dating/?$ /tinder/ [R=301,L]
+
 </IfModule>
+
+# ── 404 Page handling ─────────────────────────────────────────
+ErrorDocument 404 /404.html
+
